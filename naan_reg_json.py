@@ -423,7 +423,7 @@ def main() -> int:
         parser.add_argument(
             "-s", "--schema", action="store_true", help="Generate JSON schema and exit."
         )
-        parser.add_argument("path", default="_schema_", nargs="?", help="Path to naan_reg_priv ANVL file.")
+        parser.add_argument("path", default="not-a-source", nargs="?", help="Path to naan_reg_priv ANVL file.")
     else:
         parser.add_argument("path", help="Path to naan_reg_priv ANVL file.")
     parser.add_argument(
@@ -435,6 +435,9 @@ def main() -> int:
         if args.schema:
             generate_json_schema(public_only=args.public)
             return 0
+    if args.path == "not-a-source":
+        _L.error("Path to ANVL source is required.")
+        return 1
     if not os.path.exists(args.path):
         _L.error("Path '%s' not found.", args.path)
         return 1
