@@ -1,9 +1,11 @@
 """
 Generate JSON representation of naan_reg_priv/main_naans.
 
-This tool translates the NAAN registry file from ANVL to JSON to s
-simplify downstream programmatic use. This script has no dependencies
-other than python 3.8 or later.
+This tool translates the NAAN registry file from ANVL to JSON to
+assist downstream programmatic use.
+
+If pydantic is installed then the script can output JSON schema
+describing the JSON respresentation of the transformed NAAN entries.
 """
 
 import argparse
@@ -17,13 +19,16 @@ import sys
 import typing
 import urllib.parse
 
+import dataclasses
+
 PYDANTIC_AVAILABLE = False
 try:
-    from pydantic import dataclasses
+    from pydantic.dataclasses import dataclass
 
     PYDANTIC_AVAILABLE = True
 except ModuleNotFoundError:
-    import dataclasses
+    from dataclasses import dataclass
+
 
 # Global logger handle
 _L = logging.getLogger("naan_reg_json")
@@ -206,65 +211,110 @@ class AnvlParser:
             yield self.parse(block)
 
 
-@dataclasses.dataclass
-class NAAN_who:
-    """Organization responsible for NAAN
+@dataclass
+class PublicNAAN_who:
+    """Publicly visible information for organization responsible for NAAN"""
+    name: str = dataclasses.field(
+        metadata=dict(description="Official organization name")
+    )
+    acronym: typing.Optional[str] = dataclasses.field(
+        default=None,
+        metadata=dict(description="Optional display acronym derived from DNS name"),
+    )
 
-    Attributes:
-        name (str): Official organization name
-        acronym (str): Optional display acronym derived from DNS name
-    """
+@dataclass
+class NAAN_who(PublicNAAN_who):
+    """Organization responsible for NAAN"""
 
-    name: str
-    acronym: typing.Optional[str] = None
+    address: str = dataclasses.field(
+        default=None, metadata=dict(description="Physical address of organization")
+    )
 
 
-@dataclasses.dataclass
+@dataclass
 class NAAN_how:
-    """Policy and tenure of NAAN management
+    """Policy and tenure of NAAN management"""
 
-    Attributes:
-        orgtype (str): Organization type, FP = For profit, NP = Not for profit.
-        policy (str): Policy Summary,
-                        NR = No re-assignment. Once a base identifier-to-object association
-                             has been made public, that association shall remain unique into
-                             the indefinite future.
-                        OP = Opacity. Base identifiers shall be assigned with no widely
-                             recognizable semantic information.
-                        CC = A check character is generated in assigned identifiers to guard
-                             against common transcription errors.
-        tenure (str):
-        policy_url (str):
-    """
+    orgtype: str = dataclasses.field(
+        metadata=dict(
+            description="Organization type, FP = For profit, NP = Not for profit."
+        )
+    )
+    policy: str = dataclasses.field(
+        metadata=dict(
+            description=(
+                "NR = No re-assignment. Once a base identifier-to-object association"
+                "     has been made public, that association shall remain unique into"
+                "     the indefinite future."
+                "OP = Opacity. Base identifiers shall be assigned with no widely"
+                "     recognizable semantic information."
+                "CC = A check character is generated in assigned identifiers to guard"
+                "     against common transcription errors."
+            )
+        )
+    )
+    tenure: str = dataclasses.field(metadata=dict(description="<start year YYYY of role tenure>[-<end of tenure> ]"))
+    policy_url: typing.Optional[str] = dataclasses.field(
+        default=None, metadata=dict(description="URL to narrative policy statement")
+    )
 
-    orgtype: str
-    policy: str
-    tenure: str
-    policy_url: typing.Optional[str] = None
 
-
-@dataclasses.dataclass
+@dataclass
 class NAAN_contact:
-    name: str
-    unit: typing.Optional[str] = None
-    tenure: typing.Optional[str] = None
-    email: typing.Optional[str] = None
-    phone: typing.Optional[str] = None
+    name: str = dataclasses.field(metadata=dict(description="Name of contact"))
+    unit: typing.Optional[str] = dataclasses.field(
+        default=None, metadata=dict(description="Name of contact organization")
+    )
+    tenure: typing.Optional[str] = dataclasses.field(
+        default=None,
+        metadata=dict(
+            description="<start year YYYY of role tenure>[-<end of tenure> ]"
+        ),
+    )
+    email: typing.Optional[str] = dataclasses.field(
+        default=None, metadata=dict(description="Email address of contact")
+    )
+    phone: typing.Optional[str] = dataclasses.field(
+        default=None, metadata=dict(description="Telephone number for contact")
+    )
 
 
-@dataclasses.dataclass
-class NAAN:
-    what: str
-    where: str
-    target: str
-    when: datetime.datetime
-    why: str
-    address: str
-    who: NAAN_who
-    contact: NAAN_contact
+@dataclass
+class PublicNAAN:
+    what: str = dataclasses.field(
+        metadata=dict(description="The NAAN value, e.g. 12345")
+    )
+    where: str = dataclasses.field(
+        metadata=dict(description="URL of service endpoint accepting ARK identifiers.")
+    )
+    target: str = dataclasses.field(
+        metadata=dict(
+            description=(
+                "URL of service endpoint accepting ARK identifiers including subsitution"
+                "parameters $arkpid for full ARK or $pid for NAAN/suffix."
+            )
+        )
+    )
+    when: datetime.datetime = dataclasses.field(
+        metadata=dict(description="Date when this record was last modified.")
+    )
+    who: PublicNAAN_who
     na_policy: NAAN_how
-    comments: typing.Optional[list[str]] = None
-    provider: typing.Optional[str] = None
+
+
+@dataclass
+class NAAN(PublicNAAN):
+    who: NAAN_who
+    why: str = dataclasses.field(
+        metadata=dict(description="Purpose for this record, 'ARK'")
+    )
+    contact: NAAN_contact
+    comments: typing.Optional[typing.List[dict]] = dataclasses.field(
+        default=None, metadata=dict(description="Comments about NAAN record")
+    )
+    provider: typing.Optional[str] = dataclasses.field(
+        default=None, metadata=dict(description="")
+    )
 
     @property
     def key(self) -> str:
@@ -276,7 +326,10 @@ class NAAN:
             "where": self.where,
             "target": self.target,
             "when": self.when,
-            "who": self.who,
+            "who": {
+                "name": self.who.name,
+                "acronym": self.who.acronym,
+            },
             "na_policy": self.na_policy,
         }
 
@@ -286,7 +339,8 @@ class NAAN:
         Factory method for creating NAAN from an ANVL parsed block
         """
         data = block.get("naa", {})
-        res = {"address": None, "comments": None, "provider": None}
+        res = {"comments": None, "provider": None}
+        _address = None
         for k, v in data.items():
             if k == "who":
                 parts = v.split("(=)", 1)
@@ -320,9 +374,9 @@ class NAAN:
             elif k == "!why":
                 res["why"] = v
             elif k == "!address":
-                res["address"] = v
+                _address = v
             elif k == "!provider":
-                res["provider"] = v
+                res["provider"] = str(v)
             else:
                 if k.startswith("!"):
                     if res["comments"] is None:
@@ -333,6 +387,8 @@ class NAAN:
                         res["comments"].append({k: v})
                 else:
                     res[k] = v
+        if "who" in res:
+            res["who"].address = _address
         if "what" in res:
             return cls(**res)
         return None
@@ -353,8 +409,11 @@ def load_naan_reg_priv(naan_src: str, public_only=False):
     return res
 
 
-def generate_json_schema():
-    schema = NAAN.__pydantic_model__.schema()
+def generate_json_schema(public_only:bool=False):
+    if public_only:
+        schema = PublicNAAN.__pydantic_model__.schema()
+    else:
+        schema = NAAN.__pydantic_model__.schema()
     print(json.dumps(schema, indent=2))
 
 
@@ -364,7 +423,7 @@ def main() -> int:
         parser.add_argument(
             "-s", "--schema", action="store_true", help="Generate JSON schema and exit."
         )
-        parser.add_argument("path", default="", help="Path to naan_reg_priv ANVL file.")
+        parser.add_argument("path", default="_schema_", nargs="?", help="Path to naan_reg_priv ANVL file.")
     else:
         parser.add_argument("path", help="Path to naan_reg_priv ANVL file.")
     parser.add_argument(
@@ -374,7 +433,7 @@ def main() -> int:
     logging.basicConfig(level=logging.INFO)
     if PYDANTIC_AVAILABLE:
         if args.schema:
-            generate_json_schema()
+            generate_json_schema(public_only=args.public)
             return 0
     if not os.path.exists(args.path):
         _L.error("Path '%s' not found.", args.path)
