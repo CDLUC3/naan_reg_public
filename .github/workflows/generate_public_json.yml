@@ -9,7 +9,7 @@ jobs:
         os: [ubuntu-latest]
         python-version: [3.9]
     steps:
-    - uses: actions.checkout@v3
+    - uses: actions/checkout@v3
       with:
         repository: CDLUC3/naan_reg_priv
         path: naan_reg_priv
