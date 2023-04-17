@@ -214,6 +214,7 @@ class AnvlParser:
 @dataclass
 class PublicNAAN_who:
     """Publicly visible information for organization responsible for NAAN"""
+
     name: str = dataclasses.field(
         metadata=dict(description="Official organization name")
     )
@@ -221,6 +222,7 @@ class PublicNAAN_who:
         default=None,
         metadata=dict(description="Optional display acronym derived from DNS name"),
     )
+
 
 @dataclass
 class NAAN_who(PublicNAAN_who):
@@ -253,7 +255,9 @@ class NAAN_how:
             )
         )
     )
-    tenure: str = dataclasses.field(metadata=dict(description="<start year YYYY of role tenure>[-<end of tenure> ]"))
+    tenure: str = dataclasses.field(
+        metadata=dict(description="<start year YYYY of role tenure>[-<end of tenure> ]")
+    )
     policy_url: typing.Optional[str] = dataclasses.field(
         default=None, metadata=dict(description="URL to narrative policy statement")
     )
@@ -320,18 +324,12 @@ class NAAN(PublicNAAN):
     def key(self) -> str:
         return self.what
 
-    def as_public(self) -> dict:
-        return {
-            "what": self.what,
-            "where": self.where,
-            "target": self.target,
-            "when": self.when,
-            "who": {
-                "name": self.who.name,
-                "acronym": self.who.acronym,
-            },
-            "na_policy": self.na_policy,
-        }
+    def as_public(self) -> PublicNAAN:
+        public_who = PublicNAAN_who(self.who.name, self.who.acronym)
+        public = PublicNAAN(
+            self.what, self.where, self.target, self.when, public_who, self.na_policy
+        )
+        return public
 
     @classmethod
     def from_block(cls, block: dict):
@@ -409,7 +407,7 @@ def load_naan_reg_priv(naan_src: str, public_only=False):
     return res
 
 
-def generate_json_schema(public_only:bool=False):
+def generate_json_schema(public_only: bool = False):
     if public_only:
         schema = PublicNAAN.__pydantic_model__.schema()
     else:
@@ -423,7 +421,12 @@ def main() -> int:
         parser.add_argument(
             "-s", "--schema", action="store_true", help="Generate JSON schema and exit."
         )
-        parser.add_argument("path", default="not-a-source", nargs="?", help="Path to naan_reg_priv ANVL file.")
+        parser.add_argument(
+            "path",
+            default="not-a-source",
+            nargs="?",
+            help="Path to naan_reg_priv ANVL file.",
+        )
     else:
         parser.add_argument("path", help="Path to naan_reg_priv ANVL file.")
     parser.add_argument(
