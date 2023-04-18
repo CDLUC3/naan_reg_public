@@ -109,3 +109,7 @@ To generate the schema documentation:
 generate-schema-doc --config-file docs_config.yaml ./schema ./schema/
 ```
 
+## Acknowledgement
+
+This work is supported in part by the California Digital Library.
+
