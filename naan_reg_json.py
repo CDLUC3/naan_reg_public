@@ -13,6 +13,7 @@ import collections
 import datetime
 import json
 import logging
+import os
 import os.path
 import re
 import sys
@@ -432,6 +433,9 @@ def main() -> int:
     parser.add_argument(
         "-p", "--public", action="store_true", help="Output public content only."
     )
+    parser.add_argument(
+        "-f", "--files", default=None, help="Write individual json files to path."
+    )
     args = parser.parse_args()
     logging.basicConfig(level=logging.INFO)
     if PYDANTIC_AVAILABLE:
@@ -449,7 +453,13 @@ def main() -> int:
     naan_txt = open(naan_src, "r").read()
     res = load_naan_reg_priv(naan_txt, public_only=args.public)
     _L.info("Total of %s entries", len(res))
-    print(json.dumps(res, indent=2, ensure_ascii=False, cls=EnhancedJSONEncoder))
+    if args.files is not None:
+        os.makedirs(args.files, exist_ok=True)
+        for k,v in res.items():
+            with open(os.path.join(args.files,f"{k}.json"), "w") as fdest:
+                json.dump(v, fdest, indent=2, ensure_ascii=False, cls=EnhancedJSONEncoder)
+    else:
+        print(json.dumps(res, indent=2, ensure_ascii=False, cls=EnhancedJSONEncoder))
     return 0
 
 
