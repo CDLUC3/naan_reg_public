@@ -306,6 +306,14 @@ class PublicNAAN:
     who: PublicNAAN_who
     na_policy: NAAN_how
 
+    def as_flat(self) -> dict:
+        return {
+            "what": self.what,
+            "who": self.who.name,
+            "where": self.where,
+            "when": self.when,
+        }
+
 
 @dataclass
 class NAAN(PublicNAAN):
@@ -434,7 +442,16 @@ def main() -> int:
         "-p", "--public", action="store_true", help="Output public content only."
     )
     parser.add_argument(
-        "-f", "--files", default=None, help="Write individual json files to path."
+        "-f",
+        "--files",
+        default=None,
+        help="Write individual json files to folder FILES. WARNING: existing content overwritten!",
+    )
+    parser.add_argument(
+        "-t",
+        "--flat",
+        action="store_true",
+        help="Output flat file compatible public view to stdout.",
     )
     args = parser.parse_args()
     logging.basicConfig(level=logging.INFO)
@@ -453,12 +470,31 @@ def main() -> int:
     naan_txt = open(naan_src, "r").read()
     res = load_naan_reg_priv(naan_txt, public_only=args.public)
     _L.info("Total of %s entries", len(res))
+    _output_generated = False
     if args.files is not None:
+        _index = {}
         os.makedirs(args.files, exist_ok=True)
-        for k,v in res.items():
-            with open(os.path.join(args.files,f"{k}.json"), "w") as fdest:
-                json.dump(v, fdest, indent=2, ensure_ascii=False, cls=EnhancedJSONEncoder)
-    else:
+        for k, v in res.items():
+            fname = f"{k}.json"
+            _index[k] = fname
+            with open(os.path.join(args.files, fname), "w") as fdest:
+                json.dump(
+                    v, fdest, indent=2, ensure_ascii=False, cls=EnhancedJSONEncoder
+                )
+        with open(os.path.join(args.files, "index.json"), "w") as fdest:
+            json.dump(
+                _index, fdest, indent=2, ensure_ascii=False, cls=EnhancedJSONEncoder
+            )
+        _output_generated = True
+    if args.flat:
+        flat_list = []
+        for k, v in res.items():
+            flat_list.append(v.as_flat())
+        print(
+            json.dumps(flat_list, indent=2, ensure_ascii=False, cls=EnhancedJSONEncoder)
+        )
+        _output_generated = True
+    if not _output_generated:
         print(json.dumps(res, indent=2, ensure_ascii=False, cls=EnhancedJSONEncoder))
     return 0
 
