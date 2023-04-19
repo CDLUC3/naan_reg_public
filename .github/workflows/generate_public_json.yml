@@ -26,5 +26,6 @@ jobs:
         python naan_reg_json.py -p naan_reg_priv/main_naans > public/naans_public.json
     - name: Publish outputs
       uses: peaceiris/actions-gh-pages@v3
-      with: github_token: ${{ secrets.GITHUB_TOKEN }}
-      publish_dir: ./public
+      with: 
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./public
