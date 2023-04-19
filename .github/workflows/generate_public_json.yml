@@ -9,22 +9,22 @@ jobs:
         os: [ubuntu-latest]
         python-version: [3.9]
     steps:
+    - name: Checkout this tool
+      uses: actions/checkout@v3
+      with:
+        ref: main
     - name: Checkout NAAN registry
       uses: actions/checkout@v3
       with:
         repository: CDLUC3/naan_reg_priv
         token: ${{ secrets.NAAN_REG_PRIV_PAT }}
         path: naan_reg_priv
-    - name: Checkout this tool
-      uses: actions/checkout@v3
-      with:
-        ref: main
     - name: Generate public NAANs JSON
       run: |
         mkdir -p public
         cp -r schema public
-        ls -la ..
-        python naan_reg_json.py -p ../naan_reg_priv/main_naans > public/naans_public.json
+        ls -la
+        python naan_reg_json.py -p naan_reg_priv/main_naans > public/naans_public.json
     - name: Publish outputs
       uses: peaceiris/actions-gh-pages@v3
       with: 
