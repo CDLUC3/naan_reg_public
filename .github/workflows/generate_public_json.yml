@@ -23,8 +23,8 @@ jobs:
       run: |
         mkdir -p public
         cp -r schema public
-        ls -la
-        python naan_reg_json.py -p naan_reg_priv/main_naans > public/naans_public.json
+        ls -la ..
+        python naan_reg_json.py -p ../naan_reg_priv/main_naans > public/naans_public.json
     - name: Publish outputs
       uses: peaceiris/actions-gh-pages@v3
       with: 
