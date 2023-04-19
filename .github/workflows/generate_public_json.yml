@@ -26,6 +26,6 @@ jobs:
         ls -la
         python naan_reg_json.py -p naan_reg_priv/main_naans > public/naans_public.json
     - name: Publish outputs
-      uses: peaceiris/actions-gh-pages@v3
+      uses: JamesIves/github-pages-deploy-action@v4
       with: 
         folder: ./public
