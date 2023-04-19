@@ -21,11 +21,12 @@ jobs:
         path: naan_reg_priv
     - name: Generate public NAANs JSON
       run: |
-        mkdir -p public
-        cp -r schema public
+        mkdir -p docs
+        cp -r schema docs
         ls -la
-        python naan_reg_json.py -p naan_reg_priv/main_naans > public/naans_public.json
-    - name: Publish outputs
-      uses: JamesIves/github-pages-deploy-action@v4
-      with: 
-        folder: ./public
+        python naan_reg_json.py -p naan_reg_priv/main_naans > docs/naans_public.json
+    - name: Publish documentation
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./docs
