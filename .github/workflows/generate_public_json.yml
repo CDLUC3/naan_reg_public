@@ -1,0 +1,32 @@
+name: generate_public_json
+on:
+  workflow_dispatch:
+jobs:
+  generate_json:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [ubuntu-latest]
+        python-version: [3.9]
+    steps:
+    - name: Checkout this tool
+      uses: actions/checkout@v3
+      with:
+        ref: main
+    - name: Checkout NAAN registry
+      uses: actions/checkout@v3
+      with:
+        repository: CDLUC3/naan_reg_priv
+        token: ${{ secrets.NAAN_REG_PRIV_PAT }}
+        path: naan_reg_priv
+    - name: Generate public NAANs JSON
+      run: |
+        mkdir -p docs
+        cp -r schema docs
+        ls -la
+        python naan_reg_json.py -p naan_reg_priv/main_naans > docs/naans_public.json
+    - name: Publish documentation
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./docs

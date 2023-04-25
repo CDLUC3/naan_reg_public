@@ -1,0 +1,8 @@
+description_is_markdown: true
+minify: false
+show_toc: true
+template_name: md
+badge_as_image: true
+show_heading_numbers: true
+with_footer: true
+footer_show_time: true
