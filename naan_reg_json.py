@@ -400,6 +400,35 @@ class NAAN(PublicNAAN):
             return cls(**res)
         return None
 
+def generate_index_html(naans, index):
+    res = [
+        '<!DOCTYPE html>',
+        '<html lang="en">',
+        '<head><title>Public NAAN Records</title><meta charset="utf-8"></head>',
+        '<body>',
+    ]
+    keys = list(index)
+    keys.sort()
+    counts = {}
+    for k in keys:
+        i = k[0]
+        counts_entry = counts.get(i, {"n":0, "e":[]})
+        counts_entry["n"] = counts_entry["n"] + 1
+        counts_entry["e"].append({"naan": k, "name": naans[k].who.name})
+        counts[i] = counts_entry
+    for k,e in counts.items():
+        res.append('<details>')
+        res.append(f'<summary>Entries starting with {k} (n={e["n"]}):</summary>')
+        res.append("<table>")
+        res.append("<tr><th>NAAN</th><th>Name</th></tr>")
+        for entry in e['e']:
+            res.append(f"<tr><td><a href=\"{index[entry['naan']]}\">{entry['naan']}</a></td><td>{entry['name']}</td></tr>")
+        res.append("</table>")
+        res.append('</details>')
+    res.append("</body></html>")
+    return "\n".join(res)
+
+
 
 def load_naan_reg_priv(naan_src: str, public_only=False):
     anvl_parser = AnvlParser()
@@ -476,8 +505,12 @@ def main() -> int:
         os.makedirs(args.files, exist_ok=True)
         for k, v in res.items():
             fname = f"{k}.json"
-            _index[k] = fname
-            with open(os.path.join(args.files, fname), "w") as fdest:
+            sub_path = fname[0]
+            dest_path = os.path.join(args.files, sub_path)
+            if not os.path.exists(dest_path):
+                os.makedirs(dest_path, exist_ok=True)
+            _index[k] = os.path.join(sub_path, fname)
+            with open(os.path.join(args.files, _index[k]), "w") as fdest:
                 json.dump(
                     v, fdest, indent=2, ensure_ascii=False, cls=EnhancedJSONEncoder
                 )
@@ -485,6 +518,8 @@ def main() -> int:
             json.dump(
                 _index, fdest, indent=2, ensure_ascii=False, cls=EnhancedJSONEncoder
             )
+        with open(os.path.join(args.files, "index.html"), "w") as fdest:
+            fdest.write(generate_index_html(res, _index))
         _output_generated = True
     if args.flat:
         flat_list = []
