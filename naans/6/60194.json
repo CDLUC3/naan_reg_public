@@ -1,0 +1,16 @@
+{
+  "what": "60194",
+  "where": "https://hemeroteca.uaemex.mx",
+  "target": "https://hemeroteca.uaemex.mx/$arkpid",
+  "when": "2020-10-27T00:00:00+00:00",
+  "who": {
+    "name": "Universidad Autónoma del Estado de México",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "NP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2020",
+    "policy_url": null
+  }
+}

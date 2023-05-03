@@ -1,0 +1,16 @@
+{
+  "what": "56775",
+  "where": "http://192.168.1.12/flora",
+  "target": "http://192.168.1.12/flora/$arkpid",
+  "when": "2020-11-12T00:00:00+00:00",
+  "who": {
+    "name": "Fondation de Coubertin",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "NP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2020",
+    "policy_url": null
+  }
+}

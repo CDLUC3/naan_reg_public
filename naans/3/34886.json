@@ -1,0 +1,16 @@
+{
+  "what": "34886",
+  "where": "https://archives.cotesdarmor.fr",
+  "target": "https://archives.cotesdarmor.fr/$arkpid",
+  "when": "2020-08-24T00:00:00+00:00",
+  "who": {
+    "name": "Archives départementales des Côtes-d'Armor",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "NP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2020",
+    "policy_url": null
+  }
+}

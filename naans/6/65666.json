@@ -1,0 +1,16 @@
+{
+  "what": "65666",
+  "where": "https://edl.cultura.gov.it/id",
+  "target": "https://edl.cultura.gov.it/id/$arkpid",
+  "when": "2019-11-29T00:00:00+00:00",
+  "who": {
+    "name": "Biblioteca Estense Universitaria di Modena",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "NP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2019",
+    "policy_url": null
+  }
+}

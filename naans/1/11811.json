@@ -1,0 +1,16 @@
+{
+  "what": "11811",
+  "where": "http://rub.de",
+  "target": "http://rub.de/$arkpid",
+  "when": "2018-02-26T00:00:00+00:00",
+  "who": {
+    "name": "Ruhr Universität Bochum",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "NP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2018",
+    "policy_url": null
+  }
+}

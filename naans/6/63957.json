@@ -1,0 +1,16 @@
+{
+  "what": "63957",
+  "where": "http://www.chelles.fr",
+  "target": "http://www.chelles.fr/$arkpid",
+  "when": "2018-11-15T00:00:00+00:00",
+  "who": {
+    "name": "Archives de la Ville de Chelles",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "NP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2018",
+    "policy_url": null
+  }
+}

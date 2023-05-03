@@ -1,0 +1,16 @@
+{
+  "what": "32833",
+  "where": "http://libraries.mit.edu",
+  "target": "http://libraries.mit.edu/$arkpid",
+  "when": "2009-11-17T00:00:00+00:00",
+  "who": {
+    "name": "Massachusetts Institute of Technology",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "NP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2009",
+    "policy_url": null
+  }
+}

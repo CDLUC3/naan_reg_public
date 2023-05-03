@@ -1,0 +1,16 @@
+{
+  "what": "27361",
+  "where": "http://www.jmu.edu",
+  "target": "http://www.jmu.edu/$arkpid",
+  "when": "2014-02-20T00:00:00+00:00",
+  "who": {
+    "name": "James Madison University",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "NP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2014",
+    "policy_url": null
+  }
+}

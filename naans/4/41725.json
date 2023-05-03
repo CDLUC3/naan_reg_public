@@ -1,0 +1,16 @@
+{
+  "what": "41725",
+  "where": "http://www.ircica.org",
+  "target": "http://www.ircica.org/$arkpid",
+  "when": "2011-04-22T00:00:00+00:00",
+  "who": {
+    "name": "Research Center for Islamic History, Art and Culture",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "NP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2011",
+    "policy_url": null
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "what": "25031",
+  "where": "http://www.lib.ku.edu",
+  "target": "http://www.lib.ku.edu/$arkpid",
+  "when": "2006-03-29T00:00:00+00:00",
+  "who": {
+    "name": "University of Kansas",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "NP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2006",
+    "policy_url": null
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "what": "64641",
+  "where": "https://web.auroville-archives.org",
+  "target": "https://web.auroville-archives.org/$arkpid",
+  "when": "2022-03-20T00:00:00+00:00",
+  "who": {
+    "name": "Auroville Archives",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "NP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2022",
+    "policy_url": null
+  }
+}

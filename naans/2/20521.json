@@ -1,0 +1,16 @@
+{
+  "what": "20521",
+  "where": "http://www.cite-sciences.fr",
+  "target": "http://www.cite-sciences.fr/$arkpid",
+  "when": "2014-06-13T00:00:00+00:00",
+  "who": {
+    "name": "Cité des Sciences et de l'industrie",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "NP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2014",
+    "policy_url": null
+  }
+}

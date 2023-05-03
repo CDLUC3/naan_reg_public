@@ -1,0 +1,16 @@
+{
+  "what": "67033",
+  "where": "http://archives.cg74.fr",
+  "target": "http://archives.cg74.fr/$arkpid",
+  "when": "2012-09-29T00:00:00+00:00",
+  "who": {
+    "name": "Archives départementales de la Haute-Savoie",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "NP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2012",
+    "policy_url": null
+  }
+}

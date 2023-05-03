@@ -1,0 +1,16 @@
+{
+  "what": "14709",
+  "where": "https://osderpublications.com",
+  "target": "https://osderpublications.com/$arkpid",
+  "when": "2022-08-26T00:00:00+00:00",
+  "who": {
+    "name": "Organization for Social Development and Research Publications",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "NP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2022",
+    "policy_url": null
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "what": "87898",
+  "where": "https://musees-nationaux-malmaison.fr",
+  "target": "https://musees-nationaux-malmaison.fr/$arkpid",
+  "when": "2022-02-07T00:00:00+00:00",
+  "who": {
+    "name": "Musée national des châteaux de Malmaison et Bois-Préau",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "NP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2022",
+    "policy_url": null
+  }
+}

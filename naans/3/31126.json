@@ -1,0 +1,16 @@
+{
+  "what": "31126",
+  "where": "https://cd05.decalog.net/floramusee",
+  "target": "https://cd05.decalog.net/floramusee/$arkpid",
+  "when": "2020-11-17T00:00:00+00:00",
+  "who": {
+    "name": "Musee museum départemental des hautes-Alpes",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "NP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2020",
+    "policy_url": null
+  }
+}

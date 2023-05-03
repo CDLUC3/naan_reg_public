@@ -1,0 +1,16 @@
+{
+  "what": "25311",
+  "where": "https://www.jneurophilosophy.com/index.php/jnp/gateway/plugin/pubIdResolver",
+  "target": "https://www.jneurophilosophy.com/index.php/jnp/gateway/plugin/pubIdResolver/$arkpid",
+  "when": "2022-05-19T00:00:00+00:00",
+  "who": {
+    "name": "Journal of Neurophilosophy",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "NP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2022",
+    "policy_url": null
+  }
+}

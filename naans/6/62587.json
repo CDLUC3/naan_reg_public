@@ -1,0 +1,16 @@
+{
+  "what": "62587",
+  "where": "http://www.rra.museum.kyoto-u.ac.jp",
+  "target": "http://www.rra.museum.kyoto-u.ac.jp/$arkpid",
+  "when": "2017-10-04T00:00:00+00:00",
+  "who": {
+    "name": "The Kyoto University Museum",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "NP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2017",
+    "policy_url": null
+  }
+}

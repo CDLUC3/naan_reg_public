@@ -1,0 +1,16 @@
+{
+  "what": "39673",
+  "where": "http://www.ardeche.fr",
+  "target": "http://www.ardeche.fr/$arkpid",
+  "when": "2014-09-11T00:00:00+00:00",
+  "who": {
+    "name": "Archives départementales de l'Ardèche",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "NP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2014",
+    "policy_url": null
+  }
+}

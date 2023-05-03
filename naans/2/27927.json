@@ -1,0 +1,16 @@
+{
+  "what": "27927",
+  "where": "http://www.portico.org/digital-preservation",
+  "target": "http://www.portico.org/digital-preservation/$arkpid",
+  "when": "2004-12-10T00:00:00+00:00",
+  "who": {
+    "name": "Portico Digital Preservation Service",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "NP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2004",
+    "policy_url": null
+  }
+}

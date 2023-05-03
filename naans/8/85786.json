@@ -1,0 +1,16 @@
+{
+  "what": "85786",
+  "where": "http://www-lib.uwyo.edu",
+  "target": "http://www-lib.uwyo.edu/$arkpid",
+  "when": "2015-02-23T00:00:00+00:00",
+  "who": {
+    "name": "University of Wyoming Libraries",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "NP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2015",
+    "policy_url": null
+  }
+}

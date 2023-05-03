@@ -1,0 +1,16 @@
+{
+  "what": "99152",
+  "where": "http://n2t.net",
+  "target": "http://n2t.net/$arkpid",
+  "when": "2007-10-02T00:00:00+00:00",
+  "who": {
+    "name": "Metadata Terms",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "NP",
+    "policy": "NR, OP",
+    "tenure": "2007",
+    "policy_url": null
+  }
+}

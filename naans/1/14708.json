@@ -1,0 +1,16 @@
+{
+  "what": "14708",
+  "where": "https://biblio.laval.ca",
+  "target": "https://biblio.laval.ca/$arkpid",
+  "when": "2020-12-05T00:00:00+00:00",
+  "who": {
+    "name": "Bibliothèques de Laval",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "NP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2020",
+    "policy_url": null
+  }
+}

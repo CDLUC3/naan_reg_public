@@ -1,0 +1,16 @@
+{
+  "what": "80033",
+  "where": "https://www.gov.br/ibict",
+  "target": "https://www.gov.br/ibict/$arkpid",
+  "when": "2022-06-15T00:00:00+00:00",
+  "who": {
+    "name": "Brazilian Institute of Information in Science and Technology",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "NP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2022",
+    "policy_url": null
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "what": "81398",
+  "where": "http://repositorio.smn.gob.ar",
+  "target": "http://repositorio.smn.gob.ar/$arkpid",
+  "when": "2020-02-14T00:00:00+00:00",
+  "who": {
+    "name": "Servicio Meteorológico Nacional Argentina",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "NP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2020",
+    "policy_url": null
+  }
+}

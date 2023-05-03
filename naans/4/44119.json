@@ -1,0 +1,16 @@
+{
+  "what": "44119",
+  "where": "http://www.wallonie.be/fr/guide/guide-services/1150",
+  "target": "http://www.wallonie.be/fr/guide/guide-services/1150/$arkpid",
+  "when": "2013-05-27T00:00:00+00:00",
+  "who": {
+    "name": "Service des archives régionales de Wallonie",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "NP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2013",
+    "policy_url": null
+  }
+}

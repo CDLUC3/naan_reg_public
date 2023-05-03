@@ -1,0 +1,16 @@
+{
+  "what": "63272",
+  "where": "https://medialibrary.it",
+  "target": "https://medialibrary.it/$arkpid",
+  "when": "2019-04-30T00:00:00+00:00",
+  "who": {
+    "name": "MediaLibraryOnLine",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "FP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2019",
+    "policy_url": null
+  }
+}

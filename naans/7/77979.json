@@ -1,0 +1,16 @@
+{
+  "what": "77979",
+  "where": "https://rocs.balgrist.ch",
+  "target": "https://rocs.balgrist.ch/$arkpid",
+  "when": "2020-03-12T00:00:00+00:00",
+  "who": {
+    "name": "Research in Orthopedic Computer Science",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "NP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2020",
+    "policy_url": null
+  }
+}

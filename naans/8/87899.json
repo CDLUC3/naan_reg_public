@@ -1,0 +1,16 @@
+{
+  "what": "87899",
+  "where": "https://classpad.academy/fr",
+  "target": "https://classpad.academy/fr/$arkpid",
+  "when": "2023-01-26T00:00:00+00:00",
+  "who": {
+    "name": "CASIO France",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "FP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2023",
+    "policy_url": null
+  }
+}

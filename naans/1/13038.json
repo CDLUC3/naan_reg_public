@@ -1,0 +1,16 @@
+{
+  "what": "13038",
+  "where": "http://www.wipo.int",
+  "target": "http://www.wipo.int/$arkpid",
+  "when": "2002-07-12T00:00:00+00:00",
+  "who": {
+    "name": "World Intellectual Property Organization",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "NP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2002",
+    "policy_url": null
+  }
+}

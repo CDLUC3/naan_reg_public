@@ -1,0 +1,16 @@
+{
+  "what": "25651",
+  "where": "http://gael.gironde.fr",
+  "target": "http://gael.gironde.fr/$arkpid",
+  "when": "2011-08-18T00:00:00+00:00",
+  "who": {
+    "name": "Archives départementales de la Gironde",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "NP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2011",
+    "policy_url": null
+  }
+}

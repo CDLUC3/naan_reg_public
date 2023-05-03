@@ -1,0 +1,16 @@
+{
+  "what": "64297",
+  "where": "http://www.archivespasdecalais.fr",
+  "target": "http://www.archivespasdecalais.fr/$arkpid",
+  "when": "2011-06-07T00:00:00+00:00",
+  "who": {
+    "name": "Archives départementales du Pas-de-Calais",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "NP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2011",
+    "policy_url": null
+  }
+}

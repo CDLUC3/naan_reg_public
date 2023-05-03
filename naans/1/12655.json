@@ -1,0 +1,16 @@
+{
+  "what": "12655",
+  "where": "http://www.livre-franchecomte.com",
+  "target": "http://www.livre-franchecomte.com/$arkpid",
+  "when": "2011-09-13T00:00:00+00:00",
+  "who": {
+    "name": "ACCOLAD Franche-Comté",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "NP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2011",
+    "policy_url": null
+  }
+}

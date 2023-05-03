@@ -1,0 +1,16 @@
+{
+  "what": "88238",
+  "where": "https://pid.uba.uva.nl",
+  "target": "https://pid.uba.uva.nl/$arkpid",
+  "when": "2019-12-13T00:00:00+00:00",
+  "who": {
+    "name": "Library of the University of Amsterdam",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "NP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2019",
+    "policy_url": null
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "what": "35573",
+  "where": "https://sprinpub.com",
+  "target": "https://sprinpub.com/$arkpid",
+  "when": "2022-04-06T00:00:00+00:00",
+  "who": {
+    "name": "Sprin Publisher",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "NP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2022",
+    "policy_url": null
+  }
+}

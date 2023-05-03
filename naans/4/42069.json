@@ -1,0 +1,16 @@
+{
+  "what": "42069",
+  "where": "https://bct.boletincientifico.cl",
+  "target": "https://bct.boletincientifico.cl/$arkpid",
+  "when": "2021-06-10T00:00:00+00:00",
+  "who": {
+    "name": "Boletín Científico Tecnológico",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "NP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2021",
+    "policy_url": null
+  }
+}

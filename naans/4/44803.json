@@ -1,0 +1,16 @@
+{
+  "what": "44803",
+  "where": "http://www.archives.oise.fr",
+  "target": "http://www.archives.oise.fr/$arkpid",
+  "when": "2012-07-11T00:00:00+00:00",
+  "who": {
+    "name": "Archives départementales de l'Oise",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "NP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2012",
+    "policy_url": null
+  }
+}

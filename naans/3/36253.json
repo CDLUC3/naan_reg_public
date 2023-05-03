@@ -1,0 +1,16 @@
+{
+  "what": "36253",
+  "where": "http://www.eastmanhouse.org",
+  "target": "http://www.eastmanhouse.org/$arkpid",
+  "when": "2009-03-17T00:00:00+00:00",
+  "who": {
+    "name": "George Eastman House - International Museum of Photography and Film",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "NP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2009",
+    "policy_url": null
+  }
+}

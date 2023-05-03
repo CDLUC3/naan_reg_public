@@ -1,0 +1,16 @@
+{
+  "what": "88119",
+  "where": "https://www.facebase.org",
+  "target": "https://www.facebase.org/$arkpid",
+  "when": "2015-09-08T00:00:00+00:00",
+  "who": {
+    "name": "Facebase Consortium",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "NP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2015",
+    "policy_url": null
+  }
+}

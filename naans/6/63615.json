@@ -1,0 +1,16 @@
+{
+  "what": "63615",
+  "where": "https://comedie-francaise.bibli.fr",
+  "target": "https://comedie-francaise.bibli.fr/$arkpid",
+  "when": "2022-07-05T00:00:00+00:00",
+  "who": {
+    "name": "Comédie-Française",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "NP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2022",
+    "policy_url": null
+  }
+}

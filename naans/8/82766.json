@@ -1,0 +1,16 @@
+{
+  "what": "82766",
+  "where": "https://marseille.fr",
+  "target": "https://marseille.fr/$arkpid",
+  "when": "2020-11-09T00:00:00+00:00",
+  "who": {
+    "name": "Archives municipales de Marseille",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "NP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2020",
+    "policy_url": null
+  }
+}

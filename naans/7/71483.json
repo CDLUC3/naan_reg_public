@@ -1,0 +1,16 @@
+{
+  "what": "71483",
+  "where": "https://mudac.ch",
+  "target": "https://mudac.ch/$arkpid",
+  "when": "2022-02-16T00:00:00+00:00",
+  "who": {
+    "name": "Musée cantonal de Design et d'Arts Appliqués Contemporains",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "NP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2022",
+    "policy_url": null
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "what": "64981",
+  "where": "http://www.locirdoc.fr",
+  "target": "http://www.locirdoc.fr/$arkpid",
+  "when": "2010-06-21T00:00:00+00:00",
+  "who": {
+    "name": "Lo CIRDÒC - Mediatèca occitana",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "NP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2010",
+    "policy_url": null
+  }
+}

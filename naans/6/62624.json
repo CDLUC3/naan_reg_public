@@ -1,0 +1,16 @@
+{
+  "what": "62624",
+  "where": "http://library.nyu.edu",
+  "target": "http://library.nyu.edu/$arkpid",
+  "when": "2004-10-07T00:00:00+00:00",
+  "who": {
+    "name": "New York University",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "NP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2004",
+    "policy_url": null
+  }
+}

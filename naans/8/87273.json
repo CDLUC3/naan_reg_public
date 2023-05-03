@@ -1,0 +1,16 @@
+{
+  "what": "87273",
+  "where": "http://wsu.edu",
+  "target": "http://wsu.edu/$arkpid",
+  "when": "2012-07-20T00:00:00+00:00",
+  "who": {
+    "name": "Washington State University",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "NP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2012",
+    "policy_url": null
+  }
+}

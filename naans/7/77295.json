@@ -1,0 +1,16 @@
+{
+  "what": "77295",
+  "where": "https://economicas.uba.ar",
+  "target": "https://economicas.uba.ar/$arkpid",
+  "when": "2021-06-14T00:00:00+00:00",
+  "who": {
+    "name": "Facultad de Ciencias Económicas de la Universidad de Buenos Aires",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "NP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2021",
+    "policy_url": null
+  }
+}

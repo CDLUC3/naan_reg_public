@@ -1,0 +1,16 @@
+{
+  "what": "52670",
+  "where": "https://fondationlecorbusier.fr",
+  "target": "https://fondationlecorbusier.fr/$arkpid",
+  "when": "2019-12-03T00:00:00+00:00",
+  "who": {
+    "name": "Fondation Le Corbusier",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "NP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2019",
+    "policy_url": null
+  }
+}

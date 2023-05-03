@@ -1,0 +1,16 @@
+{
+  "what": "19497",
+  "where": "https://ngsme.villagemath.net",
+  "target": "https://ngsme.villagemath.net/$arkpid",
+  "when": "2020-05-17T00:00:00+00:00",
+  "who": {
+    "name": "The VillageMath Network",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "NP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2020",
+    "policy_url": null
+  }
+}

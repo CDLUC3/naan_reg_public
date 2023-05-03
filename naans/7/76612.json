@@ -1,0 +1,16 @@
+{
+  "what": "76612",
+  "where": "https://www.ihp.fr/fr",
+  "target": "https://www.ihp.fr/fr/$arkpid",
+  "when": "2022-07-05T00:00:00+00:00",
+  "who": {
+    "name": "Bibliothèque de l'Institut Henri Poincaré",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "NP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2022",
+    "policy_url": null
+  }
+}

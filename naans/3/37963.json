@@ -1,0 +1,16 @@
+{
+  "what": "37963",
+  "where": "https://archives.lamayenne.fr/archives-en-ligne",
+  "target": "https://archives.lamayenne.fr/archives-en-ligne/$arkpid",
+  "when": "2013-02-15T00:00:00+00:00",
+  "who": {
+    "name": "Archives départementales de la Mayenne",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "NP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2013",
+    "policy_url": null
+  }
+}

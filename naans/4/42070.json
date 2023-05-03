@@ -1,0 +1,16 @@
+{
+  "what": "42070",
+  "where": "https://www.aventicum.org",
+  "target": "https://www.aventicum.org/$arkpid",
+  "when": "2022-03-20T00:00:00+00:00",
+  "who": {
+    "name": "Site et Musée romains d'Avenches",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "NP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2022",
+    "policy_url": null
+  }
+}

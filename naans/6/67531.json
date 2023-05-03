@@ -1,0 +1,16 @@
+{
+  "what": "67531",
+  "where": "http://digital.library.unt.edu",
+  "target": "http://digital.library.unt.edu/$arkpid",
+  "when": "2004-10-07T00:00:00+00:00",
+  "who": {
+    "name": "University of North Texas",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "NP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2004",
+    "policy_url": null
+  }
+}

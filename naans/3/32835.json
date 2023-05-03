@@ -1,0 +1,16 @@
+{
+  "what": "32835",
+  "where": "https://www.evidenceb.com",
+  "target": "https://www.evidenceb.com/$arkpid",
+  "when": "2021-04-06T00:00:00+00:00",
+  "who": {
+    "name": "EvidenceB",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "NP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2021",
+    "policy_url": null
+  }
+}

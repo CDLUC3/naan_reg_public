@@ -1,0 +1,16 @@
+{
+  "what": "47883",
+  "where": "https://www.startlab-education.com",
+  "target": "https://www.startlab-education.com/$arkpid",
+  "when": "2020-08-24T00:00:00+00:00",
+  "who": {
+    "name": "Fastlane Education",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "FP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2020",
+    "policy_url": null
+  }
+}

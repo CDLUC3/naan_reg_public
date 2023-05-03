@@ -1,0 +1,16 @@
+{
+  "what": "80374",
+  "where": "https://www.magikeduk.fr",
+  "target": "https://www.magikeduk.fr/$arkpid",
+  "when": "2022-04-19T00:00:00+00:00",
+  "who": {
+    "name": "MagikEduk",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "FP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2022",
+    "policy_url": null
+  }
+}

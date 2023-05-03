@@ -1,0 +1,16 @@
+{
+  "what": "35227",
+  "where": "http://www.archives.landes.org",
+  "target": "http://www.archives.landes.org/$arkpid",
+  "when": "2012-04-24T00:00:00+00:00",
+  "who": {
+    "name": "Archives départementales des Landes",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "NP",
+    "policy": "NR, OP",
+    "tenure": "2012",
+    "policy_url": null
+  }
+}

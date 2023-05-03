@@ -1,0 +1,16 @@
+{
+  "what": "38992",
+  "where": "https://app.orientoi.fr",
+  "target": "https://app.orientoi.fr/$arkpid",
+  "when": "2022-03-22T00:00:00+00:00",
+  "who": {
+    "name": "Orientoi",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "FP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2022",
+    "policy_url": null
+  }
+}

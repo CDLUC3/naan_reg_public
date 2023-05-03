@@ -1,0 +1,16 @@
+{
+  "what": "33861",
+  "where": "https://balado.ac-creteil.fr",
+  "target": "https://balado.ac-creteil.fr/$arkpid",
+  "when": "2022-10-11T00:00:00+00:00",
+  "who": {
+    "name": "Académie de Créteil",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "NP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2022",
+    "policy_url": null
+  }
+}

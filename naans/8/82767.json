@@ -1,0 +1,16 @@
+{
+  "what": "82767",
+  "where": "https://wisconsinhistory.org",
+  "target": "https://wisconsinhistory.org/$arkpid",
+  "when": "2022-07-27T00:00:00+00:00",
+  "who": {
+    "name": "Wisconsin Historical Society",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "NP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2022",
+    "policy_url": null
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "what": "19838",
+  "where": "http://www.cahiersdelahauteloire.fr",
+  "target": "http://www.cahiersdelahauteloire.fr/$arkpid",
+  "when": "2018-03-12T00:00:00+00:00",
+  "who": {
+    "name": "Cahiers de la Haute-Loire",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "NP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2018",
+    "policy_url": null
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "what": "69427",
+  "where": "http://unitwin-cs.org",
+  "target": "http://unitwin-cs.org/$arkpid",
+  "when": "2014-01-15T00:00:00+00:00",
+  "who": {
+    "name": "Complex Systems Digital Campus",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "NP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2014",
+    "policy_url": null
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "what": "53012",
+  "where": "http://cienciaeduc.unerg.me",
+  "target": "http://cienciaeduc.unerg.me/$arkpid",
+  "when": "2021-02-02T00:00:00+00:00",
+  "who": {
+    "name": "Universidad Nacional Experimental de los Llanos Centrales Rómulo Gallegos",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "NP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2021",
+    "policy_url": null
+  }
+}

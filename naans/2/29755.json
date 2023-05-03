@@ -1,0 +1,16 @@
+{
+  "what": "29755",
+  "where": "http://www.bn-valenciennes.fr",
+  "target": "http://www.bn-valenciennes.fr/$arkpid",
+  "when": "2015-02-13T00:00:00+00:00",
+  "who": {
+    "name": "Bibliothèque municipale de Valenciennes",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "NP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2015",
+    "policy_url": null
+  }
+}

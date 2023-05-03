@@ -1,0 +1,16 @@
+{
+  "what": "75244",
+  "where": "http://www.charles-camoin.com",
+  "target": "http://www.charles-camoin.com/$arkpid",
+  "when": "2023-01-27T00:00:00+00:00",
+  "who": {
+    "name": "Archives Camoin",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "NP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2023",
+    "policy_url": null
+  }
+}

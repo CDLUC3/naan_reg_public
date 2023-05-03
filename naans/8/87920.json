@@ -1,0 +1,16 @@
+{
+  "what": "87920",
+  "where": "http//cams.mse.ufl.edu",
+  "target": "https:///http//cams.mse.ufl.edu/$arkpid",
+  "when": "2013-09-09T00:00:00+00:00",
+  "who": {
+    "name": "Cyberinfrastructure for Atomistic Materials Science",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "NP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2013",
+    "policy_url": null
+  }
+}

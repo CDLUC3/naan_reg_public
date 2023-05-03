@@ -1,0 +1,16 @@
+{
+  "what": "43777",
+  "where": "http://www.jorl.net",
+  "target": "http://www.jorl.net/$arkpid",
+  "when": "2014-01-30T00:00:00+00:00",
+  "who": {
+    "name": "Otolaryngology Online Journal",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "NP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2014",
+    "policy_url": null
+  }
+}

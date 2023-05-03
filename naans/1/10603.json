@@ -1,0 +1,16 @@
+{
+  "what": "10603",
+  "where": "http://www2.fcsh.unl.pt/inet/indexeng.html",
+  "target": "http://www2.fcsh.unl.pt/inet/indexeng.html/$arkpid",
+  "when": "2014-12-09T00:00:00+00:00",
+  "who": {
+    "name": "Instituto de Etnomusicologia - Centro de Estudos em Música e Dança, Faculdade de Motricidade Humana",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "NP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2014",
+    "policy_url": null
+  }
+}

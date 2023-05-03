@@ -1,0 +1,16 @@
+{
+  "what": "73876",
+  "where": "https://www.musee-memorial-terrorisme.fr",
+  "target": "https://www.musee-memorial-terrorisme.fr/$arkpid",
+  "when": "2021-06-29T00:00:00+00:00",
+  "who": {
+    "name": "GIP mission de préfiguration Musée-mémorial du terrorisme",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "NP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2021",
+    "policy_url": null
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "what": "53011",
+  "where": "http://philamuseum.org",
+  "target": "http://philamuseum.org/$arkpid",
+  "when": "2017-08-08T00:00:00+00:00",
+  "who": {
+    "name": "Philadelphia Museum of Art",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "NP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2017",
+    "policy_url": null
+  }
+}

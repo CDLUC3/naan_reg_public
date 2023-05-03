@@ -1,0 +1,16 @@
+{
+  "what": "69431",
+  "where": "http://ijcsacademia.com/index.php/journal/gateway/plugin/pubIdResolver",
+  "target": "http://ijcsacademia.com/index.php/journal/gateway/plugin/pubIdResolver/$arkpid",
+  "when": "2022-10-19T00:00:00+00:00",
+  "who": {
+    "name": "African Journal of Commercial Studies",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "NP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2022",
+    "policy_url": null
+  }
+}

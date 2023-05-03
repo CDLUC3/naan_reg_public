@@ -1,0 +1,16 @@
+{
+  "what": "56434",
+  "where": "https://kokorolingua.fr",
+  "target": "https://kokorolingua.fr/$arkpid",
+  "when": "2022-10-21T00:00:00+00:00",
+  "who": {
+    "name": "KOKORO lingua SA",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "FP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2022",
+    "policy_url": null
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "what": "24969",
+  "where": "https://ark.hello-charly.com",
+  "target": "https://ark.hello-charly.com/$arkpid",
+  "when": "2020-09-25T00:00:00+00:00",
+  "who": {
+    "name": "Hello Charly",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "FP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2020",
+    "policy_url": null
+  }
+}

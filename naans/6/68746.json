@@ -1,0 +1,16 @@
+{
+  "what": "68746",
+  "where": "https://limburgcollectie.nl",
+  "target": "https://limburgcollectie.nl/$arkpid",
+  "when": "2022-12-14T00:00:00+00:00",
+  "who": {
+    "name": "Huis voor de Kunsten Limburg",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "NP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2022",
+    "policy_url": null
+  }
+}

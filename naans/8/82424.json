@@ -1,0 +1,16 @@
+{
+  "what": "82424",
+  "where": "https://recherche.archives.nicecotedazur.org",
+  "target": "https://recherche.archives.nicecotedazur.org/$arkpid",
+  "when": "2019-08-13T00:00:00+00:00",
+  "who": {
+    "name": "Archives Nice Côte d'Azur",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "NP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2019",
+    "policy_url": null
+  }
+}

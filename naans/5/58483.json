@@ -1,0 +1,16 @@
+{
+  "what": "58483",
+  "where": "http://www.somme.fr",
+  "target": "http://www.somme.fr/$arkpid",
+  "when": "2009-10-21T00:00:00+00:00",
+  "who": {
+    "name": "Archives départementales de la Somme",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "NP",
+    "policy": "NR, OP",
+    "tenure": "2009",
+    "policy_url": "http://archives.somme.fr/download.cgi?filename=accounts/mnesys_ad80/datas/cms/aide_fr_v04_2.pdf"
+  }
+}

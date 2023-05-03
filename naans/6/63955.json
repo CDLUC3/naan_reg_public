@@ -1,0 +1,16 @@
+{
+  "what": "63955",
+  "where": "http://bvmm.irht.cnrs.fr",
+  "target": "http://bvmm.irht.cnrs.fr/$arkpid",
+  "when": "2013-01-29T00:00:00+00:00",
+  "who": {
+    "name": "Institut de recherche et d'histoire des textes",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "NP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2013",
+    "policy_url": null
+  }
+}

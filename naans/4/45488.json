@@ -1,0 +1,16 @@
+{
+  "what": "45488",
+  "where": "https://cid.coherentdigital.net",
+  "target": "https://cid.coherentdigital.net/$arkpid",
+  "when": "2020-05-06T00:00:00+00:00",
+  "who": {
+    "name": "Coherent Digital, LLC",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "FP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2020",
+    "policy_url": null
+  }
+}

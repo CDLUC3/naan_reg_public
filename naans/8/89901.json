@@ -1,0 +1,16 @@
+{
+  "what": "89901",
+  "where": "http://www.arkivnamnden.org",
+  "target": "http://www.arkivnamnden.org/$arkpid",
+  "when": "2005-11-30T00:00:00+00:00",
+  "who": {
+    "name": "Archives of Region of Västra Götaland and City of Gothenburg, Sweden",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "NP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2005",
+    "policy_url": null
+  }
+}

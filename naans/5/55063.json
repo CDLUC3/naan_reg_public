@@ -1,0 +1,16 @@
+{
+  "what": "55063",
+  "where": "http://mediatheques.grand-dole.fr",
+  "target": "http://mediatheques.grand-dole.fr/$arkpid",
+  "when": "2015-06-26T00:00:00+00:00",
+  "who": {
+    "name": "Médiathèques du Grand Dole",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "NP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2015",
+    "policy_url": null
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "what": "76611",
+  "where": "https://www.leventhalmap.org",
+  "target": "https://www.leventhalmap.org/$arkpid",
+  "when": "2020-09-16T00:00:00+00:00",
+  "who": {
+    "name": "Leventhal Map & Education Center",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "NP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2020",
+    "policy_url": null
+  }
+}

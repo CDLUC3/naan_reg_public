@@ -1,0 +1,16 @@
+{
+  "what": "18813",
+  "where": "https://www.kit.edu",
+  "target": "https://www.kit.edu/$arkpid",
+  "when": "2021-07-14T00:00:00+00:00",
+  "who": {
+    "name": "Karlsruhe Institute of Technology",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "NP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2021",
+    "policy_url": null
+  }
+}

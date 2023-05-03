@@ -1,0 +1,16 @@
+{
+  "what": "81428",
+  "where": "http://rc.dartmouth.edu/index.php/virtual-basilica-project",
+  "target": "http://rc.dartmouth.edu/index.php/virtual-basilica-project/$arkpid",
+  "when": "2018-05-01T00:00:00+00:00",
+  "who": {
+    "name": "Dartmouth Virtual Basilica",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "NP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2018",
+    "policy_url": null
+  }
+}

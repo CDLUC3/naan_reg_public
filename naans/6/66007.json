@@ -1,0 +1,16 @@
+{
+  "what": "66007",
+  "where": "http://www.archives28.fr",
+  "target": "http://www.archives28.fr/$arkpid",
+  "when": "2014-02-14T00:00:00+00:00",
+  "who": {
+    "name": "Archives départementales d'Eure-et-Loir",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "NP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2014",
+    "policy_url": null
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "what": "53355",
+  "where": "https://collections.louvre.fr",
+  "target": "https://collections.louvre.fr/$arkpid",
+  "when": "2019-09-23T00:00:00+00:00",
+  "who": {
+    "name": "Musée du Louvre",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "NP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2019",
+    "policy_url": null
+  }
+}

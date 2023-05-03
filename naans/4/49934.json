@@ -1,0 +1,16 @@
+{
+  "what": "49934",
+  "where": "http://www.laiesken.net/arqueologia",
+  "target": "http://www.laiesken.net/arqueologia/$arkpid",
+  "when": "2019-10-07T00:00:00+00:00",
+  "who": {
+    "name": "Arqueologia Iberoamericana",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "NP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2019",
+    "policy_url": null
+  }
+}

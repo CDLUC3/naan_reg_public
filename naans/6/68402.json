@@ -1,0 +1,16 @@
+{
+  "what": "68402",
+  "where": "http://www.ur-red.com/ang/index.php",
+  "target": "http://www.ur-red.com/ang/index.php/$arkpid",
+  "when": "2018-03-12T00:00:00+00:00",
+  "who": {
+    "name": "Unit Research - Research, Enterprises and Decision",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "NP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2018",
+    "policy_url": null
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "what": "71821",
+  "where": "http://www.archives49.fr",
+  "target": "http://www.archives49.fr/$arkpid",
+  "when": "2014-12-14T00:00:00+00:00",
+  "who": {
+    "name": "Archives départementales de Maine-et-Loire",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "NP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2014",
+    "policy_url": null
+  }
+}

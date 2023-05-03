@@ -1,0 +1,16 @@
+{
+  "what": "36255",
+  "where": "http://grandpalais.fr",
+  "target": "http://grandpalais.fr/$arkpid",
+  "when": "2018-02-01T00:00:00+00:00",
+  "who": {
+    "name": "Réunion des musées nationaux - Grand Palais",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "NP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2018",
+    "policy_url": null
+  }
+}

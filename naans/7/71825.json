@@ -1,0 +1,16 @@
+{
+  "what": "71825",
+  "where": "https://www.bipm.org",
+  "target": "https://www.bipm.org/$arkpid",
+  "when": "2023-02-21T00:00:00+00:00",
+  "who": {
+    "name": "Bureau International des Poids et Mesures: BIPM (International Bureau of Weights and Measures)",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "NP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2023",
+    "policy_url": null
+  }
+}

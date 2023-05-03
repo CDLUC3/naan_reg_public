@@ -1,0 +1,16 @@
+{
+  "what": "87913",
+  "where": "https://www.lde.fr",
+  "target": "https://www.lde.fr/$arkpid",
+  "when": "2019-05-13T00:00:00+00:00",
+  "who": {
+    "name": "Librairie LDE",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "FP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2019",
+    "policy_url": null
+  }
+}

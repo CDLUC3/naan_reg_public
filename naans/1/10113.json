@@ -1,0 +1,16 @@
+{
+  "what": "10113",
+  "where": "http://www.nal.usda.gov",
+  "target": "http://www.nal.usda.gov/$arkpid",
+  "when": "2001-03-08T00:00:00+00:00",
+  "who": {
+    "name": "US National Agricultural Library",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "NP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2001",
+    "policy_url": null
+  }
+}

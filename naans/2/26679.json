@@ -1,0 +1,16 @@
+{
+  "what": "26679",
+  "where": "http://www.brgm.fr",
+  "target": "http://www.brgm.fr/$arkpid",
+  "when": "2018-01-15T00:00:00+00:00",
+  "who": {
+    "name": "Bureau de Recherches Géologiques et Minières",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "NP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2018",
+    "policy_url": null
+  }
+}

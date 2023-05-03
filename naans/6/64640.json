@@ -1,0 +1,16 @@
+{
+  "what": "64640",
+  "where": "https://archive.gr",
+  "target": "https://archive.gr/$arkpid",
+  "when": "2020-06-09T00:00:00+00:00",
+  "who": {
+    "name": "Archive (Athens)",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "NP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2020",
+    "policy_url": null
+  }
+}

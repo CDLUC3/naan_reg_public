@@ -1,0 +1,16 @@
+{
+  "what": "43780",
+  "where": "https://archives.lessablesdolonne.fr",
+  "target": "https://archives.lessablesdolonne.fr/$arkpid",
+  "when": "2021-10-14T00:00:00+00:00",
+  "who": {
+    "name": "Archives des Sables d'Olonne",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "NP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2021",
+    "policy_url": null
+  }
+}

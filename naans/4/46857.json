@@ -1,0 +1,16 @@
+{
+  "what": "46857",
+  "where": "https://SHE.short-edition.com",
+  "target": "https://she.short-edition.com/$arkpid",
+  "when": "2021-01-14T00:00:00+00:00",
+  "who": {
+    "name": "Short Edition",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "FP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2021",
+    "policy_url": null
+  }
+}

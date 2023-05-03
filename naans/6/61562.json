@@ -1,0 +1,16 @@
+{
+  "what": "61562",
+  "where": "https://www.bibliotheque-mazarine.fr",
+  "target": "https://www.bibliotheque-mazarine.fr/$arkpid",
+  "when": "2018-05-02T00:00:00+00:00",
+  "who": {
+    "name": "Bibliothèque Mazarine",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "NP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2018",
+    "policy_url": null
+  }
+}

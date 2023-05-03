@@ -1,0 +1,16 @@
+{
+  "what": "88737",
+  "where": "https://visiblethinking.duke.edu",
+  "target": "https://visiblethinking.duke.edu/$arkpid",
+  "when": "2018-06-29T00:00:00+00:00",
+  "who": {
+    "name": "Duke Visible Thinking",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "NP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2018",
+    "policy_url": null
+  }
+}

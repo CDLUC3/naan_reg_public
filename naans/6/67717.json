@@ -1,0 +1,16 @@
+{
+  "what": "67717",
+  "where": "http://data.culture.fr/thesaurus/resource",
+  "target": "http://data.culture.fr/thesaurus/resource/$arkpid",
+  "when": "2011-03-14T00:00:00+00:00",
+  "who": {
+    "name": "Ministère de la Culture",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "NP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2011",
+    "policy_url": null
+  }
+}

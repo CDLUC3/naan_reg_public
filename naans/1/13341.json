@@ -1,0 +1,16 @@
+{
+  "what": "13341",
+  "where": "http://efele.net",
+  "target": "http://efele.net/$arkpid",
+  "when": "2022-02-06T00:00:00+00:00",
+  "who": {
+    "name": "EFELE",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "NP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2022",
+    "policy_url": null
+  }
+}

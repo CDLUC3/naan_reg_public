@@ -1,0 +1,16 @@
+{
+  "what": "26677",
+  "where": "http://collectionscanada.ca",
+  "target": "http://collectionscanada.ca/$arkpid",
+  "when": "2008-05-15T00:00:00+00:00",
+  "who": {
+    "name": "Library and Archives Canada",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "NP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2008",
+    "policy_url": null
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "what": "51301",
+  "where": "http://www.centrodeestudiosandaluces.es",
+  "target": "http://www.centrodeestudiosandaluces.es/$arkpid",
+  "when": "2011-06-20T00:00:00+00:00",
+  "who": {
+    "name": "Fundación Centro de Estudios Andaluces",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "NP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2011",
+    "policy_url": null
+  }
+}

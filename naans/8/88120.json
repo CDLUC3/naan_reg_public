@@ -1,0 +1,16 @@
+{
+  "what": "88120",
+  "where": "http://www.isi.edu/research/informatics",
+  "target": "http://www.isi.edu/research/informatics/$arkpid",
+  "when": "2015-09-08T00:00:00+00:00",
+  "who": {
+    "name": "USC ISI Informatics Systems Research Division",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "NP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2015",
+    "policy_url": null
+  }
+}

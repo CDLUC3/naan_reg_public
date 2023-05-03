@@ -1,0 +1,16 @@
+{
+  "what": "56089",
+  "where": "http://www.mmsh.univ-aix.fr/Pages/default.aspx",
+  "target": "http://www.mmsh.univ-aix.fr/Pages/default.aspx/$arkpid",
+  "when": "2014-07-03T00:00:00+00:00",
+  "who": {
+    "name": "Cité Numérique de la Méditerranée",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "NP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2014",
+    "policy_url": null
+  }
+}

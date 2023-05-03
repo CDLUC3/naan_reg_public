@@ -1,0 +1,16 @@
+{
+  "what": "84477",
+  "where": "http://www.fisem.org/www/index.php",
+  "target": "http://www.fisem.org/www/index.php/$arkpid",
+  "when": "2020-04-28T00:00:00+00:00",
+  "who": {
+    "name": "UNIÓN - Revista Iberoamericana de Educación Matemática",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "NP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2020",
+    "policy_url": null
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "what": "57116",
+  "where": "https://www.fee.put.poznan.pl",
+  "target": "https://www.fee.put.poznan.pl/$arkpid",
+  "when": "2019-01-03T00:00:00+00:00",
+  "who": {
+    "name": "Institute of Control, Robotics and Information Engineering (Poznan University of Technology)",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "NP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2019",
+    "policy_url": null
+  }
+}

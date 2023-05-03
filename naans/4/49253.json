@@ -1,0 +1,16 @@
+{
+  "what": "49253",
+  "where": "https://www.reincisol.com/ojs/index.php/Remulci/gateway/plugin/pubIdResolver",
+  "target": "https://www.reincisol.com/ojs/index.php/Remulci/gateway/plugin/pubIdResolver/$arkpid",
+  "when": "2023-02-08T00:00:00+00:00",
+  "who": {
+    "name": "Remulci: Revista Multidisciplinaria de Investigación Científica",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "NP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2023",
+    "policy_url": null
+  }
+}

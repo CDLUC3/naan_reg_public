@@ -1,0 +1,16 @@
+{
+  "what": "88115",
+  "where": "http://mindbrain.ucdavis.edu/labs/luck-lab",
+  "target": "http://mindbrain.ucdavis.edu/labs/luck-lab/$arkpid",
+  "when": "2015-08-13T00:00:00+00:00",
+  "who": {
+    "name": "Laboratory for Basic and Translational Cognitive Neuroscience",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "NP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2015",
+    "policy_url": null
+  }
+}

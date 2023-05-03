@@ -1,0 +1,16 @@
+{
+  "what": "21198",
+  "where": "http://library.ucla.edu",
+  "target": "http://library.ucla.edu/$arkpid",
+  "when": "2005-05-02T00:00:00+00:00",
+  "who": {
+    "name": "University of California Los Angeles",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "NP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2005",
+    "policy_url": null
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "what": "77293",
+  "where": "http://www.savoie-archives.fr",
+  "target": "http://www.savoie-archives.fr/$arkpid",
+  "when": "2011-06-07T00:00:00+00:00",
+  "who": {
+    "name": "Archives départementales de la Savoie",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "NP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2011",
+    "policy_url": null
+  }
+}

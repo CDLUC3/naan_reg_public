@@ -1,0 +1,16 @@
+{
+  "what": "11630",
+  "where": "https://infotel.com",
+  "target": "https://infotel.com/$arkpid",
+  "when": "2019-06-27T00:00:00+00:00",
+  "who": {
+    "name": "Infotel SA",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "FP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2019",
+    "policy_url": null
+  }
+}

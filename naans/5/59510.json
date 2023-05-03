@@ -1,0 +1,16 @@
+{
+  "what": "59510",
+  "where": "https://www.musee-orsay.fr",
+  "target": "https://www.musee-orsay.fr/$arkpid",
+  "when": "2019-10-22T00:00:00+00:00",
+  "who": {
+    "name": "Etablissement publique des musées d'Orsay et de l'Orangerie",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "NP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2019",
+    "policy_url": null
+  }
+}

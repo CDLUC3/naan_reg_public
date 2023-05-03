@@ -1,0 +1,16 @@
+{
+  "what": "55405",
+  "where": "http://www.colum.edu",
+  "target": "http://www.colum.edu/$arkpid",
+  "when": "2010-02-19T00:00:00+00:00",
+  "who": {
+    "name": "Columbia College Chicago",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "NP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2010",
+    "policy_url": null
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "what": "61220",
+  "where": "https://ark.digital.utsc.utoronto.ca",
+  "target": "https://ark.digital.utsc.utoronto.ca/$arkpid",
+  "when": "2020-06-23T00:00:00+00:00",
+  "who": {
+    "name": "University of Toronto Scarborough Library",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "NP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2020",
+    "policy_url": null
+  }
+}

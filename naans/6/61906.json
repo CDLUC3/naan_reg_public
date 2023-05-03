@@ -1,0 +1,16 @@
+{
+  "what": "61906",
+  "where": "https://www.openscience.uz",
+  "target": "https://www.openscience.uz/$arkpid",
+  "when": "2020-04-20T00:00:00+00:00",
+  "who": {
+    "name": "Open Science LLC",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "FP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2020",
+    "policy_url": null
+  }
+}

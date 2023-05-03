@@ -1,0 +1,16 @@
+{
+  "what": "67036",
+  "where": "https://www.reincisol.com/ojs/index.php/reincisol/gateway/plugin/pubIdResolver",
+  "target": "https://www.reincisol.com/ojs/index.php/reincisol/gateway/plugin/pubIdResolver/$arkpid",
+  "when": "2022-06-21T00:00:00+00:00",
+  "who": {
+    "name": "Revista de Investigación Científica y Social",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "NP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2022",
+    "policy_url": null
+  }
+}

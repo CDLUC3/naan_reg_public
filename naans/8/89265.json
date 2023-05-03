@@ -1,0 +1,16 @@
+{
+  "what": "89265",
+  "where": "https://revistascientificas.filo.uba.ar",
+  "target": "https://revistascientificas.filo.uba.ar/$arkpid",
+  "when": "2021-09-08T00:00:00+00:00",
+  "who": {
+    "name": "Facultad de Filosofía y Letras, Universidad de Buenos Aires",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "NP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2021",
+    "policy_url": null
+  }
+}

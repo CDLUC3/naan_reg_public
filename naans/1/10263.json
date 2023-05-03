@@ -1,0 +1,16 @@
+{
+  "what": "10263",
+  "where": "https://princeofpeaceabbey.org",
+  "target": "https://princeofpeaceabbey.org/$arkpid",
+  "when": "2021-03-26T00:00:00+00:00",
+  "who": {
+    "name": "Prince of Peace Abbey Library",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "NP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2021",
+    "policy_url": null
+  }
+}

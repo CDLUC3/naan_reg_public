@@ -1,0 +1,16 @@
+{
+  "what": "82083",
+  "where": "https://cnd.fr",
+  "target": "https://cnd.fr/$arkpid",
+  "when": "2019-11-14T00:00:00+00:00",
+  "who": {
+    "name": "Centre national de la danse",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "NP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2019",
+    "policy_url": null
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "what": "12345",
+  "where": "http://n2t.net",
+  "target": "http://n2t.net/$arkpid",
+  "when": "2007-10-02T00:00:00+00:00",
+  "who": {
+    "name": "NAAN Reserved for use in Examples",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "NP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2007",
+    "policy_url": null
+  }
+}

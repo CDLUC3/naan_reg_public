@@ -1,0 +1,16 @@
+{
+  "what": "84479",
+  "where": "https://www.mcba.ch",
+  "target": "https://www.mcba.ch/$arkpid",
+  "when": "2022-02-16T00:00:00+00:00",
+  "who": {
+    "name": "Musée cantonal des Beaux-Arts de Lausanne",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "NP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2022",
+    "policy_url": null
+  }
+}

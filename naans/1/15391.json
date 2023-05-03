@@ -1,0 +1,16 @@
+{
+  "what": "15391",
+  "where": "http://archives.ville-saint-denis.fr",
+  "target": "http://archives.ville-saint-denis.fr/$arkpid",
+  "when": "2012-12-13T00:00:00+00:00",
+  "who": {
+    "name": "Archives municipales de Saint-Denis",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "NP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2012",
+    "policy_url": null
+  }
+}

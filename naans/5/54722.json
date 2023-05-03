@@ -1,0 +1,16 @@
+{
+  "what": "54722",
+  "where": "http://naturalis.nl",
+  "target": "http://naturalis.nl/$arkpid",
+  "when": "2018-06-27T00:00:00+00:00",
+  "who": {
+    "name": "Naturalis Biodiversity Center",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "NP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2018",
+    "policy_url": null
+  }
+}

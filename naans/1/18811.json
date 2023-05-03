@@ -1,0 +1,16 @@
+{
+  "what": "18811",
+  "where": "http://www.archives-lyon.fr/archives",
+  "target": "http://www.archives-lyon.fr/archives/$arkpid",
+  "when": "2012-09-17T00:00:00+00:00",
+  "who": {
+    "name": "Archives municipales de LYON",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "NP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2012",
+    "policy_url": null
+  }
+}

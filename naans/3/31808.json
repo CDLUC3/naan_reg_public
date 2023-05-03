@@ -1,0 +1,16 @@
+{
+  "what": "31808",
+  "where": "http://www.archives.gard.fr",
+  "target": "http://www.archives.gard.fr/$arkpid",
+  "when": "2018-10-10T00:00:00+00:00",
+  "who": {
+    "name": "Archives départementales du Gard",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "NP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2018",
+    "policy_url": null
+  }
+}

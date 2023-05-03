@@ -1,0 +1,16 @@
+{
+  "what": "65323",
+  "where": "http://library.ucalgary.ca",
+  "target": "http://library.ucalgary.ca/$arkpid",
+  "when": "2007-06-05T00:00:00+00:00",
+  "who": {
+    "name": "University of Calgary",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "NP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2007",
+    "policy_url": null
+  }
+}

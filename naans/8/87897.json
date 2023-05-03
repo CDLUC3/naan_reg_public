@@ -1,0 +1,16 @@
+{
+  "what": "87897",
+  "where": "https://www.atelier-languefrancaise.fr",
+  "target": "https://www.atelier-languefrancaise.fr/$arkpid",
+  "when": "2021-03-24T00:00:00+00:00",
+  "who": {
+    "name": "Atelier de la langue française",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "NP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2021",
+    "policy_url": null
+  }
+}

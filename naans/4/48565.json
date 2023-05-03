@@ -1,0 +1,16 @@
+{
+  "what": "48565",
+  "where": "http://www.besancon.fr",
+  "target": "http://www.besancon.fr/$arkpid",
+  "when": "2010-09-28T00:00:00+00:00",
+  "who": {
+    "name": "Ville de Besançon",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "NP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2010",
+    "policy_url": null
+  }
+}

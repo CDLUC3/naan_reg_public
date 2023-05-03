@@ -1,0 +1,16 @@
+{
+  "what": "40699",
+  "where": "http://www.memoiredeshommes.sga.defense.gouv.fr",
+  "target": "http://www.memoiredeshommes.sga.defense.gouv.fr/$arkpid",
+  "when": "2013-08-31T00:00:00+00:00",
+  "who": {
+    "name": "Ministère de la Défense, Mémoire des hommes",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "NP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2013",
+    "policy_url": null
+  }
+}

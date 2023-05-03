@@ -1,0 +1,16 @@
+{
+  "what": "63273",
+  "where": "https://library.wcs.org/Archives.aspx",
+  "target": "https://library.wcs.org/Archives.aspx/$arkpid",
+  "when": "2020-12-16T00:00:00+00:00",
+  "who": {
+    "name": "Wildlife Conservation Society Library and Archives",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "NP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2020",
+    "policy_url": null
+  }
+}

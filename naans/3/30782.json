@@ -1,0 +1,16 @@
+{
+  "what": "30782",
+  "where": "http://w3public.ville-ge.ch",
+  "target": "http://w3public.ville-ge.ch/$arkpid",
+  "when": "2019-09-16T00:00:00+00:00",
+  "who": {
+    "name": "Archives de la Ville de Genève",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "NP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2019",
+    "policy_url": null
+  }
+}

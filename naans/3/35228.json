@@ -1,0 +1,16 @@
+{
+  "what": "35228",
+  "where": "http://www.scd.uha.fr",
+  "target": "http://www.scd.uha.fr/$arkpid",
+  "when": "2015-12-05T00:00:00+00:00",
+  "who": {
+    "name": "Université de Haute-Alsace",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "NP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2015",
+    "policy_url": null
+  }
+}

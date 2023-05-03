@@ -1,0 +1,16 @@
+{
+  "what": "30439",
+  "where": "http://archives36.cg36.fr",
+  "target": "http://archives36.cg36.fr/$arkpid",
+  "when": "2017-07-05T00:00:00+00:00",
+  "who": {
+    "name": "Archives départementales de l'Indre",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "NP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2017",
+    "policy_url": null
+  }
+}

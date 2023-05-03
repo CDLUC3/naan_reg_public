@@ -1,0 +1,16 @@
+{
+  "what": "70456",
+  "where": "https://test.ijbox.itss.paris",
+  "target": "https://test.ijbox.itss.paris/$arkpid",
+  "when": "2020-08-27T00:00:00+00:00",
+  "who": {
+    "name": "ITSS",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "FP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2020",
+    "policy_url": null
+  }
+}

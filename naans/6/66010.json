@@ -1,0 +1,16 @@
+{
+  "what": "66010",
+  "where": "https://RIJ.rasayely-journals.com",
+  "target": "https://rij.rasayely-journals.com/$arkpid",
+  "when": "2022-11-08T00:00:00+00:00",
+  "who": {
+    "name": "Rasayely",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "FP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2022",
+    "policy_url": null
+  }
+}

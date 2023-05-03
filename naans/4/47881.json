@@ -1,0 +1,16 @@
+{
+  "what": "47881",
+  "where": "http://www.univ-lyon1.fr",
+  "target": "http://www.univ-lyon1.fr/$arkpid",
+  "when": "2012-04-13T00:00:00+00:00",
+  "who": {
+    "name": "Université Claude Bernard Lyon 1",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "NP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2012",
+    "policy_url": null
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "what": "35572",
+  "where": "https://www.notre-dame.science",
+  "target": "https://www.notre-dame.science/$arkpid",
+  "when": "2021-05-07T00:00:00+00:00",
+  "who": {
+    "name": "Chantier scientifique de Notre-Dame de Paris",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "NP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2021",
+    "policy_url": null
+  }
+}

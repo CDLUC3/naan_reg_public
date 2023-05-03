@@ -1,0 +1,16 @@
+{
+  "what": "27020",
+  "where": "http://www.bilketa.eus",
+  "target": "http://www.bilketa.eus/$arkpid",
+  "when": "2019-12-05T00:00:00+00:00",
+  "who": {
+    "name": "BILKETA",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "NP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2019",
+    "policy_url": null
+  }
+}

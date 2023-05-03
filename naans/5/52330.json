@@ -1,0 +1,16 @@
+{
+  "what": "52330",
+  "where": "https://library.calvin.edu",
+  "target": "https://library.calvin.edu/$arkpid",
+  "when": "2020-03-20T00:00:00+00:00",
+  "who": {
+    "name": "Hekman Library, Calvin University",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "NP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2020",
+    "policy_url": null
+  }
+}

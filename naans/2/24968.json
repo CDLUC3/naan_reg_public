@@ -1,0 +1,16 @@
+{
+  "what": "24968",
+  "where": "http://www.archivesne.ch",
+  "target": "http://www.archivesne.ch/$arkpid",
+  "when": "2018-11-26T00:00:00+00:00",
+  "who": {
+    "name": "Bibliothèque de la Ville de La Chaux-de-Fonds",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "NP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2018",
+    "policy_url": null
+  }
+}

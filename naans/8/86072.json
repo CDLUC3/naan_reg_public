@@ -1,0 +1,16 @@
+{
+  "what": "86072",
+  "where": "http://www.signaling-gateway.org",
+  "target": "http://www.signaling-gateway.org/$arkpid",
+  "when": "2012-03-05T00:00:00+00:00",
+  "who": {
+    "name": "UCSD Signaling Gateway",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "NP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2012",
+    "policy_url": null
+  }
+}

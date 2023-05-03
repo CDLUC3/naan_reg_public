@@ -1,0 +1,16 @@
+{
+  "what": "20525",
+  "where": "https://ark.goodwinarchive.uk",
+  "target": "https://ark.goodwinarchive.uk/$arkpid",
+  "when": "2022-12-14T00:00:00+00:00",
+  "who": {
+    "name": "Goodwin Archive",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "NP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2022",
+    "policy_url": null
+  }
+}

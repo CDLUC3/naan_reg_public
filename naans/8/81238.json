@@ -1,0 +1,16 @@
+{
+  "what": "81238",
+  "where": "http://spray.ucsd.edu",
+  "target": "http://spray.ucsd.edu/$arkpid",
+  "when": "2016-06-07T00:00:00+00:00",
+  "who": {
+    "name": "UCSD Scripps Spray Plotting",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "NP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2016",
+    "policy_url": null
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "what": "61563",
+  "where": "https://musees.orleans-metropole.fr",
+  "target": "https://musees.orleans-metropole.fr/$arkpid",
+  "when": "2021-04-28T00:00:00+00:00",
+  "who": {
+    "name": "Les Musées d'Orléans",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "NP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2021",
+    "policy_url": null
+  }
+}

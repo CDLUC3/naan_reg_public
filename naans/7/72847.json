@@ -1,0 +1,16 @@
+{
+  "what": "72847",
+  "where": "http://www.archivesdepartementales.puydedome.fr",
+  "target": "http://www.archivesdepartementales.puydedome.fr/$arkpid",
+  "when": "2013-11-21T00:00:00+00:00",
+  "who": {
+    "name": "Archives départementales du Puy-de-Dôme",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "NP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2013",
+    "policy_url": null
+  }
+}

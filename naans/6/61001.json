@@ -1,0 +1,16 @@
+{
+  "what": "61001",
+  "where": "http://www.lib.uchicago.edu",
+  "target": "http://www.lib.uchicago.edu/$arkpid",
+  "when": "2007-09-11T00:00:00+00:00",
+  "who": {
+    "name": "University of Chicago",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "NP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2007",
+    "policy_url": null
+  }
+}

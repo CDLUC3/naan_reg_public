@@ -1,0 +1,16 @@
+{
+  "what": "48910",
+  "where": "https://cg85musee.decalog.net/flora_cg85",
+  "target": "https://cg85musee.decalog.net/flora_cg85/$arkpid",
+  "when": "2022-02-15T00:00:00+00:00",
+  "who": {
+    "name": "Historial de la Vendée",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "NP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2022",
+    "policy_url": null
+  }
+}

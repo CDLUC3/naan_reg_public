@@ -1,0 +1,16 @@
+{
+  "what": "14366",
+  "where": "https://pastel.diplomatie.gouv.fr/archivesdiplomatiques",
+  "target": "https://pastel.diplomatie.gouv.fr/archivesdiplomatiques/$arkpid",
+  "when": "2019-10-03T00:00:00+00:00",
+  "who": {
+    "name": "Archives Diplomatiques du Ministère Des Affaires Etrangères",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "NP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2019",
+    "policy_url": null
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "what": "36937",
+  "where": "http://archives.yvelines.fr",
+  "target": "http://archives.yvelines.fr/$arkpid",
+  "when": "2014-03-25T00:00:00+00:00",
+  "who": {
+    "name": "Archives départementales des Yvelines",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "NP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2014",
+    "policy_url": null
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "what": "38307",
+  "where": "https://revistas.reduc.edu.cu/index.php/monteverdia",
+  "target": "https://revistas.reduc.edu.cu/index.php/monteverdia/$arkpid",
+  "when": "2020-08-13T00:00:00+00:00",
+  "who": {
+    "name": "Monteverdia Scientific Journal",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "NP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2020",
+    "policy_url": null
+  }
+}

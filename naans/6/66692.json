@@ -1,0 +1,16 @@
+{
+  "what": "66692",
+  "where": "https://bibliotheques.univ-grenoble-alpes.fr",
+  "target": "https://bibliotheques.univ-grenoble-alpes.fr/$arkpid",
+  "when": "2019-01-29T00:00:00+00:00",
+  "who": {
+    "name": "Service Interétablissement de la Documentation, Université Grenoble Alpes",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "NP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2019",
+    "policy_url": null
+  }
+}

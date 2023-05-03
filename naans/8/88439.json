@@ -1,0 +1,16 @@
+{
+  "what": "88439",
+  "where": "https://geophysicsjournal.com",
+  "target": "https://geophysicsjournal.com/$arkpid",
+  "when": "2019-05-10T00:00:00+00:00",
+  "who": {
+    "name": "Journal of Geophysics",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "FP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2019",
+    "policy_url": null
+  }
+}

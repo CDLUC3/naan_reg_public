@@ -1,0 +1,16 @@
+{
+  "what": "21549",
+  "where": "https://portal.hearstmuseum.berkeley.edu",
+  "target": "https://portal.hearstmuseum.berkeley.edu/$arkpid",
+  "when": "2018-12-21T00:00:00+00:00",
+  "who": {
+    "name": "Phoebe A. Hearst Museum of Anthropology",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "NP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2018",
+    "policy_url": null
+  }
+}

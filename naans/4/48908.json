@@ -1,0 +1,16 @@
+{
+  "what": "48908",
+  "where": "http://www.ville-beziers.fr",
+  "target": "http://www.ville-beziers.fr/$arkpid",
+  "when": "2015-04-19T00:00:00+00:00",
+  "who": {
+    "name": "Archives municipales de Béziers",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "NP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2015",
+    "policy_url": null
+  }
+}

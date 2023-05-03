@@ -1,0 +1,16 @@
+{
+  "what": "68405",
+  "where": "https://itejournal.com",
+  "target": "https://itejournal.com/$arkpid",
+  "when": "2023-03-06T00:00:00+00:00",
+  "who": {
+    "name": "International Technology and Education Journal",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "NP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2023",
+    "policy_url": null
+  }
+}

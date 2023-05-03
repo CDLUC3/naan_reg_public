@@ -1,0 +1,16 @@
+{
+  "what": "18472",
+  "where": "https://espacegandreck.macif.fr",
+  "target": "https://espacegandreck.macif.fr/$arkpid",
+  "when": "2021-09-03T00:00:00+00:00",
+  "who": {
+    "name": "Association Espace Gérard Andreck",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "NP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2021",
+    "policy_url": null
+  }
+}

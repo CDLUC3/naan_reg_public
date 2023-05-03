@@ -1,0 +1,16 @@
+{
+  "what": "64269",
+  "where": "http://www.dcc.ac.uk",
+  "target": "http://www.dcc.ac.uk/$arkpid",
+  "when": "2004-09-22T00:00:00+00:00",
+  "who": {
+    "name": "Digital Curation Centre",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "NP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2004",
+    "policy_url": null
+  }
+}

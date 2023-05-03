@@ -1,0 +1,16 @@
+{
+  "what": "61907",
+  "where": "https://data.advn.be",
+  "target": "https://data.advn.be/$arkpid",
+  "when": "2022-02-15T00:00:00+00:00",
+  "who": {
+    "name": "Archief voor nationale bewegingen",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "NP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2022",
+    "policy_url": null
+  }
+}

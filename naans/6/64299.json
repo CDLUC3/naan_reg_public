@@ -1,0 +1,16 @@
+{
+  "what": "64299",
+  "where": "http://mars.decalog.net/flora_malicorne",
+  "target": "http://mars.decalog.net/flora_malicorne/$arkpid",
+  "when": "2020-07-29T00:00:00+00:00",
+  "who": {
+    "name": "Musée de la faïence et de la céramique",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "FP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2020",
+    "policy_url": null
+  }
+}

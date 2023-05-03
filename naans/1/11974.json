@@ -1,0 +1,16 @@
+{
+  "what": "11974",
+  "where": "https://www.narbovia.fr",
+  "target": "https://www.narbovia.fr/$arkpid",
+  "when": "2020-10-07T00:00:00+00:00",
+  "who": {
+    "name": "EPCC Narbo Via",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "FP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2020",
+    "policy_url": null
+  }
+}

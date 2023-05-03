@@ -1,0 +1,16 @@
+{
+  "what": "77638",
+  "where": "https://plarci.org/index.php/escritos/gateway/plugin/pubIdResolver",
+  "target": "https://plarci.org/index.php/escritos/gateway/plugin/pubIdResolver/$arkpid",
+  "when": "2022-03-20T00:00:00+00:00",
+  "who": {
+    "name": "Escritos de filosofía",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "NP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2022",
+    "policy_url": null
+  }
+}

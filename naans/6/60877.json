@@ -1,0 +1,16 @@
+{
+  "what": "60877",
+  "where": "https://archives.nievre.fr/ark:$id",
+  "target": "https://archives.nievre.fr/ark:$pid",
+  "when": "2012-01-02T00:00:00+00:00",
+  "who": {
+    "name": "Archives départementales de la Nièvre",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "NP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2012",
+    "policy_url": null
+  }
+}

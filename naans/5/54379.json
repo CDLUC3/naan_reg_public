@@ -1,0 +1,16 @@
+{
+  "what": "54379",
+  "where": "http://www.ualberta.ca",
+  "target": "http://www.ualberta.ca/$arkpid",
+  "when": "2012-11-15T00:00:00+00:00",
+  "who": {
+    "name": "University of Alberta",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "NP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2012",
+    "policy_url": null
+  }
+}

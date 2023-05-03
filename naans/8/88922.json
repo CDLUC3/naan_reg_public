@@ -1,0 +1,16 @@
+{
+  "what": "88922",
+  "where": "https://identifiers.densho.org",
+  "target": "https://identifiers.densho.org/$arkpid",
+  "when": "2020-12-14T00:00:00+00:00",
+  "who": {
+    "name": "Densho",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "NP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2020",
+    "policy_url": null
+  }
+}

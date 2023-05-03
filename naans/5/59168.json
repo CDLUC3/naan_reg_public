@@ -1,0 +1,16 @@
+{
+  "what": "59168",
+  "where": "https://www.fondationcartier.com",
+  "target": "https://www.fondationcartier.com/$arkpid",
+  "when": "2021-03-08T00:00:00+00:00",
+  "who": {
+    "name": "Fondation Cartier pour l'art contemporain",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "NP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2021",
+    "policy_url": null
+  }
+}

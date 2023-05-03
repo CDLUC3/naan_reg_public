@@ -1,0 +1,16 @@
+{
+  "what": "67719",
+  "where": "https://www.vodfactory.com",
+  "target": "https://www.vodfactory.com/$arkpid",
+  "when": "2021-06-07T00:00:00+00:00",
+  "who": {
+    "name": "VOD Factory",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "FP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2021",
+    "policy_url": null
+  }
+}

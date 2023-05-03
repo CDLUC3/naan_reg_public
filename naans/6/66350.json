@@ -1,0 +1,16 @@
+{
+  "what": "66350",
+  "where": "http://institutions.ville-geneve.ch/fr/mhn/votre-visite/site-du-musee-dhistoire-des-sciences",
+  "target": "http://institutions.ville-geneve.ch/fr/mhn/votre-visite/site-du-musee-dhistoire-des-sciences/$arkpid",
+  "when": "2019-09-16T00:00:00+00:00",
+  "who": {
+    "name": "Musée d'histoire des Sciences",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "NP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2019",
+    "policy_url": null
+  }
+}

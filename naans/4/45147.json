@@ -1,0 +1,16 @@
+{
+  "what": "45147",
+  "where": "http://ajss.dz/index.php/ajss",
+  "target": "http://ajss.dz/index.php/ajss/$arkpid",
+  "when": "2020-07-02T00:00:00+00:00",
+  "who": {
+    "name": "Algerian Journal of Signals and Systems",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "NP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2020",
+    "policy_url": null
+  }
+}

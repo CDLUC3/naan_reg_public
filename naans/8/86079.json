@@ -1,0 +1,16 @@
+{
+  "what": "86079",
+  "where": "http://www.eeb.ucla.edu",
+  "target": "http://www.eeb.ucla.edu/$arkpid",
+  "when": "2012-03-12T00:00:00+00:00",
+  "who": {
+    "name": "UCLA Department of Ecology and Evolutionary Biology",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "NP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2012",
+    "policy_url": null
+  }
+}

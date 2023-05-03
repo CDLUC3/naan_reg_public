@@ -1,0 +1,16 @@
+{
+  "what": "81741",
+  "where": "https://www.amsterdamtimemachine.nl",
+  "target": "https://www.amsterdamtimemachine.nl/$arkpid",
+  "when": "2022-12-14T00:00:00+00:00",
+  "who": {
+    "name": "Amsterdam Time Machine",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "NP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2022",
+    "policy_url": null
+  }
+}

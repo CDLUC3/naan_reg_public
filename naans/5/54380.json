@@ -1,0 +1,16 @@
+{
+  "what": "54380",
+  "where": "http://bm.angers.fr",
+  "target": "http://bm.angers.fr/$arkpid",
+  "when": "2016-04-08T00:00:00+00:00",
+  "who": {
+    "name": "Bibliothèque Municipale d'Angers",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "NP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2016",
+    "policy_url": null
+  }
+}

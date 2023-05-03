@@ -1,0 +1,16 @@
+{
+  "what": "71482",
+  "where": "https://www.cyberlibris.com",
+  "target": "https://www.cyberlibris.com/$arkpid",
+  "when": "2020-04-30T00:00:00+00:00",
+  "who": {
+    "name": "Cyberlibris SA",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "FP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2020",
+    "policy_url": null
+  }
+}

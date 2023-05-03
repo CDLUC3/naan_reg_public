@@ -1,0 +1,16 @@
+{
+  "what": "84819",
+  "where": "https://collections.chateaunantes.fr",
+  "target": "https://collections.chateaunantes.fr/$arkpid",
+  "when": "2022-01-07T00:00:00+00:00",
+  "who": {
+    "name": "Musée d'histoire de Nantes - Château des ducs de Bretagne",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "NP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2022",
+    "policy_url": null
+  }
+}

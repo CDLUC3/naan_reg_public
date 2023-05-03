@@ -1,0 +1,16 @@
+{
+  "what": "87553",
+  "where": "http://archives.pontivy.fr",
+  "target": "http://archives.pontivy.fr/$arkpid",
+  "when": "2010-08-23T00:00:00+00:00",
+  "who": {
+    "name": "Archives de la ville de Pontivy",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "NP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2010",
+    "policy_url": null
+  }
+}

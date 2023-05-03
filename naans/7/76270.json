@@ -1,0 +1,16 @@
+{
+  "what": "76270",
+  "where": "https://www.bibliotheque.nat.tn",
+  "target": "https://www.bibliotheque.nat.tn/$arkpid",
+  "when": "2022-09-08T00:00:00+00:00",
+  "who": {
+    "name": "National Library of Tunisia",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "NP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2022",
+    "policy_url": null
+  }
+}

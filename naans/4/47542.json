@@ -1,0 +1,16 @@
+{
+  "what": "47542",
+  "where": "https://MNDCP.example.org",
+  "target": "https://mndcp.example.org/$arkpid",
+  "when": "2022-07-20T00:00:00+00:00",
+  "who": {
+    "name": "Musée national et domaine du château de Pau",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "NP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2022",
+    "policy_url": null
+  }
+}

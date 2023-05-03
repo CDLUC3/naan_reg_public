@@ -1,0 +1,16 @@
+{
+  "what": "32834",
+  "where": "http://quantiply.com",
+  "target": "http://quantiply.com/$arkpid",
+  "when": "2018-03-03T00:00:00+00:00",
+  "who": {
+    "name": "Quantiply Corporation",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "NP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2018",
+    "policy_url": null
+  }
+}

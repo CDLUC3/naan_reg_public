@@ -1,0 +1,16 @@
+{
+  "what": "25593",
+  "where": "http://pid.emory.edu",
+  "target": "http://pid.emory.edu/$arkpid",
+  "when": "2006-01-12T00:00:00+00:00",
+  "who": {
+    "name": "Emory University",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "NP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2006",
+    "policy_url": null
+  }
+}

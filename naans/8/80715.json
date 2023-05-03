@@ -1,0 +1,16 @@
+{
+  "what": "80715",
+  "where": "http://revele.uncoma.edu.ar/htdoc/revele",
+  "target": "http://revele.uncoma.edu.ar/htdoc/revele/$arkpid",
+  "when": "2021-06-01T00:00:00+00:00",
+  "who": {
+    "name": "Quintú Quimün. Revista de lingüística",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "NP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2021",
+    "policy_url": null
+  }
+}

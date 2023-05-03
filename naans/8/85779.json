@@ -1,0 +1,16 @@
+{
+  "what": "85779",
+  "where": "http://www.law.berkeley.edu/library.htm",
+  "target": "http://www.law.berkeley.edu/library.htm/$arkpid",
+  "when": "2015-02-07T00:00:00+00:00",
+  "who": {
+    "name": "Berkeley Law Library",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "NP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2015",
+    "policy_url": null
+  }
+}

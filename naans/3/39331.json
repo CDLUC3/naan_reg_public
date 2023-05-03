@@ -1,0 +1,16 @@
+{
+  "what": "39331",
+  "where": "http://www.oszk.hu",
+  "target": "http://www.oszk.hu/$arkpid",
+  "when": "2008-03-05T00:00:00+00:00",
+  "who": {
+    "name": "National Széchényi Library",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "NP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2008",
+    "policy_url": null
+  }
+}

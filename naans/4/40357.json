@@ -1,0 +1,16 @@
+{
+  "what": "40357",
+  "where": "http://www.archivesdepartementales.cg82.fr",
+  "target": "http://www.archivesdepartementales.cg82.fr/$arkpid",
+  "when": "2014-02-20T00:00:00+00:00",
+  "who": {
+    "name": "Archives départementales de Tarn-et-Garonne",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "NP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2014",
+    "policy_url": null
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "what": "62931",
+  "where": "https://entrepotsillonlorrain.fr",
+  "target": "https://entrepotsillonlorrain.fr/$arkpid",
+  "when": "2019-10-07T00:00:00+00:00",
+  "who": {
+    "name": "Médiathèque intercommunale de Saint-Dié-des-Vosges",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "NP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2019",
+    "policy_url": null
+  }
+}

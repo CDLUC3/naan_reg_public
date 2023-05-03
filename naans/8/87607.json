@@ -1,0 +1,16 @@
+{
+  "what": "87607",
+  "where": "chicagocollectionsconsortium.org",
+  "target": "https:///chicagocollectionsconsortium.org/$arkpid",
+  "when": "2015-04-01T00:00:00+00:00",
+  "who": {
+    "name": "Chicago Collections Consortium",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "NP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2015",
+    "policy_url": null
+  }
+}

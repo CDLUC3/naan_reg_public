@@ -1,0 +1,16 @@
+{
+  "what": "28048",
+  "where": "https://faistonfilm.co",
+  "target": "https://faistonfilm.co/$arkpid",
+  "when": "2021-09-07T00:00:00+00:00",
+  "who": {
+    "name": "Fais ton Film",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "FP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2021",
+    "policy_url": null
+  }
+}

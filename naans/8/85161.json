@@ -1,0 +1,16 @@
+{
+  "what": "85161",
+  "where": "http://www.maison-asie-pacifique.fr",
+  "target": "http://www.maison-asie-pacifique.fr/$arkpid",
+  "when": "2021-03-03T00:00:00+00:00",
+  "who": {
+    "name": "Maison Asie-Pacifique",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "NP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2021",
+    "policy_url": null
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "what": "18130",
+  "where": "https://www.cpau.org",
+  "target": "https://www.cpau.org/$arkpid",
+  "when": "2022-08-11T00:00:00+00:00",
+  "who": {
+    "name": "Consejo Profesional de Arquitectura y Urbanismo",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "NP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2022",
+    "policy_url": null
+  }
+}

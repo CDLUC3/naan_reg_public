@@ -1,0 +1,16 @@
+{
+  "what": "26337",
+  "where": "https://vert.eco",
+  "target": "https://vert.eco/$arkpid",
+  "when": "2022-02-04T00:00:00+00:00",
+  "who": {
+    "name": "Vert",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "FP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2022",
+    "policy_url": null
+  }
+}

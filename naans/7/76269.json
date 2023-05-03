@@ -1,0 +1,16 @@
+{
+  "what": "76269",
+  "where": "https://plarci.org",
+  "target": "https://plarci.org/$arkpid",
+  "when": "2021-09-08T00:00:00+00:00",
+  "who": {
+    "name": "Portal Latinoamericano de Revistas Científicas",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "NP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2021",
+    "policy_url": null
+  }
+}

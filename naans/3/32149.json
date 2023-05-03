@@ -1,0 +1,16 @@
+{
+  "what": "32149",
+  "where": "http://www.sondaqui.com",
+  "target": "http://www.sondaqui.com/$arkpid",
+  "when": "2012-01-02T00:00:00+00:00",
+  "who": {
+    "name": "Inoc Aquitania",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "NP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2012",
+    "policy_url": null
+  }
+}

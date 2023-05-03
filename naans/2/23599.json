@@ -1,0 +1,16 @@
+{
+  "what": "23599",
+  "where": "http://www.archives05.fr",
+  "target": "http://www.archives05.fr/$arkpid",
+  "when": "2014-11-14T00:00:00+00:00",
+  "who": {
+    "name": "Archives départementales des Hautes-Alpes",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "NP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2014",
+    "policy_url": null
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "what": "19153",
+  "where": "http://www.cndp.fr",
+  "target": "http://www.cndp.fr/$arkpid",
+  "when": "2011-02-12T00:00:00+00:00",
+  "who": {
+    "name": "Centre national de documentation pédagogique",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "NP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2011",
+    "policy_url": null
+  }
+}

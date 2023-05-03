@@ -1,0 +1,16 @@
+{
+  "what": "80713",
+  "where": "http://www.bnportugal.pt",
+  "target": "http://www.bnportugal.pt/$arkpid",
+  "when": "2011-02-12T00:00:00+00:00",
+  "who": {
+    "name": "Biblioteca Nacional de Portugal",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "NP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2011",
+    "policy_url": null
+  }
+}

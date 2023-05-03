@@ -1,0 +1,16 @@
+{
+  "what": "12313",
+  "where": "http://www.hachette.com",
+  "target": "http://www.hachette.com/$arkpid",
+  "when": "2016-05-27T00:00:00+00:00",
+  "who": {
+    "name": "Hachette Livre",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "NP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2016",
+    "policy_url": null
+  }
+}

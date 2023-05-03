@@ -1,0 +1,16 @@
+{
+  "what": "12315",
+  "where": "http://www.univ-lemans.fr/fr/index.html",
+  "target": "http://www.univ-lemans.fr/fr/index.html/$arkpid",
+  "when": "2022-05-24T00:00:00+00:00",
+  "who": {
+    "name": "Le Mans université",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "NP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2022",
+    "policy_url": null
+  }
+}

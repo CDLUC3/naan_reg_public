@@ -1,0 +1,16 @@
+{
+  "what": "63614",
+  "where": "https://app.wildlifeinsights.org",
+  "target": "https://app.wildlifeinsights.org/$arkpid",
+  "when": "2020-09-18T00:00:00+00:00",
+  "who": {
+    "name": "Wildlife Insights",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "NP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2020",
+    "policy_url": null
+  }
+}

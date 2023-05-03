@@ -1,0 +1,16 @@
+{
+  "what": "33177",
+  "where": "https://sondo.fr",
+  "target": "https://sondo.fr/$arkpid",
+  "when": "2020-02-11T00:00:00+00:00",
+  "who": {
+    "name": "IM France - Sondo",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "FP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2020",
+    "policy_url": null
+  }
+}

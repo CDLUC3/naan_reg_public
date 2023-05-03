@@ -1,0 +1,16 @@
+{
+  "what": "86076",
+  "where": "http://www.fhcrc.org",
+  "target": "http://www.fhcrc.org/$arkpid",
+  "when": "2012-03-05T00:00:00+00:00",
+  "who": {
+    "name": "Fred Hutchinson Cancer Research Center",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "NP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2012",
+    "policy_url": null
+  }
+}

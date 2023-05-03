@@ -1,0 +1,16 @@
+{
+  "what": "42751",
+  "where": "http://www.archives-aube.fr",
+  "target": "http://www.archives-aube.fr/$arkpid",
+  "when": "2015-02-09T00:00:00+00:00",
+  "who": {
+    "name": "Archives départementales de l'Aube",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "NP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2015",
+    "policy_url": null
+  }
+}

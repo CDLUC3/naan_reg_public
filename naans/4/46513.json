@@ -1,0 +1,16 @@
+{
+  "what": "46513",
+  "where": "http://catalogue.sciences-po.fr",
+  "target": "http://catalogue.sciences-po.fr/$arkpid",
+  "when": "2014-05-21T00:00:00+00:00",
+  "who": {
+    "name": "Sciences Po",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "NP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2014",
+    "policy_url": null
+  }
+}

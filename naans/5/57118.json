@@ -1,0 +1,16 @@
+{
+  "what": "57118",
+  "where": "http://www.revistajrg.com/index.php/jrg/gateway/plugin/pubIdResolver",
+  "target": "http://www.revistajrg.com/index.php/jrg/gateway/plugin/pubIdResolver/$arkpid",
+  "when": "2022-08-02T00:00:00+00:00",
+  "who": {
+    "name": "Revista JRG de Estudos Acadêmicos",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "NP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2022",
+    "policy_url": null
+  }
+}

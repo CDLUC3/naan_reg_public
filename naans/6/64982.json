@@ -1,0 +1,16 @@
+{
+  "what": "64982",
+  "where": "http://www.archivesenligne65.fr",
+  "target": "http://www.archivesenligne65.fr/$arkpid",
+  "when": "2015-03-04T00:00:00+00:00",
+  "who": {
+    "name": "Archives départementales des Hautes-Pyrénées",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "NP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2015",
+    "policy_url": null
+  }
+}

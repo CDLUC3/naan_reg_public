@@ -1,0 +1,16 @@
+{
+  "what": "62930",
+  "where": "http://www.library.unlv.edu",
+  "target": "http://www.library.unlv.edu/$arkpid",
+  "when": "2017-03-30T00:00:00+00:00",
+  "who": {
+    "name": "University of Nevada, Las Vegas University Libraries",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "NP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2017",
+    "policy_url": null
+  }
+}

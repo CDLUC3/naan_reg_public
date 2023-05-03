@@ -1,0 +1,16 @@
+{
+  "what": "60880",
+  "where": "http://www.globalresearchonline.net",
+  "target": "http://www.globalresearchonline.net/$arkpid",
+  "when": "2020-08-24T00:00:00+00:00",
+  "who": {
+    "name": "Global Research Online",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "NP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2020",
+    "policy_url": null
+  }
+}

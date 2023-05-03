@@ -1,0 +1,16 @@
+{
+  "what": "21206",
+  "where": "https://17beta.top",
+  "target": "https://17beta.top/$arkpid",
+  "when": "2019-08-12T00:00:00+00:00",
+  "who": {
+    "name": "17beta",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "NP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2019",
+    "policy_url": "https://17beta.top/en/identifiers"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "what": "28387",
+  "where": "http://www.archives-vienne.cg86.fr",
+  "target": "http://www.archives-vienne.cg86.fr/$arkpid",
+  "when": "2012-12-11T00:00:00+00:00",
+  "who": {
+    "name": "Archives départementales de la Vienne",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "NP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2012",
+    "policy_url": null
+  }
+}

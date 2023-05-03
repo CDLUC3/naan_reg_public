@@ -1,0 +1,16 @@
+{
+  "what": "28729",
+  "where": "http://www.rhone.fr/education_culture_loisirs/mediatheque_archives/archives_departementales",
+  "target": "http://www.rhone.fr/education_culture_loisirs/mediatheque_archives/archives_departementales/$arkpid",
+  "when": "2011-05-08T00:00:00+00:00",
+  "who": {
+    "name": "Archives départementales du Rhône",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "NP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2011",
+    "policy_url": null
+  }
+}

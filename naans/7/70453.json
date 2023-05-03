@@ -1,0 +1,16 @@
+{
+  "what": "70453",
+  "where": "http://massagetherapy.bc.ca",
+  "target": "http://massagetherapy.bc.ca/$arkpid",
+  "when": "2012-06-27T00:00:00+00:00",
+  "who": {
+    "name": "Massage Therapy Association of British Columbia",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "NP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2012",
+    "policy_url": null
+  }
+}

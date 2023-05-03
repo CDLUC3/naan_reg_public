@@ -1,0 +1,16 @@
+{
+  "what": "17103",
+  "where": "http://www.univ-cotedazur.fr",
+  "target": "http://www.univ-cotedazur.fr/$arkpid",
+  "when": "2017-12-22T00:00:00+00:00",
+  "who": {
+    "name": "Université Côte d'Azur",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "NP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2017",
+    "policy_url": null
+  }
+}

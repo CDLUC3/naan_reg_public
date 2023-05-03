@@ -1,0 +1,16 @@
+{
+  "what": "26336",
+  "where": "https://lichtspiel.ch",
+  "target": "https://lichtspiel.ch/$arkpid",
+  "when": "2020-03-26T00:00:00+00:00",
+  "who": {
+    "name": "Lichtspiel / Kinemathek Bern",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "NP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2020",
+    "policy_url": null
+  }
+}

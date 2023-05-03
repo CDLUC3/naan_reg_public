@@ -1,0 +1,16 @@
+{
+  "what": "52327",
+  "where": "http://www.banq.qc.ca",
+  "target": "http://www.banq.qc.ca/$arkpid",
+  "when": "2007-10-18T00:00:00+00:00",
+  "who": {
+    "name": "Bibliothèque et Archives Nationales du Québec",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "NP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2007",
+    "policy_url": null
+  }
+}

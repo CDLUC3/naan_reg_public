@@ -1,0 +1,16 @@
+{
+  "what": "59855",
+  "where": "https://ark.ontome.net",
+  "target": "https://ark.ontome.net/$arkpid",
+  "when": "2022-10-07T00:00:00+00:00",
+  "who": {
+    "name": "Laboratoire de recherche historique Rhône-Alpes",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "NP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2022",
+    "policy_url": null
+  }
+}

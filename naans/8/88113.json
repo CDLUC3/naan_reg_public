@@ -1,0 +1,16 @@
+{
+  "what": "88113",
+  "where": "http://escience.washington.edu",
+  "target": "http://escience.washington.edu/$arkpid",
+  "when": "2013-06-18T00:00:00+00:00",
+  "who": {
+    "name": "Penn State Institutes of Energy & Environment/PSU Data Commons",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "NP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2013",
+    "policy_url": null
+  }
+}

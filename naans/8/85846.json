@@ -1,0 +1,16 @@
+{
+  "what": "85846",
+  "where": "https://vyomhansjournals.com",
+  "target": "https://vyomhansjournals.com/$arkpid",
+  "when": "2022-09-28T00:00:00+00:00",
+  "who": {
+    "name": "Vyom Hans Journals",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "NP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2022",
+    "policy_url": null
+  }
+}

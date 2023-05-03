@@ -1,0 +1,16 @@
+{
+  "what": "24285",
+  "where": "https://portalcoleta.com.br/index.php/rcc/gateway/plugin/pubIdResolver",
+  "target": "https://portalcoleta.com.br/index.php/rcc/gateway/plugin/pubIdResolver/$arkpid",
+  "when": "2022-09-16T00:00:00+00:00",
+  "who": {
+    "name": "Revista Coleta Científica",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "NP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2022",
+    "policy_url": null
+  }
+}

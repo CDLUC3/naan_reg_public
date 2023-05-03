@@ -1,0 +1,16 @@
+{
+  "what": "79004",
+  "where": "http://www.ign.fr",
+  "target": "http://www.ign.fr/$arkpid",
+  "when": "2017-07-12T00:00:00+00:00",
+  "who": {
+    "name": "Institut National de l'Information Géographique et Forestière",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "NP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2017",
+    "policy_url": null
+  }
+}

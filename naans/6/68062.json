@@ -1,0 +1,16 @@
+{
+  "what": "68062",
+  "where": "https://www.be-my-media.com",
+  "target": "https://www.be-my-media.com/$arkpid",
+  "when": "2022-03-14T00:00:00+00:00",
+  "who": {
+    "name": "be. my media",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "FP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2022",
+    "policy_url": null
+  }
+}

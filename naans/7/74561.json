@@ -1,0 +1,16 @@
+{
+  "what": "74561",
+  "where": "https://jongleurpictures.com",
+  "target": "https://jongleurpictures.com/$arkpid",
+  "when": "2023-03-21T00:00:00+00:00",
+  "who": {
+    "name": "Jongleur Pictures LLC",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "FP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2023",
+    "policy_url": null
+  }
+}

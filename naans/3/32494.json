@@ -1,0 +1,16 @@
+{
+  "what": "32494",
+  "where": "http://www.unine.ch/iiun/home.html",
+  "target": "http://www.unine.ch/iiun/home.html/$arkpid",
+  "when": "2022-03-03T00:00:00+00:00",
+  "who": {
+    "name": "Computer science department of the University of Neuchâtel, Switzerland",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "NP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2022",
+    "policy_url": null
+  }
+}

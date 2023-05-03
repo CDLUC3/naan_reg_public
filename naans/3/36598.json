@@ -1,0 +1,16 @@
+{
+  "what": "36598",
+  "where": "https://n2d.eu",
+  "target": "https://n2d.eu/$arkpid",
+  "when": "2022-01-04T00:00:00+00:00",
+  "who": {
+    "name": "OpenJustice.be",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "NP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2022",
+    "policy_url": null
+  }
+}

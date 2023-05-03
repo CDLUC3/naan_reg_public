@@ -1,0 +1,16 @@
+{
+  "what": "26681",
+  "where": "https://bu.uphf.fr/s/signes-emergents/page/accueil",
+  "target": "https://bu.uphf.fr/s/signes-emergents/page/accueil/$arkpid",
+  "when": "2023-01-24T00:00:00+00:00",
+  "who": {
+    "name": "Signes Emergents",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "NP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2023",
+    "policy_url": null
+  }
+}

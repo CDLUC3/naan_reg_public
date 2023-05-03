@@ -1,0 +1,16 @@
+{
+  "what": "13684",
+  "where": "http://data.performing-arts.ch",
+  "target": "http://data.performing-arts.ch/$arkpid",
+  "when": "2023-01-24T00:00:00+00:00",
+  "who": {
+    "name": "SAPA Foundation, Swiss Archive of the Performing Arts",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "NP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2023",
+    "policy_url": null
+  }
+}

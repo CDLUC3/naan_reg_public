@@ -1,0 +1,16 @@
+{
+  "what": "41728",
+  "where": "https://denkmalpflege.zh.ch",
+  "target": "https://denkmalpflege.zh.ch/$arkpid",
+  "when": "2020-07-21T00:00:00+00:00",
+  "who": {
+    "name": "Kantonale Denkmalpflege Zürich",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "NP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2020",
+    "policy_url": null
+  }
+}

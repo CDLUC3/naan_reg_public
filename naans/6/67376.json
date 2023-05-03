@@ -1,0 +1,16 @@
+{
+  "what": "67376",
+  "where": "http://assimo.com",
+  "target": "http://assimo.com/$arkpid",
+  "when": "2018-10-30T00:00:00+00:00",
+  "who": {
+    "name": "NEOTIS",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "FP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2018",
+    "policy_url": null
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "what": "80444",
+  "where": "http://archiveswest.orbiscascade.org",
+  "target": "http://archiveswest.orbiscascade.org/$arkpid",
+  "when": "2006-01-06T00:00:00+00:00",
+  "who": {
+    "name": "Archives West",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "NP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2006",
+    "policy_url": null
+  }
+}

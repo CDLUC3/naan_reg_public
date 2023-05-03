@@ -1,0 +1,16 @@
+{
+  "what": "83011",
+  "where": "http://www.musee-bretagne.fr",
+  "target": "http://www.musee-bretagne.fr/$arkpid",
+  "when": "2017-06-06T00:00:00+00:00",
+  "who": {
+    "name": "Musée de Bretagne",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "NP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2017",
+    "policy_url": null
+  }
+}

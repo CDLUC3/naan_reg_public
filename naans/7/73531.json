@@ -1,0 +1,16 @@
+{
+  "what": "73531",
+  "where": "http://www.archives.var.fr",
+  "target": "http://www.archives.var.fr/$arkpid",
+  "when": "2013-02-28T00:00:00+00:00",
+  "who": {
+    "name": "Archives départementales du Var",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "NP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2013",
+    "policy_url": null
+  }
+}

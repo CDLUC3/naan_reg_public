@@ -1,0 +1,16 @@
+{
+  "what": "19156",
+  "where": "https://ark.participatory-archives.ch",
+  "target": "https://ark.participatory-archives.ch/$arkpid",
+  "when": "2022-04-14T00:00:00+00:00",
+  "who": {
+    "name": "Participatory Image Archives",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "NP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2022",
+    "policy_url": null
+  }
+}

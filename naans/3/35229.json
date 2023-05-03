@@ -1,0 +1,16 @@
+{
+  "what": "35229",
+  "where": "http://scmjournals.com/ojs/index.php/index/index",
+  "target": "http://scmjournals.com/ojs/index.php/index/index/$arkpid",
+  "when": "2018-09-17T00:00:00+00:00",
+  "who": {
+    "name": "SCM Journals",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "NP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2018",
+    "policy_url": null
+  }
+}

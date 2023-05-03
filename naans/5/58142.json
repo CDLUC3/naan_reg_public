@@ -1,0 +1,16 @@
+{
+  "what": "58142",
+  "where": "http://www.u-pem.fr",
+  "target": "http://www.u-pem.fr/$arkpid",
+  "when": "2018-06-11T00:00:00+00:00",
+  "who": {
+    "name": "Université Paris-Est Marne-la-Vallée",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "NP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2018",
+    "policy_url": null
+  }
+}

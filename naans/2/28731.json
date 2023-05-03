@@ -1,0 +1,16 @@
+{
+  "what": "28731",
+  "where": "https://www.revista.derc.org.br",
+  "target": "https://www.revista.derc.org.br/$arkpid",
+  "when": "2020-07-23T00:00:00+00:00",
+  "who": {
+    "name": "DERC - Departamento de Ergometria, Exercício, Cardiologia Nuclear e Reabilitação Cardiovascular da SBC",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "NP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2020",
+    "policy_url": null
+  }
+}
