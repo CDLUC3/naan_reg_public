@@ -1,0 +1,156 @@
+{
+  "title": "NAAN",
+  "type": "object",
+  "properties": {
+    "what": {
+      "title": "What",
+      "description": "The NAAN value, e.g. 12345",
+      "type": "string"
+    },
+    "where": {
+      "title": "Where",
+      "description": "URL of service endpoint accepting ARK identifiers.",
+      "type": "string"
+    },
+    "target": {
+      "title": "Target",
+      "description": "URL of service endpoint accepting ARK identifiers including subsitutionparameters $arkpid for full ARK or $pid for NAAN/suffix.",
+      "type": "string"
+    },
+    "when": {
+      "title": "When",
+      "description": "Date when this record was last modified.",
+      "type": "string",
+      "format": "date-time"
+    },
+    "who": {
+      "$ref": "#/definitions/NAAN_who"
+    },
+    "na_policy": {
+      "$ref": "#/definitions/NAAN_how"
+    },
+    "why": {
+      "title": "Why",
+      "description": "Purpose for this record, 'ARK'",
+      "type": "string"
+    },
+    "contact": {
+      "$ref": "#/definitions/NAAN_contact"
+    },
+    "comments": {
+      "title": "Comments",
+      "description": "Comments about NAAN record",
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "provider": {
+      "title": "Provider",
+      "type": "string"
+    }
+  },
+  "required": [
+    "what",
+    "where",
+    "target",
+    "when",
+    "who",
+    "na_policy",
+    "why",
+    "contact"
+  ],
+  "definitions": {
+    "NAAN_who": {
+      "title": "NAAN_who",
+      "description": "Organization responsible for NAAN",
+      "type": "object",
+      "properties": {
+        "name": {
+          "title": "Name",
+          "description": "Official organization name",
+          "type": "string"
+        },
+        "acronym": {
+          "title": "Acronym",
+          "description": "Optional display acronym derived from DNS name",
+          "type": "string"
+        },
+        "address": {
+          "title": "Address",
+          "description": "Physical address of organization",
+          "type": "string"
+        }
+      },
+      "required": [
+        "name"
+      ]
+    },
+    "NAAN_how": {
+      "title": "NAAN_how",
+      "description": "Policy and tenure of NAAN management",
+      "type": "object",
+      "properties": {
+        "orgtype": {
+          "title": "Orgtype",
+          "description": "Organization type, FP = For profit, NP = Not for profit.",
+          "type": "string"
+        },
+        "policy": {
+          "title": "Policy",
+          "description": "NR = No re-assignment. Once a base identifier-to-object association     has been made public, that association shall remain unique into     the indefinite future.OP = Opacity. Base identifiers shall be assigned with no widely     recognizable semantic information.CC = A check character is generated in assigned identifiers to guard     against common transcription errors.",
+          "type": "string"
+        },
+        "tenure": {
+          "title": "Tenure",
+          "description": "<start year YYYY of role tenure>[-<end of tenure> ]",
+          "type": "string"
+        },
+        "policy_url": {
+          "title": "Policy Url",
+          "description": "URL to narrative policy statement",
+          "type": "string"
+        }
+      },
+      "required": [
+        "orgtype",
+        "policy",
+        "tenure"
+      ]
+    },
+    "NAAN_contact": {
+      "title": "NAAN_contact",
+      "type": "object",
+      "properties": {
+        "name": {
+          "title": "Name",
+          "description": "Name of contact",
+          "type": "string"
+        },
+        "unit": {
+          "title": "Unit",
+          "description": "Name of contact organization",
+          "type": "string"
+        },
+        "tenure": {
+          "title": "Tenure",
+          "description": "<start year YYYY of role tenure>[-<end of tenure> ]",
+          "type": "string"
+        },
+        "email": {
+          "title": "Email",
+          "description": "Email address of contact",
+          "type": "string"
+        },
+        "phone": {
+          "title": "Phone",
+          "description": "Telephone number for contact",
+          "type": "string"
+        }
+      },
+      "required": [
+        "name"
+      ]
+    }
+  }
+}
