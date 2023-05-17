@@ -26,6 +26,7 @@ jobs:
         ls -la
         python naan_reg_json.py -p naan_reg_priv/main_naans > docs/naans_public.json
         python naan_reg_json.py -p naan_reg_priv/main_naans -f docs/naans 
+        cp templates/index.html docs/index.html
     - name: Publish documentation
       uses: peaceiris/actions-gh-pages@v3
       with:
