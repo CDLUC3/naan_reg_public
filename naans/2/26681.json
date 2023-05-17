@@ -1,7 +1,7 @@
 {
   "what": "26681",
-  "where": "https://bu.uphf.fr/s/signes-emergents/page/accueil",
-  "target": "https://bu.uphf.fr/s/signes-emergents/page/accueil/$arkpid",
+  "where": "https://bibnum.uphf.fr/s/signes-emergents/page/accueil",
+  "target": "https://bibnum.uphf.fr/s/signes-emergents/page/accueil/$arkpid",
   "when": "2023-01-24T00:00:00+00:00",
   "who": {
     "name": "Signes Emergents",

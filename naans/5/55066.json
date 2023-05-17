@@ -1,0 +1,16 @@
+{
+  "what": "55066",
+  "where": "https://sciencevolution.com",
+  "target": "https://sciencevolution.com/$arkpid",
+  "when": "2023-05-10T00:00:00+00:00",
+  "who": {
+    "name": "SCIENCEVOLUTION Centro de Investigación y Desarrollo",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "FP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2023",
+    "policy_url": null
+  }
+}

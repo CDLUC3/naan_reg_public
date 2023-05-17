@@ -1,0 +1,16 @@
+{
+  "what": "80716",
+  "where": "https://mathena-education.com",
+  "target": "https://mathena-education.com/$arkpid",
+  "when": "2023-05-04T00:00:00+00:00",
+  "who": {
+    "name": "Mathena Education",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "FP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2023",
+    "policy_url": null
+  }
+}

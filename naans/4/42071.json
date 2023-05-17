@@ -1,0 +1,16 @@
+{
+  "what": "42071",
+  "where": "https://revistasecauned.com/index.php/cda/gateway/plugin/pubIdResolver/ark:$id",
+  "target": "https://revistasecauned.com/index.php/cda/gateway/plugin/pubIdResolver/ark:$pid",
+  "when": "2023-05-12T00:00:00+00:00",
+  "who": {
+    "name": "Cuadernos de Administración",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "NP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2023",
+    "policy_url": null
+  }
+}
