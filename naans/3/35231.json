@@ -1,0 +1,16 @@
+{
+  "what": "35231",
+  "where": "https://aicla.org.br",
+  "target": "https://aicla.org.br/$arkpid",
+  "when": "2023-06-05T00:00:00+00:00",
+  "who": {
+    "name": "Academia Itapecuruense de Ciências, Letras e Artes",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "NP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2023",
+    "policy_url": null
+  }
+}

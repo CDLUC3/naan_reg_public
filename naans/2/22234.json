@@ -1,0 +1,16 @@
+{
+  "what": "22234",
+  "where": "https://lexidoo.fr",
+  "target": "https://lexidoo.fr/$arkpid",
+  "when": "2023-06-06T00:00:00+00:00",
+  "who": {
+    "name": "Lexidoo",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "FP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2023",
+    "policy_url": null
+  }
+}

@@ -17390,5 +17390,277 @@
       "tenure": "2023",
       "policy_url": null
     }
+  },
+  "77297": {
+    "what": "77297",
+    "where": "https://ksec.kalman.co.il",
+    "target": "https://ksec.kalman.co.il/$arkpid",
+    "when": "2023-05-22T00:00:00+00:00",
+    "who": {
+      "name": "KSEC",
+      "acronym": null
+    },
+    "na_policy": {
+      "orgtype": "NP",
+      "policy": "(:unkn) unknown",
+      "tenure": "2023",
+      "policy_url": null
+    }
+  },
+  "64642": {
+    "what": "64642",
+    "where": "https://ark.unige.ch",
+    "target": "https://ark.unige.ch/$arkpid",
+    "when": "2023-05-22T00:00:00+00:00",
+    "who": {
+      "name": "University of Geneva",
+      "acronym": null
+    },
+    "na_policy": {
+      "orgtype": "NP",
+      "policy": "(:unkn) unknown",
+      "tenure": "2023",
+      "policy_url": null
+    }
+  },
+  "51647": {
+    "what": "51647",
+    "where": "https://sonar.ch/fernuni",
+    "target": "https://sonar.ch/fernuni/$arkpid",
+    "when": "2023-05-22T00:00:00+00:00",
+    "who": {
+      "name": "FernUni Schweiz, UniDistance Suisse",
+      "acronym": null
+    },
+    "na_policy": {
+      "orgtype": "NP",
+      "policy": "(:unkn) unknown",
+      "tenure": "2023",
+      "policy_url": null
+    }
+  },
+  "38651": {
+    "what": "38651",
+    "where": "https://cartodebat.com",
+    "target": "https://cartodebat.com/$arkpid",
+    "when": "2023-05-23T00:00:00+00:00",
+    "who": {
+      "name": "Cartodebat",
+      "acronym": null
+    },
+    "na_policy": {
+      "orgtype": "FP",
+      "policy": "(:unkn) unknown",
+      "tenure": "2023",
+      "policy_url": null
+    }
+  },
+  "25655": {
+    "what": "25655",
+    "where": "https://www.delta-expert.com/GPO/web",
+    "target": "https://www.delta-expert.com/GPO/web/$arkpid",
+    "when": "2023-05-25T00:00:00+00:00",
+    "who": {
+      "name": "DELTA EXPERT",
+      "acronym": null
+    },
+    "na_policy": {
+      "orgtype": "FP",
+      "policy": "(:unkn) unknown",
+      "tenure": "2023",
+      "policy_url": null
+    }
+  },
+  "12658": {
+    "what": "12658",
+    "where": "https://susi.usi.ch",
+    "target": "https://susi.usi.ch/$arkpid",
+    "when": "2023-05-25T00:00:00+00:00",
+    "who": {
+      "name": "BiUSI - Biblioteche dell'Università della Svizzera italiana",
+      "acronym": null
+    },
+    "na_policy": {
+      "orgtype": "NP",
+      "policy": "(:unkn) unknown",
+      "tenure": "2023",
+      "policy_url": null
+    }
+  },
+  "86873": {
+    "what": "86873",
+    "where": "https://justodelacueva.org",
+    "target": "https://justodelacueva.org/$arkpid",
+    "when": "2023-05-30T00:00:00+00:00",
+    "who": {
+      "name": "Justo de la Cueva dokumentu eta artxibo gunea",
+      "acronym": null
+    },
+    "na_policy": {
+      "orgtype": "NP",
+      "policy": "(:unkn) unknown",
+      "tenure": "2023",
+      "policy_url": null
+    }
+  },
+  "74218": {
+    "what": "74218",
+    "where": "https://tirtha.niser.ac.in",
+    "target": "https://tirtha.niser.ac.in/$arkpid",
+    "when": "2023-05-31T00:00:00+00:00",
+    "who": {
+      "name": "Project Tirtha",
+      "acronym": null
+    },
+    "na_policy": {
+      "orgtype": "NP",
+      "policy": "(:unkn) unknown",
+      "tenure": "2023",
+      "policy_url": null
+    }
+  },
+  "61223": {
+    "what": "61223",
+    "where": "https://ICT.cenian.mx",
+    "target": "https://ict.cenian.mx/$arkpid",
+    "when": "2023-06-05T00:00:00+00:00",
+    "who": {
+      "name": "REDict",
+      "acronym": null
+    },
+    "na_policy": {
+      "orgtype": "FP",
+      "policy": "(:unkn) unknown",
+      "tenure": "2023",
+      "policy_url": null
+    }
+  },
+  "48227": {
+    "what": "48227",
+    "where": "https://periodicos.ifma.edu.br/redesign",
+    "target": "https://periodicos.ifma.edu.br/redesign/$arkpid",
+    "when": "2023-06-05T00:00:00+00:00",
+    "who": {
+      "name": "reDesign journal",
+      "acronym": null
+    },
+    "na_policy": {
+      "orgtype": "NP",
+      "policy": "(:unkn) unknown",
+      "tenure": "2023",
+      "policy_url": null
+    }
+  },
+  "35231": {
+    "what": "35231",
+    "where": "https://aicla.org.br",
+    "target": "https://aicla.org.br/$arkpid",
+    "when": "2023-06-05T00:00:00+00:00",
+    "who": {
+      "name": "Academia Itapecuruense de Ciências, Letras e Artes",
+      "acronym": null
+    },
+    "na_policy": {
+      "orgtype": "NP",
+      "policy": "(:unkn) unknown",
+      "tenure": "2023",
+      "policy_url": null
+    }
+  },
+  "22234": {
+    "what": "22234",
+    "where": "https://lexidoo.fr",
+    "target": "https://lexidoo.fr/$arkpid",
+    "when": "2023-06-06T00:00:00+00:00",
+    "who": {
+      "name": "Lexidoo",
+      "acronym": null
+    },
+    "na_policy": {
+      "orgtype": "FP",
+      "policy": "(:unkn) unknown",
+      "tenure": "2023",
+      "policy_url": null
+    }
+  },
+  "83794": {
+    "what": "83794",
+    "where": "https://www.ed.ac.uk",
+    "target": "https://www.ed.ac.uk/$arkpid",
+    "when": "2023-06-06T00:00:00+00:00",
+    "who": {
+      "name": "University of Edinburgh",
+      "acronym": null
+    },
+    "na_policy": {
+      "orgtype": "NP",
+      "policy": "(:unkn) unknown",
+      "tenure": "2023",
+      "policy_url": null
+    }
+  },
+  "70799": {
+    "what": "70799",
+    "where": "https://ub.uni-leipzig.de",
+    "target": "https://ub.uni-leipzig.de/$arkpid",
+    "when": "2023-06-06T00:00:00+00:00",
+    "who": {
+      "name": "Leipzig University Library",
+      "acronym": null
+    },
+    "na_policy": {
+      "orgtype": "NP",
+      "policy": "(:unkn) unknown",
+      "tenure": "2023",
+      "policy_url": null
+    }
+  },
+  "57803": {
+    "what": "57803",
+    "where": "https://www.ninjal.ac.jp",
+    "target": "https://www.ninjal.ac.jp/$arkpid",
+    "when": "2023-06-06T00:00:00+00:00",
+    "who": {
+      "name": "National Institute for Japanese Language and Linguistics",
+      "acronym": null
+    },
+    "na_policy": {
+      "orgtype": "NP",
+      "policy": "(:unkn) unknown",
+      "tenure": "2023",
+      "policy_url": null
+    }
+  },
+  "44807": {
+    "what": "44807",
+    "where": "https://NLI.org.il",
+    "target": "https://nli.org.il/$arkpid",
+    "when": "2023-06-06T00:00:00+00:00",
+    "who": {
+      "name": "National Library of Israel",
+      "acronym": null
+    },
+    "na_policy": {
+      "orgtype": "NP",
+      "policy": "(:unkn) unknown",
+      "tenure": "2023",
+      "policy_url": null
+    }
+  },
+  "31810": {
+    "what": "31810",
+    "where": "https://dlib.indiana.edu",
+    "target": "https://dlib.indiana.edu/$arkpid",
+    "when": "2023-06-06T00:00:00+00:00",
+    "who": {
+      "name": "Indiana University Library Technologies",
+      "acronym": null
+    },
+    "na_policy": {
+      "orgtype": "NP",
+      "policy": "(:unkn) unknown",
+      "tenure": "2023",
+      "policy_url": null
+    }
   }
 }

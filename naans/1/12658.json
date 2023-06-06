@@ -1,0 +1,16 @@
+{
+  "what": "12658",
+  "where": "https://susi.usi.ch",
+  "target": "https://susi.usi.ch/$arkpid",
+  "when": "2023-05-25T00:00:00+00:00",
+  "who": {
+    "name": "BiUSI - Biblioteche dell'Università della Svizzera italiana",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "NP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2023",
+    "policy_url": null
+  }
+}

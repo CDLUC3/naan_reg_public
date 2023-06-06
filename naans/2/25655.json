@@ -1,0 +1,16 @@
+{
+  "what": "25655",
+  "where": "https://www.delta-expert.com/GPO/web",
+  "target": "https://www.delta-expert.com/GPO/web/$arkpid",
+  "when": "2023-05-25T00:00:00+00:00",
+  "who": {
+    "name": "DELTA EXPERT",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "FP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2023",
+    "policy_url": null
+  }
+}

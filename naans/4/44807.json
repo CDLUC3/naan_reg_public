@@ -1,0 +1,16 @@
+{
+  "what": "44807",
+  "where": "https://NLI.org.il",
+  "target": "https://nli.org.il/$arkpid",
+  "when": "2023-06-06T00:00:00+00:00",
+  "who": {
+    "name": "National Library of Israel",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "NP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2023",
+    "policy_url": null
+  }
+}

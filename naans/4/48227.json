@@ -1,0 +1,16 @@
+{
+  "what": "48227",
+  "where": "https://periodicos.ifma.edu.br/redesign",
+  "target": "https://periodicos.ifma.edu.br/redesign/$arkpid",
+  "when": "2023-06-05T00:00:00+00:00",
+  "who": {
+    "name": "reDesign journal",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "NP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2023",
+    "policy_url": null
+  }
+}

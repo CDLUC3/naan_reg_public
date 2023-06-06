@@ -1,0 +1,16 @@
+{
+  "what": "83794",
+  "where": "https://www.ed.ac.uk",
+  "target": "https://www.ed.ac.uk/$arkpid",
+  "when": "2023-06-06T00:00:00+00:00",
+  "who": {
+    "name": "University of Edinburgh",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "NP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2023",
+    "policy_url": null
+  }
+}

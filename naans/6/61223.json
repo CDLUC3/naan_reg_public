@@ -1,0 +1,16 @@
+{
+  "what": "61223",
+  "where": "https://ICT.cenian.mx",
+  "target": "https://ict.cenian.mx/$arkpid",
+  "when": "2023-06-05T00:00:00+00:00",
+  "who": {
+    "name": "REDict",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "FP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2023",
+    "policy_url": null
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "what": "70799",
+  "where": "https://ub.uni-leipzig.de",
+  "target": "https://ub.uni-leipzig.de/$arkpid",
+  "when": "2023-06-06T00:00:00+00:00",
+  "who": {
+    "name": "Leipzig University Library",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "NP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2023",
+    "policy_url": null
+  }
+}
