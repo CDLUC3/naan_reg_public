@@ -1,4 +1,19 @@
-# naan_reg_json
+# naan_reg_public
+
+This is a public representation of the information contained in the private NAAN registry records.
+
+The content is expressed in JSON and is generated using a python script executed by a GitHub 
+action that retrieves the current copy of the `main_naans` file from the 
+[NAAN registry](https://github.com/CDLUC3/naan_reg_priv), parses the ANVL, and generates the 
+JSON records as a [single JSON document](https://cdluc3.github.io/naan_reg_public/naans_public.json) and also as 
+a [folder hierarchy of individual JSON records](https://cdluc3.github.io/naan_reg_public/naans/).
+
+The artifacts are published using GitHub pages, accessible at:
+
+[https://cdluc3.github.io/naan_reg_public/](https://cdluc3.github.io/naan_reg_public/)
+
+
+## The conversion script
 
 `naan_reg_json` provides a tool for converting NAAN registry ANVL to JSON. It 
 includes JSON-schema with generated docuemntation for private and publicly 
