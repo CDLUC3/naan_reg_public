@@ -112,7 +112,7 @@ $python naan_reg_json.py -s > schema/naan_schema.json
 ```
 and
 ```
-$python naan_reg_json.py -s -p > schema/naan_schema_public.json
+$python naan_reg_json.py -s -p > schema/public/naan_schema.json
 ```
 
 Schema documentation can be generated if `json-schema-for-humans` is installed:
@@ -122,7 +122,8 @@ pip install json-schema-for-humans
 
 To generate the schema documentation:
 ```
-generate-schema-doc --config-file docs_config.yaml ./schema ./schema/
+generate-schema-doc --config-file docs_config.yaml ./schema/naan_schema.json ./schema/
+generate-schema-doc --config-file docs_config.yaml ./schema/public/naan_schema.json ./schema/public/
 ```
 
 ## Acknowledgement
