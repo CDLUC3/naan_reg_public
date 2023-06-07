@@ -55,7 +55,7 @@ $python naan_reg_json.py ../naan_reg_priv/main_naans
     "who": {
       "name": "US National Library of Medicine",
       "acronym": null,
-      "address": "#REDACTED#"
+      "address": "8600 Rockville Pike, Bethesda, MD 20894, USA"
     },
     "na_policy": {
       "orgtype": "NP",
@@ -63,14 +63,18 @@ $python naan_reg_json.py ../naan_reg_priv/main_naans
       "tenure": "2001",
       "policy_url": null
     },
+    "test_identifier": null,
+    "service_provider": null,
+    "purpose": "unspecified",
     "why": "ARK",
     "contact": {
-      "name": "#REDACTED#",
+      "name": "Marill, Jennifer",
       "unit": null,
       "tenure": null,
-      "email": "#REDACTED#",
-      "phone": "#REDACTED#"
+      "email": "MarillJ@mail.nlm.nih.gov",
+      "phone": "+1 301-435-7072"
     },
+    "alternate_contact": null,
     "comments": null,
     "provider": null
   },
@@ -83,22 +87,27 @@ A public view of the ANVL to JSON can be generated using the `-p` or `--public` 
 $python naan_reg_json.py -p ../naan_reg_priv/main_naans
 
 {
-  "12025": {
+  "12025":{
     "what": "12025",
     "where": "http://www.nlm.nih.gov",
     "target": "http://www.nlm.nih.gov/$arkpid",
     "when": "2001-03-08T00:00:00+00:00",
     "who": {
-      "name": "US National Library of Medicine",
-      "acronym": null
+        "name": "US National Library of Medicine",
+        "acronym": null
     },
     "na_policy": {
-      "orgtype": "NP",
-      "policy": "(:unkn) unknown",
-      "tenure": "2001",
-      "policy_url": null
+        "orgtype": "NP",
+        "policy": "(:unkn) unknown",
+        "tenure": "2001",
+        "policy_url": null
+    },
+    "test_identifier": null,
+    "service_provider": null,
+    "purpose": "unspecified"
     }
   },
+  ...
 ```
 
 For JSON-schema generation, `pydantic` is required:
