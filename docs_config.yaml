@@ -1,7 +1,7 @@
 description_is_markdown: true
 minify: false
 show_toc: true
-template_name: md
+template_name: js
 badge_as_image: true
 show_heading_numbers: true
 with_footer: true
