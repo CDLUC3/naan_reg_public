@@ -450,7 +450,7 @@ class NAAN(PublicNAAN):
         return None
 
 
-def generate_index_html(naans, index):
+def generate_index_html2(naans, index):
     res = [
         "<!DOCTYPE html>",
         '<html lang="en">',
@@ -487,6 +487,33 @@ def generate_index_html(naans, index):
     ]
     return "\n".join(res)
 
+def generate_index_html(naans, index):
+    res = [
+        '<!DOCTYPE html>',
+        '<html lang="en">',
+        '<head><title>Public NAAN Records</title><meta charset="utf-8"></head>',
+        '<body>',
+    ]
+    keys = list(index)
+    keys.sort()
+    counts = {}
+    for k in keys:
+        i = k[0]
+        counts_entry = counts.get(i, {"n":0, "e":[]})
+        counts_entry["n"] = counts_entry["n"] + 1
+        counts_entry["e"].append({"naan": k, "name": naans[k].who.name})
+        counts[i] = counts_entry
+    for k,e in counts.items():
+        res.append('<details>')
+        res.append(f'<summary>Entries starting with {k} (n={e["n"]}):</summary>')
+        res.append("<table>")
+        res.append("<tr><th>NAAN</th><th>Name</th></tr>")
+        for entry in e['e']:
+            res.append(f"<tr><td><a href=\"{index[entry['naan']]}\">{entry['naan']}</a></td><td>{entry['name']}</td></tr>")
+        res.append("</table>")
+        res.append('</details>')
+    res.append("</body></html>")
+    return "\n".join(res)
 
 def load_naan_reg_priv(naan_src: str, public_only=False):
     anvl_parser = AnvlParser()
