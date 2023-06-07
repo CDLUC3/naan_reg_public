@@ -123,7 +123,9 @@ pip install json-schema-for-humans
 To generate the schema documentation:
 ```
 generate-schema-doc --config-file docs_config.yaml ./schema/naan_schema.json ./schema/
+generate-schema-doc --config-file docs_config.yaml --config template_name=md ./schema/naan_schema.json ./schema/
 generate-schema-doc --config-file docs_config.yaml ./schema/public/naan_schema.json ./schema/public/
+generate-schema-doc --config-file docs_config.yaml --config template_name=md ./schema/public/naan_schema.json ./schema/public/
 ```
 
 ## Acknowledgement
