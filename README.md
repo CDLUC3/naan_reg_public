@@ -16,8 +16,8 @@ The artifacts are published using GitHub pages, accessible at:
 ## The conversion script
 
 `naan_reg_json` provides a tool for converting NAAN registry ANVL to JSON. It 
-includes JSON-schema with generated docuemntation for private and publicly 
-visible NAAN records.
+includes JSON-schema with generated documentation for private and publicly 
+visible NAAN records. 
 
 
 ## Usage
@@ -40,7 +40,8 @@ optional arguments:
   -p, --public  Output public content only.
 ```
 
-For conversion from ANVL to JSON no additional dependencies are needed beyond Python3.8+. E.g. (portions redacted):
+For conversion from ANVL to JSON no additional dependencies are needed if using 
+Python3.8 or later. E.g. (portions redacted):
 
 ```
 $python naan_reg_json.py ../naan_reg_priv/main_naans
@@ -126,5 +127,5 @@ generate-schema-doc --config-file docs_config.yaml ./schema ./schema/
 
 ## Acknowledgement
 
-This work is supported in part by the California Digital Library.
+This work is supported by the California Digital Library.
 
