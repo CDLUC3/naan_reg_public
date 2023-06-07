@@ -12,5 +12,8 @@
     "policy": "NR, OP, CC",
     "tenure": "2015",
     "policy_url": "https://patrimoine.mines-paristech.fr/ark/policy"
-  }
+  },
+  "test_identifier": null,
+  "service_provider": null,
+  "purpose": "unspecified"
 }

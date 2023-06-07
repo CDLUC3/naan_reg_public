@@ -12,5 +12,8 @@
     "policy": "(:unkn) unknown",
     "tenure": "2016",
     "policy_url": null
-  }
+  },
+  "test_identifier": null,
+  "service_provider": null,
+  "purpose": "unspecified"
 }

@@ -12,5 +12,8 @@
     "policy": "NR, OP, CC",
     "tenure": "2002",
     "policy_url": "https://n2t.net/e/ark_ids.html"
-  }
+  },
+  "test_identifier": null,
+  "service_provider": null,
+  "purpose": "unspecified"
 }

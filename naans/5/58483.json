@@ -12,5 +12,8 @@
     "policy": "NR, OP",
     "tenure": "2009",
     "policy_url": "http://archives.somme.fr/download.cgi?filename=accounts/mnesys_ad80/datas/cms/aide_fr_v04_2.pdf"
-  }
+  },
+  "test_identifier": null,
+  "service_provider": null,
+  "purpose": "unspecified"
 }

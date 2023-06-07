@@ -12,5 +12,8 @@
     "policy": "NR, OP, CC",
     "tenure": "2005",
     "policy_url": "http://ark.bnf.fr/ark:/12148/bpt6k2102478.policy"
-  }
+  },
+  "test_identifier": null,
+  "service_provider": null,
+  "purpose": "unspecified"
 }

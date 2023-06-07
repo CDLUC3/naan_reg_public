@@ -12,5 +12,8 @@
     "policy": "NR, OP",
     "tenure": "2012",
     "policy_url": null
-  }
+  },
+  "test_identifier": null,
+  "service_provider": null,
+  "purpose": "unspecified"
 }
