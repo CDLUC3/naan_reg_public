@@ -1,0 +1,174 @@
+{
+  "title": "NAAN",
+  "type": "object",
+  "properties": {
+    "what": {
+      "title": "What",
+      "description": "The NAAN value, e.g. 12345",
+      "type": "string"
+    },
+    "where": {
+      "title": "Where",
+      "description": "URL of service endpoint accepting ARK identifiers.",
+      "type": "string"
+    },
+    "target": {
+      "title": "Target",
+      "description": "URL of service endpoint accepting ARK identifiers including subsitutionparameters $arkpid for full ARK or $pid for NAAN/suffix.",
+      "type": "string"
+    },
+    "when": {
+      "title": "When",
+      "description": "Date when this record was last modified.",
+      "type": "string",
+      "format": "date-time"
+    },
+    "who": {
+      "$ref": "#/definitions/NAAN_who"
+    },
+    "na_policy": {
+      "$ref": "#/definitions/NAAN_how"
+    },
+    "test_identifier": {
+      "title": "Test Identifier",
+      "description": "A specific, concrete ARK that you plan to support and that you will permit us touse periodically for testing service availability.",
+      "type": "string"
+    },
+    "service_provider": {
+      "title": "Service Provider",
+      "description": "A \"service provider\" is different from the NAAN holder organization. It provides technical assistance to the the NAAN organization such as content hosting, access, discovery, etc.",
+      "type": "string"
+    },
+    "purpose": {
+      "title": "Purpose",
+      "description": "What are you planning to assign ARKs to using the requested NAAN?Options: documents(text or page images, eg, journal articles, technical reports); audio - and / or video - based objects; non-text, non-audio / visual documents(eg, maps, posters, musical scores); datasets (eg, spreadsheets, collections of spreadsheets); records (eg, bibliographic records, archival finding aids); physical objects(eg, fine art, archaeological artifacts, scientific samples)concepts (eg, vocabulary terms, disease codes); agents (people, groups, and institutions as actors, eg, creators, contributors, publishers, performers, etc); other; unspecified; ",
+      "default": "unspecified",
+      "type": "string"
+    },
+    "why": {
+      "title": "Why",
+      "description": "Purpose for this record, 'ARK'",
+      "default": "ARK",
+      "type": "string"
+    },
+    "contact": {
+      "$ref": "#/definitions/NAAN_contact"
+    },
+    "alternate_contact": {
+      "$ref": "#/definitions/NAAN_contact"
+    },
+    "comments": {
+      "title": "Comments",
+      "description": "Comments about NAAN record",
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "provider": {
+      "title": "Provider",
+      "type": "string"
+    }
+  },
+  "required": [
+    "what",
+    "where",
+    "target",
+    "when",
+    "who",
+    "na_policy"
+  ],
+  "definitions": {
+    "NAAN_who": {
+      "title": "NAAN_who",
+      "description": "Organization responsible for NAAN",
+      "type": "object",
+      "properties": {
+        "name": {
+          "title": "Name",
+          "description": "Official organization name",
+          "type": "string"
+        },
+        "acronym": {
+          "title": "Acronym",
+          "description": "Optional display acronym derived from DNS name",
+          "type": "string"
+        },
+        "address": {
+          "title": "Address",
+          "description": "Physical address of organization",
+          "type": "string"
+        }
+      },
+      "required": [
+        "name"
+      ]
+    },
+    "NAAN_how": {
+      "title": "NAAN_how",
+      "description": "Policy and tenure of NAAN management",
+      "type": "object",
+      "properties": {
+        "orgtype": {
+          "title": "Orgtype",
+          "description": "Organization type, FP = For profit, NP = Not for profit.",
+          "type": "string"
+        },
+        "policy": {
+          "title": "Policy",
+          "description": "Which practices do you plan to implement when you assign the base name of your ARKs? The ARK base name is between your NAAN and any suffix; for example, in ark:12345/x6np1wh8k/c3.xsl the base name is x6np1wh8k. This information can help others make the best use of your ARKs. Please submit updates as your practices evolve. \n'''\nNR = No re-assignment. Once a base identifier-to-object association\n     has been made public, that association shall remain unique into\n     the indefinite future.\nOP = Opacity. Base identifiers shall be assigned with no widely\n     recognizable semantic information.\nCC = A check character is generated in assigned identifiers to guard\n     against common transcription errors.\n'''\n",
+          "type": "string"
+        },
+        "tenure": {
+          "title": "Tenure",
+          "description": "<start year YYYY of role tenure>[-<end of tenure> ]",
+          "type": "string"
+        },
+        "policy_url": {
+          "title": "Policy Url",
+          "description": "URL to narrative policy statement",
+          "type": "string"
+        }
+      },
+      "required": [
+        "orgtype",
+        "policy",
+        "tenure"
+      ]
+    },
+    "NAAN_contact": {
+      "title": "NAAN_contact",
+      "type": "object",
+      "properties": {
+        "name": {
+          "title": "Name",
+          "description": "Name of contact",
+          "type": "string"
+        },
+        "unit": {
+          "title": "Unit",
+          "description": "Name of contact organization",
+          "type": "string"
+        },
+        "tenure": {
+          "title": "Tenure",
+          "description": "<start year YYYY of role tenure>[-<end of tenure> ]",
+          "type": "string"
+        },
+        "email": {
+          "title": "Email",
+          "description": "Email address of contact",
+          "type": "string"
+        },
+        "phone": {
+          "title": "Phone",
+          "description": "Telephone number for contact",
+          "type": "string"
+        }
+      },
+      "required": [
+        "name"
+      ]
+    }
+  }
+}
