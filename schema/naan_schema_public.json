@@ -28,6 +28,11 @@
     },
     "na_policy": {
       "$ref": "#/definitions/NAAN_how"
+    },
+    "test_identifier": {
+      "title": "Test Identifier",
+      "description": "A specific, concrete ARK that you plan to support and that you will permit us touse periodically for testing service availability.",
+      "type": "string"
     }
   },
   "required": [
@@ -36,7 +41,8 @@
     "target",
     "when",
     "who",
-    "na_policy"
+    "na_policy",
+    "test_identifier"
   ],
   "definitions": {
     "PublicNAAN_who": {
@@ -71,7 +77,7 @@
         },
         "policy": {
           "title": "Policy",
-          "description": "NR = No re-assignment. Once a base identifier-to-object association     has been made public, that association shall remain unique into     the indefinite future.OP = Opacity. Base identifiers shall be assigned with no widely     recognizable semantic information.CC = A check character is generated in assigned identifiers to guard     against common transcription errors.",
+          "description": "Which practices do you plan to implement when you assign the base name of your ARKs? The ARK base name is between your NAAN and any suffix; for example, in ark:12345/x6np1wh8k/c3.xsl the base name is x6np1wh8k. This information can help others make the best use of your ARKs. Please submit updates as your practices evolve. \n'''\nNR = No re-assignment. Once a base identifier-to-object association\n     has been made public, that association shall remain unique into\n     the indefinite future.\nOP = Opacity. Base identifiers shall be assigned with no widely\n     recognizable semantic information.\nCC = A check character is generated in assigned identifiers to guard\n     against common transcription errors.\n'''\n",
           "type": "string"
         },
         "tenure": {

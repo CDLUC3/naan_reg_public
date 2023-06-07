@@ -12,6 +12,7 @@
   - [6.2. Property `PublicNAAN > na_policy > policy`](#na_policy_policy)
   - [6.3. Property `PublicNAAN > na_policy > tenure`](#na_policy_tenure)
   - [6.4. Property `PublicNAAN > na_policy > policy_url`](#na_policy_policy_url)
+- [7. Property `PublicNAAN > test_identifier`](#test_identifier)
 
 
 
@@ -27,14 +28,15 @@
 
 
 
-| Property                   | Pattern | Type   | Deprecated | Definition                      | Title/Description                                                  |
-| -------------------------- | ------- | ------ | ---------- | ------------------------------- | ------------------------------------------------------------------ |
-| + [what](#what )           | No      | string | No         | -                               | What                                                               |
-| + [where](#where )         | No      | string | No         | -                               | Where                                                              |
-| + [target](#target )       | No      | string | No         | -                               | Target                                                             |
-| + [when](#when )           | No      | string | No         | -                               | When                                                               |
-| + [who](#who )             | No      | object | No         | In #/definitions/PublicNAAN_who | Publicly visible information for organization responsible for NAAN |
-| + [na_policy](#na_policy ) | No      | object | No         | In #/definitions/NAAN_how       | Policy and tenure of NAAN management                               |
+| Property                               | Pattern | Type   | Deprecated | Definition                      | Title/Description                                                  |
+| -------------------------------------- | ------- | ------ | ---------- | ------------------------------- | ------------------------------------------------------------------ |
+| + [what](#what )                       | No      | string | No         | -                               | What                                                               |
+| + [where](#where )                     | No      | string | No         | -                               | Where                                                              |
+| + [target](#target )                   | No      | string | No         | -                               | Target                                                             |
+| + [when](#when )                       | No      | string | No         | -                               | When                                                               |
+| + [who](#who )                         | No      | object | No         | In #/definitions/PublicNAAN_who | Publicly visible information for organization responsible for NAAN |
+| + [na_policy](#na_policy )             | No      | object | No         | In #/definitions/NAAN_how       | Policy and tenure of NAAN management                               |
+| + [test_identifier](#test_identifier ) | No      | string | No         | -                               | Test Identifier                                                    |
 
 
 
@@ -299,7 +301,17 @@
 | **Required** | Yes      |
 
 
-**Description:** NR = No re-assignment. Once a base identifier-to-object association     has been made public, that association shall remain unique into     the indefinite future.OP = Opacity. Base identifiers shall be assigned with no widely     recognizable semantic information.CC = A check character is generated in assigned identifiers to guard     against common transcription errors.
+**Description:** Which practices do you plan to implement when you assign the base name of your ARKs? The ARK base name is between your NAAN and any suffix; for example, in ark:12345/x6np1wh8k/c3.xsl the base name is x6np1wh8k. This information can help others make the best use of your ARKs. Please submit updates as your practices evolve. 
+'''
+NR = No re-assignment. Once a base identifier-to-object association
+     has been made public, that association shall remain unique into
+     the indefinite future.
+OP = Opacity. Base identifiers shall be assigned with no widely
+     recognizable semantic information.
+CC = A check character is generated in assigned identifiers to guard
+     against common transcription errors.
+'''
+
 
 
 
@@ -361,5 +373,30 @@
 
 
 
+
+## <a name="test_identifier"></a>7. Property `PublicNAAN > test_identifier`
+
+
+
+
+**Title:** Test Identifier
+
+|              |          |
+| ------------ | -------- |
+| **Type**     | `string` |
+| **Required** | Yes      |
+
+
+**Description:** A specific, concrete ARK that you plan to support and that you will permit us touse periodically for testing service availability.
+
+
+
+
+
+
+
+
+
+
 ----------------------------------------------------------------------------------------------------------------------------
-Generated using [json-schema-for-humans](https://github.com/coveooss/json-schema-for-humans) on 2023-04-17 at 11:07:41 -0400
+Generated using [json-schema-for-humans](https://github.com/coveooss/json-schema-for-humans) on 2023-06-07 at 09:21:18 -0400
