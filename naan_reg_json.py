@@ -246,13 +246,21 @@ class NAAN_how:
     policy: str = dataclasses.field(
         metadata=dict(
             description=(
-                "NR = No re-assignment. Once a base identifier-to-object association"
-                "     has been made public, that association shall remain unique into"
-                "     the indefinite future."
-                "OP = Opacity. Base identifiers shall be assigned with no widely"
-                "     recognizable semantic information."
-                "CC = A check character is generated in assigned identifiers to guard"
-                "     against common transcription errors."
+                "Which practices do you plan to implement when you assign the base name "
+                "of your ARKs? The ARK base name is between your NAAN and any suffix; for "
+                "example, in ark:12345/x6np1wh8k/c3.xsl the base name is x6np1wh8k. This "
+                "information can help others make the best use of your ARKs. Please submit "
+                "updates as your practices evolve. "
+                "\n"
+                "'''\n"
+                "NR = No re-assignment. Once a base identifier-to-object association\n"
+                "     has been made public, that association shall remain unique into\n"
+                "     the indefinite future.\n"
+                "OP = Opacity. Base identifiers shall be assigned with no widely\n"
+                "     recognizable semantic information.\n"
+                "CC = A check character is generated in assigned identifiers to guard\n"
+                "     against common transcription errors.\n"
+                "'''\n"
             )
         )
     )
@@ -305,6 +313,44 @@ class PublicNAAN:
     )
     who: PublicNAAN_who
     na_policy: NAAN_how
+    test_identifier: str = dataclasses.field(
+        default=None,
+        metadata=dict(
+            description=(
+                "A specific, concrete ARK that you plan to support and that you will permit us to"
+                "use periodically for testing service availability."
+            )
+        )
+    )
+    service_provider: str = dataclasses.field(
+        default=None,
+        metadata=dict(
+            description=(
+                'A "service provider" is different from the NAAN holder organization. It provides '
+                "technical assistance to the the NAAN organization such as content hosting, access, "
+                "discovery, etc."
+            )
+        )
+    )
+    purpose: str = dataclasses.field(
+        default="unspecified",
+        metadata=dict(
+            description=(
+                "What are you planning to assign ARKs to using the requested NAAN?"
+                "Options: "
+                "documents(text or page images, eg, journal articles, technical reports); "
+                "audio - and / or video - based objects; "
+                "non-text, non-audio / visual documents(eg, maps, posters, musical scores); "
+                "datasets (eg, spreadsheets, collections of spreadsheets); "
+                "records (eg, bibliographic records, archival finding aids); "
+                "physical objects(eg, fine art, archaeological artifacts, scientific samples)"
+                "concepts (eg, vocabulary terms, disease codes); "
+                "agents (people, groups, and institutions as actors, eg, creators, contributors, publishers, performers, etc); "
+                "other; "
+                "unspecified; "
+            )
+        )
+    )
 
     def as_flat(self) -> dict:
         return {
@@ -319,9 +365,11 @@ class PublicNAAN:
 class NAAN(PublicNAAN):
     who: NAAN_who
     why: str = dataclasses.field(
+        default='ARK',
         metadata=dict(description="Purpose for this record, 'ARK'")
     )
-    contact: NAAN_contact
+    contact: NAAN_contact=None
+    alternate_contact: NAAN_contact=None
     comments: typing.Optional[typing.List[dict]] = dataclasses.field(
         default=None, metadata=dict(description="Comments about NAAN record")
     )
@@ -336,7 +384,8 @@ class NAAN(PublicNAAN):
     def as_public(self) -> PublicNAAN:
         public_who = PublicNAAN_who(self.who.name, self.who.acronym)
         public = PublicNAAN(
-            self.what, self.where, self.target, self.when, public_who, self.na_policy
+            self.what, self.where, self.target, self.when, public_who, self.na_policy,
+            self.test_identifier, self.service_provider, self.purpose
         )
         return public
 
@@ -400,34 +449,43 @@ class NAAN(PublicNAAN):
             return cls(**res)
         return None
 
+
 def generate_index_html(naans, index):
     res = [
-        '<!DOCTYPE html>',
+        "<!DOCTYPE html>",
         '<html lang="en">',
-        '<head><title>Public NAAN Records</title><meta charset="utf-8"></head>',
-        '<body>',
+        "<head>",
+        '<title>Public NAAN Records</title><meta charset="utf-8">',
+        "</head>",
+        "<body>",
+        '<div id="naans">' '<input class="search" placeholder="Search" />',
+        '<button class="sort" data-sort="name">Sort by name</button>',
+        "<table><thead>",
+        "<tr><th>NAAN</th><th>Name</th></tr>",
+        '</thead><tbody class="list">',
     ]
     keys = list(index)
     keys.sort()
     counts = {}
     for k in keys:
-        i = k[0]
-        counts_entry = counts.get(i, {"n":0, "e":[]})
-        counts_entry["n"] = counts_entry["n"] + 1
-        counts_entry["e"].append({"naan": k, "name": naans[k].who.name})
-        counts[i] = counts_entry
-    for k,e in counts.items():
-        res.append('<details>')
-        res.append(f'<summary>Entries starting with {k} (n={e["n"]}):</summary>')
-        res.append("<table>")
-        res.append("<tr><th>NAAN</th><th>Name</th></tr>")
-        for entry in e['e']:
-            res.append(f"<tr><td><a href=\"{index[entry['naan']]}\">{entry['naan']}</a></td><td>{entry['name']}</td></tr>")
-        res.append("</table>")
-        res.append('</details>')
-    res.append("</body></html>")
+        res.append(
+            f'<tr><td class="naan">{k}</td><td class="name">{naans[k].who.name}</td></tr>'
+        )
+    res += [
+        "</tbody>",
+        "</table>",
+        "</div>",
+        '<script src="//cdnjs.cloudflare.com/ajax/libs/list.js/2.3.1/list.min.js"></script>',
+        "<script>",
+        "const options= {",
+        '  valueNames: ["naan","name"]',
+        "};",
+        'let naanList = new List("naans", options);',
+        "</script>",
+        "</body>",
+        "</html>",
+    ]
     return "\n".join(res)
-
 
 
 def load_naan_reg_priv(naan_src: str, public_only=False):
