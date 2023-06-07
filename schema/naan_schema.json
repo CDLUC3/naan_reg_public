@@ -1,5 +1,5 @@
 {
-  "title": "PublicNAAN",
+  "title": "NAAN",
   "type": "object",
   "properties": {
     "what": {
@@ -24,7 +24,7 @@
       "format": "date-time"
     },
     "who": {
-      "$ref": "#/definitions/PublicNAAN_who"
+      "$ref": "#/definitions/NAAN_who"
     },
     "na_policy": {
       "$ref": "#/definitions/NAAN_how"
@@ -44,6 +44,30 @@
       "description": "What are you planning to assign ARKs to using the requested NAAN?Options: documents(text or page images, eg, journal articles, technical reports); audio - and / or video - based objects; non-text, non-audio / visual documents(eg, maps, posters, musical scores); datasets (eg, spreadsheets, collections of spreadsheets); records (eg, bibliographic records, archival finding aids); physical objects(eg, fine art, archaeological artifacts, scientific samples)concepts (eg, vocabulary terms, disease codes); agents (people, groups, and institutions as actors, eg, creators, contributors, publishers, performers, etc); other; unspecified; ",
       "default": "unspecified",
       "type": "string"
+    },
+    "why": {
+      "title": "Why",
+      "description": "Purpose for this record, 'ARK'",
+      "default": "ARK",
+      "type": "string"
+    },
+    "contact": {
+      "$ref": "#/definitions/NAAN_contact"
+    },
+    "alternate_contact": {
+      "$ref": "#/definitions/NAAN_contact"
+    },
+    "comments": {
+      "title": "Comments",
+      "description": "Comments about NAAN record",
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "provider": {
+      "title": "Provider",
+      "type": "string"
     }
   },
   "required": [
@@ -55,9 +79,9 @@
     "na_policy"
   ],
   "definitions": {
-    "PublicNAAN_who": {
-      "title": "PublicNAAN_who",
-      "description": "Publicly visible information for organization responsible for NAAN",
+    "NAAN_who": {
+      "title": "NAAN_who",
+      "description": "Organization responsible for NAAN",
       "type": "object",
       "properties": {
         "name": {
@@ -68,6 +92,11 @@
         "acronym": {
           "title": "Acronym",
           "description": "Optional display acronym derived from DNS name",
+          "type": "string"
+        },
+        "address": {
+          "title": "Address",
+          "description": "Physical address of organization",
           "type": "string"
         }
       },
@@ -105,6 +134,40 @@
         "orgtype",
         "policy",
         "tenure"
+      ]
+    },
+    "NAAN_contact": {
+      "title": "NAAN_contact",
+      "type": "object",
+      "properties": {
+        "name": {
+          "title": "Name",
+          "description": "Name of contact",
+          "type": "string"
+        },
+        "unit": {
+          "title": "Unit",
+          "description": "Name of contact organization",
+          "type": "string"
+        },
+        "tenure": {
+          "title": "Tenure",
+          "description": "<start year YYYY of role tenure>[-<end of tenure> ]",
+          "type": "string"
+        },
+        "email": {
+          "title": "Email",
+          "description": "Email address of contact",
+          "type": "string"
+        },
+        "phone": {
+          "title": "Phone",
+          "description": "Telephone number for contact",
+          "type": "string"
+        }
+      },
+      "required": [
+        "name"
       ]
     }
   }

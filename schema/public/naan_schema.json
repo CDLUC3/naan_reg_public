@@ -33,6 +33,17 @@
       "title": "Test Identifier",
       "description": "A specific, concrete ARK that you plan to support and that you will permit us touse periodically for testing service availability.",
       "type": "string"
+    },
+    "service_provider": {
+      "title": "Service Provider",
+      "description": "A \"service provider\" is different from the NAAN holder organization. It provides technical assistance to the the NAAN organization such as content hosting, access, discovery, etc.",
+      "type": "string"
+    },
+    "purpose": {
+      "title": "Purpose",
+      "description": "What are you planning to assign ARKs to using the requested NAAN?Options: documents(text or page images, eg, journal articles, technical reports); audio - and / or video - based objects; non-text, non-audio / visual documents(eg, maps, posters, musical scores); datasets (eg, spreadsheets, collections of spreadsheets); records (eg, bibliographic records, archival finding aids); physical objects(eg, fine art, archaeological artifacts, scientific samples)concepts (eg, vocabulary terms, disease codes); agents (people, groups, and institutions as actors, eg, creators, contributors, publishers, performers, etc); other; unspecified; ",
+      "default": "unspecified",
+      "type": "string"
     }
   },
   "required": [
@@ -41,8 +52,7 @@
     "target",
     "when",
     "who",
-    "na_policy",
-    "test_identifier"
+    "na_policy"
   ],
   "definitions": {
     "PublicNAAN_who": {
