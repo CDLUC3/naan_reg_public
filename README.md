@@ -68,11 +68,11 @@ $python naan_reg_json.py ../naan_reg_priv/main_naans
     "purpose": "unspecified",
     "why": "ARK",
     "contact": {
-      "name": "Marill, Jennifer",
+      "name": "M",
       "unit": null,
       "tenure": null,
-      "email": "MarillJ@mail.nlm.nih.gov",
-      "phone": "+1 301-435-7072"
+      "email": "",
+      "phone": ""
     },
     "alternate_contact": null,
     "comments": null,
