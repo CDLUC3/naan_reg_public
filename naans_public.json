@@ -9106,7 +9106,7 @@
     "target": "http://www.europresse.com/$arkpid",
     "when": "2018-09-28T00:00:00+00:00",
     "who": {
-      "name": "CEDROM-SNI",
+      "name": "CISION",
       "acronym": null
     },
     "na_policy": {
@@ -15790,11 +15790,11 @@
   },
   "63274": {
     "what": "63274",
-    "where": "https://www.zhbluzern.ch",
-    "target": "https://www.zhbluzern.ch/$arkpid",
+    "where": "https://zentralgut.ch/resolver?field=MD_PI_ARK&identifier=",
+    "target": "https://zentralgut.ch/resolver/$arkpid?field=MD_PI_ARK&identifier=",
     "when": "2021-09-13T00:00:00+00:00",
     "who": {
-      "name": "ZHB Luzern",
+      "name": "ZentralGut.ch",
       "acronym": null
     },
     "na_policy": {
@@ -20844,8 +20844,8 @@
   },
   "35231": {
     "what": "35231",
-    "where": "https://aicla.org.br",
-    "target": "https://aicla.org.br/$arkpid",
+    "where": "https://revistapergaminho.aicla.org.br/index.php/pergaminho/gateway/plugin/pubIdResolver",
+    "target": "https://revistapergaminho.aicla.org.br/index.php/pergaminho/gateway/plugin/pubIdResolver/$arkpid",
     "when": "2023-06-05T00:00:00+00:00",
     "who": {
       "name": "Academia Itapecuruense de Ciências, Letras e Artes",
@@ -21043,6 +21043,139 @@
     },
     "na_policy": {
       "orgtype": "NP",
+      "policy": "(:unkn) unknown",
+      "tenure": "2023",
+      "policy_url": null
+    },
+    "test_identifier": null,
+    "service_provider": null,
+    "purpose": "unspecified"
+  },
+  "54383": {
+    "what": "54383",
+    "where": "https://www.efficience.com",
+    "target": "https://www.efficience.com/$arkpid",
+    "when": "2023-06-14T00:00:00+00:00",
+    "who": {
+      "name": "Efficience Digitale",
+      "acronym": null
+    },
+    "na_policy": {
+      "orgtype": "FP",
+      "policy": "(:unkn) unknown",
+      "tenure": "2023",
+      "policy_url": null
+    },
+    "test_identifier": null,
+    "service_provider": null,
+    "purpose": "unspecified"
+  },
+  "41386": {
+    "what": "41386",
+    "where": "https://vawe.hu",
+    "target": "https://vawe.hu/$arkpid",
+    "when": "2023-06-18T00:00:00+00:00",
+    "who": {
+      "name": "Varga Webkiadó",
+      "acronym": null
+    },
+    "na_policy": {
+      "orgtype": "FP",
+      "policy": "(:unkn) unknown",
+      "tenure": "2023",
+      "policy_url": null
+    },
+    "test_identifier": null,
+    "service_provider": null,
+    "purpose": "unspecified"
+  },
+  "28391": {
+    "what": "28391",
+    "where": "https://hetbehoudenblik.eu/collectie",
+    "target": "https://hetbehoudenblik.eu/collectie/$arkpid",
+    "when": "2023-06-20T00:00:00+00:00",
+    "who": {
+      "name": "Stichting Het Behouden Blik",
+      "acronym": null
+    },
+    "na_policy": {
+      "orgtype": "NP",
+      "policy": "(:unkn) unknown",
+      "tenure": "2023",
+      "policy_url": null
+    },
+    "test_identifier": null,
+    "service_provider": null,
+    "purpose": "unspecified"
+  },
+  "15396": {
+    "what": "15396",
+    "where": "https://www.collectiegroningen.nl/collectie",
+    "target": "https://www.collectiegroningen.nl/collectie/$arkpid",
+    "when": "2023-06-20T00:00:00+00:00",
+    "who": {
+      "name": "Museum Wierdenland",
+      "acronym": null
+    },
+    "na_policy": {
+      "orgtype": "NP",
+      "policy": "(:unkn) unknown",
+      "tenure": "2023",
+      "policy_url": null
+    },
+    "test_identifier": null,
+    "service_provider": null,
+    "purpose": "unspecified"
+  },
+  "89951": {
+    "what": "89951",
+    "where": "https://collectiegroningen.nl/collectie",
+    "target": "https://collectiegroningen.nl/collectie/$arkpid",
+    "when": "2023-06-20T00:00:00+00:00",
+    "who": {
+      "name": "Museum Klooster Ter Apel",
+      "acronym": null
+    },
+    "na_policy": {
+      "orgtype": "NP",
+      "policy": "(:unkn) unknown",
+      "tenure": "2023",
+      "policy_url": null
+    },
+    "test_identifier": null,
+    "service_provider": null,
+    "purpose": "unspecified"
+  },
+  "76955": {
+    "what": "76955",
+    "where": "https://egyhaztortenetiszemle.hu",
+    "target": "https://egyhaztortenetiszemle.hu/$arkpid",
+    "when": "2023-06-21T00:00:00+00:00",
+    "who": {
+      "name": "Egyháztörténeti Szemle",
+      "acronym": null
+    },
+    "na_policy": {
+      "orgtype": "FP",
+      "policy": "(:unkn) unknown",
+      "tenure": "2023",
+      "policy_url": null
+    },
+    "test_identifier": null,
+    "service_provider": null,
+    "purpose": "unspecified"
+  },
+  "63959": {
+    "what": "63959",
+    "where": "https://acad.hu",
+    "target": "https://acad.hu/$arkpid",
+    "when": "2023-06-21T00:00:00+00:00",
+    "who": {
+      "name": "Sárospataki Füzetek",
+      "acronym": null
+    },
+    "na_policy": {
+      "orgtype": "FP",
       "policy": "(:unkn) unknown",
       "tenure": "2023",
       "policy_url": null

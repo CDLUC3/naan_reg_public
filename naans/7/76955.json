@@ -1,0 +1,19 @@
+{
+  "what": "76955",
+  "where": "https://egyhaztortenetiszemle.hu",
+  "target": "https://egyhaztortenetiszemle.hu/$arkpid",
+  "when": "2023-06-21T00:00:00+00:00",
+  "who": {
+    "name": "Egyháztörténeti Szemle",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "FP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2023",
+    "policy_url": null
+  },
+  "test_identifier": null,
+  "service_provider": null,
+  "purpose": "unspecified"
+}

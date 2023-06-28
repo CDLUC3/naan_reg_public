@@ -1,7 +1,7 @@
 {
   "what": "35231",
-  "where": "https://aicla.org.br",
-  "target": "https://aicla.org.br/$arkpid",
+  "where": "https://revistapergaminho.aicla.org.br/index.php/pergaminho/gateway/plugin/pubIdResolver",
+  "target": "https://revistapergaminho.aicla.org.br/index.php/pergaminho/gateway/plugin/pubIdResolver/$arkpid",
   "when": "2023-06-05T00:00:00+00:00",
   "who": {
     "name": "Academia Itapecuruense de Ciências, Letras e Artes",
