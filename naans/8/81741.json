@@ -1,7 +1,7 @@
 {
   "what": "81741",
-  "where": "https://www.amsterdamtimemachine.nl",
-  "target": "https://www.amsterdamtimemachine.nl/$arkpid",
+  "where": "https://id.amsterdamtimemachine.nl",
+  "target": "https://id.amsterdamtimemachine.nl/$arkpid",
   "when": "2022-12-14T00:00:00+00:00",
   "who": {
     "name": "Amsterdam Time Machine",

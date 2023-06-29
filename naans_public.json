@@ -19609,8 +19609,8 @@
   },
   "81741": {
     "what": "81741",
-    "where": "https://www.amsterdamtimemachine.nl",
-    "target": "https://www.amsterdamtimemachine.nl/$arkpid",
+    "where": "https://id.amsterdamtimemachine.nl",
+    "target": "https://id.amsterdamtimemachine.nl/$arkpid",
     "when": "2022-12-14T00:00:00+00:00",
     "who": {
       "name": "Amsterdam Time Machine",
@@ -21176,6 +21176,25 @@
     },
     "na_policy": {
       "orgtype": "FP",
+      "policy": "(:unkn) unknown",
+      "tenure": "2023",
+      "policy_url": null
+    },
+    "test_identifier": null,
+    "service_provider": null,
+    "purpose": "unspecified"
+  },
+  "50962": {
+    "what": "50962",
+    "where": "https://www.wacren.net",
+    "target": "https://www.wacren.net/$arkpid",
+    "when": "2023-06-28T00:00:00+00:00",
+    "who": {
+      "name": "West and Central African Research and Education Network (WACREN)",
+      "acronym": null
+    },
+    "na_policy": {
+      "orgtype": "NP",
       "policy": "(:unkn) unknown",
       "tenure": "2023",
       "policy_url": null
