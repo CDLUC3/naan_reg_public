@@ -1,0 +1,19 @@
+{
+  "what": "34888",
+  "where": "https://www.archives.remire-montjoly.fr",
+  "target": "https://www.archives.remire-montjoly.fr/$arkpid",
+  "when": "2023-07-10T00:00:00+00:00",
+  "who": {
+    "name": "Archives Municipales de Rémire-Montjoly",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "NP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2023",
+    "policy_url": null
+  },
+  "test_identifier": null,
+  "service_provider": null,
+  "purpose": "unspecified"
+}

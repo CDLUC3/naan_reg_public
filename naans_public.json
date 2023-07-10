@@ -21202,5 +21202,176 @@
     "test_identifier": null,
     "service_provider": null,
     "purpose": "unspecified"
+  },
+  "37967": {
+    "what": "37967",
+    "where": "https://museum-lehavre.fr",
+    "target": "https://museum-lehavre.fr/$arkpid",
+    "when": "2023-06-30T00:00:00+00:00",
+    "who": {
+      "name": "Museum du Havre",
+      "acronym": null
+    },
+    "na_policy": {
+      "orgtype": "NP",
+      "policy": "(:unkn) unknown",
+      "tenure": "2023",
+      "policy_url": null
+    },
+    "test_identifier": null,
+    "service_provider": null,
+    "purpose": "unspecified"
+  },
+  "24972": {
+    "what": "24972",
+    "where": "http://aipmel.it",
+    "target": "http://aipmel.it/$arkpid",
+    "when": "2023-07-03T00:00:00+00:00",
+    "who": {
+      "name": "AIPMEL",
+      "acronym": null
+    },
+    "na_policy": {
+      "orgtype": "NP",
+      "policy": "(:unkn) unknown",
+      "tenure": "2023",
+      "policy_url": null
+    },
+    "test_identifier": null,
+    "service_provider": null,
+    "purpose": "unspecified"
+  },
+  "12316": {
+    "what": "12316",
+    "where": "https://sch.com.pk",
+    "target": "https://sch.com.pk/$arkpid",
+    "when": "2023-07-03T00:00:00+00:00",
+    "who": {
+      "name": "PAKISTAN JOURNAL OF LINGUISTICS",
+      "acronym": null
+    },
+    "na_policy": {
+      "orgtype": "FP",
+      "policy": "(:unkn) unknown",
+      "tenure": "2023",
+      "policy_url": null
+    },
+    "test_identifier": null,
+    "service_provider": null,
+    "purpose": "unspecified"
+  },
+  "86531": {
+    "what": "86531",
+    "where": "https://archives.thionville.fr",
+    "target": "https://archives.thionville.fr/$arkpid",
+    "when": "2023-07-03T00:00:00+00:00",
+    "who": {
+      "name": "Archives municipales de Thionville",
+      "acronym": null
+    },
+    "na_policy": {
+      "orgtype": "NP",
+      "policy": "(:unkn) unknown",
+      "tenure": "2023",
+      "policy_url": null
+    },
+    "test_identifier": null,
+    "service_provider": null,
+    "purpose": "unspecified"
+  },
+  "73535": {
+    "what": "73535",
+    "where": "https://cazadoresdemicrobios.com",
+    "target": "https://cazadoresdemicrobios.com/$arkpid",
+    "when": "2023-07-05T00:00:00+00:00",
+    "who": {
+      "name": "Libro Cazadores de Microbios en Venezuela",
+      "acronym": null
+    },
+    "na_policy": {
+      "orgtype": "NP",
+      "policy": "(:unkn) unknown",
+      "tenure": "2023",
+      "policy_url": null
+    },
+    "test_identifier": null,
+    "service_provider": null,
+    "purpose": "unspecified"
+  },
+  "60538": {
+    "what": "60538",
+    "where": "https://pid.nfdi4culture.de",
+    "target": "https://pid.nfdi4culture.de/$arkpid",
+    "when": "2023-07-05T00:00:00+00:00",
+    "who": {
+      "name": "NFDI4Culture",
+      "acronym": null
+    },
+    "na_policy": {
+      "orgtype": "NP",
+      "policy": "(:unkn) unknown",
+      "tenure": "2023",
+      "policy_url": null
+    },
+    "test_identifier": null,
+    "service_provider": null,
+    "purpose": "unspecified"
+  },
+  "47543": {
+    "what": "47543",
+    "where": "https://www.scienceandtech.co.uk",
+    "target": "https://www.scienceandtech.co.uk/$arkpid",
+    "when": "2023-07-07T00:00:00+00:00",
+    "who": {
+      "name": "JOURNAL OF INTELLIGENT SYSTEMS AND COMPUTING (JISCOM)",
+      "acronym": null
+    },
+    "na_policy": {
+      "orgtype": "FP",
+      "policy": "(:unkn) unknown",
+      "tenure": "2023",
+      "policy_url": null
+    },
+    "test_identifier": null,
+    "service_provider": null,
+    "purpose": "unspecified"
+  },
+  "34888": {
+    "what": "34888",
+    "where": "https://www.archives.remire-montjoly.fr",
+    "target": "https://www.archives.remire-montjoly.fr/$arkpid",
+    "when": "2023-07-10T00:00:00+00:00",
+    "who": {
+      "name": "Archives Municipales de Rémire-Montjoly",
+      "acronym": null
+    },
+    "na_policy": {
+      "orgtype": "NP",
+      "policy": "(:unkn) unknown",
+      "tenure": "2023",
+      "policy_url": null
+    },
+    "test_identifier": null,
+    "service_provider": null,
+    "purpose": "unspecified"
+  },
+  "21893": {
+    "what": "21893",
+    "where": "https://revistaconcienciajuridica.com",
+    "target": "https://revistaconcienciajuridica.com/$arkpid",
+    "when": "2023-07-10T00:00:00+00:00",
+    "who": {
+      "name": "Revista Científica ConCiencia Jurídica",
+      "acronym": null
+    },
+    "na_policy": {
+      "orgtype": "NP",
+      "policy": "(:unkn) unknown",
+      "tenure": "2023",
+      "policy_url": null
+    },
+    "test_identifier": null,
+    "service_provider": null,
+    "purpose": "unspecified"
   }
 }
