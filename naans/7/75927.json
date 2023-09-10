@@ -1,7 +1,7 @@
 {
   "what": "75927",
-  "where": "https://data.ng-london.org.uk",
-  "target": "https://data.ng-london.org.uk/$arkpid",
+  "where": "https://data.ng.ac.uk/${nlid}",
+  "target": "https://data.ng.ac.uk/${nlid}/$arkpid",
   "when": "2020-12-14T00:00:00+00:00",
   "who": {
     "name": "The National Gallery, London",

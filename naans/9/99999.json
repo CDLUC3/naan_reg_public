@@ -4,7 +4,7 @@
   "target": "http://n2t.net/$arkpid",
   "when": "2010-08-04T00:00:00+00:00",
   "who": {
-    "name": "NAAN Reserved for Invalid or Impossible ARKs",
+    "name": "Shared NAAN for Temporary Testing and Development",
     "acronym": null
   },
   "na_policy": {

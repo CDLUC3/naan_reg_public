@@ -1,0 +1,19 @@
+{
+  "what": "44464",
+  "where": "https://revgacetaestudiantil.sld.cu/index.php/gme/index",
+  "target": "https://revgacetaestudiantil.sld.cu/index.php/gme/index/$arkpid",
+  "when": "2023-07-13T00:00:00+00:00",
+  "who": {
+    "name": "Gaceta Médica Estudiantil",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "NP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2023",
+    "policy_url": null
+  },
+  "test_identifier": null,
+  "service_provider": null,
+  "purpose": "unspecified"
+}

@@ -480,7 +480,7 @@
     "target": "http://n2t.net/$arkpid",
     "when": "2007-10-02T00:00:00+00:00",
     "who": {
-      "name": "Metadata Terms",
+      "name": "Shared NAAN for Metadata Terms",
       "acronym": null
     },
     "na_policy": {
@@ -499,7 +499,7 @@
     "target": "http://n2t.net/$arkpid",
     "when": "2007-10-02T00:00:00+00:00",
     "who": {
-      "name": "NAAN Reserved for use in Examples",
+      "name": "Shared NAAN for Examples",
       "acronym": null
     },
     "na_policy": {
@@ -1012,7 +1012,7 @@
     "target": "http://n2t.net/$arkpid",
     "when": "2010-08-04T00:00:00+00:00",
     "who": {
-      "name": "People, Groups, and Institutions as Agents",
+      "name": "Shared NAAN for People, Groups, and Institutions as Agents",
       "acronym": null
     },
     "na_policy": {
@@ -1031,7 +1031,7 @@
     "target": "http://n2t.net/$arkpid",
     "when": "2010-08-04T00:00:00+00:00",
     "who": {
-      "name": "NAAN Reserved for Invalid or Impossible ARKs",
+      "name": "Shared NAAN for Temporary Testing and Development",
       "acronym": null
     },
     "na_policy": {
@@ -13073,8 +13073,8 @@
   },
   "75927": {
     "what": "75927",
-    "where": "https://data.ng-london.org.uk",
-    "target": "https://data.ng-london.org.uk/$arkpid",
+    "where": "https://data.ng.ac.uk/${nlid}",
+    "target": "https://data.ng.ac.uk/${nlid}/$arkpid",
     "when": "2020-12-14T00:00:00+00:00",
     "who": {
       "name": "The National Gallery, London",
@@ -13548,8 +13548,8 @@
   },
   "88582": {
     "what": "88582",
-    "where": "https://webnode.cz",
-    "target": "https://webnode.cz/$arkpid",
+    "where": "https://pokus-ark-nm.cz",
+    "target": "https://pokus-ark-nm.cz/$arkpid",
     "when": "2021-02-05T00:00:00+00:00",
     "who": {
       "name": "Jizerska-knihovna",
@@ -13989,7 +13989,7 @@
     "target": "https://poblaciones.org/$arkpid",
     "when": "2021-03-23T00:00:00+00:00",
     "who": {
-      "name": "Observatorio de la Deuda Social Argentina (ODSA) de la Universidad Católica Argentina (UCA)",
+      "name": "Poblaciones",
       "acronym": null
     },
     "na_policy": {
@@ -14973,8 +14973,8 @@
   },
   "61221": {
     "what": "61221",
-    "where": "https://library.gmu.edu",
-    "target": "https://library.gmu.edu/$arkpid",
+    "where": "https://masonlibraries.gmu.edu",
+    "target": "https://masonlibraries.gmu.edu/$arkpid",
     "when": "2021-06-29T00:00:00+00:00",
     "who": {
       "name": "George Mason University Libraries",
@@ -15733,8 +15733,8 @@
   },
   "15052": {
     "what": "15052",
-    "where": "https://www.brabantcloud.nl",
-    "target": "https://www.brabantcloud.nl/$arkpid",
+    "where": "https://data.brabantcloud.nl/id",
+    "target": "https://data.brabantcloud.nl/id/$arkpid",
     "when": "2021-09-07T00:00:00+00:00",
     "who": {
       "name": "Erfgoed Brabant",
@@ -20578,8 +20578,8 @@
   },
   "55066": {
     "what": "55066",
-    "where": "https://sciencevolution.com",
-    "target": "https://sciencevolution.com/$arkpid",
+    "where": "https://revista.sciencevolution.com/index.php/sciencievolution/gateway/plugin/pubIdResolver",
+    "target": "https://revista.sciencevolution.com/index.php/sciencievolution/gateway/plugin/pubIdResolver/$arkpid",
     "when": "2023-05-10T00:00:00+00:00",
     "who": {
       "name": "SCIENCEVOLUTION Centro de Investigación y Desarrollo",
@@ -20654,8 +20654,8 @@
   },
   "77297": {
     "what": "77297",
-    "where": "https://ksec.kalman.co.il",
-    "target": "https://ksec.kalman.co.il/$arkpid",
+    "where": "https://ark.kalman.co.il",
+    "target": "https://ark.kalman.co.il/$arkpid",
     "when": "2023-05-22T00:00:00+00:00",
     "who": {
       "name": "KSEC",
@@ -21243,11 +21243,11 @@
   },
   "12316": {
     "what": "12316",
-    "where": "https://sch.com.pk",
-    "target": "https://sch.com.pk/$arkpid",
+    "where": "https://pjl.com.pk",
+    "target": "https://pjl.com.pk/$arkpid",
     "when": "2023-07-03T00:00:00+00:00",
     "who": {
-      "name": "PAKISTAN JOURNAL OF LINGUISTICS",
+      "name": "Pakistan Journal of Linguistics",
       "acronym": null
     },
     "na_policy": {
@@ -21319,11 +21319,11 @@
   },
   "47543": {
     "what": "47543",
-    "where": "https://www.scienceandtech.co.uk",
-    "target": "https://www.scienceandtech.co.uk/$arkpid",
+    "where": "https://scienceandtech.co.uk/journals/index.php/jiscom/gateway/plugin/pubIdResolver",
+    "target": "https://scienceandtech.co.uk/journals/index.php/jiscom/gateway/plugin/pubIdResolver/$arkpid",
     "when": "2023-07-07T00:00:00+00:00",
     "who": {
-      "name": "JOURNAL OF INTELLIGENT SYSTEMS AND COMPUTING (JISCOM)",
+      "name": "Journal of Intelligent Systems and Computing",
       "acronym": null
     },
     "na_policy": {
@@ -21362,6 +21362,367 @@
     "when": "2023-07-10T00:00:00+00:00",
     "who": {
       "name": "Revista Científica ConCiencia Jurídica",
+      "acronym": null
+    },
+    "na_policy": {
+      "orgtype": "NP",
+      "policy": "(:unkn) unknown",
+      "tenure": "2023",
+      "policy_url": null
+    },
+    "test_identifier": null,
+    "service_provider": null,
+    "purpose": "unspecified"
+  },
+  "83111": {
+    "what": "83111",
+    "where": "https://revtecnologia.sld.cu/index.php/tec",
+    "target": "https://revtecnologia.sld.cu/index.php/tec/$arkpid",
+    "when": "2023-07-10T00:00:00+00:00",
+    "who": {
+      "name": "Revista Cubana de Tecnología de la Salud",
+      "acronym": null
+    },
+    "na_policy": {
+      "orgtype": "NP",
+      "policy": "(:unkn) unknown",
+      "tenure": "2023",
+      "policy_url": null
+    },
+    "test_identifier": null,
+    "service_provider": null,
+    "purpose": "unspecified"
+  },
+  "70114": {
+    "what": "70114",
+    "where": "https://ijcst.com.pk",
+    "target": "https://ijcst.com.pk/$arkpid",
+    "when": "2023-07-12T00:00:00+00:00",
+    "who": {
+      "name": "NOBLE INSTITUTE FOR NEW GENERATION",
+      "acronym": null
+    },
+    "na_policy": {
+      "orgtype": "FP",
+      "policy": "(:unkn) unknown",
+      "tenure": "2023",
+      "policy_url": null
+    },
+    "test_identifier": null,
+    "service_provider": null,
+    "purpose": "unspecified"
+  },
+  "57119": {
+    "what": "57119",
+    "where": "https://journal.mdji.org",
+    "target": "https://journal.mdji.org/$arkpid",
+    "when": "2023-07-12T00:00:00+00:00",
+    "who": {
+      "name": "ROYAL INSTITUTE FOR RESEARCH AND EDUCATIONAL DEVELOPMENT ®",
+      "acronym": null
+    },
+    "na_policy": {
+      "orgtype": "FP",
+      "policy": "(:unkn) unknown",
+      "tenure": "2023",
+      "policy_url": null
+    },
+    "test_identifier": null,
+    "service_provider": null,
+    "purpose": "unspecified"
+  },
+  "44464": {
+    "what": "44464",
+    "where": "https://revgacetaestudiantil.sld.cu/index.php/gme/index",
+    "target": "https://revgacetaestudiantil.sld.cu/index.php/gme/index/$arkpid",
+    "when": "2023-07-13T00:00:00+00:00",
+    "who": {
+      "name": "Gaceta Médica Estudiantil",
+      "acronym": null
+    },
+    "na_policy": {
+      "orgtype": "NP",
+      "policy": "(:unkn) unknown",
+      "tenure": "2023",
+      "policy_url": null
+    },
+    "test_identifier": null,
+    "service_provider": null,
+    "purpose": "unspecified"
+  },
+  "31469": {
+    "what": "31469",
+    "where": "https://ark.madinat-albalat.fr",
+    "target": "https://ark.madinat-albalat.fr/$arkpid",
+    "when": "2023-07-15T00:00:00+00:00",
+    "who": {
+      "name": "Proyecto Albalat - Projet Albalat",
+      "acronym": null
+    },
+    "na_policy": {
+      "orgtype": "NP",
+      "policy": "(:unkn) unknown",
+      "tenure": "2023",
+      "policy_url": null
+    },
+    "test_identifier": null,
+    "service_provider": null,
+    "purpose": "unspecified"
+  },
+  "18474": {
+    "what": "18474",
+    "where": "https://hast.biodiv.tw",
+    "target": "https://hast.biodiv.tw/$arkpid",
+    "when": "2023-07-24T00:00:00+00:00",
+    "who": {
+      "name": "Biodiversity Research Center, Academia Sinica",
+      "acronym": null
+    },
+    "na_policy": {
+      "orgtype": "NP",
+      "policy": "(:unkn) unknown",
+      "tenure": "2023",
+      "policy_url": null
+    },
+    "test_identifier": null,
+    "service_provider": null,
+    "purpose": "unspecified"
+  },
+  "79690": {
+    "what": "79690",
+    "where": "https://archives.seinesaintdenis.fr",
+    "target": "https://archives.seinesaintdenis.fr/$arkpid",
+    "when": "2023-07-26T00:00:00+00:00",
+    "who": {
+      "name": "Archives départementales de la Seine-Saint-Denis",
+      "acronym": null
+    },
+    "na_policy": {
+      "orgtype": "NP",
+      "policy": "(:unkn) unknown",
+      "tenure": "2023",
+      "policy_url": null
+    },
+    "test_identifier": null,
+    "service_provider": null,
+    "purpose": "unspecified"
+  },
+  "92250": {
+    "what": "92250",
+    "where": "https://biscicol.org/api/v1/inaan",
+    "target": "https://biscicol.org/api/v1/inaan/$arkpid",
+    "when": "2023-07-26T00:00:00+00:00",
+    "who": {
+      "name": "Shared NAAN for Inline Concepts",
+      "acronym": null
+    },
+    "na_policy": {
+      "orgtype": "NP",
+      "policy": "",
+      "tenure": "2023",
+      "policy_url": null
+    },
+    "test_identifier": null,
+    "service_provider": null,
+    "purpose": "unspecified"
+  },
+  "66695": {
+    "what": "66695",
+    "where": "https://tws.phil-fak.uni-koeln.de",
+    "target": "https://tws.phil-fak.uni-koeln.de/$arkpid",
+    "when": "2023-08-01T00:00:00+00:00",
+    "who": {
+      "name": "Theaterwissenschaftliche Sammlung Köln",
+      "acronym": null
+    },
+    "na_policy": {
+      "orgtype": "NP",
+      "policy": "(:unkn) unknown",
+      "tenure": "2023",
+      "policy_url": null
+    },
+    "test_identifier": null,
+    "service_provider": null,
+    "purpose": "unspecified"
+  },
+  "54040": {
+    "what": "54040",
+    "where": "https://ark.kleksi.com",
+    "target": "https://ark.kleksi.com/$arkpid",
+    "when": "2023-08-10T00:00:00+00:00",
+    "who": {
+      "name": "KLEKSI",
+      "acronym": null
+    },
+    "na_policy": {
+      "orgtype": "FP",
+      "policy": "(:unkn) unknown",
+      "tenure": "2023",
+      "policy_url": null
+    },
+    "test_identifier": null,
+    "service_provider": null,
+    "purpose": "unspecified"
+  },
+  "41045": {
+    "what": "41045",
+    "where": "https://www.ehri-project.eu",
+    "target": "https://www.ehri-project.eu/$arkpid",
+    "when": "2023-08-10T00:00:00+00:00",
+    "who": {
+      "name": "European Holocaust Research Infrastructure",
+      "acronym": null
+    },
+    "na_policy": {
+      "orgtype": "NP",
+      "policy": "(:unkn) unknown",
+      "tenure": "2023",
+      "policy_url": null
+    },
+    "test_identifier": null,
+    "service_provider": null,
+    "purpose": "unspecified"
+  },
+  "19291": {
+    "what": "19291",
+    "where": "https://rijksmuseumboerhaave.nl",
+    "target": "https://rijksmuseumboerhaave.nl/$arkpid",
+    "when": "2023-08-10T00:00:00+00:00",
+    "who": {
+      "name": "Rijksmuseum Boerhaave",
+      "acronym": null
+    },
+    "na_policy": {
+      "orgtype": "NP",
+      "policy": "(:unkn) unknown",
+      "tenure": "2023",
+      "policy_url": null
+    },
+    "test_identifier": null,
+    "service_provider": null,
+    "purpose": "unspecified"
+  },
+  "28049": {
+    "what": "28049",
+    "where": "https://eko-konnect.org.ng",
+    "target": "https://eko-konnect.org.ng/$arkpid",
+    "when": "2023-08-16T00:00:00+00:00",
+    "who": {
+      "name": "Eko-Konnect Research and Education Initiative",
+      "acronym": null
+    },
+    "na_policy": {
+      "orgtype": "NP",
+      "policy": "(:unkn) unknown",
+      "tenure": "2023",
+      "policy_url": null
+    },
+    "test_identifier": null,
+    "service_provider": null,
+    "purpose": "unspecified"
+  },
+  "15053": {
+    "what": "15053",
+    "where": "https://arks.claremont.edu",
+    "target": "https://arks.claremont.edu/$arkpid",
+    "when": "2023-08-21T00:00:00+00:00",
+    "who": {
+      "name": "The Claremont Colleges Library",
+      "acronym": null
+    },
+    "na_policy": {
+      "orgtype": "NP",
+      "policy": "(:unkn) unknown",
+      "tenure": "2023",
+      "policy_url": null
+    },
+    "test_identifier": null,
+    "service_provider": null,
+    "purpose": "unspecified"
+  },
+  "89266": {
+    "what": "89266",
+    "where": "https://www.chaumet.com",
+    "target": "https://www.chaumet.com/$arkpid",
+    "when": "2023-08-24T00:00:00+00:00",
+    "who": {
+      "name": "Chaumet International SA",
+      "acronym": null
+    },
+    "na_policy": {
+      "orgtype": "FP",
+      "policy": "(:unkn) unknown",
+      "tenure": "2023",
+      "policy_url": null
+    },
+    "test_identifier": null,
+    "service_provider": null,
+    "purpose": "unspecified"
+  },
+  "76271": {
+    "what": "76271",
+    "where": "https://adc.arts.ubc.ca",
+    "target": "https://adc.arts.ubc.ca/$arkpid",
+    "when": "2023-08-24T00:00:00+00:00",
+    "who": {
+      "name": "UBC ArtsISIT",
+      "acronym": null
+    },
+    "na_policy": {
+      "orgtype": "NP",
+      "policy": "(:unkn) unknown",
+      "tenure": "2023",
+      "policy_url": null
+    },
+    "test_identifier": null,
+    "service_provider": null,
+    "purpose": "unspecified"
+  },
+  "63616": {
+    "what": "63616",
+    "where": "https://archinum.univ-paris1.fr",
+    "target": "https://archinum.univ-paris1.fr/$arkpid",
+    "when": "2023-08-29T00:00:00+00:00",
+    "who": {
+      "name": "Service des archives, Université Paris 1-Panthéon Sorbonne",
+      "acronym": null
+    },
+    "na_policy": {
+      "orgtype": "NP",
+      "policy": "(:unkn) unknown",
+      "tenure": "2023",
+      "policy_url": null
+    },
+    "test_identifier": null,
+    "service_provider": null,
+    "purpose": "unspecified"
+  },
+  "50621": {
+    "what": "50621",
+    "where": "https://melangescaraibes.fr",
+    "target": "https://melangescaraibes.fr/$arkpid",
+    "when": "2023-08-29T00:00:00+00:00",
+    "who": {
+      "name": "Association Mélanges Caraïbes",
+      "acronym": null
+    },
+    "na_policy": {
+      "orgtype": "NP",
+      "policy": "(:unkn) unknown",
+      "tenure": "2023",
+      "policy_url": null
+    },
+    "test_identifier": null,
+    "service_provider": null,
+    "purpose": "unspecified"
+  },
+  "37625": {
+    "what": "37625",
+    "where": "https://patrimoine-archives.reze.fr",
+    "target": "https://patrimoine-archives.reze.fr/$arkpid",
+    "when": "2023-09-06T00:00:00+00:00",
+    "who": {
+      "name": "Archives municipales de Rezé",
       "acronym": null
     },
     "na_policy": {

@@ -1,14 +1,14 @@
 {
-  "what": "77297",
-  "where": "https://ark.kalman.co.il",
-  "target": "https://ark.kalman.co.il/$arkpid",
-  "when": "2023-05-22T00:00:00+00:00",
+  "what": "70114",
+  "where": "https://ijcst.com.pk",
+  "target": "https://ijcst.com.pk/$arkpid",
+  "when": "2023-07-12T00:00:00+00:00",
   "who": {
-    "name": "KSEC",
+    "name": "NOBLE INSTITUTE FOR NEW GENERATION",
     "acronym": null
   },
   "na_policy": {
-    "orgtype": "NP",
+    "orgtype": "FP",
     "policy": "(:unkn) unknown",
     "tenure": "2023",
     "policy_url": null

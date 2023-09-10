@@ -1,16 +1,16 @@
 {
-  "what": "88582",
-  "where": "https://pokus-ark-nm.cz",
-  "target": "https://pokus-ark-nm.cz/$arkpid",
-  "when": "2021-02-05T00:00:00+00:00",
+  "what": "50621",
+  "where": "https://melangescaraibes.fr",
+  "target": "https://melangescaraibes.fr/$arkpid",
+  "when": "2023-08-29T00:00:00+00:00",
   "who": {
-    "name": "Jizerska-knihovna",
+    "name": "Association Mélanges Caraïbes",
     "acronym": null
   },
   "na_policy": {
     "orgtype": "NP",
     "policy": "(:unkn) unknown",
-    "tenure": "2021",
+    "tenure": "2023",
     "policy_url": null
   },
   "test_identifier": null,

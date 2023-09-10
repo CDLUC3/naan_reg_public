@@ -1,10 +1,10 @@
 {
-  "what": "77297",
-  "where": "https://ark.kalman.co.il",
-  "target": "https://ark.kalman.co.il/$arkpid",
-  "when": "2023-05-22T00:00:00+00:00",
+  "what": "79690",
+  "where": "https://archives.seinesaintdenis.fr",
+  "target": "https://archives.seinesaintdenis.fr/$arkpid",
+  "when": "2023-07-26T00:00:00+00:00",
   "who": {
-    "name": "KSEC",
+    "name": "Archives départementales de la Seine-Saint-Denis",
     "acronym": null
   },
   "na_policy": {
