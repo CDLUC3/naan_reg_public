@@ -1,10 +1,10 @@
 {
   "what": "66350",
-  "where": "http://institutions.ville-geneve.ch/fr/mhn/votre-visite/site-du-musee-dhistoire-des-sciences",
-  "target": "http://institutions.ville-geneve.ch/fr/mhn/votre-visite/site-du-musee-dhistoire-des-sciences/$arkpid",
+  "where": "https://archives.mhng.ch",
+  "target": "https://archives.mhng.ch/$arkpid",
   "when": "2019-09-16T00:00:00+00:00",
   "who": {
-    "name": "Musée d'histoire des Sciences",
+    "name": "Archives du Museum d'Histoire Naturelle de Genève",
     "acronym": null
   },
   "na_policy": {

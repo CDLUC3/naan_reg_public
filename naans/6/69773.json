@@ -1,0 +1,19 @@
+{
+  "what": "69773",
+  "where": "https://archive.disc4all.eu",
+  "target": "https://archive.disc4all.eu/$arkpid",
+  "when": "2023-09-25T00:00:00+00:00",
+  "who": {
+    "name": "Disc4All International Training Network",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "FP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2023",
+    "policy_url": null
+  },
+  "test_identifier": null,
+  "service_provider": null,
+  "purpose": "unspecified"
+}

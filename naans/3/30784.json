@@ -1,14 +1,14 @@
 {
-  "what": "18474",
-  "where": "https://pid.biodiv.tw",
-  "target": "https://pid.biodiv.tw/$arkpid",
-  "when": "2023-07-24T00:00:00+00:00",
+  "what": "30784",
+  "where": "https://actoon.fr",
+  "target": "https://actoon.fr/$arkpid",
+  "when": "2023-10-05T00:00:00+00:00",
   "who": {
-    "name": "Biodiversity Research Center, Academia Sinica",
+    "name": "Actoon",
     "acronym": null
   },
   "na_policy": {
-    "orgtype": "NP",
+    "orgtype": "FP",
     "policy": "(:unkn) unknown",
     "tenure": "2023",
     "policy_url": null

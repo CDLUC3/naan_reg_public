@@ -1,10 +1,10 @@
 {
   "what": "13001",
-  "where": "https://archives.cjbg.ch/ (will be online 2021)",
-  "target": "https://archives.cjbg.ch/ (will be online 2021)/$arkpid",
+  "where": "https://archives.cjbg.ch",
+  "target": "https://archives.cjbg.ch/$arkpid",
   "when": "2021-04-21T00:00:00+00:00",
   "who": {
-    "name": "Conservatoire et jardin botaniques de la ville de Genève",
+    "name": "Conservatoire et Jardin botaniques de Genève",
     "acronym": null
   },
   "na_policy": {

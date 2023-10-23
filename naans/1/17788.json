@@ -1,16 +1,16 @@
 {
-  "what": "47540",
-  "where": "https://ark.colorado.edu",
-  "target": "https://ark.colorado.edu/$arkpid",
-  "when": "2018-12-11T00:00:00+00:00",
+  "what": "17788",
+  "where": "https://www.museeroybetfould.fr",
+  "target": "https://www.museeroybetfould.fr/$arkpid",
+  "when": "2023-10-06T00:00:00+00:00",
   "who": {
-    "name": "University of Colorado Boulder",
+    "name": "Musée Roybet-Fould",
     "acronym": null
   },
   "na_policy": {
     "orgtype": "NP",
     "policy": "(:unkn) unknown",
-    "tenure": "2018",
+    "tenure": "2023",
     "policy_url": null
   },
   "test_identifier": null,

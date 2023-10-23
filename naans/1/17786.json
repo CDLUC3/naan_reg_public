@@ -1,7 +1,7 @@
 {
   "what": "17786",
-  "where": "http://institutions.ville-geneve.ch/fr/bge",
-  "target": "http://institutions.ville-geneve.ch/fr/bge/$arkpid",
+  "where": "https://archives.bge-geneve.ch",
+  "target": "https://archives.bge-geneve.ch/$arkpid",
   "when": "2019-09-16T00:00:00+00:00",
   "who": {
     "name": "Bibliothèque de Genève",

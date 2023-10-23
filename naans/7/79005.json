@@ -1,7 +1,7 @@
 {
   "what": "79005",
-  "where": "http://www.ville-geneve.ch/plan-ville/bibliotheques/musee-voltaire",
-  "target": "http://www.ville-geneve.ch/plan-ville/bibliotheques/musee-voltaire/$arkpid",
+  "where": "https://voltaire.bge-geneve.ch",
+  "target": "https://voltaire.bge-geneve.ch/$arkpid",
   "when": "2019-09-16T00:00:00+00:00",
   "who": {
     "name": "Institut et Musée Voltaire",

@@ -1,16 +1,16 @@
 {
-  "what": "47540",
-  "where": "https://ark.colorado.edu",
-  "target": "https://ark.colorado.edu/$arkpid",
-  "when": "2018-12-11T00:00:00+00:00",
+  "what": "85847",
+  "where": "https://azlibrary.gov",
+  "target": "https://azlibrary.gov/$arkpid",
+  "when": "2023-09-19T00:00:00+00:00",
   "who": {
-    "name": "University of Colorado Boulder",
+    "name": "Arizona State Archives",
     "acronym": null
   },
   "na_policy": {
     "orgtype": "NP",
     "policy": "(:unkn) unknown",
-    "tenure": "2018",
+    "tenure": "2023",
     "policy_url": null
   },
   "test_identifier": null,
