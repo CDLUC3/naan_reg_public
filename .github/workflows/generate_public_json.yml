@@ -32,3 +32,16 @@ jobs:
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_dir: ./docs
+    - name: Get timestamp
+      id: timestamp
+      run: echo "::set-output name=timestamp::$(date +'%Y%m%d.%H%M%S')"
+    - name: Create tag
+      uses: actions/github-script@v5
+      with:
+        script: |
+          github.rest.git.createref({
+            owner: context.repo.owner,
+            repo: context.repo.repo,
+            ref: 'refs/tags/${{ steps.timestamp.outputs.timestamp }}',
+            sha: context.sha
+          })
