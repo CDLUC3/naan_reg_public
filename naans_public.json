@@ -8798,8 +8798,8 @@
   },
   "29072": {
     "what": "29072",
-    "where": "https://www.bodleian.ox.ac.uk",
-    "target": "https://www.bodleian.ox.ac.uk/$arkpid",
+    "where": "https://pii.bodleian.ox.ac.uk/ark:$id",
+    "target": "https://pii.bodleian.ox.ac.uk/ark:$pid",
     "when": "2018-07-09T00:00:00+00:00",
     "who": {
       "name": "Bodleian Libraries, University of Oxford",
@@ -8807,7 +8807,7 @@
     },
     "na_policy": {
       "orgtype": "NP",
-      "policy": "(:unkn) unknown",
+      "policy": "NR, OP",
       "tenure": "2018",
       "policy_url": null
     },
@@ -22103,6 +22103,82 @@
     "when": "2023-10-20T00:00:00+00:00",
     "who": {
       "name": "Commune du Chesnay-Rocquencourt",
+      "acronym": null
+    },
+    "na_policy": {
+      "orgtype": "NP",
+      "policy": "(:unkn) unknown",
+      "tenure": "2023",
+      "policy_url": null
+    },
+    "test_identifier": null,
+    "service_provider": null,
+    "purpose": "unspecified"
+  },
+  "75929": {
+    "what": "75929",
+    "where": "https://virtualtreasury.ie",
+    "target": "https://virtualtreasury.ie/$arkpid",
+    "when": "2023-10-24T00:00:00+00:00",
+    "who": {
+      "name": "Virtual Record Treasury of Ireland",
+      "acronym": null
+    },
+    "na_policy": {
+      "orgtype": "NP",
+      "policy": "(:unkn) unknown",
+      "tenure": "2023",
+      "policy_url": null
+    },
+    "test_identifier": null,
+    "service_provider": null,
+    "purpose": "unspecified"
+  },
+  "62933": {
+    "what": "62933",
+    "where": "https://accesoabierto.uh.cu",
+    "target": "https://accesoabierto.uh.cu/$arkpid",
+    "when": "2023-10-27T00:00:00+00:00",
+    "who": {
+      "name": "Biblioteca Central de la Universidad de La Habana",
+      "acronym": null
+    },
+    "na_policy": {
+      "orgtype": "NP",
+      "policy": "(:unkn) unknown",
+      "tenure": "2023",
+      "policy_url": null
+    },
+    "test_identifier": null,
+    "service_provider": null,
+    "purpose": "unspecified"
+  },
+  "49936": {
+    "what": "49936",
+    "where": "https://www.nolej.io",
+    "target": "https://www.nolej.io/$arkpid",
+    "when": "2023-10-27T00:00:00+00:00",
+    "who": {
+      "name": "NOLEJ",
+      "acronym": null
+    },
+    "na_policy": {
+      "orgtype": "FP",
+      "policy": "(:unkn) unknown",
+      "tenure": "2023",
+      "policy_url": null
+    },
+    "test_identifier": null,
+    "service_provider": null,
+    "purpose": "unspecified"
+  },
+  "36941": {
+    "what": "36941",
+    "where": "https://discover.york.ac.uk",
+    "target": "https://discover.york.ac.uk/$arkpid",
+    "when": "2023-10-27T00:00:00+00:00",
+    "who": {
+      "name": "University of York Library Archives and Learning Services",
       "acronym": null
     },
     "na_policy": {

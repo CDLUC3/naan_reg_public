@@ -1,7 +1,7 @@
 {
   "what": "29072",
-  "where": "https://www.bodleian.ox.ac.uk",
-  "target": "https://www.bodleian.ox.ac.uk/$arkpid",
+  "where": "https://pii.bodleian.ox.ac.uk/ark:$id",
+  "target": "https://pii.bodleian.ox.ac.uk/ark:$pid",
   "when": "2018-07-09T00:00:00+00:00",
   "who": {
     "name": "Bodleian Libraries, University of Oxford",
@@ -9,7 +9,7 @@
   },
   "na_policy": {
     "orgtype": "NP",
-    "policy": "(:unkn) unknown",
+    "policy": "NR, OP",
     "tenure": "2018",
     "policy_url": null
   },
