@@ -22285,5 +22285,24 @@
     "test_identifier": null,
     "service_provider": null,
     "purpose": "unspecified"
+  },
+  "46517": {
+    "what": "46517",
+    "where": "https://archives.isere.fr",
+    "target": "https://archives.isere.fr/$arkpid",
+    "when": "2023-11-04T00:00:00+00:00",
+    "who": {
+      "name": "Archives départementales de l'Isère",
+      "acronym": null
+    },
+    "na_policy": {
+      "orgtype": "NP",
+      "policy": "(:unkn) unknown",
+      "tenure": "2023",
+      "policy_url": null
+    },
+    "test_identifier": null,
+    "service_provider": null,
+    "purpose": "unspecified"
   }
 }
