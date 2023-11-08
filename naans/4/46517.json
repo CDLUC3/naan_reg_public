@@ -1,7 +1,7 @@
 {
   "what": "46517",
-  "where": "https://archives.isere.fr",
-  "target": "https://archives.isere.fr/$arkpid",
+  "where": "https://archivesenligne1.archives-isere.fr",
+  "target": "https://archivesenligne1.archives-isere.fr/$arkpid",
   "when": "2023-11-04T00:00:00+00:00",
   "who": {
     "name": "Archives départementales de l'Isère",
