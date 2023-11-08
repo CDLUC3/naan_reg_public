@@ -22323,5 +22323,24 @@
     "test_identifier": null,
     "service_provider": null,
     "purpose": "unspecified"
+  },
+  "20867": {
+    "what": "20867",
+    "where": "http://repositoriouba.sisbi.uba.ar",
+    "target": "http://repositoriouba.sisbi.uba.ar/$arkpid",
+    "when": "2023-11-08T00:00:00+00:00",
+    "who": {
+      "name": "Repositorio Digital Institucional de la Universidad de Buenos Aires",
+      "acronym": null
+    },
+    "na_policy": {
+      "orgtype": "NP",
+      "policy": "(:unkn) unknown",
+      "tenure": "2023",
+      "policy_url": null
+    },
+    "test_identifier": null,
+    "service_provider": null,
+    "purpose": "unspecified"
   }
 }
