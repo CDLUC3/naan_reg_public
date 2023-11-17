@@ -22437,5 +22437,24 @@
     "test_identifier": null,
     "service_provider": null,
     "purpose": "unspecified"
+  },
+  "17448": {
+    "what": "17448",
+    "where": "https://NLN.revistas.ceipa.edu.co/index.php/perspectiva-empresarial",
+    "target": "https://nln.revistas.ceipa.edu.co/index.php/perspectiva-empresarial/$arkpid",
+    "when": "2023-11-17T00:00:00+00:00",
+    "who": {
+      "name": "Fondo Editorial CEIPA. Revista Perspectiva Empresarial",
+      "acronym": null
+    },
+    "na_policy": {
+      "orgtype": "NP",
+      "policy": "(:unkn) unknown",
+      "tenure": "2023",
+      "policy_url": null
+    },
+    "test_identifier": null,
+    "service_provider": null,
+    "purpose": "unspecified"
   }
 }
