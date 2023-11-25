@@ -22589,5 +22589,24 @@
     "test_identifier": null,
     "service_provider": null,
     "purpose": "unspecified"
+  },
+  "75245": {
+    "what": "75245",
+    "where": "https://catalogue-bm.geneve.ch/ark:/BMU",
+    "target": "https://catalogue-bm.geneve.ch/ark:/BMU/$arkpid",
+    "when": "2023-11-25T00:00:00+00:00",
+    "who": {
+      "name": "Bibliothèques municipales de la ville de Genève",
+      "acronym": null
+    },
+    "na_policy": {
+      "orgtype": "NP",
+      "policy": "(:unkn) unknown",
+      "tenure": "2023",
+      "policy_url": null
+    },
+    "test_identifier": null,
+    "service_provider": null,
+    "purpose": "unspecified"
   }
 }
