@@ -4,7 +4,7 @@
   "target": "https://archives.bge-geneve.ch/$arkpid",
   "when": "2019-09-16T00:00:00+00:00",
   "who": {
-    "name": "Bibliothèque de Genève",
+    "name": "Manuscrits et archives privées de la Bibliothèque de Genève",
     "acronym": null
   },
   "na_policy": {
