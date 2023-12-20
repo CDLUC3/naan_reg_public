@@ -22779,5 +22779,24 @@
     "test_identifier": null,
     "service_provider": null,
     "purpose": "unspecified"
+  },
+  "33179": {
+    "what": "33179",
+    "where": "https://data.fomu.be",
+    "target": "https://data.fomu.be/$arkpid",
+    "when": "2023-12-20T00:00:00+00:00",
+    "who": {
+      "name": "FOMU - Fotomuseum Antwerpen",
+      "acronym": null
+    },
+    "na_policy": {
+      "orgtype": "NP",
+      "policy": "(:unkn) unknown",
+      "tenure": "2023",
+      "policy_url": null
+    },
+    "test_identifier": null,
+    "service_provider": null,
+    "purpose": "unspecified"
   }
 }
