@@ -1,0 +1,19 @@
+{
+  "what": "68747",
+  "where": "https://www.instm-bulletin.tn/index.php/bulletin/gateway/plugin/pubIdResolver",
+  "target": "https://www.instm-bulletin.tn/index.php/bulletin/gateway/plugin/pubIdResolver/$arkpid",
+  "when": "2023-12-22T00:00:00+00:00",
+  "who": {
+    "name": "Institut National des Sciences et Technologies de la Mer",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "NP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2023",
+    "policy_url": null
+  },
+  "test_identifier": null,
+  "service_provider": null,
+  "purpose": "unspecified"
+}
