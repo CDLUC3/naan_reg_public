@@ -1,0 +1,19 @@
+{
+  "what": "48911",
+  "where": "https://perikleioslibrary-1lyk-chol.gr",
+  "target": "https://perikleioslibrary-1lyk-chol.gr/$arkpid",
+  "when": "2024-01-25T00:00:00+00:00",
+  "who": {
+    "name": "Perikleios Library 1st Lyceum Cholargos",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "NP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2024",
+    "policy_url": null
+  },
+  "test_identifier": null,
+  "service_provider": null,
+  "purpose": "unspecified"
+}
