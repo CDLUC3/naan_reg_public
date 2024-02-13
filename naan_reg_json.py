@@ -399,6 +399,14 @@ class NAAN(PublicNAAN):
         _address = None
         for k, v in data.items():
             if k == "who":
+                # Bit of a hack, but rarely there will appear a multipart name
+                # Just treat it as a somewhat formatted string.
+                if isinstance(v, list):
+                    v = "\n".join(v)
+                # Bit of a hack, but rarely there will appear a multipart name
+                # Just treat it as a somewhat formatted string.
+                if isinstance(v, list):
+                    v = "\n".join(v)
                 parts = v.split("(=)", 1)
                 _who = NAAN_who(name=parts[0].strip())
                 if len(parts) > 1:
