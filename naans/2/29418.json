@@ -1,0 +1,19 @@
+{
+  "what": "29418",
+  "where": "http://www.arretsurimages.net",
+  "target": "http://www.arretsurimages.net/$arkpid",
+  "when": "2024-02-15T00:00:00+00:00",
+  "who": {
+    "name": "Arrêt sur images",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "FP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2024",
+    "policy_url": null
+  },
+  "test_identifier": null,
+  "service_provider": null,
+  "purpose": "unspecified"
+}

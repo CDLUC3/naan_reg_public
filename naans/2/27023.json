@@ -1,7 +1,7 @@
 {
   "what": "27023",
-  "where": "https://colonialcollections.nl",
-  "target": "https://colonialcollections.nl/$arkpid",
+  "where": "https://id.colonialcollections.nl",
+  "target": "https://id.colonialcollections.nl/$arkpid",
   "when": "2023-11-25T00:00:00+00:00",
   "who": {
     "name": "Colonial Collections Consortium",

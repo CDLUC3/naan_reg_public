@@ -1,0 +1,19 @@
+{
+  "what": "42413",
+  "where": "https://www.ville-clichy.fr",
+  "target": "https://www.ville-clichy.fr/$arkpid",
+  "when": "2024-02-15T00:00:00+00:00",
+  "who": {
+    "name": "Archives municipales de Clichy la Garenne",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "NP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2024",
+    "policy_url": null
+  },
+  "test_identifier": null,
+  "service_provider": null,
+  "purpose": "unspecified"
+}

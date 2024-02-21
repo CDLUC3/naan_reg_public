@@ -1,0 +1,19 @@
+{
+  "what": "51989",
+  "where": "https://journalzone.org/index.php/bjgesd",
+  "target": "https://journalzone.org/index.php/bjgesd/$arkpid",
+  "when": "2024-02-20T00:00:00+00:00",
+  "who": {
+    "name": "Journal Zone Publishing",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "NP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2024",
+    "policy_url": null
+  },
+  "test_identifier": null,
+  "service_provider": null,
+  "purpose": "unspecified"
+}

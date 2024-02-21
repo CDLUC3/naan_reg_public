@@ -1,0 +1,19 @@
+{
+  "what": "38994",
+  "where": "https://intentresearch.org/index.php/irsj/index",
+  "target": "https://intentresearch.org/index.php/irsj/index/$arkpid",
+  "when": "2024-02-20T00:00:00+00:00",
+  "who": {
+    "name": "Intent Research Scientific Journal",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "FP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2024",
+    "policy_url": null
+  },
+  "test_identifier": null,
+  "service_provider": null,
+  "purpose": "unspecified"
+}
