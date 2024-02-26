@@ -23577,5 +23577,24 @@
     "test_identifier": null,
     "service_provider": null,
     "purpose": "unspecified"
+  },
+  "48570": {
+    "what": "48570",
+    "where": "http://www.ecimed.sld.cu",
+    "target": "http://www.ecimed.sld.cu/$arkpid",
+    "when": "2024-02-26T00:00:00+00:00",
+    "who": {
+      "name": "Editorial Ciencias Médicas",
+      "acronym": null
+    },
+    "na_policy": {
+      "orgtype": "NP",
+      "policy": "(:unkn) unknown",
+      "tenure": "2024",
+      "policy_url": null
+    },
+    "test_identifier": null,
+    "service_provider": null,
+    "purpose": "unspecified"
   }
 }
