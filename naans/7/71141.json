@@ -1,0 +1,19 @@
+{
+  "what": "71141",
+  "where": "https://mun.edicioneskimun.cl",
+  "target": "https://mun.edicioneskimun.cl/$arkpid",
+  "when": "2024-02-28T00:00:00+00:00",
+  "who": {
+    "name": "Ediciones Kimün SpA",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "FP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2024",
+    "policy_url": null
+  },
+  "test_identifier": null,
+  "service_provider": null,
+  "purpose": "unspecified"
+}
