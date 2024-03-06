@@ -23710,5 +23710,24 @@
     "test_identifier": null,
     "service_provider": null,
     "purpose": "unspecified"
+  },
+  "12314": {
+    "what": "12314",
+    "where": "http://revestomatologia.sld.cu/index.php/est/index",
+    "target": "http://revestomatologia.sld.cu/index.php/est/index/$arkpid",
+    "when": "2024-03-06T00:00:00+00:00",
+    "who": {
+      "name": "Revista Cubana de Estomatologia",
+      "acronym": null
+    },
+    "na_policy": {
+      "orgtype": "NP",
+      "policy": "(:unkn) unknown",
+      "tenure": "2024",
+      "policy_url": null
+    },
+    "test_identifier": null,
+    "service_provider": null,
+    "purpose": "unspecified"
   }
 }
