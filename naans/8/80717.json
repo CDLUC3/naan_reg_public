@@ -1,0 +1,19 @@
+{
+  "what": "80717",
+  "where": "https://ichdata.be",
+  "target": "https://ichdata.be/$arkpid",
+  "when": "2024-03-18T00:00:00+00:00",
+  "who": {
+    "name": "Werkplaats Immaterieel erfgoed",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "NP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2024",
+    "policy_url": null
+  },
+  "test_identifier": null,
+  "service_provider": null,
+  "purpose": "unspecified"
+}
