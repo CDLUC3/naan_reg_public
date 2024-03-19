@@ -11809,9 +11809,9 @@
     },
     "na_policy": {
       "orgtype": "NP",
-      "policy": "(:unkn) unknown",
+      "policy": "NR",
       "tenure": "2020",
-      "policy_url": null
+      "policy_url": "https://ark.digital.utsc.utoronto.ca"
     },
     "test_identifier": null,
     "service_provider": null,
@@ -13814,8 +13814,8 @@
   },
   "55749": {
     "what": "55749",
-    "where": "https://patrimoine.inpi.fr",
-    "target": "https://patrimoine.inpi.fr/$arkpid",
+    "where": "https://archives.inpi.fr",
+    "target": "https://archives.inpi.fr/$arkpid",
     "when": "2021-03-10T00:00:00+00:00",
     "who": {
       "name": "Institut national de la propriété industrielle",
@@ -22520,7 +22520,7 @@
     "target": "https://www.olympika.org/index.php/Olympika-Magazine/gateway/plugin/pubIdResolver/$arkpid",
     "when": "2023-11-21T00:00:00+00:00",
     "who": {
-      "name": "RELEASE EDITORIAL LTDA",
+      "name": "Release Editorial LTDA",
       "acronym": null
     },
     "na_policy": {
@@ -23622,7 +23622,7 @@
     "target": "https://howmanyjeu.fr/lassociation/$arkpid",
     "when": "2024-02-27T00:00:00+00:00",
     "who": {
-      "name": "IMAGEZ LES MATHS !",
+      "name": "Imagez les Maths!",
       "acronym": null
     },
     "na_policy": {

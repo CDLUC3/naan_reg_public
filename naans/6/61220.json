@@ -9,9 +9,9 @@
   },
   "na_policy": {
     "orgtype": "NP",
-    "policy": "(:unkn) unknown",
+    "policy": "NR",
     "tenure": "2020",
-    "policy_url": null
+    "policy_url": "https://ark.digital.utsc.utoronto.ca"
   },
   "test_identifier": null,
   "service_provider": null,
