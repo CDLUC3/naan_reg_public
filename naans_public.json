@@ -2623,8 +2623,8 @@
   },
   "21547": {
     "what": "21547",
-    "where": "http://www.biocodecommons.org",
-    "target": "http://www.biocodecommons.org/$arkpid",
+    "where": "https://ezid.cdlib.org",
+    "target": "https://ezid.cdlib.org/$arkpid",
     "when": "2013-03-23T00:00:00+00:00",
     "who": {
       "name": "Biocode Commons",
