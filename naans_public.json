@@ -23919,5 +23919,24 @@
     "test_identifier": null,
     "service_provider": null,
     "purpose": "unspecified"
+  },
+  "64302": {
+    "what": "64302",
+    "where": "https://iaoeinc.org",
+    "target": "https://iaoeinc.org/$arkpid",
+    "when": "2024-03-28T00:00:00+00:00",
+    "who": {
+      "name": "International Association of Open Educators Research Journal",
+      "acronym": null
+    },
+    "na_policy": {
+      "orgtype": "NP",
+      "policy": "(:unkn) unknown",
+      "tenure": "2024",
+      "policy_url": null
+    },
+    "test_identifier": null,
+    "service_provider": null,
+    "purpose": "unspecified"
   }
 }
