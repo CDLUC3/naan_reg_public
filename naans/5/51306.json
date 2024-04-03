@@ -1,0 +1,19 @@
+{
+  "what": "51306",
+  "where": "https://qau.edu.ye",
+  "target": "https://qau.edu.ye/$arkpid",
+  "when": "2024-04-03T00:00:00+00:00",
+  "who": {
+    "name": "Queen Arwa University",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "NP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2024",
+    "policy_url": null
+  },
+  "test_identifier": null,
+  "service_provider": null,
+  "purpose": "unspecified"
+}
