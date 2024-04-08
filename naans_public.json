@@ -23998,8 +23998,8 @@
   },
   "12317": {
     "what": "12317",
-    "where": "https://dr.dmko.gr/omeka-s",
-    "target": "https://dr.dmko.gr/omeka-s/$arkpid",
+    "where": "https://dr.dmko.gr",
+    "target": "https://dr.dmko.gr/$arkpid",
     "when": "2024-04-03T00:00:00+00:00",
     "who": {
       "name": "Municipal Museum of the Kalavritan Holocaust",
