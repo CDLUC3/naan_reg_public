@@ -4,8 +4,26 @@ Generate JSON representation of naan_reg_priv/main_naans.
 This tool translates the NAAN registry file from ANVL to JSON to
 assist downstream programmatic use.
 
+It also generates shoulder records from the naan_reg_priv/shoulder_registry
+ANVL source.
+
+Note that there is a discrepancy betwen configuration details offered
+by the "official" NAAN registry and entries managed by EZID. For example,
+main_naans currently reports 54723 target as https://www.hoover.org/ark:$id
+however, that NAAN is actually managed by EZID, and so the actual NAAN
+target listed in the registry should be ttps://ezid.cdlib.org/ark:$id
+since that service handles the resolution.
+
 If pydantic is installed then the script can output JSON schema
-describing the JSON respresentation of the transformed NAAN entries.
+describing the JSON representation of the transformed NAAN entries.
+
+To generate the complete NAAN registry from the various ANVL sources,
+there are three steps necessary:
+
+1. Generate the NAAN JSON records from main_naans
+2. Generate the Shoulder JSON records from shoulder_registry
+3. Update NAAN records being managed by EZID using the
+   entries from https://ezid.cdlib.org/static/info/shoulder-list.txt
 """
 
 import argparse
@@ -39,6 +57,7 @@ When a registered target does not include a
 """
 DEFAULT_ARK_SUBST = "$arkid"
 
+WHO_PATTERN = re.compile(r"\s\(=\)\s")
 
 def datestring2date(dstr: str) -> datetime.datetime:
     """Convert yyyy.mm.dd format to a datetime at UTC."""
@@ -46,7 +65,22 @@ def datestring2date(dstr: str) -> datetime.datetime:
     return res.replace(tzinfo=datetime.timezone.utc)
 
 
-def urlstr2target(ustr: str, include_slash=True) -> str:
+def split_who(who: str) -> typing.Dict[str, str]:
+    res = {"name": None, "acronym": None, "name_native": None}
+    parts = WHO_PATTERN.split(who)
+    if len(parts) == 1:
+        res["name"] = who
+    elif len(parts) == 2:
+        res["name"] = parts[0]
+        res["acronym"] = parts[1]
+    elif len(parts) == 3:
+        res["name_native"] = parts[0]
+        res['name'] = parts[1]
+        res["acronym"] = parts[2]
+    return res
+
+
+def urlstr2target(ustr: str, include_slash=True) -> dict:
     """
     Computes the redirect target URL.
 
@@ -83,8 +117,18 @@ def urlstr2target(ustr: str, include_slash=True) -> str:
             return pstr + "$arkpid"
         return pstr + "ark:$pid"
 
+    http_code = 302
+    ustr = ustr.strip()
+    parts = ustr.split()
+    if len(parts) > 1:
+        try:
+            http_code = int(parts[0])
+        except ValueError as e:
+            logging.warning("Invalid status code %s", parts[0])
+        ustr = parts[1]
+
     url = urllib.parse.urlsplit(ustr, scheme="https")
-    return urllib.parse.urlunsplit(
+    structured_url = urllib.parse.urlunsplit(
         (
             url.scheme.lower(),
             url.netloc.lower(),
@@ -93,6 +137,7 @@ def urlstr2target(ustr: str, include_slash=True) -> str:
             url.fragment,
         )
     )
+    return {"http_code": http_code, "url": structured_url}
 
 
 class EnhancedJSONEncoder(json.JSONEncoder):
@@ -149,6 +194,7 @@ class AnvlParser:
         else:
             lines = s
         for l in lines:
+            l = l.rstrip()
             if len(l) == 0:
                 k = None
             elif l[0] == "#":
@@ -211,6 +257,24 @@ class AnvlParser:
         if len(block) > 0:
             yield self.parse(block)
 
+@dataclasses.dataclass
+class Target:
+
+    url: str = dataclasses.field(
+        metadata = dict(
+            description=(
+                "URL of service endpoint accepting ARK identifiers including subsitution"
+                "parameters $arkpid for full ARK or $pid for NAAN/suffix."
+            )
+        )
+    )
+    http_code: int = dataclasses.field(
+        default=302,
+        metadata=dict(
+            description="The HTTP code to use for redirection"
+        )
+    )
+
 
 @dataclass
 class PublicNAAN_who:
@@ -218,6 +282,10 @@ class PublicNAAN_who:
 
     name: str = dataclasses.field(
         metadata=dict(description="Official organization name")
+    )
+    name_native: str = dataclasses.field(
+        default=None,
+        metadata=dict(description="Non-english variant of the official organization.")
     )
     acronym: typing.Optional[str] = dataclasses.field(
         default=None,
@@ -300,14 +368,7 @@ class PublicNAAN:
     where: str = dataclasses.field(
         metadata=dict(description="URL of service endpoint accepting ARK identifiers.")
     )
-    target: str = dataclasses.field(
-        metadata=dict(
-            description=(
-                "URL of service endpoint accepting ARK identifiers including subsitution"
-                "parameters $arkpid for full ARK or $pid for NAAN/suffix."
-            )
-        )
-    )
+    target: Target
     when: datetime.datetime = dataclasses.field(
         metadata=dict(description="Date when this record was last modified.")
     )
@@ -399,18 +460,8 @@ class NAAN(PublicNAAN):
         _address = None
         for k, v in data.items():
             if k == "who":
-                # Bit of a hack, but rarely there will appear a multipart name
-                # Just treat it as a somewhat formatted string.
-                if isinstance(v, list):
-                    v = "\n".join(v)
-                # Bit of a hack, but rarely there will appear a multipart name
-                # Just treat it as a somewhat formatted string.
-                if isinstance(v, list):
-                    v = "\n".join(v)
-                parts = v.split("(=)", 1)
-                _who = NAAN_who(name=parts[0].strip())
-                if len(parts) > 1:
-                    _who.abbrev = parts[1].strip()
+                who_parts = split_who(v)
+                _who = NAAN_who(**who_parts)
                 res["who"] = _who
             elif k == "when":
                 res["when"] = datestring2date(v)
@@ -457,6 +508,76 @@ class NAAN(PublicNAAN):
             return cls(**res)
         return None
 
+@dataclasses.dataclass
+class NAANShoulder:
+    shoulder: str
+    naan: str
+    who: NAAN_who
+    where: str = dataclasses.field(
+        metadata=dict(description="URL of service endpoint accepting ARK identifiers.")
+    )
+    target: str = dataclasses.field(
+        metadata=dict(
+            description=(
+                "URL of service endpoint accepting ARK identifiers including subsitution"
+                "parameters $arkpid for full ARK or $pid for NAAN/suffix."
+            )
+        )
+    )
+    when: datetime.datetime = dataclasses.field(
+        metadata=dict(description="Date when this record was last modified.")
+    )
+    na_policy: NAAN_how
+    comments: typing.Optional[typing.List[dict]] = dataclasses.field(
+        default=None, metadata=dict(description="Comments about Shoulder record")
+    )
+
+    @classmethod
+    def from_block(cls, block: dict):
+        """
+        Factory method for creating NAAN from an ANVL parsed block
+        """
+        data = block.get("naa", {})
+        res = {"comments": None, }
+        for k, v in data.items():
+            if k == "what":
+                scheme, value = v.split(":")
+                if scheme.lower() != "ark":
+                    raise ValueError("Only ARK shoulders supported.")
+                value = value.strip("/")
+                naan, shoulder = value.split("/")
+                res["naan"] = naan
+                res["shoulder"] = shoulder
+            elif k == "who":
+                who_parts = split_who(v)
+                _who = NAAN_who(**who_parts)
+                res["who"] = _who
+            elif k == "when":
+                res["when"] = datestring2date(v)
+            elif k == "where":
+                res["where"] = v
+                res["target"] = urlstr2target(v)
+            elif k == "how":
+                _how = NAAN_how(
+                    orgtype=v[0],
+                    policy=v[1],
+                    tenure=v[2],
+                    policy_url=v[3] if v[3] != "" else None,
+                )
+                res["na_policy"] = _how
+            else:
+                if k.startswith("!"):
+                    if res["comments"] is None:
+                        res["comments"] = [
+                            {k: v},
+                        ]
+                    else:
+                        res["comments"].append({k: v})
+                else:
+                    res[k] = v
+        if "shoulder" in res:
+            return cls(**res)
+        return None
 
 def generate_index_html2(naans, index):
     res = [
