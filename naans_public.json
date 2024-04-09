@@ -24090,5 +24090,24 @@
     "test_identifier": null,
     "service_provider": null,
     "purpose": "unspecified"
+  },
+  "34889": {
+    "what": "34889",
+    "where": "https://www.chateau-lafayette.com",
+    "target": "https://www.chateau-lafayette.com/$arkpid",
+    "when": "2024-04-09T00:00:00+00:00",
+    "who": {
+      "name": "Château de Chavaniac-Lafayette",
+      "acronym": null
+    },
+    "na_policy": {
+      "orgtype": "NP",
+      "policy": "(:unkn) unknown",
+      "tenure": "2024",
+      "policy_url": null
+    },
+    "test_identifier": null,
+    "service_provider": null,
+    "purpose": "unspecified"
   }
 }
