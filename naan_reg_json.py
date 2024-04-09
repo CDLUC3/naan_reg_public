@@ -28,6 +28,7 @@ there are three steps necessary:
 
 import argparse
 import collections
+import dataclasses
 import datetime
 import json
 import logging
@@ -38,7 +39,8 @@ import sys
 import typing
 import urllib.parse
 
-import dataclasses
+import click
+import requests
 
 PYDANTIC_AVAILABLE = False
 try:
@@ -59,6 +61,14 @@ DEFAULT_ARK_SUBST = "$arkid"
 
 WHO_PATTERN = re.compile(r"\s\(=\)\s")
 
+# Override these target.
+# Necessary when migrating from legacy N2T as the replacement does not
+# handle resolution of individual identifiers for ezid, instead that
+# functionality is handled by ezid.
+TARGET_OVERRIDES = {
+    "n2t.net":"arks.org",
+}
+
 def datestring2date(dstr: str) -> datetime.datetime:
     """Convert yyyy.mm.dd format to a datetime at UTC."""
     res = datetime.datetime.strptime(dstr, "%Y.%m.%d")
@@ -66,6 +76,8 @@ def datestring2date(dstr: str) -> datetime.datetime:
 
 
 def split_who(who: str) -> typing.Dict[str, str]:
+    if isinstance(who, list):
+        who = " | ".join(who)
     res = {"name": None, "acronym": None, "name_native": None}
     parts = WHO_PATTERN.split(who)
     if len(parts) == 1:
@@ -117,6 +129,12 @@ def urlstr2target(ustr: str, include_slash=True) -> dict:
             return pstr + "$arkpid"
         return pstr + "ark:$pid"
 
+    def adjust_netloc(netloc:str)->str:
+        netloc = netloc.lower()
+        if netloc in TARGET_OVERRIDES:
+            netloc = TARGET_OVERRIDES[netloc]
+        return netloc
+
     http_code = 302
     ustr = ustr.strip()
     parts = ustr.split()
@@ -131,7 +149,7 @@ def urlstr2target(ustr: str, include_slash=True) -> dict:
     structured_url = urllib.parse.urlunsplit(
         (
             url.scheme.lower(),
-            url.netloc.lower(),
+            adjust_netloc(url.netloc),
             adjust_path(url.path),
             url.query,
             url.fragment,
@@ -257,7 +275,11 @@ class AnvlParser:
         if len(block) > 0:
             yield self.parse(block)
 
-@dataclasses.dataclass
+
+
+
+
+@dataclass
 class Target:
 
     url: str = dataclasses.field(
@@ -412,6 +434,10 @@ class PublicNAAN:
             )
         )
     )
+    rtype: str = dataclasses.field(
+        metadata=dict(description="Type of this record."),
+        default="naan"
+    )
 
     def as_flat(self) -> dict:
         return {
@@ -443,7 +469,7 @@ class NAAN(PublicNAAN):
         return self.what
 
     def as_public(self) -> PublicNAAN:
-        public_who = PublicNAAN_who(self.who.name, self.who.acronym)
+        public_who = PublicNAAN_who(name=self.who.name, name_native=self.who.name_native, acronym=self.who.acronym)
         public = PublicNAAN(
             self.what, self.where, self.target, self.when, public_who, self.na_policy,
             self.test_identifier, self.service_provider, self.purpose
@@ -460,6 +486,7 @@ class NAAN(PublicNAAN):
         _address = None
         for k, v in data.items():
             if k == "who":
+                _L.debug(v)
                 who_parts = split_who(v)
                 _who = NAAN_who(**who_parts)
                 res["who"] = _who
@@ -508,15 +535,20 @@ class NAAN(PublicNAAN):
             return cls(**res)
         return None
 
-@dataclasses.dataclass
-class NAANShoulder:
-    shoulder: str
-    naan: str
-    who: NAAN_who
+
+@dataclass
+class PublicNAANShoulder:
+    shoulder:str = dataclasses.field(
+        metadata=dict(description="The shoulder part of the record")
+    )
+    naan: str = dataclasses.field(
+        metadata=dict(description="The naan part of the record")
+    )
+    who: PublicNAAN_who
     where: str = dataclasses.field(
         metadata=dict(description="URL of service endpoint accepting ARK identifiers.")
     )
-    target: str = dataclasses.field(
+    target: Target = dataclasses.field(
         metadata=dict(
             description=(
                 "URL of service endpoint accepting ARK identifiers including subsitution"
@@ -528,9 +560,40 @@ class NAANShoulder:
         metadata=dict(description="Date when this record was last modified.")
     )
     na_policy: NAAN_how
+    rtype: str = dataclasses.field(
+        metadata=dict(description="Type of this record."),
+        default="shoulder"
+    )
+
+
+@dataclass
+class NAANShoulder(PublicNAANShoulder):
+    who: NAAN_who
+    contact: NAAN_contact=None
+    alternate_contact: NAAN_contact=None
     comments: typing.Optional[typing.List[dict]] = dataclasses.field(
         default=None, metadata=dict(description="Comments about Shoulder record")
     )
+    provider: typing.Optional[str] = dataclasses.field(
+        default=None, metadata=dict(description="")
+    )
+
+    @property
+    def key(self) -> str:
+        return f"{self.naan}/{self.shoulder}"
+
+    def as_public(self) -> PublicNAANShoulder:
+        public_who = PublicNAAN_who(self.who.name, self.who.acronym)
+        public = PublicNAANShoulder(
+            shoulder=self.shoulder,
+            naan=self.naan,
+            who=public_who,
+            where=self.where,
+            target=self.target,
+            when=self.when,
+            na_policy=self.na_policy,
+        )
+        return public
 
     @classmethod
     def from_block(cls, block: dict):
@@ -644,7 +707,7 @@ def generate_index_html(naans, index):
     res.append("</body></html>")
     return "\n".join(res)
 
-def load_naan_reg_priv(naan_src: str, public_only=False):
+def load_naan_reg_priv(naan_src: str, public_only=False) -> dict[str, typing.Union[NAAN, PublicNAAN]]:
     anvl_parser = AnvlParser()
     res = {}
     for block in anvl_parser.parseBlocks(naan_src):
@@ -659,12 +722,204 @@ def load_naan_reg_priv(naan_src: str, public_only=False):
     return res
 
 
+def load_naan_shoulders(shoulder_src: str, public_only=False) -> dict[str, typing.Union[NAANShoulder, PublicNAANShoulder]]:
+    anvl_parser = AnvlParser()
+    res = {}
+    for block in anvl_parser.parseBlocks(shoulder_src):
+        shoulder = NAANShoulder.from_block(block)
+        if shoulder is not None:
+            if shoulder.key in res:
+                raise ValueError("Key %s elready present", shoulder.key)
+            if public_only:
+                res[shoulder.key] = shoulder.as_public()
+            else:
+                res[shoulder.key] = shoulder
+    return res
+
+
+def naan_to_path_name(naan:str) -> dict[str, str]:
+    res = {"path":"", "name":""}
+    res["path"] = naan[0]
+    res["name"] = f"{naan}.json"
+    return res
+
+
+def shoulder_to_path_name(naan:str, shoulder:str) -> dict[str, str]:
+    res = naan_to_path_name(naan)
+    res["path"] = os.path.join(res["path"], naan)
+    res["name"] = f"{shoulder}.json"
+    return res
+
+
+def store_json_naan_record(dest_folder: str, record: typing.Union[NAAN, PublicNAAN])->str:
+    path_name = naan_to_path_name(record.what)
+    os.makedirs(os.path.join(dest_folder, path_name["path"]), exist_ok=True)
+    fname = os.path.join(dest_folder, path_name["path"], path_name["name"])
+    with open(fname, "w") as dest:
+        json.dump(record, dest, indent=2, ensure_ascii=False, cls=EnhancedJSONEncoder)
+    return fname
+
+
+def store_json_shoulder_record(dest_folder: str, record:NAANShoulder)->str:
+    path_name = shoulder_to_path_name(record.naan, record.shoulder)
+    os.makedirs(os.path.join(dest_folder, path_name["path"]), exist_ok=True)
+    fname = os.path.join(dest_folder, path_name["path"], path_name["name"])
+    with open(fname, "w") as dest:
+        json.dump(record, dest, indent=2, ensure_ascii=False, cls=EnhancedJSONEncoder)
+    return fname
+
+
+def store_json_record(dest_folder:str, record: typing.Union[PublicNAANShoulder, NAANShoulder, PublicNAAN, NAAN])->typing.Optional[str]:
+    if isinstance(record, (NAANShoulder, PublicNAANShoulder)):
+        return store_json_shoulder_record(dest_folder, record)
+    if isinstance(record, (NAAN, PublicNAAN)):
+        return store_json_naan_record(dest_folder, record)
+    return None
+
+
 def generate_json_schema(public_only: bool = False):
     if public_only:
         schema = PublicNAAN.__pydantic_model__.schema()
     else:
         schema = NAAN.__pydantic_model__.schema()
     print(json.dumps(schema, indent=2))
+
+
+def load_ezid_shoulder_list(url:str) -> typing.List[dict]:
+    # regexp to match entries in the shoulder-list output
+    re_ark = re.compile(
+        r"\b(?P<PID>ark:/?(?P<prefix>[0-9]{5,10})\/(?P<value>\S+)?)",
+        re.IGNORECASE | re.MULTILINE,
+    )
+    response = requests.get(url)
+    if response.status_code == 200:
+        _L.info("Shoulder list retrieved from %s", url)
+        text = response.text
+        result = re_ark.finditer(text)
+        pids = []
+        for row in result:
+            pid = {
+                "scheme": "ark",
+                "prefix": row.group("prefix"),
+                "value": "" if row.group("value") is None else row.group("value"),
+            }
+            pids.append(pid)
+        return pids
+    else:
+        _L.error("HTTP response status %s. Failed to retrieve shoulder list from %s", response.status_code, url)
+    return []
+
+
+@click.group(name="naan_reg")
+def click_main():
+    logging.basicConfig(level=logging.DEBUG)
+    pass
+
+@click_main.command()
+@click.argument("anvl_source", type=click.Path(exists=True))
+@click.option("-d", "--dest_folder", default=".")
+@click.option("-i", "--individual", is_flag=True, default=False, help="Write individual NAAN records")
+@click.option("-p", "--private", is_flag=True, help="Generate private JSON records.")
+def naan_anvl_to_json(anvl_source:str, dest_folder: str, individual: bool, private:bool):
+    os.makedirs(dest_folder, exist_ok=True)
+    naan_src = open(anvl_source, "r").read()
+    naan_records = load_naan_reg_priv(naan_src, public_only= not private)
+    if individual:
+        for k, naan_record in naan_records.items():
+            fname = store_json_record(dest_folder, naan_record)
+            _L.info("Wrote NAAN record at %s", fname)
+    fname = os.path.join(dest_folder, "naan_records.json")
+    existing = {}
+    if os.path.exists(fname):
+        with open(fname, "r") as inf:
+            existing = json.load(inf)
+    for k, v in naan_records.items():
+        existing[k] = v
+    with open(fname, "w") as dest:
+        json.dump(existing, dest, indent=2, ensure_ascii=False, cls=EnhancedJSONEncoder)
+        _L.info("Wrote full NAAN records to %s", fname)
+
+
+@click_main.command()
+@click.argument("anvl_source", type=click.Path(exists=True))
+@click.option("-d", "--dest_folder", default=".")
+@click.option("-i", "--individual", is_flag=True, default=False, help="Write individual NAAN records")
+@click.option("-p", "--private", is_flag=True, help="Generate private JSON records.")
+def shoulder_anvl_to_json(anvl_source:str, dest_folder: str, individual:bool, private:bool):
+    os.makedirs(dest_folder, exist_ok=True)
+    shoulder_src = open(anvl_source, "r").read()
+    shoulders = load_naan_shoulders(shoulder_src, public_only=not private)
+    if individual:
+        for k, shoulder in shoulders.items():
+            fname = store_json_record(dest_folder, shoulder)
+            _L.info("Wrote Shoulder record at %s", fname)
+    fname = os.path.join(dest_folder, "naan_records.json")
+    existing = {}
+    if os.path.exists(fname):
+        with open(fname, "r") as inf:
+            existing = json.load(inf)
+    for k, v in shoulders.items():
+        existing[k] = v
+    with open(fname, "w") as dest:
+        json.dump(existing, dest, indent=2, ensure_ascii=False, cls=EnhancedJSONEncoder)
+        _L.info("Wrote full Shoulder records to %s", fname)
+
+@click_main.command()
+@click.option(
+    "-e",
+    "--ezid_shoulders_url",
+    default="https://ezid.cdlib.org/static/info/shoulder-list.txt",
+    help="URL for the EZID shoulder list."
+)
+@click.option("-d", "--dest_folder", default=".")
+def ezid_overrides(ezid_shoulders_url, dest_folder):
+    fname = os.path.join(dest_folder, "naan_records.json")
+    existing = {}
+    if os.path.exists(fname):
+        with open(fname, "r") as inf:
+            existing = json.load(inf)
+    if len(existing) == 0:
+        raise ValueError("Must load NAANs before running ezid_overrides")
+    ezid_shoulder_list = load_ezid_shoulder_list(ezid_shoulders_url)
+    if len(ezid_shoulder_list) == 0:
+        raise ValueError("EZID shoulder list could not be loaded. Aborting.")
+    for entry in ezid_shoulder_list:
+        # Find a matching existing record
+        # either a NAAN or a Shoulder entry
+        key = None
+        record = None
+        if len(entry["value"]) > 0:
+            key = f'{entry["prefix"]}/{entry["value"]}'
+            record = existing.get(key, None)
+        if record is None:
+            key = entry["prefix"]
+            record = existing.get(key, None)
+        if record is None:
+            _L.error("Existing record not found for EZID record %s", key)
+            continue
+        # Replace the target URL with ezid.cdlib.org
+        _L.info("EZID %s %s updating record %s %s", entry["prefix"], entry["value"], key, record["target"]["url"])
+        url = urllib.parse.urlsplit(record["target"]["url"])
+        new_url = urllib.parse.urlunsplit(
+            (
+                url.scheme.lower(),
+                "ezid.cdlib.org",
+                url.path,
+                url.query,
+                url.fragment,
+            )
+        )
+        _L.info(new_url)
+        record["target"]["url"] = new_url
+        existing[key] = record
+    with open(fname, "w") as dest:
+        json.dump(existing, dest, indent=2, ensure_ascii=False, cls=EnhancedJSONEncoder)
+        _L.info("Wrote EZID updated records to %s", fname)
+
+
+@click_main.command()
+def generate_schema():
+    pass
 
 
 def main() -> int:
@@ -747,6 +1002,5 @@ def main() -> int:
         print(json.dumps(res, indent=2, ensure_ascii=False, cls=EnhancedJSONEncoder))
     return 0
 
-
 if __name__ == "__main__":
-    sys.exit(main())
+    sys.exit(click_main())
