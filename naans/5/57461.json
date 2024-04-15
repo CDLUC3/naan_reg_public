@@ -1,0 +1,19 @@
+{
+  "what": "57461",
+  "where": "https://ark.hostajournal.com",
+  "target": "https://ark.hostajournal.com/$arkpid",
+  "when": "2024-04-15T00:00:00+00:00",
+  "who": {
+    "name": "Host A Journal Pvt. Ltd.",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "FP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2024",
+    "policy_url": null
+  },
+  "test_identifier": null,
+  "service_provider": null,
+  "purpose": "unspecified"
+}
