@@ -1,0 +1,19 @@
+{
+  "what": "54041",
+  "where": "https://archives.boulognebillancourt.com",
+  "target": "https://archives.boulognebillancourt.com/$arkpid",
+  "when": "2024-04-22T00:00:00+00:00",
+  "who": {
+    "name": "Mairie de Boulogne-Billancourt",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "NP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2024",
+    "policy_url": null
+  },
+  "test_identifier": null,
+  "service_provider": null,
+  "purpose": "unspecified"
+}
