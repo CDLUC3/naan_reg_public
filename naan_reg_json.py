@@ -1,11 +1,8 @@
 """
-Generate JSON representation of naan_reg_priv/main_naans.
+Generate JSON form of naan_reg_priv/main_naans and naan_reg_priv/shoulder_registry.
 
-This tool translates the NAAN registry file from ANVL to JSON to
+This tool translates the NAAN and shoulder registry files from ANVL to JSON to
 assist downstream programmatic use.
-
-It also generates shoulder records from the naan_reg_priv/shoulder_registry
-ANVL source.
 
 Note that there is a discrepancy betwen configuration details offered
 by the "official" NAAN registry and entries managed by EZID. For example,
@@ -28,6 +25,7 @@ there are three steps necessary:
 
 import argparse
 import collections
+import copy
 import dataclasses
 import datetime
 import json
@@ -144,6 +142,9 @@ def urlstr2target(ustr: str, include_slash=True) -> dict:
         except ValueError as e:
             logging.warning("Invalid status code %s", parts[0])
         ustr = parts[1]
+
+    if ("?" in ustr) and ((ustr[-1] == "=") or (ustr[-1] == "?")):
+        return {"http_code": http_code, "url": f"{ustr}$arkpid"}
 
     url = urllib.parse.urlsplit(ustr, scheme="https")
     structured_url = urllib.parse.urlunsplit(
@@ -788,7 +789,7 @@ def generate_json_schema(public_only: bool = False):
 def load_ezid_shoulder_list(url:str) -> typing.List[dict]:
     # regexp to match entries in the shoulder-list output
     re_ark = re.compile(
-        r"\b(?P<PID>ark:/?(?P<prefix>[0-9]{5,10})\/(?P<value>\S+)?)",
+        r"\b(?P<PID>ark:/?(?P<prefix>[0-9]{5,10})\/(?P<value>\S+)?)\s+(?P<name>.*)",
         re.IGNORECASE | re.MULTILINE,
     )
     response = requests.get(url)
@@ -802,6 +803,7 @@ def load_ezid_shoulder_list(url:str) -> typing.List[dict]:
                 "scheme": "ark",
                 "prefix": row.group("prefix"),
                 "value": "" if row.group("value") is None else row.group("value"),
+                "name": "" if row.group("name") is None else row.group("name"),
             }
             pids.append(pid)
         return pids
@@ -828,6 +830,15 @@ def naan_anvl_to_json(anvl_source:str, dest_folder: str, individual: bool, priva
         for k, naan_record in naan_records.items():
             fname = store_json_record(dest_folder, naan_record)
             _L.info("Wrote NAAN record at %s", fname)
+    # Write out the json-lines representation of the NAAN records
+    # This format is convenient for loading in tools like duckdb
+    fname = os.path.join(dest_folder, "naan_records.jsonl")
+    with open(fname, "w") as dest:
+        for k,v in naan_records.items():
+            dest.write(json.dumps(v, ensure_ascii=False, cls=EnhancedJSONEncoder))
+            dest.write("\n")
+    _L.info("Wrote full NAAN records to %s", fname)
+    # Write out a single dictionary representation
     fname = os.path.join(dest_folder, "naan_records.json")
     existing = {}
     if os.path.exists(fname):
@@ -873,6 +884,10 @@ def shoulder_anvl_to_json(anvl_source:str, dest_folder: str, individual:bool, pr
 )
 @click.option("-d", "--dest_folder", default=".")
 def ezid_overrides(ezid_shoulders_url, dest_folder):
+    ezid_exceptions = [
+        "87602",
+        "21549",
+    ]
     fname = os.path.join(dest_folder, "naan_records.json")
     existing = {}
     if os.path.exists(fname):
@@ -886,32 +901,46 @@ def ezid_overrides(ezid_shoulders_url, dest_folder):
     for entry in ezid_shoulder_list:
         # Find a matching existing record
         # either a NAAN or a Shoulder entry
-        key = None
-        record = None
-        if len(entry["value"]) > 0:
-            key = f'{entry["prefix"]}/{entry["value"]}'
-            record = existing.get(key, None)
-        if record is None:
-            key = entry["prefix"]
-            record = existing.get(key, None)
-        if record is None:
-            _L.error("Existing record not found for EZID record %s", key)
+        shoulder_key:typing.Optional[str] = None
+        shoulder_record:typing.Optional[dict[str,typing.Any]] = None
+        naan_key = entry["prefix"]
+        if naan_key in ezid_exceptions:
+            _L.warning("Imposing ezid_exception for NAAN %s", naan_key)
             continue
+        naan_record = existing.get(naan_key, None)
+        if len(entry["value"]) > 0:
+            shoulder_key = f'{entry["prefix"]}/{entry["value"]}'
+            shoulder_record = existing.get(shoulder_key, None)
+        if shoulder_record is not None:
+            # check the target url. If netloc is arks.org then override, otherwise leave it be.
+            url = urllib.parse.urlsplit(shoulder_record["target"]["url"], scheme="https")
+            if url.netloc == "arks.org":
+                shoulder_record["target"]["url"] = "https://ezid.cdlib.org/$arkpid"
+                existing[shoulder_key] = shoulder_record
+                _L.info("Updated %s shoulder record with ezid target", shoulder_key)
+                continue
+            _L.warning("Skipping override of existing shoulder record %s / %s", shoulder_record["naan"], shoulder_record["shoulder"])
+            continue
+        if naan_record is None:
+            _L.error("Existing NAAN record not found for EZID record %s / %s", entry["prefix"], entry["value"])
+            continue
+        if shoulder_key is not None and shoulder_record is None:
+            # create a new record based on the naan record.
+            shoulder_record = copy.deepcopy(naan_record)
+            shoulder_record["rtype"] = "shoulder"
+            shoulder_record["naan"] = naan_key
+            shoulder_record["shoulder"] = shoulder_record["what"]
+            del shoulder_record["what"]
+            shoulder_record["who"]["name"] = entry["name"]
+            shoulder_record["who"]["acronym"] = None
+            shoulder_record["target"]["url"] = "https://ezid.cdlib.org/$arkpid"
+            existing[shoulder_key] = shoulder_record
+            continue
+
         # Replace the target URL with ezid.cdlib.org
-        _L.info("EZID %s %s updating record %s %s", entry["prefix"], entry["value"], key, record["target"]["url"])
-        url = urllib.parse.urlsplit(record["target"]["url"])
-        new_url = urllib.parse.urlunsplit(
-            (
-                url.scheme.lower(),
-                "ezid.cdlib.org",
-                url.path,
-                url.query,
-                url.fragment,
-            )
-        )
-        _L.info(new_url)
-        record["target"]["url"] = new_url
-        existing[key] = record
+        _L.info("EZID %s %s updating record %s %s", entry["prefix"], entry["value"], naan_key, naan_record["target"]["url"])
+        naan_record["target"]["url"] = "https://ezid.cdlib.org/$arkpid"
+        existing[naan_key] = naan_record
     with open(fname, "w") as dest:
         json.dump(existing, dest, indent=2, ensure_ascii=False, cls=EnhancedJSONEncoder)
         _L.info("Wrote EZID updated records to %s", fname)
