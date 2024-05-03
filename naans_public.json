@@ -24394,5 +24394,24 @@
     "test_identifier": null,
     "service_provider": null,
     "purpose": "unspecified"
+  },
+  "63617": {
+    "what": "63617",
+    "where": "https://ccrr.patrimonionacional.es",
+    "target": "https://ccrr.patrimonionacional.es/$arkpid",
+    "when": "2024-05-03T00:00:00+00:00",
+    "who": {
+      "name": "Patrimonio Nacional",
+      "acronym": null
+    },
+    "na_policy": {
+      "orgtype": "NP",
+      "policy": "(:unkn) unknown",
+      "tenure": "2024",
+      "policy_url": null
+    },
+    "test_identifier": null,
+    "service_provider": null,
+    "purpose": "unspecified"
   }
 }
