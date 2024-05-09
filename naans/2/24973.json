@@ -1,0 +1,19 @@
+{
+  "what": "24973",
+  "where": "https://elsa.brin.go.id",
+  "target": "https://elsa.brin.go.id/$arkpid",
+  "when": "2024-05-09T00:00:00+00:00",
+  "who": {
+    "name": "Badan Riset dan Inovasi Nasional",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "NP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2024",
+    "policy_url": null
+  },
+  "test_identifier": null,
+  "service_provider": null,
+  "purpose": "unspecified"
+}
