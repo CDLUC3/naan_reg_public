@@ -24470,5 +24470,24 @@
     "test_identifier": null,
     "service_provider": null,
     "purpose": "unspecified"
+  },
+  "11977": {
+    "what": "11977",
+    "where": "https://geologica.gov.pk",
+    "target": "https://geologica.gov.pk/$arkpid",
+    "when": "2024-05-13T00:00:00+00:00",
+    "who": {
+      "name": "GEOLOGICA",
+      "acronym": null
+    },
+    "na_policy": {
+      "orgtype": "NP",
+      "policy": "(:unkn) unknown",
+      "tenure": "2024",
+      "policy_url": null
+    },
+    "test_identifier": null,
+    "service_provider": null,
+    "purpose": "unspecified"
   }
 }
