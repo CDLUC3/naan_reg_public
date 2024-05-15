@@ -1,0 +1,19 @@
+{
+  "what": "73193",
+  "where": "https://bina.bulac.fr/s/bina",
+  "target": "https://bina.bulac.fr/s/bina/$arkpid",
+  "when": "2024-05-15T00:00:00+00:00",
+  "who": {
+    "name": "Bibliothèque universitaire des langues et civilisations",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "NP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2024",
+    "policy_url": null
+  },
+  "test_identifier": null,
+  "service_provider": null,
+  "purpose": "unspecified"
+}
