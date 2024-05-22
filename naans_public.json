@@ -23865,8 +23865,8 @@
   },
   "28733": {
     "what": "28733",
-    "where": "http://root-me.pro",
-    "target": "http://root-me.pro/$arkpid",
+    "where": "https://root-me.pro",
+    "target": "https://root-me.pro/$arkpid",
     "when": "2024-03-22T00:00:00+00:00",
     "who": {
       "name": "Root-Me Pro",
@@ -23983,7 +23983,7 @@
     "target": "https://marcelle.media/$arkpid",
     "when": "2024-04-03T00:00:00+00:00",
     "who": {
-      "name": "MARCELLE LE MEDIA SAS",
+      "name": "Marcelle le Media SAS",
       "acronym": null
     },
     "na_policy": {
@@ -24040,7 +24040,7 @@
     "target": "https://unirajournal.com/$arkpid",
     "when": "2024-04-08T00:00:00+00:00",
     "who": {
-      "name": "UNIVERSAL RESEARCH AND ACADEMIC JOURNAL",
+      "name": "Universal Research and Academic Journal",
       "acronym": null
     },
     "na_policy": {
@@ -24539,6 +24539,44 @@
     },
     "na_policy": {
       "orgtype": "FP",
+      "policy": "(:unkn) unknown",
+      "tenure": "2024",
+      "policy_url": null
+    },
+    "test_identifier": null,
+    "service_provider": null,
+    "purpose": "unspecified"
+  },
+  "47544": {
+    "what": "47544",
+    "where": "https://ark.aqmo.org",
+    "target": "https://ark.aqmo.org/$arkpid",
+    "when": "2024-05-22T00:00:00+00:00",
+    "who": {
+      "name": "University of Rennes",
+      "acronym": null
+    },
+    "na_policy": {
+      "orgtype": "NP",
+      "policy": "(:unkn) unknown",
+      "tenure": "2024",
+      "policy_url": null
+    },
+    "test_identifier": null,
+    "service_provider": null,
+    "purpose": "unspecified"
+  },
+  "34548": {
+    "what": "34548",
+    "where": "https://www.nchc.org.tw",
+    "target": "https://www.nchc.org.tw/$arkpid",
+    "when": "2024-05-22T00:00:00+00:00",
+    "who": {
+      "name": "National Center for High-performance Computing (NCHC)",
+      "acronym": null
+    },
+    "na_policy": {
+      "orgtype": "NP",
       "policy": "(:unkn) unknown",
       "tenure": "2024",
       "policy_url": null

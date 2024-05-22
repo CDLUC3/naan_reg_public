@@ -1,14 +1,14 @@
 {
-  "what": "28733",
-  "where": "https://root-me.pro",
-  "target": "https://root-me.pro/$arkpid",
-  "when": "2024-03-22T00:00:00+00:00",
+  "what": "47544",
+  "where": "https://ark.aqmo.org",
+  "target": "https://ark.aqmo.org/$arkpid",
+  "when": "2024-05-22T00:00:00+00:00",
   "who": {
-    "name": "Root-Me Pro",
+    "name": "University of Rennes",
     "acronym": null
   },
   "na_policy": {
-    "orgtype": "FP",
+    "orgtype": "NP",
     "policy": "(:unkn) unknown",
     "tenure": "2024",
     "policy_url": null
