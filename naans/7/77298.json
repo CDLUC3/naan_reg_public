@@ -1,7 +1,7 @@
 {
   "what": "77298",
-  "where": "https://ki.ujep.cz",
-  "target": "https://ki.ujep.cz/$arkpid",
+  "where": "https://ids.ki.ujep.cz",
+  "target": "https://ids.ki.ujep.cz/$arkpid",
   "when": "2024-03-27T00:00:00+00:00",
   "who": {
     "name": "Jan Evangelista Purkyně University in Ústí nad Labem Faculty of Science, Department of Informatics",
