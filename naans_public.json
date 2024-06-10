@@ -24850,5 +24850,24 @@
     "test_identifier": null,
     "service_provider": null,
     "purpose": "unspecified"
+  },
+  "76272": {
+    "what": "76272",
+    "where": "https://www.eo.symbiose-audiovisuelle.fr",
+    "target": "https://www.eo.symbiose-audiovisuelle.fr/$arkpid",
+    "when": "2024-06-09T00:00:00+00:00",
+    "who": {
+      "name": "Editions Oeuvres. AVANT PREMIERE CINEMA",
+      "acronym": null
+    },
+    "na_policy": {
+      "orgtype": "NP",
+      "policy": "(:unkn) unknown",
+      "tenure": "2024",
+      "policy_url": null
+    },
+    "test_identifier": null,
+    "service_provider": null,
+    "purpose": "unspecified"
   }
 }
