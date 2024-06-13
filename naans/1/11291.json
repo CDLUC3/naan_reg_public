@@ -1,0 +1,19 @@
+{
+  "what": "11291",
+  "where": "https://vcc.arcabc.ca",
+  "target": "https://vcc.arcabc.ca/$arkpid",
+  "when": "2024-06-13T00:00:00+00:00",
+  "who": {
+    "name": "Vancouver Community College",
+    "acronym": null
+  },
+  "na_policy": {
+    "orgtype": "NP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2024",
+    "policy_url": null
+  },
+  "test_identifier": null,
+  "service_provider": null,
+  "purpose": "unspecified"
+}
