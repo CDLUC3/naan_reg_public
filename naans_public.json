@@ -25059,5 +25059,24 @@
     "test_identifier": null,
     "service_provider": null,
     "purpose": "unspecified"
+  },
+  "20868": {
+    "what": "20868",
+    "where": "https://www.bmvr.marseille.fr",
+    "target": "https://www.bmvr.marseille.fr/$arkpid",
+    "when": "2024-06-13T00:00:00+00:00",
+    "who": {
+      "name": "Bmvr Alcazar",
+      "acronym": null
+    },
+    "na_policy": {
+      "orgtype": "NP",
+      "policy": "(:unkn) unknown",
+      "tenure": "2024",
+      "policy_url": null
+    },
+    "test_identifier": null,
+    "service_provider": null,
+    "purpose": "unspecified"
   }
 }
