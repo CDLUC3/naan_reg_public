@@ -25135,5 +25135,24 @@
     "test_identifier": null,
     "service_provider": null,
     "purpose": "unspecified"
+  },
+  "43439": {
+    "what": "43439",
+    "where": "https://yukonu.ca/library",
+    "target": "https://yukonu.ca/library/$arkpid",
+    "when": "2024-06-16T00:00:00+00:00",
+    "who": {
+      "name": "Yukon University Library",
+      "acronym": null
+    },
+    "na_policy": {
+      "orgtype": "NP",
+      "policy": "(:unkn) unknown",
+      "tenure": "2024",
+      "policy_url": null
+    },
+    "test_identifier": null,
+    "service_provider": null,
+    "purpose": "unspecified"
   }
 }
