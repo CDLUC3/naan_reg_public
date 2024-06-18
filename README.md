@@ -24,7 +24,7 @@ visible NAAN records.
 
 ```
 $python naan_reg_json.py --help
-usage: naan_reg_json.py [-h] [-s] [-p] [path]
+usage: naan_reg_json.py [-h] [-p] [path]
 
 Generate JSON representation of naan_reg_priv/main_naans. This tool translates the 
 NAAN registry file from ANVL to JSON to assist downstream programmatic use. If pydantic 
@@ -36,7 +36,6 @@ positional arguments:
 
 optional arguments:
   -h, --help    show this help message and exit
-  -s, --schema  Generate JSON schema and exit.
   -p, --public  Output public content only.
 ```
 
