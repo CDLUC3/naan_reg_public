@@ -25173,5 +25173,24 @@
     "test_identifier": null,
     "service_provider": null,
     "purpose": "unspecified"
+  },
+  "17789": {
+    "what": "17789",
+    "where": "https://objvdh-lehavre.decalog.net/flora_a50",
+    "target": "https://objvdh-lehavre.decalog.net/flora_a50/$arkpid",
+    "when": "2024-06-17T00:00:00+00:00",
+    "who": {
+      "name": "Local Government",
+      "acronym": null
+    },
+    "na_policy": {
+      "orgtype": "NP",
+      "policy": "(:unkn) unknown",
+      "tenure": "2024",
+      "policy_url": null
+    },
+    "test_identifier": null,
+    "service_provider": null,
+    "purpose": "unspecified"
   }
 }
