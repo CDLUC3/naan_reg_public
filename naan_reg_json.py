@@ -67,6 +67,7 @@ TARGET_OVERRIDES = {
     "n2t.net":"arks.org",
 }
 
+
 def datestring2date(dstr: str) -> datetime.datetime:
     """Convert yyyy.mm.dd format to a datetime at UTC."""
     res = datetime.datetime.strptime(dstr, "%Y.%m.%d")
@@ -94,6 +95,25 @@ def urlstr2target(ustr: str, include_slash=True) -> dict:
     """
     Computes the redirect target URL.
 
+    Legacy N2T appears to support a couple different substitution patterns, using
+    "ark:/12345/foo" as the input PID in a request:
+
+    blank = Append the ARK as provided in the request to the target URL.
+            e.g.: http://example.com/ -> http://example.com/ark:12345/foo
+            ${pid} in the JSON NAAN records.
+
+    $id = Replace the $id string with the content portion of the PID (naan/value)
+            e.g.: http://example.com/$id -> http://example.com/12345/foo
+            ${content} in the JSON NAAN records
+
+    $arkid = Replace the $arkid string with the full PID
+            e.g.: http://example.com/$arkid -> http://example.com/ark:/12345/foo
+            ${pid} in the JSON NAAN records
+
+    $nlid = Replace the $niid string with the value portion of the ARK identifier.
+            e.g.: http://example.com/$niid -> http://example.com/foo
+            ${value} in the JSON NAAN records
+
     If ustr path includes "$pid" or "$arkpid", then the path is unchanged,
     otherwise "$arkpid" is appended to create the target.
 
@@ -108,24 +128,31 @@ def urlstr2target(ustr: str, include_slash=True) -> dict:
 
     def adjust_path(pstr: str) -> str:
         pstr = pstr.strip()
-        if "$pid" in pstr or "$arkpid" in pstr:
-            return pstr
-        # replace $id or $arkid with $pid or $arkpid
-        if "$id" in pstr:
-            return pstr.replace("$id", "$pid")
-        if "$arkid" in pstr:
-            return pstr.replace("$arkid", "$arkpid")
+        replacements = {
+            "$pid": "${content}",
+            "$arkpid": "${pid}",
+            "${arkpid}": "${pid}",
+            "$id": "${pid}",
+            "${id}": "${pid}",
+            "$arkid": "${pid}",
+            "${arkid}": "${pid}",
+            "$nlid": "${value}",
+            "${nlid}": "${value}",
+        }
+        for k,v in replacements.items():
+            if k in pstr:
+                return pstr.replace(k, v)
         # There's at least one entry in the NAAN registry like this
         if pstr.endswith("ark:"):
-            return pstr + "$pid"
+            return pstr + "${content}"
         if pstr.endswith("ark:/"):
-            return pstr + "$pid"
+            return pstr + "${content}"
         # Always add a slash when constructing the url
         if not pstr.endswith("/"):
             pstr += "/"
         if include_slash:
-            return pstr + "$arkpid"
-        return pstr + "ark:$pid"
+            return pstr + "ark:/${content}"
+        return pstr + "ark:${content}"
 
     def adjust_netloc(netloc:str)->str:
         netloc = netloc.lower()
@@ -275,9 +302,6 @@ class AnvlParser:
                 block.append(line)
         if len(block) > 0:
             yield self.parse(block)
-
-
-
 
 
 @dataclass
@@ -822,7 +846,8 @@ def click_main():
 @click.option("-d", "--dest_folder", default=".")
 @click.option("-i", "--individual", is_flag=True, default=False, help="Write individual NAAN records")
 @click.option("-p", "--private", is_flag=True, help="Generate private JSON records.")
-def naan_anvl_to_json(anvl_source:str, dest_folder: str, individual: bool, private:bool):
+@click.option("-l", "--lines", is_flag=True, default=False, help="Generate JSONL output.")
+def naan_anvl_to_json(anvl_source:str, dest_folder: str, individual: bool, private:bool, lines:bool):
     os.makedirs(dest_folder, exist_ok=True)
     naan_src = open(anvl_source, "r").read()
     naan_records = load_naan_reg_priv(naan_src, public_only= not private)
@@ -832,13 +857,22 @@ def naan_anvl_to_json(anvl_source:str, dest_folder: str, individual: bool, priva
             _L.info("Wrote NAAN record at %s", fname)
     # Write out the json-lines representation of the NAAN records
     # This format is convenient for loading in tools like duckdb
-    fname = os.path.join(dest_folder, "naan_records.jsonl")
-    with open(fname, "w") as dest:
-        for k,v in naan_records.items():
-            dest.write(json.dumps(v, ensure_ascii=False, cls=EnhancedJSONEncoder))
-            dest.write("\n")
-    _L.info("Wrote full NAAN records to %s", fname)
+    if lines:
+        fname = os.path.join(dest_folder, "naan_records.jsonl")
+        with open(fname, "w") as dest:
+            for k,v in naan_records.items():
+                dest.write(json.dumps(v, ensure_ascii=False, cls=EnhancedJSONEncoder))
+                dest.write("\n")
+    else:
+        res = []
+        for k, v in naan_records.items():
+            res.append(v)
+        fname = os.path.join(dest_folder, "naan_records.json")
+        with open(fname, "w") as dest:
+            json.dump(res, dest, ensure_ascii=False, cls=EnhancedJSONEncoder, indent=2)
+        _L.info("Wrote full NAAN records to %s", fname)
     # Write out a single dictionary representation
+    '''
     fname = os.path.join(dest_folder, "naan_records.json")
     existing = {}
     if os.path.exists(fname):
@@ -849,7 +883,7 @@ def naan_anvl_to_json(anvl_source:str, dest_folder: str, individual: bool, priva
     with open(fname, "w") as dest:
         json.dump(existing, dest, indent=2, ensure_ascii=False, cls=EnhancedJSONEncoder)
         _L.info("Wrote full NAAN records to %s", fname)
-
+    '''
 
 @click_main.command()
 @click.argument("anvl_source", type=click.Path(exists=True))
@@ -951,6 +985,7 @@ def generate_schema():
     pass
 
 
+'''
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     if PYDANTIC_AVAILABLE:
@@ -1030,6 +1065,7 @@ def main() -> int:
     if not _output_generated:
         print(json.dumps(res, indent=2, ensure_ascii=False, cls=EnhancedJSONEncoder))
     return 0
+'''
 
 if __name__ == "__main__":
     sys.exit(click_main())
