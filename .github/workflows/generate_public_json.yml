@@ -19,9 +19,6 @@ jobs:
         repository: CDLUC3/naan_reg_priv
         token: ${{ secrets.NAAN_REG_PRIV_PAT }}
         path: naan_reg_priv
-    - name: install dependencies
-      id: dependencies
-      run: pip3 install -r requirements.txt
     - name: Get timestamp
       id: timestamp
       run: echo "::set-output name=timestamp::$(date +'%Y%m%d.%H%M%S')"
@@ -30,9 +27,9 @@ jobs:
         mkdir -p docs
         cp -r schema docs
         ls -la
-        python naan_reg_json.py naan-anvl-to-json naan_reg_priv/main_naans -d docs
-        python naan_reg_json.py shoulder-anvl-to-json naan_reg_priv/shoulder_registry -d docs
-        python naan_reg_json.py ezid-overrides -d docs
+        python naan_reg_json.py -p naan_reg_priv/main_naans > docs/naans_public.json
+        python naan_reg_json.py -p naan_reg_priv/main_naans -f docs/naans 
+        cp templates/index.html docs/index.html
     - name: Publish documentation
       uses: peaceiris/actions-gh-pages@v3
       with:
