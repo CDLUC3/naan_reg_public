@@ -47,5 +47,5 @@ jobs:
           git add naan_records.json
           git commit -m "Updated naan_records.json" naan_records.json
           git push
-          git tag -a ${{ steps.timestamp.outputs.timestamp }} -m "Regenerated naan_records.json"
+          git tag -a "$TAG_TIMESTAMP" -m "Regenerated naan_records.json"
           git push origin tag "$TAG_TIMESTAMP"
