@@ -29,7 +29,7 @@ jobs:
 
       - name: NAANs to JSON
         run: |
-          python scripts/naan_reg_json.py main-naans-t-json -d . naan_reg_priv/main_naans
+          python scripts/naan_reg_json.py main-naans-to-json -d . naan_reg_priv/main_naans
           
       - name: Get timestamp
         id: timestamp
