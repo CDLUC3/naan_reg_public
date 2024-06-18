@@ -33,7 +33,7 @@ jobs:
           
       - name: Get timestamp
         id: timestamp
-        run: echo "::set-output name=timestamp::$(date +'%Y%m%d.%H%M%S')"
+        run: echo "TAG_TIMESTAMP=$(date +'%Y%m%d.%H%M%S')" >> $GITHUB_ENV
 
       - name: setup git identity
         run: |
@@ -46,5 +46,6 @@ jobs:
         run: |
           git add naan_records.json
           git commit -m "Updated naan_records.json" naan_records.json
+          git push
           git tag -a ${{ steps.timestamp.outputs.timestamp }} -m "Regenerated naan_records.json"
-          git push origin tag ${{ steps.timestamp.outputs.timestamp }}
+          git push origin tag "$TAG_TIMESTAMP"
