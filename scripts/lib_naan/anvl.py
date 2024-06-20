@@ -55,7 +55,7 @@ def urlstr2target(ustr: str, include_slash=True) -> dict:
     "ark:/12345/foo" as the input PID in a request:
 
     blank = Append the ARK as provided in the request to the target URL.
-            e.g.: http://example.com/ -> http://example.com/ark:12345/foo
+            e.g.: http://example.com/ -> http://example.com/ark:/12345/foo
             ${pid} in the JSON NAAN records.
 
     $id = Replace the $id string with the content portion of the PID (naan/value)
@@ -66,8 +66,8 @@ def urlstr2target(ustr: str, include_slash=True) -> dict:
             e.g.: http://example.com/$arkid -> http://example.com/ark:/12345/foo
             ${pid} in the JSON NAAN records
 
-    $nlid = Replace the $niid string with the value portion of the ARK identifier.
-            e.g.: http://example.com/$niid -> http://example.com/foo
+    $nlid = Replace the $nlid string with the value portion of the ARK identifier.
+            e.g.: http://example.com/$nlid -> http://example.com/foo
             ${value} in the JSON NAAN records
 
     If ustr path includes "$pid" or "$arkpid", then the path is unchanged,
@@ -85,11 +85,11 @@ def urlstr2target(ustr: str, include_slash=True) -> dict:
     def adjust_path(pstr: str) -> str:
         pstr = pstr.strip()
         replacements = {
-            "$pid": "${content}",
+            "$pid": "${pid}",
             "$arkpid": "${pid}",
             "${arkpid}": "${pid}",
-            "$id": "${pid}",
-            "${id}": "${pid}",
+            "$id": "${content}",
+            "${id}": "${content}",
             "$arkid": "${pid}",
             "${arkid}": "${pid}",
             "$nlid": "${value}",
@@ -127,7 +127,8 @@ def urlstr2target(ustr: str, include_slash=True) -> dict:
         ustr = parts[1]
 
     if ("?" in ustr) and ((ustr[-1] == "=") or (ustr[-1] == "?")):
-        return {"http_code": http_code, "url": f"{ustr}$arkpid"}
+        _v = "${pid}"
+        return {"http_code": http_code, "url": f"{ustr}{_v}"}
 
     url = urllib.parse.urlsplit(ustr, scheme="https")
     structured_url = urllib.parse.urlunsplit(

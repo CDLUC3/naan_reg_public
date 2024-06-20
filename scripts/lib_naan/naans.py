@@ -4,14 +4,14 @@ This module implements a repository for NAAN records.
 
 import dataclasses
 import datetime
-import glob
 import json
 import logging
 import os
-import re
+import pathlib
 import typing
 
 import lib_naan
+import lib_naan.anvl
 
 _L = logging.getLogger(__name__)
 
@@ -28,39 +28,32 @@ class EnhancedJSONEncoder(json.JSONEncoder):
 
 
 class NaanRepository:
+
+    __version__ = "1.0"
+
     """
     Implements an on-disk repository for NAAN records.
 
-    NAAN records are stored as JSON files in a directory tree. Subfolders
-    of the tree are named with the first character of the NAAN value for the record,
-    and individual NAAN records are named as NAAN_VALUE.json.
+    NAAN records are stored to a single JSON file that may contain NAAN records and
+    shoulder records for NAANs.
 
-    The top level of the directory tree contains an index.json file which contains
-    a dictionary with keys being NAAN_VALUE and values being the relative path to
-    the corresponding NAAN record.
+    A corresponding NAAN record must be present for shoulders, hence NAANs should be
+    loaded first to avoid consistency exceptions.
+
     """
-    def __init__(self, base_dir: str):
-        self._base_dir = base_dir
-        if not os.path.exists(self._base_dir):
-            _L.info("Creating directory %s", self._base_dir)
-            os.makedirs(self._base_dir)
-        self._index_name = os.path.join(self._base_dir, "index.json")
-        self.naan_value_re = re.compile(r"[0-9]{5}")
+    def __init__(self, store_path: typing.Union[str, pathlib.Path]):
+        self._store_path = pathlib.Path(store_path)
+        self._index: dict[str, int] = {}
+        self._records = []
+        self._metadata = {
+            "version": NaanRepository.__version__,
+            "created_date": datetime.datetime.now(tz=datetime.timezone.utc).isoformat(),
+            "modified_date": None,
+            "description": "Public NAAN records and Shoulder information."
+        }
 
-    def _naan_path(self, naan_value:str) -> str:
-        """
-        Returns the path on disk to the naan record for the given NAAN value.
-
-        Args:
-            naan_value: A NAAN value, e.g. "33244"
-
-        Returns:
-            str: the path on disk to the naan record for the given naan_value
-
-        """
-        naan_value = naan_value.strip()
-        sub_dir = naan_value[0]
-        return os.path.join(self._base_dir, sub_dir, f"{naan_value}.json")
+    def __len__(self) -> int:
+        return len(self._records)
 
     def _update_index(self):
         """
@@ -69,33 +62,66 @@ class NaanRepository:
         Returns:
             Nothing
         """
-        entries = []
-        for filename in glob.iglob(os.path.join(self._base_dir, "**/*.json"), recursive=True):
-            entries.append(os.path.relpath(filename, self._base_dir))
-        entries.sort()
-        index = {}
-        for entry in entries:
-            file_parts = os.path.splitext(os.path.basename(entry))
-            naan_value = file_parts[0]
-            if self.naan_value_re.match(naan_value):
-                index[naan_value] = entry
-        with open(self._index_name, "w") as dest:
-            json.dump(index, dest, indent=2, cls=EnhancedJSONEncoder)
+        self._index = {}
+        for i in range(0, len(self._records)):
+            entry = self._records[i]
+            self._index[entry.identifier] = i
 
-    def index(self):
-        """
-        Returns a dictionary with keys as naan_values and values as the
-        relative paths to the corresponding NAAN records.
+    def get(self, i: int, as_public:bool = False) -> typing.Union[lib_naan.NAAN, lib_naan.PublicNAAN]:
+        record = self._records[i]
+        if as_public:
+            return record.as_public()
+        return record
 
-        Returns:
-            dict: key=naan, value=relative path to the corresponding NAAN record
+    def read(self, key: str, as_public:bool = False) -> typing.Union[lib_naan.NAAN, lib_naan.PublicNAAN]:
         """
-        with open(self._index_name, "r") as inf:
-            return json.load(inf)
+        Retrieve the specified record with exact match of "NAAN" or "NAAN/shoulder"
 
-    def create(self, naan_record: lib_naan.NAAN) -> lib_naan.NAAN:
+        If "as_public" is True, then only public information is returned.
         """
-        Creates a NAAN record.
+        i = self._index[key]
+        return self.get(i, as_public=as_public)
+
+    def load(self) -> None:
+        """Load the set of records from the specified JSON file.
+        """
+        self._records = []
+        self._index = {}
+        with open(self._store_path, "r") as inf:
+            data = json.load(inf)
+            self._metadata = data["metadata"]
+            records = data["data"]
+        for record in records:
+            entry = lib_naan.entryFromDict(record)
+            if entry is not None:
+                self._records.append(entry)
+            else:
+                _L.warning("Unable to parse record '%s'" % record)
+        self._update_index()
+        _L.info("Loaded %s records from %s", len(self), self._store_path)
+
+    def store(self, as_public:bool=False) -> None:
+        """Store the set of records in the specified JSON file
+        """
+        if not os.path.exists(self._store_path):
+            _L.info("Creating directory %s", self._store_path)
+            self._store_path.parent.mkdir(parents=True, exist_ok=True)
+        records = self._records
+        if as_public:
+            records = []
+            for record in self._records:
+                records.append(record.as_public())
+        data = {
+            "metadata": self._metadata,
+            "data": records
+        }
+        with open(self._store_path, "w") as dest:
+            json.dump(data, dest, indent=2, cls=EnhancedJSONEncoder)
+        _L.info("Saved %s records to %s", len(self), self._store_path)
+
+    def insert(self, entry: lib_naan.StorableTypes) -> str:
+        """
+        Adds a record.
 
         Adds a new naan record if the record does not already exist. The repository
         index is updated.
@@ -106,15 +132,84 @@ class NaanRepository:
         Returns:
             The stored naan_record.
         """
-        fname = self._naan_path(naan_record.what)
-        if os.path.exists(fname):
-            raise KeyError(f"{naan_record.what} already exists.")
-        with open(fname, "w") as dest:
-            json.dump(naan_record, dest, indent=2, cls=EnhancedJSONEncoder)
+        key = self._index.get(entry.identifier, None)
+        if key is not None:
+            raise ValueError(f"Entry with key {key} already exists. Try update instead.")
+        self._records.append(entry)
         self._update_index()
-        return naan_record
+        self._metadata["updated"] = datetime.datetime.now(tz=datetime.timezone.utc)
+        return entry.identifier
 
-    def read(self, naan: str, as_public:bool = False) -> typing.Union[lib_naan.NAAN, lib_naan.PublicNAAN]:
+    def update(self, entry: lib_naan.StorableTypes) -> str:
+        key = entry.identifier
+        existing = self.read(key)
+        existing.update(entry)
+        self._update_index()
+        self._metadata["updated"] = datetime.datetime.now(tz=datetime.timezone.utc)
+        return existing.identifier
+
+    def upsert(self, entry: lib_naan.StorableTypes):
+        try:
+            return self.insert(entry)
+        except ValueError as err:
+            pass
+        return self.update(entry)
+
+    def delete(self, key:str):
+        i = self._index[key]
+        del self._records[i]
+        self._update_index()
+        self._metadata["updated"] = datetime.datetime.now(tz=datetime.timezone.utc)
+
+    @property
+    def index(self):
+        """
+        Returns a dictionary with keys as naan / shoulder values and values as the
+        offset in the internal list of entries.
+
+        Returns:
+            dict: key=naan, value=relative path to the corresponding NAAN record
+        """
+        return self._index
+
+    def load_naan_reg_priv(self, naan_src: str, as_public:bool=True) -> int:
+        """Load NAAN records from ANVL formatted source.
+
+        naan_src is the full text of main_naans (i.e. contents, not path to file)
+        """
+        anvl_parser = lib_naan.anvl.AnvlParser()
+        n = 0
+        for block in anvl_parser.parseBlocks(naan_src):
+            try:
+                naan = lib_naan.NAAN.from_anvl_block(block)
+                if as_public:
+                    naan = naan.as_public()
+                self.upsert(naan)
+                n += 1
+            except ValueError as err:
+                _L.warning(f"Could not parse %s as NAAN", block)
+        return n
+
+    def load_shoulder_registry(self, shoulder_src: str, as_public:bool=True) -> int:
+        """Load shoulder records from the shoulder_registry
+        """
+        anvl_parser = lib_naan.anvl.AnvlParser()
+        n = 0
+        for block in anvl_parser.parseBlocks(shoulder_src):
+            try:
+                shoulder = lib_naan.NAANShoulder.from_anvl_block(block)
+                if as_public:
+                    shoulder = shoulder.as_public()
+                self.upsert(shoulder)
+                n += 1
+            except ValueError as err:
+                _L.warning(f"Could not parse %s as Shoulder", block)
+        return n
+
+
+'''
+
+    def read(self, naan: str, as_public:bool = False) -> StoredTypes:
         """
         Returns the naan record for the specified NAAN.
 
@@ -171,3 +266,4 @@ class NaanRepository:
         for key in index:
             yield self.read(key, as_public=as_public)
 
+'''
