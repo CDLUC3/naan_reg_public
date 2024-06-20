@@ -30,6 +30,7 @@ import json
 import logging
 import os
 import os.path
+import pathlib
 import re
 import sys
 import typing
@@ -40,6 +41,7 @@ import requests
 
 import lib_naan
 import lib_naan.anvl
+import lib_naan.naans
 
 PYDANTIC_AVAILABLE = False
 try:
@@ -129,22 +131,6 @@ def generate_index_html(naans, index):
         res.append('</details>')
     res.append("</body></html>")
     return "\n".join(res)
-
-def load_naan_reg_priv(naan_src: str, public_only=False) -> dict[str, typing.Union[lib_naan.NAAN, lib_naan.PublicNAAN]]:
-    anvl_parser = lib_naan.anvl.AnvlParser()
-    res = {}
-    for block in anvl_parser.parseBlocks(naan_src):
-        try:
-            naan = lib_naan.NAAN.from_anvl_block(block)
-            if naan.key in res:
-                raise ValueError("Key %s elready present", naan.key)
-            if public_only:
-                res[naan.key] = naan.as_public()
-            else:
-                res[naan.key] = naan
-        except ValueError as e:
-            _L.error(e)
-    return res
 
 
 def load_naan_shoulders(shoulder_src: str, public_only=False) -> dict[str, typing.Union[lib_naan.NAANShoulder, lib_naan.PublicNAANShoulder]]:
@@ -244,83 +230,37 @@ def click_main():
 
 @click_main.command("main-naans-to-json")
 @click.argument("anvl_source", type=click.Path(exists=True))
-@click.option("-d", "--dest_folder", default=".")
-@click.option("-i", "--individual", is_flag=True, default=False, help="Write individual NAAN records")
+@click.option("-d", "--dest_path", default=pathlib.Path("naan_records.json"), type=click.Path(), help="JSON destination for NAANs. Existing is updated, path created if necessary.")
 @click.option("-p", "--private", is_flag=True, help="Generate private JSON records.")
-@click.option("-l", "--lines", is_flag=True, default=False, help="Generate JSONL output.")
-def naan_anvl_to_json(anvl_source:str, dest_folder: str, individual: bool, private:bool, lines:bool):
+def naan_anvl_to_json(anvl_source:str, dest_path: pathlib.Path, private:bool):
     """Generate a JSON version of the main_naans file.
 
     The default behavior is to produce the public JSON naans file.
     """
-    os.makedirs(dest_folder, exist_ok=True)
     naan_src = open(anvl_source, "r").read()
-    naan_records = load_naan_reg_priv(naan_src, public_only= not private)
-    if individual:
-        for k, naan_record in naan_records.items():
-            fname = store_json_record(dest_folder, naan_record)
-            _L.info("Wrote NAAN record at %s", fname)
-    # Write out the json-lines representation of the NAAN records
-    # This format is convenient for loading in tools like duckdb
-    if lines:
-        fname = os.path.join(dest_folder, "naan_records.jsonl")
-        with open(fname, "w") as dest:
-            for k,v in naan_records.items():
-                dest.write(json.dumps(v, ensure_ascii=False, cls=EnhancedJSONEncoder))
-                dest.write("\n")
-    else:
-        res = {
-            "metadata": {
-                "version": "1.0.0",
-                "modified_date": datetime.datetime.now(tz=datetime.timezone.utc).isoformat(),
-                "content": "Public content of NAAN records"
-            },
-            "data": []
-        }
-        for k, v in naan_records.items():
-            res["data"].append(v)
-        fname = os.path.join(dest_folder, "naan_records.json")
-        with open(fname, "w") as dest:
-            json.dump(res, dest, ensure_ascii=False, cls=EnhancedJSONEncoder, indent=2)
-        _L.info("Wrote NAAN records to %s", fname)
-    # Write out a single dictionary representation
-    '''
-    fname = os.path.join(dest_folder, "naan_records.json")
-    existing = {}
-    if os.path.exists(fname):
-        with open(fname, "r") as inf:
-            existing = json.load(inf)
-    for k, v in naan_records.items():
-        existing[k] = v
-    with open(fname, "w") as dest:
-        json.dump(existing, dest, indent=2, ensure_ascii=False, cls=EnhancedJSONEncoder)
-        _L.info("Wrote full NAAN records to %s", fname)
-    '''
+    repo = lib_naan.naans.NaanRepository(dest_path)
+    if dest_path.exists():
+        repo.load()
+        _L.info(f"Loaded {dest_path}")
+    n = repo.load_naan_reg_priv(naan_src, as_public=not private)
+    _L.info("Loaded %s records from %s", n, anvl_source)
+    repo.store(as_public=not private)
 
-@click_main.command()
+
+@click_main.command("shoulder-registry-to-json")
 @click.argument("anvl_source", type=click.Path(exists=True))
-@click.option("-d", "--dest_folder", default=".")
-@click.option("-i", "--individual", is_flag=True, default=False, help="Write individual NAAN records")
+@click.option("-d", "--dest_path", default=pathlib.Path("naan_records.json"), type=click.Path(), help="JSON destination for NAANs. Existing is updated, path created if necessary.")
 @click.option("-p", "--private", is_flag=True, help="Generate private JSON records.")
-def shoulder_anvl_to_json(anvl_source:str, dest_folder: str, individual:bool, private:bool):
-
-    os.makedirs(dest_folder, exist_ok=True)
+def shoulder_anvl_to_json(anvl_source:str, dest_path: pathlib.Path, private:bool):
     shoulder_src = open(anvl_source, "r").read()
-    shoulders = load_naan_shoulders(shoulder_src, public_only=not private)
-    if individual:
-        for k, shoulder in shoulders.items():
-            fname = store_json_record(dest_folder, shoulder)
-            _L.info("Wrote Shoulder record at %s", fname)
-    fname = os.path.join(dest_folder, "naan_records.json")
-    existing = {}
-    if os.path.exists(fname):
-        with open(fname, "r") as inf:
-            existing = json.load(inf)
-    for k, v in shoulders.items():
-        existing[k] = v
-    with open(fname, "w") as dest:
-        json.dump(existing, dest, indent=2, ensure_ascii=False, cls=EnhancedJSONEncoder)
-        _L.info("Wrote full Shoulder records to %s", fname)
+    repo = lib_naan.naans.NaanRepository(dest_path)
+    if dest_path.exists():
+        repo.load()
+        _L.info(f"Loaded {dest_path}")
+    n = repo.load_shoulder_registry(shoulder_src, as_public=not private)
+    _L.info("Loaded %s records from %s", n, anvl_source)
+    repo.store(as_public=not private)
+
 
 @click_main.command()
 @click.option(

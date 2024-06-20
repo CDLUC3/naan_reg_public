@@ -8,6 +8,8 @@ import datetime
 import logging
 import typing
 
+import dacite
+
 from . import anvl
 
 PYDANTIC_AVAILABLE = False
@@ -50,7 +52,7 @@ class PublicNAAN_who:
     name: str = dataclasses.field(
         metadata=dict(description="Official organization name")
     )
-    name_native: str = dataclasses.field(
+    name_native: typing.Optional[str] = dataclasses.field(
         default=None,
         metadata=dict(description="Non-english variant of the official organization.")
     )
@@ -69,13 +71,14 @@ class PublicNAAN_who:
 class NAAN_who(PublicNAAN_who):
     """Organization responsible for NAAN"""
 
-    address: str = dataclasses.field(
+    address: typing.Optional[str] = dataclasses.field(
         default=None, metadata=dict(description="Physical address of organization")
     )
 
     def update(self, record:'NAAN_who') -> 'NAAN_who':
         super().update(record)
-        self.address = record.address
+        if isinstance(record, NAAN_who):
+            self.address = record.address
         return self
 
 
@@ -173,7 +176,7 @@ class PublicNAAN:
     )
     who: PublicNAAN_who
     na_policy: NAAN_how
-    test_identifier: str = dataclasses.field(
+    test_identifier: typing.Optional[str] = dataclasses.field(
         default=None,
         metadata=dict(
             description=(
@@ -182,7 +185,7 @@ class PublicNAAN:
             )
         )
     )
-    service_provider: str = dataclasses.field(
+    service_provider: typing.Optional[str] = dataclasses.field(
         default=None,
         metadata=dict(
             description=(
@@ -213,8 +216,13 @@ class PublicNAAN:
     )
     rtype: str = dataclasses.field(
         metadata=dict(description="Type of this record."),
-        default="naan"
+        default="PublicNAAN"
     )
+
+    @property
+    def identifier(self) -> str:
+        return self.what
+
 
     def as_flat(self) -> dict:
         return {
@@ -238,6 +246,9 @@ class PublicNAAN:
         self.when = datetime.datetime.now(tz=datetime.timezone.utc)
         return self
 
+    def as_public(self) -> 'PublicNAAN':
+        return self
+
 
 @dataclass
 class NAAN(PublicNAAN):
@@ -247,12 +258,16 @@ class NAAN(PublicNAAN):
         metadata=dict(description="Purpose for this record, 'ARK'")
     )
     contact: NAAN_contact=None
-    alternate_contact: NAAN_contact=None
+    alternate_contact: typing.Optional[NAAN_contact]=None
     comments: typing.Optional[typing.List[dict]] = dataclasses.field(
         default=None, metadata=dict(description="Comments about NAAN record")
     )
     provider: typing.Optional[str] = dataclasses.field(
         default=None, metadata=dict(description="")
+    )
+    rtype: str = dataclasses.field(
+        metadata=dict(description="Type of this record."),
+        default="NAAN"
     )
 
     @property
@@ -260,10 +275,17 @@ class NAAN(PublicNAAN):
         return self.what
 
     def as_public(self) -> PublicNAAN:
-        public_who = PublicNAAN_who(self.who.name, self.who.acronym)
+        public_who = PublicNAAN_who(name=self.who.name, name_native=self.who.name_native, acronym=self.who.acronym)
         public = PublicNAAN(
-            self.what, self.where, self.target, self.when, public_who, self.na_policy,
-            self.test_identifier, self.service_provider, self.purpose
+            what=self.what,
+            where=self.where,
+            target=self.target,
+            when=self.when,
+            who=public_who,
+            na_policy=self.na_policy,
+            test_identifier=self.test_identifier,
+            service_provider=self.service_provider,
+            purpose=self.purpose
         )
         return public
 
@@ -279,11 +301,12 @@ class NAAN(PublicNAAN):
         self.when = datetime.datetime.now(tz=datetime.timezone.utc)
         self.who.update(record.who)
         self.na_policy.update(record.na_policy)
-        self.why = record.why
-        self.contact = copy.deepcopy(record.contact)
-        self.alternate_contact = copy.deepcopy(record.alternate_contact)
-        self.comments = copy.deepcopy(record.comments)
-        self.provider = record.provider
+        if isinstance(record, NAAN):
+            self.why = record.why
+            self.contact = copy.deepcopy(record.contact)
+            self.alternate_contact = copy.deepcopy(record.alternate_contact)
+            self.comments = copy.deepcopy(record.comments)
+            self.provider = record.provider
         return self
 
     @classmethod
@@ -305,7 +328,8 @@ class NAAN(PublicNAAN):
                 res["when"] = anvl.datestring2date(v)
             elif k == "where":
                 res["where"] = v
-                res["target"] = anvl.urlstr2target(v)
+                _target_dict = anvl.urlstr2target(v)
+                res["target"] = Target(**_target_dict)
             elif k == "how":
                 _how = NAAN_how(
                     orgtype=v[0],
@@ -355,6 +379,10 @@ class PublicNAANShoulder:
     naan: str = dataclasses.field(
         metadata=dict(description="The naan part of the record")
     )
+    what: str = dataclasses.field(
+        metadata=dict(description="The combination of naan / shoulder"),
+        init=False
+    )
     who: PublicNAAN_who
     where: str = dataclasses.field(
         metadata=dict(description="URL of service endpoint accepting ARK identifiers.")
@@ -373,19 +401,48 @@ class PublicNAANShoulder:
     na_policy: NAAN_how
     rtype: str = dataclasses.field(
         metadata=dict(description="Type of this record."),
-        default="shoulder"
+        default="PublicNAANShoulder"
     )
+
+    @property
+    def identifier(self) -> str:
+        return f"{self.naan}/{self.shoulder}"
+
+    def __post_init__(self):
+        self.what = f"{self.naan}/{self.shoulder}"
+
+    def as_public(self) -> 'PublicNAANShoulder':
+        return self
+
+    def update(self, record:'PublicNAANShoulder') -> 'PublicNAANShoulder':
+        if record.shoulder is not None:
+            if record.shoulder != self.shoulder:
+                raise ValueError(f"Cannot update the shoulder value, incoming {record.shoulder} != {self.shoulder}.")
+        if record.naan is not None:
+            if record.naan != self.naan:
+                raise ValueError(f"Cannot update the naan value, incoming {record.naan} != {self.naan}.")
+        self.who.update(record.who)
+        self.where = record.where
+        self.target.update(record.target)
+        self.when = record.when
+        self.na_policy.update(record.na_policy)
+        return self
+
 
 @dataclass
 class NAANShoulder(PublicNAANShoulder):
     who: NAAN_who
     contact: NAAN_contact=None
-    alternate_contact: NAAN_contact=None
+    alternate_contact: typing.Optional[NAAN_contact]=None
     comments: typing.Optional[typing.List[dict]] = dataclasses.field(
         default=None, metadata=dict(description="Comments about Shoulder record")
     )
     provider: typing.Optional[str] = dataclasses.field(
         default=None, metadata=dict(description="")
+    )
+    rtype: str = dataclasses.field(
+        metadata=dict(description="Type of this record."),
+        default="NAANShoulder"
     )
 
     @property
@@ -393,7 +450,11 @@ class NAANShoulder(PublicNAANShoulder):
         return f"{self.naan}/{self.shoulder}"
 
     def as_public(self) -> PublicNAANShoulder:
-        public_who = PublicNAAN_who(self.who.name, self.who.acronym)
+        public_who = PublicNAAN_who(
+            name=self.who.name,
+            name_native=self.who.name_native,
+            acronym=self.who.acronym
+        )
         public = PublicNAANShoulder(
             shoulder=self.shoulder,
             naan=self.naan,
@@ -404,6 +465,26 @@ class NAANShoulder(PublicNAANShoulder):
             na_policy=self.na_policy,
         )
         return public
+
+    def update(self, record:'NAANShoulder') -> 'NAANShoulder':
+        if record.shoulder is not None:
+            if record.shoulder != self.shoulder:
+                raise ValueError(f"Cannot update the shoulder value, incoming {record.shoulder} != {self.shoulder}.")
+        if record.naan is not None:
+            if record.naan != self.naan:
+                raise ValueError(f"Cannot update the naan value, incoming {record.naan} != {self.naan}.")
+        self.who.update(record.who)
+        # deep copy is used where property may be None
+        if isinstance(record, NAANShoulder):
+            self.contact = copy.deepcopy(record.contact)
+            self.alternate_contact = copy.deepcopy(record.alternate_contact)
+            self.comments = copy.deepcopy(record.comments)
+            self.provider = record.provider
+        self.where = record.where
+        self.target.update(record.target)
+        self.when = record.when
+        self.na_policy.update(record.na_policy)
+        return self
 
     @classmethod
     def from_anvl_block(cls, block: dict) -> 'NAANShoulder':
@@ -429,7 +510,8 @@ class NAANShoulder(PublicNAANShoulder):
                 res["when"] = anvl.datestring2date(v)
             elif k == "where":
                 res["where"] = v
-                res["target"] = anvl.urlstr2target(v)
+                _target_dict = anvl.urlstr2target(v)
+                res["target"] = Target(**_target_dict)
             elif k == "how":
                 _how = NAAN_how(
                     orgtype=v[0],
@@ -451,3 +533,30 @@ class NAANShoulder(PublicNAANShoulder):
         if "shoulder" in res:
             return cls(**res)
         raise ValueError(f"No 'shoulder' entry in block!")
+
+
+
+def datetime_from_iso_string(iso_string: str) -> datetime:
+    if isinstance(iso_string, str):
+        return datetime.datetime.fromisoformat(iso_string)
+    return iso_string
+
+
+StorableTypes = typing.Union[
+        NAAN, PublicNAAN, NAANShoulder, PublicNAANShoulder
+    ]
+
+def entryFromDict(data) -> typing.Any:
+    _type = data.get("rtype", None)
+    config = dacite.Config(type_hooks={datetime.datetime: datetime_from_iso_string})
+    if _type is None:
+        return None
+    if _type == "NAAN":
+        return dacite.from_dict(data_class=NAAN, data=data, config=config)
+    if _type == "PublicNAAN":
+        return dacite.from_dict(data_class=PublicNAAN, data=data, config=config)
+    if _type == "NAANShoulder":
+        return dacite.from_dict(data_class=NAANShoulder, data=data, config=config)
+    if _type == "PublicNAANShoulder":
+        return dacite.from_dict(data_class=NAANShoulder, data=data, config=config)
+    return None
