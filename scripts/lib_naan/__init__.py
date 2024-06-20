@@ -399,6 +399,15 @@ class PublicNAANShoulder:
         metadata=dict(description="Date when this record was last modified.")
     )
     na_policy: NAAN_how
+    test_identifier: typing.Optional[str] = dataclasses.field(
+        default=None,
+        metadata=dict(
+            description=(
+                "A specific, concrete ARK that you plan to support and that you will permit us to"
+                "use periodically for testing service availability."
+            )
+        )
+    )
     rtype: str = dataclasses.field(
         metadata=dict(description="Type of this record."),
         default="PublicNAANShoulder"
