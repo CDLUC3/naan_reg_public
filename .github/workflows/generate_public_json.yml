@@ -28,10 +28,6 @@ jobs:
 
     - name: Get timestamp
       id: timestamp
-      run: echo "::set-output name=timestamp::$(date +'%Y%m%d.%H%M%S')"
-
-    - name: Get timestamp
-      id: timestamp
       run: echo "TAG_TIMESTAMP=$(date +'%Y%m%d.%H%M%S')" >> $GITHUB_ENV
 
     - name: Generate public NAANs JSON
