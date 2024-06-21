@@ -186,6 +186,8 @@ def naan_anvl_to_json(anvl_source:str, dest_path: pathlib.Path, private:bool):
 @click.option("-d", "--dest_path", default=pathlib.Path("naan_records.json"), type=click.Path(), help="JSON destination for NAANs. Existing is updated, path created if necessary.")
 @click.option("-p", "--private", is_flag=True, help="Generate private JSON records.")
 def shoulder_anvl_to_json(anvl_source:str, dest_path: pathlib.Path, private:bool):
+    if isinstance(dest_path, str):
+        dest_path = pathlib.Path(dest_path)
     shoulder_src = open(anvl_source, "r").read()
     repo = lib_naan.naans.NaanRepository(dest_path)
     if dest_path.exists():
@@ -214,6 +216,8 @@ def ezid_overrides(ezid_shoulders_url, dest_path):
         #"87602",
         "21549",
     ]
+    if isinstance(dest_path, str):
+        dest_path = pathlib.Path(dest_path)
     repo = lib_naan.naans.NaanRepository(dest_path)
     repo.load()
     _L.info(f"Loaded {dest_path}")
