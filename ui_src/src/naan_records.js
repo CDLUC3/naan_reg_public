@@ -28,7 +28,14 @@ export class NAANRecord {
 
 export class NAANRecords {
     constructor (records) {
-        this.data = records.data;
+        this._alldata = records.data;
+        this.data = [];
+        const naan_pattern = /^[0-9]{5}$/;
+        for (const _record of this._alldata) {
+            if (_record.what.match(naan_pattern)) {
+                this.data.push(_record);
+            }
+        }
         this.metadata = records.metadata;
         this._index = this.buildIndex();
         this.timeCounts = this.buildTimeCounts();
