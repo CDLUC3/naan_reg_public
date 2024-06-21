@@ -1,17 +1,17 @@
 {
   "metadata": {
     "version": "1.0",
-    "created_date": "2024-06-21T11:32:37.346182+00:00",
+    "created_date": "2024-06-21T18:17:02.017374+00:00",
     "modified_date": null,
     "description": "Public NAAN records and Shoulder information.",
-    "updated": "2024-06-21T11:32:39+00:00"
+    "updated": "2024-06-21T18:17:03+00:00"
   },
   "data": [
     {
       "what": "b6071",
       "where": "https://ezid.cdlib.org/",
       "target": {
-        "url": "https://ezid.cdlib.org/ark:/${content}",
+        "url": "https://doi.org/10.6071/${value}",
         "http_code": 302
       },
       "when": "1970-01-01T00:00:00+00:00",
@@ -35,7 +35,7 @@
       "what": "b7291",
       "where": "https://ezid.cdlib.org/",
       "target": {
-        "url": "https://ezid.cdlib.org/ark:/${content}",
+        "url": "https://doi.org/10.7291/${value}",
         "http_code": 302
       },
       "when": "1970-01-01T00:00:00+00:00",
@@ -59,7 +59,7 @@
       "what": "b5060",
       "where": "https://ezid.cdlib.org/",
       "target": {
-        "url": "https://ezid.cdlib.org/ark:/${content}",
+        "url": "https://doi.org/10.5060/${value}",
         "http_code": 302
       },
       "when": "1970-01-01T00:00:00+00:00",
@@ -83,7 +83,7 @@
       "what": "b7272",
       "where": "https://ezid.cdlib.org/",
       "target": {
-        "url": "https://ezid.cdlib.org/ark:/${content}",
+        "url": "https://doi.org/10.7272/${value}",
         "http_code": 302
       },
       "when": "1970-01-01T00:00:00+00:00",
@@ -107,7 +107,7 @@
       "what": "b7280",
       "where": "https://ezid.cdlib.org/",
       "target": {
-        "url": "https://ezid.cdlib.org/ark:/${content}",
+        "url": "https://doi.org/10.7280/${value}",
         "http_code": 302
       },
       "when": "1970-01-01T00:00:00+00:00",
@@ -131,7 +131,7 @@
       "what": "b6078",
       "where": "https://ezid.cdlib.org/",
       "target": {
-        "url": "https://ezid.cdlib.org/ark:/${content}",
+        "url": "https://doi.org/10.6078/${value}",
         "http_code": 302
       },
       "when": "1970-01-01T00:00:00+00:00",
