@@ -10,18 +10,30 @@ jobs:
         python-version: [3.9]
     steps:
     - name: Checkout this tool
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
       with:
         ref: main
+
+    - name: Setup python
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r scripts/requirements.txt
+
     - name: Checkout NAAN registry
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
       with:
         repository: CDLUC3/naan_reg_priv
         token: ${{ secrets.NAAN_REG_PRIV_PAT }}
         path: naan_reg_priv
+
     - name: Get timestamp
       id: timestamp
       run: echo "::set-output name=timestamp::$(date +'%Y%m%d.%H%M%S')"
+
+    - name: Get timestamp
+      id: timestamp
+      run: echo "TAG_TIMESTAMP=$(date +'%Y%m%d.%H%M%S')" >> $GITHUB_ENV
+
     - name: Generate public NAANs JSON
       run: |
         mkdir -p docs
@@ -30,10 +42,17 @@ jobs:
         python naan_reg_json.py -p naan_reg_priv/main_naans > docs/naans_public.json
         python naan_reg_json.py -p naan_reg_priv/main_naans -f docs/naans 
         cp templates/index.html docs/index.html
+
+    - name: NAANs to JSON
+      run: |
+        python scripts/naan_reg_json.py main-naans-to-json -d docs/naan_records.json naan_reg_priv/main_naans
+        python scripts/naan_reg_json.py shoulder-registry-to-json -d docs/naan_records.json naan_reg_priv/shoulder_registry
+        python scripts/naan_reg_json.py ezid-overrides -d docs/naan_records.json
+
     - name: Publish documentation
       uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_dir: ./docs
-        tag_name: ${{ steps.timestamp.outputs.timestamp }}
-        tag_message: 'Public NAANs update ${{ steps.timestamp.outputs.timestamp }}'
+        tag_name: $TAG_TIMESTAMP
+        tag_message: 'Public NAANs update $TAG_TIMESTAMP'
