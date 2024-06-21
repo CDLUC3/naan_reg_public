@@ -85,7 +85,7 @@ def generate_shadow_ark_config() -> list[lib_naan.PublicNAAN]:
             what = entry['prefix'],
             where = "https://ezid.cdlib.org/",
             target = lib_naan.Target(
-                url = "https://ezid.cdlib.org/ark:/${content}",
+                url = f"https://doi.org/10.{entry['prefix'][1:]}/$" + "{value}",
                 http_code=302
             ),
             when = datetime.datetime(year=1970, month=1, day=1, tzinfo=datetime.timezone.utc),
