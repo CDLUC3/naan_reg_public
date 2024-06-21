@@ -164,6 +164,8 @@ def naan_anvl_to_json(anvl_source:str, dest_path: pathlib.Path, private:bool):
 
     The default behavior is to produce the public JSON naans file.
     """
+    if isinstance(dest_path, str):
+        dest_path = pathlib.Path(dest_path)
     naan_src = open(anvl_source, "r").read()
     repo = lib_naan.naans.NaanRepository(dest_path)
     if len(repo) < 1:
