@@ -25325,5 +25325,24 @@
     "test_identifier": null,
     "service_provider": null,
     "purpose": "unspecified"
+  },
+  "75587": {
+    "what": "75587",
+    "where": "https://kora.kpu.ca",
+    "target": "https://kora.kpu.ca/$arkpid",
+    "when": "2024-06-21T00:00:00+00:00",
+    "who": {
+      "name": "Kwantlen Polytechnic University",
+      "acronym": null
+    },
+    "na_policy": {
+      "orgtype": "NP",
+      "policy": "(:unkn) unknown",
+      "tenure": "2024",
+      "policy_url": null
+    },
+    "test_identifier": null,
+    "service_provider": null,
+    "purpose": "unspecified"
   }
 }
