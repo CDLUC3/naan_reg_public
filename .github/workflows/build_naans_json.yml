@@ -29,7 +29,9 @@ jobs:
 
       - name: NAANs to JSON
         run: |
-          python scripts/naan_reg_json.py main-naans-to-json -d . naan_reg_priv/main_naans
+          python scripts/naan_reg_json.py main-naans-to-json -d naan_records.json naan_reg_priv/main_naans
+          python scripts/naan_reg_json.py shoulder-registry-to-json -d naan_records.json naan_reg_priv_clone/shoulder_registry
+          python scripts/naan_reg_json.py ezid-overrides -d naan_records.json
           
       - name: Get timestamp
         id: timestamp
