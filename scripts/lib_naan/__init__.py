@@ -243,7 +243,7 @@ class PublicNAAN:
         self.test_identifier = record.test_identifier
         self.service_provider = record.service_provider
         self.purpose = record.purpose
-        self.when = datetime.datetime.now(tz=datetime.timezone.utc)
+        self.when = record.when
         return self
 
     def as_public(self) -> 'PublicNAAN':
