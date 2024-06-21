@@ -1,0 +1,27 @@
+{
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "clean": "rimraf src/.observablehq/cache",
+    "build": "rimraf dist && observable build",
+    "dev": "observable preview",
+    "deploy": "observable deploy",
+    "observable": "observable",
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js"
+  },
+  "dependencies": {
+    "@observablehq/framework": "^1.7.0",
+    "gridjs": "^6.2.0",
+    "lodash": "^4.17.21"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "rimraf": "^5.0.5"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "jest": {
+    "transform": {}
+  }
+}

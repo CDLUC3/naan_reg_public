@@ -1,0 +1,18 @@
+@import url("observablehq:default.css");
+@import url("observablehq:theme-air.css");
+
+.mono-text {
+    font-family: "Cousine", monospace;
+}
+.gridjs-table {
+}
+.gridjs-td:not(thead td) {
+    height: 0.4rem;
+    padding-left: 3px;
+    padding-right: 3px;
+}
+@media (hover: hover) {
+    .gridjs-tr:hover td {
+        background-color: floralwhite;
+    }
+}
