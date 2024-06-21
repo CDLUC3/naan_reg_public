@@ -50,5 +50,5 @@ jobs:
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_dir: ./docs
-        tag_name: $TAG_TIMESTAMP
-        tag_message: 'Public NAANs update $TAG_TIMESTAMP'
+        tag_name: ${{ env.TAG_TIMESTAMP }}
+        tag_message: 'Public NAANs update ${{ env.TAG_TIMESTAMP }}'
