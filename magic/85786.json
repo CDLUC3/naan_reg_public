@@ -1,0 +1,24 @@
+    {
+      "what": "85786",
+      "where": "http://www-lib.uwyo.edu",
+      "target": {
+        "url": "http://www-lib.uwyo.edu/ark:/${content}",
+        "http_code": 302
+      },
+      "when": "2015-02-23T00:00:00+00:00",
+      "who": {
+        "name": "University of Wyoming Libraries",
+        "name_native": null,
+        "acronym": "UWYO"
+      },
+      "na_policy": {
+        "orgtype": "NP",
+        "policy": "(:unkn) unknown",
+        "tenure": "2015",
+        "policy_url": null
+      },
+      "test_identifier": null,
+      "service_provider": null,
+      "purpose": "unspecified",
+      "rtype": "PublicNAAN"
+    }

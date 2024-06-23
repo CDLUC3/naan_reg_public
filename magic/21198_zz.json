@@ -1,0 +1,24 @@
+{
+  "shoulder": "zz",
+  "naan": "21198",
+  "what": "21198/zz",
+  "who": {
+    "name": "University of California Los Angeles",
+    "name_native": null,
+    "acronym": "UCLA"
+  },
+  "where": "http://library.ucla.edu",
+  "target": {
+    "url": "http://library.ucla.edu/ark:/${content}",
+    "http_code": 302
+  },
+  "when": "2005-05-02T00:00:00+00:00",
+  "na_policy": {
+    "orgtype": "NP",
+    "policy": "(:unkn) unknown",
+    "tenure": "2005",
+    "policy_url": null
+  },
+  "test_identifier": null,
+  "rtype": "PublicNAANShoulder"
+}
