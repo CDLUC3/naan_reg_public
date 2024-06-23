@@ -1,10 +1,10 @@
 {
   "metadata": {
     "version": "1.0",
-    "created_date": "2024-06-23T14:56:20.753860+00:00",
+    "created_date": "2024-06-23T15:17:51.936772+00:00",
     "modified_date": null,
     "description": "Public NAAN records and Shoulder information.",
-    "updated": "2024-06-23T14:56:22+00:00"
+    "updated": "2024-06-23T15:17:53+00:00"
   },
   "data": [
     {
@@ -31624,7 +31624,7 @@
       },
       "when": "2024-06-13T00:00:00+00:00",
       "who": {
-        "name": "CBG | Center for family history",
+        "name": "CBG Center for family history",
         "name_native": null,
         "acronym": "CBG"
       },
@@ -32032,7 +32032,7 @@
       },
       "when": "2024-06-18T00:00:00+00:00",
       "who": {
-        "name": "University of British Columbia Okanagan Campus. Special Collections and Archives",
+        "name": "UBC Okanagan Campus Special Collections and Archives",
         "name_native": null,
         "acronym": "UBCOCSCA"
       },

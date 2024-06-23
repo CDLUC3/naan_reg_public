@@ -4,7 +4,7 @@
   "target": "https://cbg.nl/$arkpid",
   "when": "2024-06-13T00:00:00+00:00",
   "who": {
-    "name": "CBG\nCenter for family history",
+    "name": "CBG Center for family history",
     "acronym": null
   },
   "na_policy": {
