@@ -4,7 +4,7 @@
     "what": "19156/tkt42",
     "where": "https://ark.participatory-archives.ch",
     "target": {
-      "url": "https://vocab.participatory-archives.ch/vocab.participatory-archives.ch/brunner",
+      "url": "https://vocab.participatory-archives.ch/vocab.participatory-archives.ch/brunner${suffix}",
       "http_code": 302
     },
     "when": "2022-04-14T00:00:00+00:00",
