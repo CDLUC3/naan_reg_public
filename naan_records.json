@@ -1,10 +1,10 @@
 {
   "metadata": {
     "version": "1.0",
-    "created_date": "2024-06-23T15:17:51.936772+00:00",
+    "created_date": "2024-06-23T18:05:18.253913+00:00",
     "modified_date": null,
     "description": "Public NAAN records and Shoulder information.",
-    "updated": "2024-06-23T15:17:53+00:00"
+    "updated": "2024-06-23T18:05:20+00:00"
   },
   "data": [
     {
@@ -32250,7 +32250,7 @@
       },
       "where": "303 http://socialarchive.iath.virginia.edu",
       "target": {
-        "url": "https://ezid.cdlib.org/ark:/${content}",
+        "url": "http://socialarchive.iath.virginia.edu/ark:/${content}",
         "http_code": 303
       },
       "when": "2013-02-12T00:00:00+00:00",
@@ -40898,6 +40898,30 @@
         "orgtype": "NP",
         "policy": "(:unkn) unknown",
         "tenure": "2014",
+        "policy_url": null
+      },
+      "test_identifier": null,
+      "rtype": "PublicNAANShoulder"
+    },
+    {
+      "shoulder": "tkt42",
+      "naan": "19156",
+      "what": "19156/tkt42",
+      "who": {
+        "name": "Participatory Image Archives",
+        "name_native": null,
+        "acronym": "PIA"
+      },
+      "where": "https://ark.participatory-archives.ch",
+      "target": {
+        "url": "https://vocab.participatory-archives.ch/vocab.participatory-archives.ch/brunner",
+        "http_code": 302
+      },
+      "when": "2022-04-14T00:00:00+00:00",
+      "na_policy": {
+        "orgtype": "NP",
+        "policy": "(:unkn) unknown",
+        "tenure": "2022",
         "policy_url": null
       },
       "test_identifier": null,
