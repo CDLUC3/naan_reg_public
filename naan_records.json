@@ -1,10 +1,10 @@
 {
   "metadata": {
     "version": "1.0",
-    "created_date": "2024-06-23T14:53:58.732965+00:00",
+    "created_date": "2024-06-23T14:56:20.753860+00:00",
     "modified_date": null,
     "description": "Public NAAN records and Shoulder information.",
-    "updated": "2024-06-23T14:54:00+00:00"
+    "updated": "2024-06-23T14:56:22+00:00"
   },
   "data": [
     {
@@ -22643,7 +22643,7 @@
       "what": "19156",
       "where": "https://ark.participatory-archives.ch",
       "target": {
-        "url": "https://legacy-n2t.net/ark:/${content}",
+        "url": "https://legacy-n2t.n2t.net/ark:/${content}",
         "http_code": 302
       },
       "when": "2022-04-14T00:00:00+00:00",
