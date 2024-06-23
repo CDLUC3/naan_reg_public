@@ -176,7 +176,21 @@ class NaanRepository:
         """Load NAAN records from ANVL formatted source.
 
         naan_src is the full text of main_naans (i.e. contents, not path to file)
+
+        More insanity: There's at least one NAAN record that appears to be only
+        managed in n2t:
+          ark:/19156/tkt42/06l redirects to:
+            https://vocab.participatory-archives.ch/vocab.participatory-archives.ch/brunner//06l
+          That is, only the part remaining after the prefix and shoulder is forwarded in the url, but
+          there's no entry for tkt42 anywhere in the shoulders.
+
+        For now, these are handled by redirecting to legacy-n2t.n2t.net, but should be a
+        high priority for proper configuration. For 19156 the fix may be to manually add
+        a shoulder `tkt42`?
         """
+        UNKNOWN_CONFIGS = {
+            '19156': 'https://legacy-n2t.net/ark:/${content}'
+        }
         anvl_parser = lib_naan.anvl.AnvlParser()
         n = 0
         for block in anvl_parser.parseBlocks(naan_src):
@@ -184,6 +198,9 @@ class NaanRepository:
                 naan = lib_naan.NAAN.from_anvl_block(block)
                 if as_public:
                     naan = naan.as_public()
+                # TODO: !! this is a hack
+                if naan.what in UNKNOWN_CONFIGS.keys():
+                    naan.target.url = UNKNOWN_CONFIGS[naan.what]
                 self.upsert(naan)
                 n += 1
             except ValueError as err:
