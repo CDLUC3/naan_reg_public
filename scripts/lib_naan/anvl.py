@@ -62,6 +62,8 @@ def urlstr2target(ustr: str, include_slash=True) -> dict:
             e.g.: http://example.com/$id -> http://example.com/12345/foo
             ${content} in the JSON NAAN records
 
+            Note as of June 2024, n2t will always insert a preceding "/" before the content portion.
+
     $arkid = Replace the $arkid string with the full PID
             e.g.: http://example.com/$arkid -> http://example.com/ark:/12345/foo
             ${pid} in the JSON NAAN records
@@ -88,7 +90,7 @@ def urlstr2target(ustr: str, include_slash=True) -> dict:
             "$pid": "${pid}",
             "$arkpid": "${pid}",
             "${arkpid}": "${pid}",
-            "$id": "${content}",
+            "$id": "/${content}",
             "${id}": "${content}",
             "$arkid": "${pid}",
             "${arkid}": "${pid}",
