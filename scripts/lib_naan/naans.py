@@ -189,7 +189,7 @@ class NaanRepository:
         a shoulder `tkt42`?
         """
         UNKNOWN_CONFIGS = {
-            '19156': 'https://legacy-n2t.net/ark:/${content}'
+            '19156': 'https://legacy-n2t.n2t.net/ark:/${content}'
         }
         anvl_parser = lib_naan.anvl.AnvlParser()
         n = 0
