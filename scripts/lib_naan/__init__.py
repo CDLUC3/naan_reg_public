@@ -20,6 +20,7 @@ try:
 except ModuleNotFoundError:
     from dataclasses import dataclass
 
+EZID_PRODUCTION_SERVER = "https://ezid.cdlib.org/"
 
 @dataclass
 class Target:
@@ -71,7 +72,7 @@ class PublicNAAN_who:
 class NAAN_who(PublicNAAN_who):
     """Organization responsible for NAAN"""
 
-    address: typing.Optional[str] = dataclasses.field(
+    address: typing.Optional[typing.Union[str, list[str]]] = dataclasses.field(
         default=None, metadata=dict(description="Physical address of organization")
     )
 
@@ -142,7 +143,7 @@ class NAAN_contact:
     email: typing.Optional[str] = dataclasses.field(
         default=None, metadata=dict(description="Email address of contact")
     )
-    phone: typing.Optional[str] = dataclasses.field(
+    phone: typing.Optional[typing.Union[str, list[str]]] = dataclasses.field(
         default=None, metadata=dict(description="Telephone number for contact")
     )
 
@@ -313,6 +314,14 @@ class NAAN(PublicNAAN):
     def from_anvl_block(cls, block: dict) -> 'NAAN':
         """
         Factory method for creating NAAN from an ANVL parsed block
+
+        Note - there's insanity here. If the main_naans !why value suggests
+        this naan is managed by EZID, then it is. The suggestion may take the form of
+        any of the following: "ARK, later EZID ARK", "ARK, once EZID ARK", "EZID ARK only",
+        "EZID ARK", "EZID ARK, started as ARK".
+
+        In any of those cases, the actual target should be EZID, since that is apparently
+        the source of authority for the underlying targets.
         """
         _L = logging.getLogger("lib_naan")
         data = block.get("naa", {})
@@ -366,6 +375,11 @@ class NAAN(PublicNAAN):
                     res[k] = v
         if "who" in res:
             res["who"].address = _address
+        insanity = res.get('why', None)
+        if insanity is not None:
+            if "EZID ARK" in insanity:
+                # The actual target should be the EZID production server
+                res["target"].url = EZID_PRODUCTION_SERVER + "ark:/${content}"
         if "what" in res:
             return cls(**res)
         raise ValueError("NAAN record has no 'what' field!")
