@@ -1,0 +1,24 @@
+{
+    "what": "88120",
+    "where": "http://www.isi.edu/research/informatics",
+    "target": {
+      "url": "https://ezid.cdlib.org/ark:/${content}",
+      "http_code": 302
+    },
+    "when": "2015-09-08T00:00:00+00:00",
+    "who": {
+      "name": "USC ISI Informatics Systems Research Division",
+      "name_native": null,
+      "acronym": "ISRD"
+    },
+    "na_policy": {
+      "orgtype": "NP",
+      "policy": "(:unkn) unknown",
+      "tenure": "2015",
+      "policy_url": null
+    },
+    "test_identifier": null,
+    "service_provider": null,
+    "purpose": "unspecified",
+    "rtype": "PublicNAAN"
+}

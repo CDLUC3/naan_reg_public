@@ -1,0 +1,24 @@
+{
+  "shoulder": "w6",
+  "naan": "99166",
+  "what": "99166/w6",
+  "who": {
+    "name": "Social Networks and Archival Context Cooperative - historical persons, families, organizations",
+    "name_native": null,
+    "acronym": "SNACC"
+  },
+  "where": "303 http://socialarchive.iath.virginia.edu",
+  "target": {
+    "url": "http://socialarchive.iath.virginia.edu/ark:/${content}",
+    "http_code": 303
+  },
+  "when": "2013-02-12T00:00:00+00:00",
+  "na_policy": {
+    "orgtype": "NP",
+    "policy": "NR, OP, CC",
+    "tenure": "2013",
+    "policy_url": null
+  },
+  "test_identifier": null,
+  "rtype": "PublicNAANShoulder"
+}

@@ -1,0 +1,24 @@
+  {
+    "shoulder": "tkt42",
+    "naan": "19156",
+    "what": "19156/tkt42",
+    "where": "https://ark.participatory-archives.ch",
+    "target": {
+      "url": "https://vocab.participatory-archives.ch/vocab.participatory-archives.ch/brunner",
+      "http_code": 302
+    },
+    "when": "2022-04-14T00:00:00+00:00",
+    "who": {
+      "name": "Participatory Image Archives",
+      "name_native": null,
+      "acronym": "PIA"
+    },
+    "na_policy": {
+      "orgtype": "NP",
+      "policy": "(:unkn) unknown",
+      "tenure": "2022",
+      "policy_url": null
+    },
+    "test_identifier": null,
+    "rtype": "PublicNAANShoulder"
+  }

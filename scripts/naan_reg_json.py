@@ -256,6 +256,18 @@ def ezid_overrides(ezid_shoulders_url, dest_path):
             repo.upsert(shoulder_record)
             _L.info(f"Updated shoulder {key} from {previous_target} to {shoulder_record.target.url}")
     repo.store(as_public=True)
+    # Now apply magic patches
+    magic_path = pathlib.Path("./magic")
+    patches = magic_path.glob("*.json")
+    for path in patches:
+        record = None
+        with open(path, "r") as inf:
+            record = json.load(inf)
+        if record is not None:
+            entry = lib_naan.entryFromDict(record)
+            repo.upsert(entry)
+            _L.info("Applied magic patch to %s", entry.what)
+    repo.store(as_public=True)
     return
     '''
         shoulder_key:typing.Optional[str] = None
