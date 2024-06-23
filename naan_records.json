@@ -1,10 +1,10 @@
 {
   "metadata": {
     "version": "1.0",
-    "created_date": "2024-06-23T18:53:54.209157+00:00",
+    "created_date": "2024-06-23T19:11:28.546555+00:00",
     "modified_date": null,
     "description": "Public NAAN records and Shoulder information.",
-    "updated": "2024-06-23T18:53:55+00:00"
+    "updated": "2024-06-23T19:11:30+00:00"
   },
   "data": [
     {
@@ -5771,7 +5771,7 @@
       "what": "85786",
       "where": "http://www-lib.uwyo.edu",
       "target": {
-        "url": "https://ezid.cdlib.org/ark:/${content}",
+        "url": "http://www-lib.uwyo.edu/ark:/${content}",
         "http_code": 302
       },
       "when": "2015-02-23T00:00:00+00:00",
@@ -39522,7 +39522,7 @@
       },
       "where": "http://library.ucla.edu",
       "target": {
-        "url": "https://ezid.cdlib.org/ark:/${content}",
+        "url": "http://library.ucla.edu/ark:/${content}",
         "http_code": 302
       },
       "when": "2005-05-02T00:00:00+00:00",
