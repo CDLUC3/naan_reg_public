@@ -1,10 +1,10 @@
 {
   "metadata": {
     "version": "1.0",
-    "created_date": "2024-06-23T18:05:18.253913+00:00",
+    "created_date": "2024-06-23T18:53:54.209157+00:00",
     "modified_date": null,
     "description": "Public NAAN records and Shoulder information.",
-    "updated": "2024-06-23T18:05:20+00:00"
+    "updated": "2024-06-23T18:53:55+00:00"
   },
   "data": [
     {
@@ -40914,7 +40914,7 @@
       },
       "where": "https://ark.participatory-archives.ch",
       "target": {
-        "url": "https://vocab.participatory-archives.ch/vocab.participatory-archives.ch/brunner",
+        "url": "https://vocab.participatory-archives.ch/vocab.participatory-archives.ch/brunner${suffix}",
         "http_code": 302
       },
       "when": "2022-04-14T00:00:00+00:00",
