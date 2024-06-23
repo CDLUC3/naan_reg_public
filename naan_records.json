@@ -1,10 +1,10 @@
 {
   "metadata": {
     "version": "1.0",
-    "created_date": "2024-06-21T18:17:02.017374+00:00",
+    "created_date": "2024-06-23T13:08:17.214348+00:00",
     "modified_date": null,
     "description": "Public NAAN records and Shoulder information.",
-    "updated": "2024-06-21T18:17:03+00:00"
+    "updated": "2024-06-23T13:08:18+00:00"
   },
   "data": [
     {
@@ -2243,7 +2243,7 @@
       "what": "60877",
       "where": "https://archives.nievre.fr/ark:$id",
       "target": {
-        "url": "https://archives.nievre.fr/ark:${content}",
+        "url": "https://archives.nievre.fr/ark:/${content}",
         "http_code": 302
       },
       "when": "2012-01-02T00:00:00+00:00",
@@ -3203,7 +3203,7 @@
       "what": "50959",
       "where": "https://ark.digitalcommonwealth.org/ark:$id",
       "target": {
-        "url": "https://ark.digitalcommonwealth.org/ark:${content}",
+        "url": "https://ark.digitalcommonwealth.org/ark:/${content}",
         "http_code": 302
       },
       "when": "2013-02-05T00:00:00+00:00",
@@ -11267,7 +11267,7 @@
       "what": "29072",
       "where": "https://pii.bodleian.ox.ac.uk/ark:$id",
       "target": {
-        "url": "https://pii.bodleian.ox.ac.uk/ark:${content}",
+        "url": "https://pii.bodleian.ox.ac.uk/ark:/${content}",
         "http_code": 302
       },
       "when": "2018-07-09T00:00:00+00:00",
@@ -25667,7 +25667,7 @@
       "what": "64985",
       "where": "https://revistasecauned.com/index.php/ciriec/gateway/plugin/pubIdResolver/ark:$id",
       "target": {
-        "url": "https://revistasecauned.com/index.php/ciriec/gateway/plugin/pubIdResolver/ark:${content}",
+        "url": "https://revistasecauned.com/index.php/ciriec/gateway/plugin/pubIdResolver/ark:/${content}",
         "http_code": 302
       },
       "when": "2023-03-09T00:00:00+00:00",
@@ -26147,7 +26147,7 @@
       "what": "42071",
       "where": "https://revistasecauned.com/index.php/cda/gateway/plugin/pubIdResolver/ark:$id",
       "target": {
-        "url": "https://revistasecauned.com/index.php/cda/gateway/plugin/pubIdResolver/ark:${content}",
+        "url": "https://revistasecauned.com/index.php/cda/gateway/plugin/pubIdResolver/ark:/${content}",
         "http_code": 302
       },
       "when": "2023-05-12T00:00:00+00:00",
