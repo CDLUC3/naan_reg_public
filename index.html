@@ -78,7 +78,7 @@
 
 import {define} from "./_observablehq/client.js";
 
-define({id: "37644e85", inputs: ["view","html","Mutable"], outputs: ["PIDSplitter","NAANRecords","Grid","ghtml","dateStr","naans_url","records","selected_record","setSelectedRecord","getSelectedRecord"], body: async (view,html,Mutable) => {
+define({id: "559d4546", inputs: ["view","html","Mutable"], outputs: ["PIDSplitter","NAANRecords","Grid","ghtml","dateStr","naans_url","records","selected_record","setSelectedRecord","getSelectedRecord"], body: async (view,html,Mutable) => {
 const [{PIDSplitter}, {NAANRecords}, {Grid, html: ghtml}] = await Promise.all([import("./_import/pidsplitter.0174b124.js"), import("./_import/naan_records.e72f7286.js"), import("./_npm/gridjs@6.2.0/_esm.js")]);
 
 
@@ -87,7 +87,7 @@ const dateStr = (v) => {
     return d.toISOString().split('T')[0]
 }
 
-const naans_url = "https://raw.githubusercontent.com/CDLUC3/naan_reg_public/main/naan_records.json";
+const naans_url = "https://cdluc3.github.io/naan_reg_public/naan_records.json";
 const records =  await fetch(naans_url)
     .then((response) => response.json())
     .then((data) => {return new NAANRecords(data)})
@@ -283,7 +283,7 @@ recordJSON(selected_record)
 <h1 id="naan-registry-records" tabindex="-1"><a class="observablehq-header-anchor" href="#naan-registry-records">NAAN Registry Records</a></h1>
 <p>The NAAN Registry maintains the authoritative list of Name Assigning Authority Numbers which are the numeric
 prefixes used by ARK identifiers. A NAAN may be allocated to an organization on request.</p>
-<div class="observablehq observablehq--block"><!--:37644e85:--></div>
+<div class="observablehq observablehq--block"><!--:559d4546:--></div>
 <p>There are currently <observablehq-loading></observablehq-loading><!--:45d770fe:--> NAAN records, with the first issued on <observablehq-loading></observablehq-loading><!--:c8671b4b:--> and the most
 recent on <observablehq-loading></observablehq-loading><!--:80da6f8d:-->.</p>
 <div class="observablehq observablehq--block"><!--:76aefd46:--></div>
