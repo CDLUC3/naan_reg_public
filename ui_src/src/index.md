@@ -20,7 +20,7 @@ const dateStr = (v) => {
     return d.toISOString().split('T')[0]
 }
 
-const naans_url = "https://raw.githubusercontent.com/CDLUC3/naan_reg_public/main/naan_records.json";
+const naans_url = "https://cdluc3.github.io/naan_reg_public/naan_records.json";
 const records =  await fetch(naans_url)
     .then((response) => response.json())
     .then((data) => {return new NAANRecords(data)})
