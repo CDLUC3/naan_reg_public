@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>NAAN Registry Records | NAAN Registry</title>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&amp;display=swap" crossorigin>
+<link rel="preload" as="style" href="./_import/style.5791985c.css">
+<link rel="preload" as="style" href="./_observablehq/stdlib/inputs.css">
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&amp;display=swap" crossorigin>
+<link rel="stylesheet" type="text/css" href="./_import/style.5791985c.css">
+<link rel="stylesheet" type="text/css" href="./_observablehq/stdlib/inputs.css">
+<link rel="modulepreload" href="./_observablehq/client.js">
+<link rel="modulepreload" href="./_observablehq/runtime.js">
+<link rel="modulepreload" href="./_observablehq/stdlib.js">
+<link rel="modulepreload" href="./_import/pidsplitter.0174b124.js">
+<link rel="modulepreload" href="./_import/naan_records.e72f7286.js">
+<link rel="modulepreload" href="./_npm/gridjs@6.2.0/_esm.js">
+<link rel="modulepreload" href="./_npm/htl@0.3.1/_esm.js">
+<link rel="modulepreload" href="./_observablehq/stdlib/inputs.js">
+<link rel="modulepreload" href="./_observablehq/stdlib/vega-lite.js">
+<link rel="modulepreload" href="./_npm/isoformat@0.2.1/_esm.js">
+<link rel="modulepreload" href="./_npm/vega-lite-api@5.6.0/_esm.js">
+<link rel="modulepreload" href="./_npm/vega-lite@5.19.0/_esm.js">
+<link rel="modulepreload" href="./_npm/vega@5.30.0/_esm.js">
+<link rel="modulepreload" href="./_npm/vega-util@1.17.2/_esm.js">
+<link rel="modulepreload" href="./_npm/vega-event-selector@3.0.1/_esm.js">
+<link rel="modulepreload" href="./_npm/vega-expression@5.1.1/_esm.js">
+<link rel="modulepreload" href="./_npm/vega-dataflow@5.7.6/_esm.js">
+<link rel="modulepreload" href="./_npm/vega-transforms@4.12.0/_esm.js">
+<link rel="modulepreload" href="./_npm/vega-view-transforms@4.6.0/_esm.js">
+<link rel="modulepreload" href="./_npm/vega-encode@4.10.1/_esm.js">
+<link rel="modulepreload" href="./_npm/vega-geo@4.4.2/_esm.js">
+<link rel="modulepreload" href="./_npm/vega-force@4.2.1/_esm.js">
+<link rel="modulepreload" href="./_npm/vega-hierarchy@4.1.2/_esm.js">
+<link rel="modulepreload" href="./_npm/vega-label@1.3.0/_esm.js">
+<link rel="modulepreload" href="./_npm/vega-regression@1.3.0/_esm.js">
+<link rel="modulepreload" href="./_npm/vega-voronoi@4.2.3/_esm.js">
+<link rel="modulepreload" href="./_npm/vega-wordcloud@4.1.5/_esm.js">
+<link rel="modulepreload" href="./_npm/vega-crossfilter@4.1.2/_esm.js">
+<link rel="modulepreload" href="./_npm/vega-statistics@1.9.0/_esm.js">
+<link rel="modulepreload" href="./_npm/vega-time@2.1.2/_esm.js">
+<link rel="modulepreload" href="./_npm/vega-loader@4.5.2/_esm.js">
+<link rel="modulepreload" href="./_npm/vega-scenegraph@4.13.0/_esm.js">
+<link rel="modulepreload" href="./_npm/vega-scale@7.4.1/_esm.js">
+<link rel="modulepreload" href="./_npm/vega-projection@1.6.1/_esm.js">
+<link rel="modulepreload" href="./_npm/vega-view@5.13.0/_esm.js">
+<link rel="modulepreload" href="./_npm/vega-format@1.1.2/_esm.js">
+<link rel="modulepreload" href="./_npm/vega-functions@5.15.0/_esm.js">
+<link rel="modulepreload" href="./_npm/vega-parser@6.4.0/_esm.js">
+<link rel="modulepreload" href="./_npm/vega-runtime@6.2.0/_esm.js">
+<link rel="modulepreload" href="./_npm/d3-array@3.2.4/_esm.js">
+<link rel="modulepreload" href="./_npm/d3-interpolate@3.0.1/_esm.js">
+<link rel="modulepreload" href="./_npm/d3-geo@3.1.1/_esm.js">
+<link rel="modulepreload" href="./_npm/d3-color@3.1.0/_esm.js">
+<link rel="modulepreload" href="./_npm/vega-canvas@1.2.7/_esm.js">
+<link rel="modulepreload" href="./_npm/d3-force@3.0.0/_esm.js">
+<link rel="modulepreload" href="./_npm/d3-hierarchy@3.1.2/_esm.js">
+<link rel="modulepreload" href="./_npm/d3-delaunay@6.0.4/_esm.js">
+<link rel="modulepreload" href="./_npm/d3-time@3.1.0/_esm.js">
+<link rel="modulepreload" href="./_npm/d3-dsv@3.0.1/_esm.js">
+<link rel="modulepreload" href="./_npm/topojson-client@3.1.0/_esm.js">
+<link rel="modulepreload" href="./_npm/d3-shape@3.2.0/_esm.js">
+<link rel="modulepreload" href="./_npm/d3-path@3.1.0/_esm.js">
+<link rel="modulepreload" href="./_npm/d3-scale@4.0.2/_esm.js">
+<link rel="modulepreload" href="./_npm/d3-scale-chromatic@3.1.0/_esm.js">
+<link rel="modulepreload" href="./_npm/d3-geo-projection@4.0.0/_esm.js">
+<link rel="modulepreload" href="./_npm/d3-timer@3.0.1/_esm.js">
+<link rel="modulepreload" href="./_npm/d3-format@3.1.0/_esm.js">
+<link rel="modulepreload" href="./_npm/d3-time-format@4.1.0/_esm.js">
+<link rel="modulepreload" href="./_npm/vega-selections@5.4.2/_esm.js">
+<link rel="modulepreload" href="./_npm/internmap@2.0.3/_esm.js">
+<link rel="modulepreload" href="./_npm/d3-quadtree@3.0.1/_esm.js">
+<link rel="modulepreload" href="./_npm/d3-dispatch@3.0.1/_esm.js">
+<link rel="modulepreload" href="./_npm/delaunator@5.0.1/_esm.js">
+<link rel="modulepreload" href="./_npm/robust-predicates@3.0.2/_esm.js">
+<link rel="icon" href="./_file/arks.736b6cfe.png" type="image/png" sizes="32x32">
+<script type="module">
+
+import {define} from "./_observablehq/client.js";
+
+define({id: "37644e85", inputs: ["view","html","Mutable"], outputs: ["PIDSplitter","NAANRecords","Grid","ghtml","dateStr","naans_url","records","selected_record","setSelectedRecord","getSelectedRecord"], body: async (view,html,Mutable) => {
+const [{PIDSplitter}, {NAANRecords}, {Grid, html: ghtml}] = await Promise.all([import("./_import/pidsplitter.0174b124.js"), import("./_import/naan_records.e72f7286.js"), import("./_npm/gridjs@6.2.0/_esm.js")]);
+
+
+const dateStr = (v) => {
+    const d = new Date(v);
+    return d.toISOString().split('T')[0]
+}
+
+const naans_url = "https://raw.githubusercontent.com/CDLUC3/naan_reg_public/main/naan_records.json";
+const records =  await fetch(naans_url)
+    .then((response) => response.json())
+    .then((data) => {return new NAANRecords(data)})
+    .catch((reason) => {
+        const tnow = new Date();
+        view(html`<pre>ERROR: Could not load ${naans_url}</pre>`);
+        return new NAANRecords([{"when":dateStr(tnow)}]);
+    });
+
+const selected_record = Mutable(0);
+const setSelectedRecord = (v) => {
+    selected_record.value = v;
+}
+const getSelectedRecord = () => {
+    return selected_record.value;
+}
+return {PIDSplitter,NAANRecords,Grid,ghtml,dateStr,naans_url,records,selected_record,setSelectedRecord,getSelectedRecord};
+}});
+
+define({id: "45d770fe", mode: "inline", inputs: ["records","display"], body: async (records,display) => {
+display(await(
+records.length.toLocaleString()
+))
+}});
+
+define({id: "c8671b4b", mode: "inline", inputs: ["dateStr","records","display"], body: async (dateStr,records,display) => {
+display(await(
+dateStr(records.earliest)
+))
+}});
+
+define({id: "80da6f8d", mode: "inline", inputs: ["dateStr","records","display"], body: async (dateStr,records,display) => {
+display(await(
+dateStr(records.latest)
+))
+}});
+
+define({id: "76aefd46", inputs: ["vl","records","display","resize"], outputs: ["histogram"], body: async (vl,records,display,resize) => {
+const histogram = await vl.render({
+    spec: {
+        "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+        "width": -1,
+        "height": 250,
+        "autosize": {"type": "fit", "contains": "padding"},
+        "data": {"values": records.timeCounts},
+        "mark": "line",
+        "encoding": {
+            "x": {
+                "field": "date",
+                "type": "temporal",
+                "title": "Date",
+            },
+            "y": {
+                "field": "count",
+                "title": "Number of records",
+                "type": "quantitative"
+            }         
+        }
+    }
+})
+display(resize((width) => {
+  histogram.value.width(Math.min(640 - 16 * 2, width));
+  histogram.value.run();
+  return histogram;
+}));
+return {histogram};
+}});
+
+define({id: "c8671b4b-1", mode: "inline", inputs: ["dateStr","records","display"], body: async (dateStr,records,display) => {
+display(await(
+dateStr(records.earliest)
+))
+}});
+
+define({id: "80da6f8d-1", mode: "inline", inputs: ["dateStr","records","display"], body: async (dateStr,records,display) => {
+display(await(
+dateStr(records.latest)
+))
+}});
+
+define({id: "784f0878", mode: "inline", inputs: ["html","naans_url","display"], body: async (html,naans_url,display) => {
+display(await(
+html `<a href='${naans_url}'>naan_records.json</a>`
+))
+}});
+
+define({id: "45d770fe-1", mode: "inline", inputs: ["records","display"], body: async (records,display) => {
+display(await(
+records.length.toLocaleString()
+))
+}});
+
+define({id: "9b66002c", inputs: ["Inputs","PIDSplitter","records","html","Grid","setSelectedRecord","ghtml","dateStr"], outputs: ["userpid","splitter","recordHtml","recordJSON","datatable","ele"], body: (Inputs,PIDSplitter,records,html,Grid,setSelectedRecord,ghtml,dateStr) => {
+const userpid = Inputs.text({value:"ark:/12345/foo/baz"});
+
+const splitter = new PIDSplitter(userpid.value);
+
+const recordHtml = (naan) => {
+    const record = records.get(naan);
+    if (record) {
+        return html`
+            <div >
+                <dl>
+                    <dt>Prefix:</dt><dd><code>${record.what}</code></dd>
+                    <dt>Created:</dt><dd>${record.created}</dd>
+                    <dt>Agency:</dt><dd>${record.name}</dd>
+                    <dt>Where:</dt><dd><a href="${record.where}" target="_blank">${record.where}</a></dd>
+                    <dt>Target:</dt><dd><code>${record.target.url} (${record.target.http_code})</code></dd>
+                    <dt>
+                </dl>
+           </div>
+        `;
+    }
+    return html`No record selected.`;
+}
+
+const recordJSON = (naan) => {
+    const record = records.get(naan);
+    return html`<pre style="overflow:scroll">${record.jsonstr}</pre>`
+}
+
+const datatable = new Grid({
+    columns:[{
+        id: "what",
+        name: "Prefix",
+        attributes: (cell) => {
+            if (cell) {
+                return {
+                  'onmouseover': ()=>{},
+                  'onclick': ()=>{setSelectedRecord(cell)},  
+                  'style': 'cursor: pointer'
+                };
+            }
+        },
+        formatter: (v, row)=> {
+            return ghtml(`<code>${v}</code>`);
+        }
+    }, {
+        data: (row) => dateStr(row.when),
+        name: "Created"
+    }, {
+        data: (row) => {
+            let name = row.who.name;
+            if (row.who.acronym) {
+                name = `${name} (${row.who.acronym})`;
+            }
+            return name;
+        },
+        name: "Who",
+        formatter: (v, row) => {
+            const record = records.get(row.cells[0].data);
+            return ghtml(`<a href='${record.where}' target='_blank'>${v}</a>`);
+        }
+    }
+    ],
+    fixedHeader: true,
+    height: '600px',
+    maxWidth: '640px',
+    search: true,
+    sort: true,
+    data: records.data,
+})
+const ele = document.getElementById("datatable");
+if (ele) {
+    ele.innerHTML = "";
+}
+
+datatable.render(document.getElementById("datatable"));
+setSelectedRecord("12025");
+return {userpid,splitter,recordHtml,recordJSON,datatable,ele};
+}});
+
+define({id: "fdb5a037", mode: "inline", inputs: ["recordHtml","selected_record","display"], body: async (recordHtml,selected_record,display) => {
+display(await(
+recordHtml(selected_record)
+))
+}});
+
+define({id: "fa6c8864", mode: "inline", inputs: ["recordJSON","selected_record","display"], body: async (recordJSON,selected_record,display) => {
+display(await(
+recordJSON(selected_record)
+))
+}});
+
+</script>
+<aside id="observablehq-toc" data-selector="h1:not(:first-of-type)[id], h2:first-child[id], :not(h1) + h2[id]">
+<nav>
+</nav>
+</aside>
+<div id="observablehq-center">
+<main id="observablehq-main" class="observablehq">
+<link href="./_npm/gridjs@6.2.0/dist/theme/mermaid.min.css" rel="stylesheet">
+<h1 id="naan-registry-records" tabindex="-1"><a class="observablehq-header-anchor" href="#naan-registry-records">NAAN Registry Records</a></h1>
+<p>The NAAN Registry maintains the authoritative list of Name Assigning Authority Numbers which are the numeric
+prefixes used by ARK identifiers. A NAAN may be allocated to an organization on request.</p>
+<div class="observablehq observablehq--block"><!--:37644e85:--></div>
+<p>There are currently <observablehq-loading></observablehq-loading><!--:45d770fe:--> NAAN records, with the first issued on <observablehq-loading></observablehq-loading><!--:c8671b4b:--> and the most
+recent on <observablehq-loading></observablehq-loading><!--:80da6f8d:-->.</p>
+<div class="observablehq observablehq--block"><!--:76aefd46:--></div>
+<p><strong>Figure 1.</strong> Number of NAAN records registered over time. The first registration was recorded on <observablehq-loading></observablehq-loading><!--:c8671b4b-1:-->
+and the most recent on <observablehq-loading></observablehq-loading><!--:80da6f8d-1:-->.</p>
+<p>A list of the NAAN records is provided below. This list is also available in other formats for programmatic use:</p>
+<ul>
+<li>JSON: <observablehq-loading></observablehq-loading><!--:784f0878:--></li>
+<li>YAML: <a href="https://legacy-n2t.n2t.net/e/n2t_full_prefixes.yaml" target="_blank" rel="noopener noreferrer">n2t_full_prefixes.yaml</a></li>
+</ul>
+<div class="card">
+<p><strong>Table 1.</strong> A listing of the <observablehq-loading></observablehq-loading><!--:45d770fe-1:--> NAAN records maintained by the NAAN registry. The public
+information for a record may be seen below by clicking on the corresponding prefix (NAAN) value. The search box can be used
+to filter the displayed records.</p>
+<div id="datatable"></div>
+</div>
+<div class="observablehq observablehq--block"><!--:9b66002c:--></div>
+<div class="grid grid-cols-2">
+    <observablehq-loading></observablehq-loading><!--:fdb5a037:-->
+    <observablehq-loading></observablehq-loading><!--:fa6c8864:-->
+</div>
+</main>
+</div>
