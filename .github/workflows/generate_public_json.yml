@@ -30,17 +30,17 @@ jobs:
       id: timestamp
       run: echo "TAG_TIMESTAMP=$(date +'%Y%m%d.%H%M%S')" >> $GITHUB_ENV
 
-    - name: Generate public NAANs JSON
-      run: |
-        mkdir -p docs
-        cp -r schema docs
-        ls -la
-        python naan_reg_json.py -p naan_reg_priv/main_naans > docs/naans_public.json
-        python naan_reg_json.py -p naan_reg_priv/main_naans -f docs/naans 
-        cp templates/index.html docs/index.html
+    #- name: Generate public NAANs JSON
+    #  run: |
+    #    mkdir -p docs
+    #    cp -r schema docs
+    #    python naan_reg_json.py -p naan_reg_priv/main_naans > docs/naans_public.json
+    #    python naan_reg_json.py -p naan_reg_priv/main_naans -f docs/naans
+    #    cp templates/index.html docs/index.html
 
     - name: NAANs to JSON
       run: |
+        mkdir -p docs
         python scripts/naan_reg_json.py main-naans-to-json -d docs/naan_records.json naan_reg_priv/main_naans
         python scripts/naan_reg_json.py shoulder-registry-to-json -d docs/naan_records.json naan_reg_priv/shoulder_registry
         python scripts/naan_reg_json.py ezid-overrides -d docs/naan_records.json
