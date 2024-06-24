@@ -26,6 +26,11 @@ jobs:
         token: ${{ secrets.NAAN_REG_PRIV_PAT }}
         path: naan_reg_priv
 
+    - name: Add static web files
+      run: |
+        mkdir -p docs
+        touch docs/.nojekyll
+
     - name: Setup node for page generation
       uses: actions/setup-node@v4
       with:
@@ -47,7 +52,6 @@ jobs:
 
     - name: NAANs to JSON
       run: |
-        mkdir -p docs
         python scripts/naan_reg_json.py main-naans-to-json -d docs/naan_records.json naan_reg_priv/main_naans
         python scripts/naan_reg_json.py shoulder-registry-to-json -d docs/naan_records.json naan_reg_priv/shoulder_registry
         python scripts/naan_reg_json.py ezid-overrides -d docs/naan_records.json
