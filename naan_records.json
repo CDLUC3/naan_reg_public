@@ -1,10 +1,10 @@
 {
   "metadata": {
     "version": "1.0",
-    "created_date": "2024-06-24T08:01:52.716055+00:00",
+    "created_date": "2024-06-24T08:28:16.049673+00:00",
     "modified_date": null,
     "description": "Public NAAN records and Shoulder information.",
-    "updated": "2024-06-24T08:01:54+00:00"
+    "updated": "2024-06-24T08:28:18+00:00"
   },
   "data": [
     {
@@ -32179,6 +32179,30 @@
         "name": "Acadia University",
         "name_native": null,
         "acronym": "ACAD"
+      },
+      "na_policy": {
+        "orgtype": "NP",
+        "policy": "(:unkn) unknown",
+        "tenure": "2024",
+        "policy_url": null
+      },
+      "test_identifier": null,
+      "service_provider": null,
+      "purpose": "unspecified",
+      "rtype": "PublicNAAN"
+    },
+    {
+      "what": "49937",
+      "where": "https://revistas.udenar.edu.co/index.php/rheprol/issue/view/606",
+      "target": {
+        "url": "https://revistas.udenar.edu.co/index.php/rheprol/issue/view/606/ark:/${content}",
+        "http_code": 302
+      },
+      "when": "2024-06-24T00:00:00+00:00",
+      "who": {
+        "name": "Hechos y Proyecciones del Lenguaje",
+        "name_native": null,
+        "acronym": "HPL"
       },
       "na_policy": {
         "orgtype": "NP",
