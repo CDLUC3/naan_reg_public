@@ -26,17 +26,24 @@ jobs:
         token: ${{ secrets.NAAN_REG_PRIV_PAT }}
         path: naan_reg_priv
 
+    - name: Setup node for page generation
+      uses: actions/setup-node@v4
+      with:
+        node-version: 20
+        cache: "npm"
+        cache-dependency-path: ./ui_src/package-lock.json
+
+    - name: Install dependencies
+      working-directory: ./ui_src
+      run: npm ci
+
+    - name: Build
+      working-directory: ./ui_src
+      run: npm run build
+
     - name: Get timestamp
       id: timestamp
       run: echo "TAG_TIMESTAMP=$(date +'%Y%m%d.%H%M%S')" >> $GITHUB_ENV
-
-    #- name: Generate public NAANs JSON
-    #  run: |
-    #    mkdir -p docs
-    #    cp -r schema docs
-    #    python naan_reg_json.py -p naan_reg_priv/main_naans > docs/naans_public.json
-    #    python naan_reg_json.py -p naan_reg_priv/main_naans -f docs/naans
-    #    cp templates/index.html docs/index.html
 
     - name: NAANs to JSON
       run: |
