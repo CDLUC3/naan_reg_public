@@ -214,7 +214,7 @@ def ezid_overrides(ezid_shoulders_url, dest_path):
     """
     ezid_exceptions = [
         #"87602",
-        "21549",
+        "21549",  # Even though advertised by ezid shoulder list, it is not actually managed by ezid.
     ]
     if isinstance(dest_path, str):
         dest_path = pathlib.Path(dest_path)
