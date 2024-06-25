@@ -1,10 +1,10 @@
 {
   "metadata": {
     "version": "1.0",
-    "created_date": "2024-06-24T12:26:47.884169+00:00",
+    "created_date": "2024-06-25T19:13:46.193988+00:00",
     "modified_date": null,
     "description": "Public NAAN records and Shoulder information.",
-    "updated": "2024-06-24T12:26:49+00:00"
+    "updated": "2024-06-25T19:13:47+00:00"
   },
   "data": [
     {
@@ -32806,6 +32806,30 @@
         "http_code": 302
       },
       "when": "2024-05-21T00:00:00+00:00",
+      "na_policy": {
+        "orgtype": "NP",
+        "policy": "(:unkn) unknown",
+        "tenure": "2024",
+        "policy_url": null
+      },
+      "test_identifier": null,
+      "rtype": "PublicNAANShoulder"
+    },
+    {
+      "shoulder": "r5",
+      "naan": "99152",
+      "what": "99152/r5",
+      "who": {
+        "name": "Opentheso",
+        "name_native": null,
+        "acronym": "OTHESO"
+      },
+      "where": "https://opentheso.huma-num.fr/opentheso/api",
+      "target": {
+        "url": "https://opentheso.huma-num.fr/opentheso/api/ark:/${content}",
+        "http_code": 302
+      },
+      "when": "2024-06-25T00:00:00+00:00",
       "na_policy": {
         "orgtype": "NP",
         "policy": "(:unkn) unknown",
