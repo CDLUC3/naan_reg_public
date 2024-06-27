@@ -1,10 +1,10 @@
 {
   "metadata": {
     "version": "1.0",
-    "created_date": "2024-06-25T19:13:46.193988+00:00",
+    "created_date": "2024-06-27T14:49:51.982869+00:00",
     "modified_date": null,
     "description": "Public NAAN records and Shoulder information.",
-    "updated": "2024-06-25T19:13:47+00:00"
+    "updated": "2024-06-27T14:49:53+00:00"
   },
   "data": [
     {
@@ -32203,6 +32203,30 @@
         "name": "Hechos y Proyecciones del Lenguaje",
         "name_native": null,
         "acronym": "HPL"
+      },
+      "na_policy": {
+        "orgtype": "NP",
+        "policy": "(:unkn) unknown",
+        "tenure": "2024",
+        "policy_url": null
+      },
+      "test_identifier": null,
+      "service_provider": null,
+      "purpose": "unspecified",
+      "rtype": "PublicNAAN"
+    },
+    {
+      "what": "36942",
+      "where": "https://www.repertoireinformatiecentrum.nl",
+      "target": {
+        "url": "https://www.repertoireinformatiecentrum.nl/ark:/${content}",
+        "http_code": 302
+      },
+      "when": "2024-06-27T00:00:00+00:00",
+      "who": {
+        "name": "Stichting Repertoire Informatie Centrum",
+        "name_native": null,
+        "acronym": "RIC"
       },
       "na_policy": {
         "orgtype": "NP",
