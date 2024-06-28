@@ -24,17 +24,13 @@ there are three steps necessary:
 """
 
 import copy
-import dataclasses
 import datetime
 import json
 import logging
-import os
-import os.path
 import pathlib
 import re
 import sys
 import typing
-import urllib.parse
 
 import click
 import requests
@@ -49,12 +45,10 @@ try:
 
     PYDANTIC_AVAILABLE = True
 except ModuleNotFoundError:
-    from dataclasses import dataclass
-
+    pass
 
 # Global logger handle
 _L = logging.getLogger("naan_reg_json")
-
 
 
 def generate_json_schema(public_only: bool = False):
@@ -72,40 +66,41 @@ def generate_shadow_ark_config() -> list[lib_naan.PublicNAAN]:
     from the Internet. So we inject them into the configuration here.
     """
     wild_shadow_prefixes = [
-        {'prefix':'b6071', 'test': 'ark:/b6071/m3z07d'},
-        {'prefix':'b7291', 'test': 'ark:/b7291/d1wc74'},
-        {'prefix':'b5060', 'test': 'ark:/b5060/d8bc75'},
-        {'prefix':'b7272', 'test': 'ark:/b7272/q6ms3qnx'},
-        {'prefix':'b7280', 'test': 'ark:/b7280/d1988w'},
-        {'prefix':'b6078', 'test': 'ark:/b6078/d1mw2k'},
+        {'prefix': 'b6071', 'test': 'ark:/b6071/m3z07d'},
+        {'prefix': 'b7291', 'test': 'ark:/b7291/d1wc74'},
+        {'prefix': 'b5060', 'test': 'ark:/b5060/d8bc75'},
+        {'prefix': 'b7272', 'test': 'ark:/b7272/q6ms3qnx'},
+        {'prefix': 'b7280', 'test': 'ark:/b7280/d1988w'},
+        {'prefix': 'b6078', 'test': 'ark:/b6078/d1mw2k'},
     ]
     shadows = []
     for entry in wild_shadow_prefixes:
         shadow = lib_naan.PublicNAAN(
-            what = entry['prefix'],
-            where = "https://ezid.cdlib.org/",
-            target = lib_naan.Target(
-                url = f"https://doi.org/10.{entry['prefix'][1:]}/$" + "{value}",
+            what=entry['prefix'],
+            where="https://ezid.cdlib.org/",
+            target=lib_naan.Target(
+                url=f"https://doi.org/10.{entry['prefix'][1:]}/$" + "{value}",
                 http_code=302
             ),
-            when = datetime.datetime(year=1970, month=1, day=1, tzinfo=datetime.timezone.utc),
-            who = lib_naan.PublicNAAN_who(
-                name = "CDLIB EZID",
-                acronym = "EZID"
+            when=datetime.datetime(year=1970, month=1, day=1, tzinfo=datetime.timezone.utc),
+            who=lib_naan.PublicNAAN_who(
+                name="CDLIB EZID",
+                acronym="EZID"
             ),
-            na_policy = lib_naan.NAAN_how(
+            na_policy=lib_naan.NAAN_how(
                 orgtype="NP",
                 policy="NR",
                 tenure="1970",
                 policy_url=""
             ),
-            test_identifier = entry['test'],
-            service_provider = None,
+            test_identifier=entry['test'],
+            service_provider=None,
         )
         shadows.append(shadow)
     return shadows
 
-def load_ezid_shoulder_list(url:str) -> typing.List[dict]:
+
+def load_ezid_shoulder_list(url: str) -> typing.List[dict]:
     # regexp to match entries in the shoulder-list output
     re_ark = re.compile(
         r"\b(?P<PID>ark:/?(?P<prefix>[0-9]{5,10})\/(?P<value>\S+)?)\s+(?P<name>.*)",
@@ -131,15 +126,16 @@ def load_ezid_shoulder_list(url:str) -> typing.List[dict]:
     return []
 
 
-def shoulder_from_naan(naan: typing.Union[lib_naan.NAAN, lib_naan.PublicNAAN]) -> typing.Union[lib_naan.NAANShoulder, lib_naan.PublicNAANShoulder]:
+def shoulder_from_naan(naan: typing.Union[lib_naan.NAAN, lib_naan.PublicNAAN]) -> typing.Union[
+    lib_naan.NAANShoulder, lib_naan.PublicNAANShoulder]:
     shoulder = lib_naan.NAANShoulder(
         shoulder="",
-        naan = naan.what,
-        who = copy.deepcopy(naan.who),
-        where = naan.where,
-        target = copy.deepcopy(naan.target),
-        when = naan.when,
-        na_policy = copy.deepcopy(naan.na_policy)
+        naan=naan.what,
+        who=copy.deepcopy(naan.who),
+        where=naan.where,
+        target=copy.deepcopy(naan.target),
+        when=naan.when,
+        na_policy=copy.deepcopy(naan.na_policy)
     )
     if isinstance(naan, lib_naan.PublicNAAN):
         return shoulder.as_public()
@@ -157,9 +153,10 @@ def click_main():
 
 @click_main.command("main-naans-to-json")
 @click.argument("anvl_source", type=click.Path(exists=True))
-@click.option("-d", "--dest_path", default=pathlib.Path("naan_records.json"), type=click.Path(), help="JSON destination for NAANs. Existing is updated, path created if necessary.")
+@click.option("-d", "--dest_path", default=pathlib.Path("naan_records.json"), type=click.Path(),
+              help="JSON destination for NAANs. Existing is updated, path created if necessary.")
 @click.option("-p", "--private", is_flag=True, help="Generate private JSON records.")
-def naan_anvl_to_json(anvl_source:str, dest_path: pathlib.Path, private:bool):
+def naan_anvl_to_json(anvl_source: str, dest_path: pathlib.Path, private: bool):
     """Generate a JSON version of the main_naans file.
 
     The default behavior is to produce the public JSON naans file.
@@ -183,9 +180,10 @@ def naan_anvl_to_json(anvl_source:str, dest_path: pathlib.Path, private:bool):
 
 @click_main.command("shoulder-registry-to-json")
 @click.argument("anvl_source", type=click.Path(exists=True))
-@click.option("-d", "--dest_path", default=pathlib.Path("naan_records.json"), type=click.Path(), help="JSON destination for NAANs. Existing is updated, path created if necessary.")
+@click.option("-d", "--dest_path", default=pathlib.Path("naan_records.json"), type=click.Path(),
+              help="JSON destination for NAANs. Existing is updated, path created if necessary.")
 @click.option("-p", "--private", is_flag=True, help="Generate private JSON records.")
-def shoulder_anvl_to_json(anvl_source:str, dest_path: pathlib.Path, private:bool):
+def shoulder_anvl_to_json(anvl_source: str, dest_path: pathlib.Path, private: bool):
     if isinstance(dest_path, str):
         dest_path = pathlib.Path(dest_path)
     shoulder_src = open(anvl_source, "r").read()
@@ -205,7 +203,8 @@ def shoulder_anvl_to_json(anvl_source:str, dest_path: pathlib.Path, private:bool
     default="https://ezid.cdlib.org/static/info/shoulder-list.txt",
     help="URL for the EZID shoulder list."
 )
-@click.option("-d", "--dest_path", default=pathlib.Path("naan_records.json"), type=click.Path(), help="JSON destination for NAANs. Existing is updated, path created if necessary.")
+@click.option("-d", "--dest_path", default=pathlib.Path("naan_records.json"), type=click.Path(),
+              help="JSON destination for NAANs. Existing is updated, path created if necessary.")
 def ezid_overrides(ezid_shoulders_url, dest_path):
     """Overrides targets known to be managed by EZID.
 
@@ -213,7 +212,7 @@ def ezid_overrides(ezid_shoulders_url, dest_path):
     manual override such as this.
     """
     ezid_exceptions = [
-        #"87602",
+        # "87602",
         "21549",  # Even though advertised by ezid shoulder list, it is not actually managed by ezid.
     ]
     if isinstance(dest_path, str):
@@ -246,7 +245,7 @@ def ezid_overrides(ezid_shoulders_url, dest_path):
             key = f"{entry['prefix']}/{entry['value']}"
             try:
                 shoulder_record = repo.read(key)
-            except KeyError as e:
+            except KeyError:
                 _L.info(f"Create shoulder {key}")
                 shoulder_record = shoulder_from_naan(naan_record)
                 shoulder_record.shoulder = entry["value"]
@@ -314,6 +313,7 @@ def ezid_overrides(ezid_shoulders_url, dest_path):
         json.dump(existing, dest, indent=2, ensure_ascii=False, cls=EnhancedJSONEncoder)
         _L.info("Wrote EZID updated records to %s", fname)
     '''
+
 
 @click_main.command()
 def generate_schema():

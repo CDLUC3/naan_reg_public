@@ -6,12 +6,11 @@ import typing
 import gql
 import gql.transport.requests
 
-
 RE_EXTRACT_JSON = re.compile(r"\`\`\`json([\s\S]*?)\`\`\`", re.DOTALL)
 
 
 def extract_json_block_from_markdown(
-    markdown: str,
+        markdown: str,
 ) -> typing.Optional[typing.Union[typing.Dict, typing.List]]:
     data_match = RE_EXTRACT_JSON.search(markdown)
     if data_match is None:
@@ -107,7 +106,7 @@ class IssueJsonExtractor:
         return result
 
     def get_json_from_issue(
-        self, issue_number: int, key: str = None
+            self, issue_number: int, key: str = None
     ) -> typing.Optional[typing.Dict]:
         issue = self.get_issue(issue_number)
         body = issue.get("repository", {}).get("issue", {}).get("body", "")

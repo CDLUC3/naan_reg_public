@@ -7,7 +7,6 @@ import re
 import typing
 import urllib.parse
 
-
 WHO_PATTERN = re.compile(r"\s\(=\)\s")
 
 
@@ -44,8 +43,9 @@ DEFAULT_ARK_SUBST = "$arkid"
 # handle resolution of individual identifiers for ezid, instead that
 # functionality is handled by ezid.
 TARGET_OVERRIDES = {
-    "n2t.net":"arks.org",
+    "n2t.net": "arks.org",
 }
+
 
 def urlstr2target(ustr: str, include_slash=True) -> dict:
     """
@@ -97,7 +97,7 @@ def urlstr2target(ustr: str, include_slash=True) -> dict:
             "$nlid": "${value}",
             "${nlid}": "${value}",
         }
-        for k,v in replacements.items():
+        for k, v in replacements.items():
             if k in pstr:
                 return pstr.replace(k, v)
         # There's at least one entry in the NAAN registry like this
@@ -112,7 +112,7 @@ def urlstr2target(ustr: str, include_slash=True) -> dict:
             return pstr + "ark:/${content}"
         return pstr + "ark:${content}"
 
-    def adjust_netloc(netloc:str)->str:
+    def adjust_netloc(netloc: str) -> str:
         netloc = netloc.lower()
         if netloc in TARGET_OVERRIDES:
             netloc = TARGET_OVERRIDES[netloc]
@@ -124,7 +124,7 @@ def urlstr2target(ustr: str, include_slash=True) -> dict:
     if len(parts) > 1:
         try:
             http_code = int(parts[0])
-        except ValueError as e:
+        except ValueError:
             logging.warning("Invalid status code %s", parts[0])
         ustr = parts[1]
 
@@ -250,4 +250,3 @@ class AnvlParser:
                 block.append(line)
         if len(block) > 0:
             yield self.parse(block)
-

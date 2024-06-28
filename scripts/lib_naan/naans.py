@@ -28,7 +28,6 @@ class EnhancedJSONEncoder(json.JSONEncoder):
 
 
 class NaanRepository:
-
     __version__ = "1.0"
 
     """
@@ -41,6 +40,7 @@ class NaanRepository:
     loaded first to avoid consistency exceptions.
 
     """
+
     def __init__(self, store_path: typing.Union[str, pathlib.Path]):
         self._store_path = pathlib.Path(store_path)
         self._index: dict[str, int] = {}
@@ -67,13 +67,13 @@ class NaanRepository:
             entry = self._records[i]
             self._index[entry.identifier] = i
 
-    def get(self, i: int, as_public:bool = False) -> typing.Union[lib_naan.NAAN, lib_naan.PublicNAAN]:
+    def get(self, i: int, as_public: bool = False) -> typing.Union[lib_naan.NAAN, lib_naan.PublicNAAN]:
         record = self._records[i]
         if as_public:
             return record.as_public()
         return record
 
-    def read(self, key: str, as_public:bool = False) -> typing.Union[lib_naan.NAAN, lib_naan.PublicNAAN]:
+    def read(self, key: str, as_public: bool = False) -> typing.Union[lib_naan.NAAN, lib_naan.PublicNAAN]:
         """
         Retrieve the specified record with exact match of "NAAN" or "NAAN/shoulder"
 
@@ -100,7 +100,7 @@ class NaanRepository:
         self._update_index()
         _L.info("Loaded %s records from %s", len(self), self._store_path)
 
-    def store(self, as_public:bool=False) -> None:
+    def store(self, as_public: bool = False) -> None:
         """Store the set of records in the specified JSON file
         """
         if not os.path.exists(self._store_path):
@@ -151,11 +151,11 @@ class NaanRepository:
     def upsert(self, entry: lib_naan.StorableTypes):
         try:
             return self.insert(entry)
-        except ValueError as err:
+        except ValueError:
             pass
         return self.update(entry)
 
-    def delete(self, key:str):
+    def delete(self, key: str):
         i = self._index[key]
         del self._records[i]
         self._update_index()
@@ -172,7 +172,7 @@ class NaanRepository:
         """
         return self._index
 
-    def load_naan_reg_priv(self, naan_src: str, as_public:bool=True) -> int:
+    def load_naan_reg_priv(self, naan_src: str, as_public: bool = True) -> int:
         """Load NAAN records from ANVL formatted source.
 
         naan_src is the full text of main_naans (i.e. contents, not path to file)
@@ -203,11 +203,11 @@ class NaanRepository:
                     naan.target.url = UNKNOWN_CONFIGS[naan.what]
                 self.upsert(naan)
                 n += 1
-            except ValueError as err:
-                _L.warning(f"Could not parse %s as NAAN", block)
+            except ValueError:
+                _L.warning("Could not parse %s as NAAN", block)
         return n
 
-    def load_shoulder_registry(self, shoulder_src: str, as_public:bool=True) -> int:
+    def load_shoulder_registry(self, shoulder_src: str, as_public: bool = True) -> int:
         """Load shoulder records from the shoulder_registry
         """
         anvl_parser = lib_naan.anvl.AnvlParser()
@@ -219,8 +219,8 @@ class NaanRepository:
                     shoulder = shoulder.as_public()
                 self.upsert(shoulder)
                 n += 1
-            except ValueError as err:
-                _L.warning(f"Could not parse %s as Shoulder", block)
+            except ValueError:
+                _L.warning("Could not parse %s as Shoulder", block)
         return n
 
 

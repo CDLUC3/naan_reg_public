@@ -22,11 +22,11 @@ except ModuleNotFoundError:
 
 EZID_PRODUCTION_SERVER = "https://ezid.cdlib.org/"
 
+
 @dataclass
 class Target:
-
     url: str = dataclasses.field(
-        metadata = dict(
+        metadata=dict(
             description=(
                 "URL of service endpoint accepting ARK identifiers including subsitution"
                 "parameters $arkpid for full ARK or $pid for NAAN/suffix."
@@ -40,7 +40,7 @@ class Target:
         )
     )
 
-    def update(self, record:'Target') -> 'Target':
+    def update(self, record: 'Target') -> 'Target':
         self.url = record.url
         self.http_code = record.http_code
         return self
@@ -61,7 +61,8 @@ class PublicNAAN_who:
         default=None,
         metadata=dict(description="Optional display acronym derived from DNS name"),
     )
-    def update(self, record:'PublicNAAN_who') -> 'PublicNAAN_who':
+
+    def update(self, record: 'PublicNAAN_who') -> 'PublicNAAN_who':
         self.name = record.name
         self.name_native = record.name_native
         self.acronym = record.acronym
@@ -76,7 +77,7 @@ class NAAN_who(PublicNAAN_who):
         default=None, metadata=dict(description="Physical address of organization")
     )
 
-    def update(self, record:'NAAN_who') -> 'NAAN_who':
+    def update(self, record: 'NAAN_who') -> 'NAAN_who':
         super().update(record)
         if isinstance(record, NAAN_who):
             self.address = record.address
@@ -120,7 +121,7 @@ class NAAN_how:
         default=None, metadata=dict(description="URL to narrative policy statement")
     )
 
-    def update(self, record:'NAAN_how') -> 'NAAN_how':
+    def update(self, record: 'NAAN_how') -> 'NAAN_how':
         self.orgtype = record.orgtype
         self.policy = record.policy
         self.tenure = record.tenure
@@ -147,7 +148,7 @@ class NAAN_contact:
         default=None, metadata=dict(description="Telephone number for contact")
     )
 
-    def update(self, record:'NAAN_contact') -> 'NAAN_contact':
+    def update(self, record: 'NAAN_contact') -> 'NAAN_contact':
         self.name = record.name
         self.unit = record.unit
         self.tenure = record.tenure
@@ -224,7 +225,6 @@ class PublicNAAN:
     def identifier(self) -> str:
         return self.what
 
-
     def as_flat(self) -> dict:
         return {
             "what": self.what,
@@ -258,8 +258,8 @@ class NAAN(PublicNAAN):
         default='ARK',
         metadata=dict(description="Purpose for this record, 'ARK'")
     )
-    contact: NAAN_contact=None
-    alternate_contact: typing.Optional[NAAN_contact]=None
+    contact: NAAN_contact = None
+    alternate_contact: typing.Optional[NAAN_contact] = None
     comments: typing.Optional[typing.List[dict]] = dataclasses.field(
         default=None, metadata=dict(description="Comments about NAAN record")
     )
@@ -387,7 +387,7 @@ class NAAN(PublicNAAN):
 
 @dataclass
 class PublicNAANShoulder:
-    shoulder:str = dataclasses.field(
+    shoulder: str = dataclasses.field(
         metadata=dict(description="The shoulder part of the record")
     )
     naan: str = dataclasses.field(
@@ -437,7 +437,7 @@ class PublicNAANShoulder:
     def as_public(self) -> 'PublicNAANShoulder':
         return self
 
-    def update(self, record:'PublicNAANShoulder') -> 'PublicNAANShoulder':
+    def update(self, record: 'PublicNAANShoulder') -> 'PublicNAANShoulder':
         if record.shoulder is not None:
             if record.shoulder != self.shoulder:
                 raise ValueError(f"Cannot update the shoulder value, incoming {record.shoulder} != {self.shoulder}.")
@@ -455,8 +455,8 @@ class PublicNAANShoulder:
 @dataclass
 class NAANShoulder(PublicNAANShoulder):
     who: NAAN_who
-    contact: NAAN_contact=None
-    alternate_contact: typing.Optional[NAAN_contact]=None
+    contact: NAAN_contact = None
+    alternate_contact: typing.Optional[NAAN_contact] = None
     comments: typing.Optional[typing.List[dict]] = dataclasses.field(
         default=None, metadata=dict(description="Comments about Shoulder record")
     )
@@ -489,7 +489,7 @@ class NAANShoulder(PublicNAANShoulder):
         )
         return public
 
-    def update(self, record:'NAANShoulder') -> 'NAANShoulder':
+    def update(self, record: 'NAANShoulder') -> 'NAANShoulder':
         if record.shoulder is not None:
             if record.shoulder != self.shoulder:
                 raise ValueError(f"Cannot update the shoulder value, incoming {record.shoulder} != {self.shoulder}.")
@@ -555,8 +555,7 @@ class NAANShoulder(PublicNAANShoulder):
                     res[k] = v
         if "shoulder" in res:
             return cls(**res)
-        raise ValueError(f"No 'shoulder' entry in block!")
-
+        raise ValueError("No 'shoulder' entry in block!")
 
 
 def datetime_from_iso_string(iso_string: str) -> datetime:
@@ -566,8 +565,9 @@ def datetime_from_iso_string(iso_string: str) -> datetime:
 
 
 StorableTypes = typing.Union[
-        NAAN, PublicNAAN, NAANShoulder, PublicNAANShoulder
-    ]
+    NAAN, PublicNAAN, NAANShoulder, PublicNAANShoulder
+]
+
 
 def entryFromDict(data) -> typing.Any:
     _type = data.get("rtype", None)

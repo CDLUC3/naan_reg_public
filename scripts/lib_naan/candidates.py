@@ -10,12 +10,14 @@ import shutil
 
 _L = logging.getLogger(__name__)
 
+
 def get_timestamp():
     ds = datetime.datetime.now(tz=datetime.timezone.utc)
     return ds.isoformat(timespec="seconds")
 
+
 class CandidateNaans:
-    def __init__(self, candidate_naan_file:str):
+    def __init__(self, candidate_naan_file: str):
         self.candidate_naans_file = candidate_naan_file
         self.line_match = re.compile(r"(?P<comment>#\s*)?(?P<naan>[0-9]{5})(?P<msg>.*)")
 
@@ -39,10 +41,10 @@ class CandidateNaans:
                 continue
             if match.group("comment") is not None:
                 continue
-            naan_value  = match.group("naan")
+            naan_value = match.group("naan")
             return naan_value
 
-    def allocate_next_naan(self, message:str) -> str:
+    def allocate_next_naan(self, message: str) -> str:
         """
         Allocates the next available NAAN value and mutates the
         candidate_naans file to record that it has been allocated.
@@ -103,7 +105,7 @@ class CandidateNaans:
         try:
             os.rename(new_file, self.candidate_naans_file)
         except Exception as e:
-            #Roll back.
+            # Roll back.
             _L.warning("An error was encountered updating the candidate naans file.")
             _L.error(e)
             os.rename(bak_file, self.candidate_naans_file)
