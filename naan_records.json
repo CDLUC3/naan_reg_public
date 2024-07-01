@@ -1,10 +1,10 @@
 {
   "metadata": {
     "version": "1.0",
-    "created_date": "2024-07-01T17:01:45.629965+00:00",
+    "created_date": "2024-07-01T17:03:18.494280+00:00",
     "modified_date": null,
     "description": "Public NAAN records and Shoulder information.",
-    "updated": "2024-07-01T17:01:47+00:00"
+    "updated": "2024-07-01T17:03:20+00:00"
   },
   "data": [
     {
@@ -32227,6 +32227,30 @@
         "name": "Stichting Repertoire Informatie Centrum",
         "name_native": null,
         "acronym": "RIC"
+      },
+      "na_policy": {
+        "orgtype": "NP",
+        "policy": "(:unkn) unknown",
+        "tenure": "2024",
+        "policy_url": null
+      },
+      "test_identifier": null,
+      "service_provider": null,
+      "purpose": "unspecified",
+      "rtype": "PublicNAAN"
+    },
+    {
+      "what": "23947",
+      "where": "https://id.erfgoeddata.be/ark:/[NAAN]/UUID",
+      "target": {
+        "url": "https://id.erfgoeddata.be/ark:/[NAAN]/UUID/ark:/${content}",
+        "http_code": 302
+      },
+      "when": "2024-07-01T00:00:00+00:00",
+      "who": {
+        "name": "heritage database Flanders",
+        "name_native": null,
+        "acronym": "HDF"
       },
       "na_policy": {
         "orgtype": "NP",
