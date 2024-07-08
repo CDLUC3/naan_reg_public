@@ -1,0 +1,356 @@
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/13030/bn        ?1?
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/86073/b3        American University of Beirut
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/44124/d2        Archaeological Research Facility
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/99999/fk4       ARK Test
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/99999/fk8       ARK Test (non-expiring)
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/85779/j4        Berkeley Law Library
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/80354/b3        Berkeley Linguistics Society
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/87932/k0        Berkeley Seismological Laboratory
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/57799/b9        bioCADDIE
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/57799/          bioCADDIE no minter
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/21547/          Biocode Commons
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/87286/          Biocode Commons (UCB only)
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/86084/b4        Blavatnik Archive
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/84246/p7        California Coastal Atlas
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/99166/p9        CDL Agent
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/13030/j2        CDL Auxiliary
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/13030/c8        CDL Digital Special Collections
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/13030/sw1       CDL Web Archiving System
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/87285/t8        Center for Multiscale Modeling of Atmospheric Processes
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/87915/n7        Center for Nanotechnology in Society
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/87295/w8        Center for Research in Biological Systems
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/87607/c7        Chicago Collections Consortium
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/87942/          CLIVAR & Carbon Hydrographic Data Office
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/86080/k3        Collaborative Research in Computational Neuroscience (CRCNS)
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/81220/w2        College of William & Mary Libraries
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/19153/b2        CRDP academie d'Aix-Marseille
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/83024/d4        Dartmouth College Library
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/80373/d3        Dartmouth College Research, Teaching and Learning
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/44461/r4        Dartmouth Remix the Manuscript
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/87296/s6        Dartmouth Spatial Archaeometry Lab
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/88736/t6        Dartmouth Thayer Instructional Labs
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/81428/v8        Dartmouth Virtual Basilica
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/83022/m4        DataMares
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/13030/d3        DCPPC Team Sodium
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/21198/n1        DLP
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/13030/fq        DPR Legacy
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/85782/d8        Drug Design Data (D3R) Resource
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/87924/r4        Duke Digital Repository
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/87924/r3        Duke Digital Repository (Retired Minter)
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/87924/g9        Duke University
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/87924/m1        DUL Archives & Manuscripts
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/23942/g3        EarthCube Documents
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/23942/g2        EarthCube Resources
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/78662/s2        Environmental System Science Data Infrastructure for a Virtual Ecosystem (ESS-DIVE)
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/99166/p3        eScholarship Agents
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/13030/qt        eScholarship Legacy
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/12345/          Examples Shoulder
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/13030/c7        EZID
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/13030/g3        EZID binder ids
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/88119/f7        Facebase Consortium
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/19153/s9        Formulaire Scolomfr
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/88118/p7        Geotechnical Extreme Events Reconnaissance
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/54723/h3        Hoover Institution Library & Archives
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/85147/j4        iDASH Repository
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/88122/          Industry Documents Library
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/87292/w9        Iowa State University
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/87281/t2        Johns Hopkins University Data Archive
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/88115/d6        Laboratory for Basic and Translational Cognitive Neuroscience
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/87941/t2        Lawrence Berkeley National Laboratory
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/51986/b6        LBNL BTUSAdmin
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/80358/s5        LBNL CESD
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/88431/b4        LBNL EAEI
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/88734/p3        LBNL JCAP/CSD
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/87943/t4        LBNL OpenMSI
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/13030/vf        Legacy arkpreserve
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/81239/m9        Marine and Coastal Research Institute of Columbia
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/13030/m5        Merritt
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/75788/m4        Montana State University
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/87602/m4        Morphosource Project
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/85335/m5        MSU Libraries
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/85065/d7        National Center for Atmospheric Research (NCAR)
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/85063/f2        National Center for Ecological Analysis and Synthesis (NCEAS)
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/88112/x2        National Registry of Exonerations
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/81985/n2        NorthwesternUniv
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/13030/kt        Online Archive of California (OAC)
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/13030/ft        Online Archive of California (OAC) Legacy ft
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/13030/tf        Online Archive of California (OAC) Legacy tf
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/13030/p8        Open Access Policy
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/13030/p4        Open Access Policy (Retired Minter)
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/13960/t         Open Content Alliance
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/28722/k2        OpenContext
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/28722/r2        OpenContext identifier preregistration shoulder
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/99152/p0        OpenContext PeriodO
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/85069/g8        OpenTopography Facility
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/19153/p4        Parcours EGO-PAC
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/86085/n0        Partnership for Interdisciplinary Studies of Coastal Oceans (PISCO)
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/42409/pr9       Penn State Libraries: (Dark) Preservation
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/42409/ac3       Penn State Libraries: Access
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/42409/ed5       Penn State Libraries: Educational Resource
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/42409/ex7       Penn State Libraries: Exhibitions
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/42409/fa8       Penn State Libraries: Finding Aids
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/42409/ii3       Penn State Libraries: IIIF Presentation Manifests
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/21549/          Phoebe A. Hearst Museum of Anthropology
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/88435/dsp01     Princeton University Library
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/88435/pr1       Princeton University Open Access Repository
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/88435/          PUL Digital Collections
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/88114/p7        Purdue Polytechnic Institute (Retired Minter)
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/86084/b8        Refuseniks & Activists
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/19153/spbb9     Scolomfr -- Association Française pour la Lecture
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/19153/sbcs9     Scolomfr -- Bac à sable
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/19153/sdbb9     Scolomfr -- BrainPop
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/19153/spbc9     Scolomfr -- BRNE - Myriaé
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/19153/sdbc9     Scolomfr -- Cadmos
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/19153/rcbc9     Scolomfr -- Canopé
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/19153/spbd9     Scolomfr -- Canoprof
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/19153/sdbd9     Scolomfr -- Cfactuel
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/19153/sdbf9     Scolomfr -- Delagrave
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/19153/sdbg9     Scolomfr -- Didier
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/19153/sdbh9     Scolomfr -- Didier (2017)
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/19153/sdbt9     Scolomfr -- e-Toiles éditions
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/19153/sdbj9     Scolomfr -- Editions Chavirô
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/19153/sdbk9     Scolomfr -- Éditions Maison des Langues
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/19153/spbf9     Scolomfr -- Edubases pour Myriaé
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/19153/sdbn9     Scolomfr -- Educ'Arte
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/19153/sdbm9     Scolomfr -- Educagri
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/19153/sdbp9     Scolomfr -- Educlever
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/19153/sdbq9     Scolomfr -- Educode
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/19153/sdbr9     Scolomfr -- eduMedia
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/19153/sdbs9     Scolomfr -- EduPad
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/19153/spcw9     Scolomfr -- Encyclopædia Universalis
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/19153/rcbh9     Scolomfr -- ENI Onisep
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/19153/rcbf9     Scolomfr -- ENI ressources
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/19153/sdbv9     Scolomfr -- Euro-France Médias
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/19153/sdbw9     Scolomfr -- Floc Production Multimédia
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/19153/sdbx9     Scolomfr -- Foucher
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/19153/sdbz9     Scolomfr -- Foucher (2017)
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/19153/sdcb9     Scolomfr -- Fourmikili
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/19153/spdc9     Scolomfr -- Fovéa
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/19153/sdcc9     Scolomfr -- Génération 5
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/19153/sdcd9     Scolomfr -- Hachette
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/19153/sdcf9     Scolomfr -- Hachette (2017)
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/19153/sdcg9     Scolomfr -- Hachette FLE
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/19153/sdch9     Scolomfr -- Hachette FLE (2017)
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/19153/sdcj9     Scolomfr -- Hatier
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/19153/sdck9     Scolomfr -- Hatier (2017)
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/19153/spcx9     Scolomfr -- INS HEA
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/19153/sdcm9     Scolomfr -- International développement système
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/19153/sdcn9     Scolomfr -- Istra
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/19153/sdcp9     Scolomfr -- Istra (2017)
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/19153/sdcq9     Scolomfr -- Itop Education
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/19153/spcz9     Scolomfr -- Jeu Numérique
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/19153/sdcr9     Scolomfr -- Kiupe
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/19153/sdcs9     Scolomfr -- Kwyk
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/19153/sddb9     Scolomfr -- L'Escapadou
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/19153/sdct9     Scolomfr -- Larousse
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/19153/sdcv9     Scolomfr -- Larousse (2017)
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/19153/sdcw9     Scolomfr -- Le Kiosque de l'Education
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/19153/sdcx9     Scolomfr -- Le Web Pédagogique
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/19153/sdcz9     Scolomfr -- Learn Enjoy
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/19153/spbg9     Scolomfr -- Lumni - AFP
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/19153/spbh9     Scolomfr -- Lumni - ARTE
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/19153/spbj9     Scolomfr -- Lumni - BBC
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/19153/spbk9     Scolomfr -- Lumni - BNF
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/19153/spbm9     Scolomfr -- Lumni - BNF Partenariats
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/19153/spbn9     Scolomfr -- Lumni - BRGM
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/19153/spbp9     Scolomfr -- Lumni - Centre Pompidou
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/19153/spbq9     Scolomfr -- Lumni - Château de Versailles
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/19153/spbr9     Scolomfr -- Lumni - Cité de l'architecture et du patrimoine
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/19153/spbs9     Scolomfr -- Lumni - CMN
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/19153/spbt9     Scolomfr -- Lumni - CNES
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/19153/spbv9     Scolomfr -- Lumni - CNRS
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/19153/spbw9     Scolomfr -- Lumni - Deutsche Welle
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/19153/spbx9     Scolomfr -- Lumni - ECPAD
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/19153/spbz9     Scolomfr -- Lumni - Espace Myriaé
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/19153/spcb9     Scolomfr -- Lumni - Ifremer
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/19153/spcc9     Scolomfr -- Lumni - IGN édugéo
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/19153/spcd9     Scolomfr -- Lumni - INA GRM
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/19153/spcf9     Scolomfr -- Lumni - Inserm
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/19153/spcg9     Scolomfr -- Lumni - Institut du Monde arabe
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/19153/spch9     Scolomfr -- Lumni - LE BAL
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/19153/spcj9     Scolomfr -- Lumni - Louvre
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/19153/spck9     Scolomfr -- Lumni - Météo France
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/19153/spcm9     Scolomfr -- Lumni - MNHN
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/19153/rcbd9     Scolomfr -- Lumni - Offre théâtre
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/19153/spcn9     Scolomfr -- Lumni - Philharmonie de Paris
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/19153/spcp9     Scolomfr -- Lumni - Radio France
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/19153/spcq9     Scolomfr -- Lumni - Retronews - BNF
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/19153/spcr9     Scolomfr -- Lumni - RMN HPI
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/19153/spcs9     Scolomfr -- Lumni - RMN PA
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/19153/spct9     Scolomfr -- Lumni - RTVE
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/19153/spcv9     Scolomfr -- Lumni - Site.tv
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/19153/sddc9     Scolomfr -- Magistère
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/19153/sddd9     Scolomfr -- Magnard
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/19153/sddf9     Scolomfr -- MusicAmour SAS
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/19153/spdb9     Scolomfr -- Myriaé - Espace prescripteurs académiques
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/19153/sddg9     Scolomfr -- Neotis
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/19153/sddh9     Scolomfr -- Pixel Cookers
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/19153/sddj9     Scolomfr -- Planet Némo Interactive
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/19153/sddk9     Scolomfr -- Plateforme pédagogiques multimédia
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/19153/sddm9     Scolomfr -- Promethean
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/19153/rcbg9     Scolomfr -- Réseau Canopé - Espace Myriaé
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/19153/sddn9     Scolomfr -- Retronews-BNF
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/19153/sddp9     Scolomfr -- Seira
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/19153/sddq9     Scolomfr -- Sejer
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/19153/sddr9     Scolomfr -- Serpodile
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/19153/sdds9     Scolomfr -- SlimCricket
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/19153/sddt9     Scolomfr -- Teïta conseil
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/19153/stst9     Scolomfr -- Test
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/19153/sddv9     Scolomfr -- Texas Instruments
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/19153/rcngcg9   Scolomfr -- TNE-Cabrilog [nonGar]
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/19153/rcngbn9   Scolomfr -- TNE-Jocatop [nonGar]
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/19153/rcngbw9   Scolomfr -- TNE-Kardi [nonGar]
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/19153/rcngbm9   Scolomfr -- TNE-LaliloPlume [nonGar]
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/19153/rcngbv9   Scolomfr -- TNE-LDE [nonGar]
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/19153/rcngbt9   Scolomfr -- TNE-Learn Enjoy [nonGar]
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/19153/rcngcc9   Scolomfr -- TNE-MaskottBelin [nonGar]
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/19153/rcngcd9   Scolomfr -- TNE-MFB Edumalin [nonGar]
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/19153/sddw9     Scolomfr -- Tom Pouce Interactive
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/19153/sddx9     Scolomfr -- Tralalère
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/19153/sddz9     Scolomfr -- Vuilbert
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/19153/rcpcb9    Scolomfr – TNE - Bayard
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/19153/rcpbx9    Scolomfr – TNE - Bordas
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/19153/rcpcg9    Scolomfr – TNE - Cabrilog
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/19153/rcpbr9    Scolomfr – TNE - Educlever
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/19153/rcpbp9    Scolomfr – TNE - Hachette
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/19153/rcpbn9    Scolomfr – TNE - Jocatop
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/19153/rcpbw9    Scolomfr – TNE - Kardi
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/19153/rcpbm9    Scolomfr – TNE - LaliloPlume
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/19153/rcpbv9    Scolomfr – TNE - LDE
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/19153/rcpcj9    Scolomfr – TNE - Le livre scolaire
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/19153/rcpbt9    Scolomfr – TNE - Learn Enjoy
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/19153/rcpbq9    Scolomfr – TNE - Lili
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/19153/rcpcc9    Scolomfr – TNE - MaskottBelin
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/19153/rcpcd9    Scolomfr – TNE - MFB Edumalin
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/19153/rcpbs9    Scolomfr – TNE - ODE
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/19153/rcpbk9    Scolomfr – TNE - Pearltrees
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/19153/rcpbj9    Scolomfr – TNE - Réseau Canopé
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/19153/rcpbz9    Scolomfr – TNE - Retz
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/19153/rcpch9    Scolomfr – TNE - Studytracks
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/19153/rcpcf9    Scolomfr – TNE - Tralalère
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/19153/rcpck9    Scolomfr – TNE - Wooclap
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/19153/rcbk9     Scolomfr – TNE – Candidat 1
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/19153/rcbw9     Scolomfr – TNE – Candidat 10
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/19153/rcbx9     Scolomfr – TNE – Candidat 11
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/19153/rcbz9     Scolomfr – TNE – Candidat 12
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/19153/rccb9     Scolomfr – TNE – Candidat 13
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/19153/rccc9     Scolomfr – TNE – Candidat 14
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/19153/rccd9     Scolomfr – TNE – Candidat 15
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/19153/rccf9     Scolomfr – TNE – Candidat 16
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/19153/rccg9     Scolomfr – TNE – Candidat 17
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/19153/rcch9     Scolomfr – TNE – Candidat 18
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/19153/rccj9     Scolomfr – TNE – Candidat 19
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/19153/rcbm9     Scolomfr – TNE – Candidat 2
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/19153/rcck9     Scolomfr – TNE – Candidat 20
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/19153/rcbn9     Scolomfr – TNE – Candidat 3
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/19153/rcbp9     Scolomfr – TNE – Candidat 4
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/19153/rcbq9     Scolomfr – TNE – Candidat 5
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/19153/rcbr9     Scolomfr – TNE – Candidat 6
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/19153/rcbs9     Scolomfr – TNE – Candidat 7
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/19153/rcbt9     Scolomfr – TNE – Candidat 8
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/19153/rcbv9     Scolomfr – TNE – Candidat 9
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/19153/rcbj9     Scolomfr – TNE – Réseau Canopé
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/19153/rcngcf9   Scolomfr – TNE-Tralalère [nonGar]
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/81986/caida     SDSC CAIDA
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/81986/s6.caida  SDSC CAIDA Minter
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/65665/          Smithsonian Institution - empty shoulder
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/65665/n6        Smithsonian Institution - no longer used
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/99166/w6        SNAC
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/19153/srtpbb8   Syrtis -- Prod
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/19153/srtvbb8   Syrtis -- Val
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/10945/t4        TeachPitch
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/81423/b1        Texas A&M Univ Batt
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/81423/d2        Texas A&M Univ DigProjects
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/81423/m3        Texas A&M Univ Libr
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/81423/g1        Texas A&M Univ MSL
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/28722/d9        UC Berkeley
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/87297/x3        UC Berkeley Department of Linguistics
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/87922/g3        UC Berkeley Institute of Transportation Studies (ITS)
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/13030/hb        UC Berkeley Legacy Library
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/28722/bk        UC Berkeley Legacy Library bk
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/28722/h2        UC Berkeley Library - HathiTrust/UCB
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/28722/b8        UC Berkeley Miscellany
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/87299/x6        UC Berkeley Museum of Vertebrate Zoology
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/87928/h7        UC Berkeley Research IT
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/13030/k6        UC Berkeley/Digital Special Collections
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/87293/d3        UC Davis Archives and Institutional Assets Program
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/85781/m7        UC Davis DAMS (legacy branch)
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/85141/s6        UC Davis, Social Science Data Service
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/87280/t0        UC Irvine Library
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/86071/h7        UC Merced
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/81973/r7        UC Natural Reserve System
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/81973/s3        UC NRS Santa Cruz Island Reserve
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/80353/k5        UC Observatories
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/86086/n2        UC Riverside
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/87268/p2        UC Riverside Bourns College of Engineering
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/87908/b9        UC San Diego Department of Biomedical Informatics
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/81224/h2        UC San Diego Philosophy Dept
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/81418/g4        UCB Geotechnical Engineering Research
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/28722/s7        UCB Library Systems Office
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/87287/d7        UCD Online Strategies
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/81235/d8        UCI Library Digital Assets
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/81416/p4        UCI PECE Project
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/21198/r1        UCLA
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/80352/c5        UCLA Civil and Environmental Engineering
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/21198/z1        UCLA Digital Library
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/21198/zz        UCLA Legacy
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/21198/r2        UCLA Library
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/87909/s7        UCLA Library Data Science Center
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/81222/c2        UCLA_CEEGEO
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/86071/d2        UCM Library Digital Assets
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/48907/b7        UCSB
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/87919/f5        UCSB Advanced Graphics Lab
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/48907/f3        UCSB Alexandria Digital Research Library
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/85788/g4        UCSB Climate Hazards Group, Dept of Geography
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/81424/r2        UCSB Earth Research Institute
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/81229/m2        UCSB ECE Dept Mostofi Lab
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/81972/g7        UCSB English Department
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/84135/p5        UCSB Punctum Books
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/87940/m4        UCSB Writing Program
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/86074/z4        UCSB Zapruder World
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/38305/g4        UCSC Grateful Dead Archive
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/38305/f1        UCSC Library
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/20775/          UCSD
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/88437/c3        UCSD CDIP
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/80359/c9        UCSD Center for Computational Mass Spectrometry
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/20775/cp        UCSD COMET (Project Surfliner) (CP)
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/20775/cs        UCSD COMET (Project Surfliner) (CS)
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/13340/d3        UCSD Digital Media Lab
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/81228/w2        UCSD Metabolomics Workbench
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/87279/s8        UCSD Ocean Observatory Initiative
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/87300/x9        UCSD OneLab
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/88436/s3        UCSD SCCOOS
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/81976/p7        UCSD Scripps CASPO
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/81422/d4        UCSD Scripps ProjectIDA
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/81238/s3        UCSD Scripps Spray Plotting
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/86072/h9        UCSD Signaling Gateway
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/87270/q3        UCSD Skaggs School of Pharmacy and Pharmaceutical Sciences
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/29114/q5        UCSF
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/81983/s9        UCSF Archives & Special Collections
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/87272/q7        UCSF Clinical & Translational Science Institute (CTSI)
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/67034/k4        UMichigan Medical School DLHS-DLKS
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/87925/          University College Dublin
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/87925/h1        University College Dublin Minter
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/85140/d4        University of California, Davis, University Library
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/81984/c8        University of Illinois at Chicago
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/81984/d3        University of Illinois Chicago Digital Collections
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/47881/m6        University of Lyon
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/87302/z3        University of Michigan Library (Retired Minter)
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/81431/p3        University of Pennsylvania Libraries
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/87290/v8        University of Tennessee
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/87278/s6        University of Utah
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/62930/w1        UNLV Libraries Web Archives
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/62930/v3        UNLV Library
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/62930/a1        UNLV Library Authorities
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/62930/d1        UNLV Library Digital Objects
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/62930/f1        UNLV Library Finding Aids
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/62930/          UNLV Library No Minter
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/87610/t6        UTA Institute of Classical Archaeology
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/85142/t4        Utah State University Merrill-Cazier Library
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/81968/g6        UWisc German Program (Retired Minter)
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/88737/t7        Visible Thinking
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/87273/q8        Washington State University
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/87936/k8        Washington University in St. Louis
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/63614/w1        Wildlife Insights (Conservation International)
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/87936/b7        WUSTL Center for Biomedical Informatics
+shoulder.py:83 shoulder impl.nog_sql.shoulder INFO     shoulder - ark:/87936/g6        WUSTL GIS

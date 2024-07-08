@@ -1,0 +1,24 @@
+{
+  "what": "b7280",
+  "where": "https://ezid.cdlib.org/",
+  "target": {
+    "url": "https://doi.org/10.7280/${value}",
+    "http_code": 302
+  },
+  "when": "1970-01-01T00:00:00+00:00",
+  "who": {
+    "name": "CDLIB EZID",
+    "name_native": null,
+    "acronym": "EZID"
+  },
+  "na_policy": {
+    "orgtype": "NP",
+    "policy": "NR",
+    "tenure": "1970",
+    "policy_url": ""
+  },
+  "test_identifier": "ark:/b7280/d1988w",
+  "service_provider": null,
+  "purpose": "unspecified",
+  "rtype": "PublicNAAN"
+}

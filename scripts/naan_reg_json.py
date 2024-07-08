@@ -31,6 +31,7 @@ import copy
 import datetime
 import json
 import logging
+import os.path
 import pathlib
 import re
 import sys
@@ -54,6 +55,8 @@ except ModuleNotFoundError:
 # Global logger handle
 _L = logging.getLogger("naan_reg_json")
 
+MAGIC_PATH = "./magic"
+EZID_SHOULDER_FILE = os.path.join(MAGIC_PATH, "shoulder-list.txt")
 
 def generate_json_schema(public_only: bool = False):
     if public_only:
@@ -110,24 +113,35 @@ def load_ezid_shoulder_list(url: str) -> typing.List[dict]:
         r"\b(?P<PID>ark:/?(?P<prefix>[0-9]{5,10})\/(?P<value>\S+)?)\s+(?P<name>.*)",
         re.IGNORECASE | re.MULTILINE,
     )
-    response = requests.get(url, timeout=10)
-    if response.status_code == 200:
-        _L.info("Shoulder list retrieved from %s", url)
-        text = response.text
-        result = re_ark.finditer(text)
-        pids = []
-        for row in result:
-            pid = {
-                "scheme": "ark",
-                "prefix": row.group("prefix"),
-                "value": "" if row.group("value") is None else row.group("value"),
-                "name": "" if row.group("name") is None else row.group("name"),
-            }
-            pids.append(pid)
-        return pids
-    else:
-        _L.error("HTTP response status %s. Failed to retrieve shoulder list from %s", response.status_code, url)
-    return []
+    text = None
+    try:
+        response = requests.get(url, timeout=10)
+        if response.status_code == 200:
+            _L.info("Shoulder list retrieved from %s", url)
+            text = response.text
+        else:
+            _L.error("HTTP response status %s. Failed to retrieve shoulder list from %s", response.status_code, url)
+    except Exception as e:
+        _L.error("Exception trying to access remote EZID shoulders: %s", e)
+    if text is None:
+        _L.info("Falling back to local copy of EZID shoulder list.")
+        if os.path.exists(EZID_SHOULDER_FILE):
+            with open(EZID_SHOULDER_FILE, "r") as f:
+                text = f.read()
+        else:
+            _L.error("Unable to load EZID shoulders.")
+            return []
+    result = re_ark.finditer(text)
+    pids = []
+    for row in result:
+        pid = {
+            "scheme": "ark",
+            "prefix": row.group("prefix"),
+            "value": "" if row.group("value") is None else row.group("value"),
+            "name": "" if row.group("name") is None else row.group("name"),
+        }
+        pids.append(pid)
+    return pids
 
 
 def shoulder_from_naan(naan: typing.Union[lib_naan.NAAN, lib_naan.PublicNAAN]) -> typing.Union[
@@ -175,11 +189,11 @@ def naan_anvl_to_json(anvl_source: str, dest_path: pathlib.Path, private: bool):
         dest_path = pathlib.Path(dest_path)
     naan_src = open(anvl_source, "r").read()
     repo = lib_naan.naans.NaanRepository(dest_path)
-    if len(repo) < 1:
-        _L.info("Installing shadows.")
-        shadows = generate_shadow_ark_config()
-        for shadow in shadows:
-            repo.insert(shadow)
+    #if len(repo) < 1:
+    #    _L.info("Installing shadows.")
+    #    shadows = generate_shadow_ark_config()
+    #    for shadow in shadows:
+    #        repo.insert(shadow)
     if dest_path.exists():
         repo.load()
         _L.info(f"Loaded {dest_path}")
@@ -222,6 +236,11 @@ def ezid_overrides(ezid_shoulders_url, dest_path):
 
     Ideally the authoritative NAAN and Shoulder records should be updated to avoid the need for a
     manual override such as this.
+
+    Note that to generate the EZID related magic files, we need the NAAN records to aleady be present,
+    so we can generate the EZID magic files which are then applied to the NAAN records. It's messed
+    up, for sure, but this confusion will go away once the source naan and shoulder records are updated
+    with the authoritative information.
     """
     ezid_exceptions = [
         # "87602",
@@ -245,11 +264,15 @@ def ezid_overrides(ezid_shoulders_url, dest_path):
         key = entry['prefix']
         naan_record = repo.read(key)
         shoulder_record = None
-        _L.info(json.dumps(entry))
+        _L.debug(json.dumps(entry))
         if entry.get("value", "") == "":
             # Update the NAAN target to point to EZID for resolution
             previous_target = naan_record.target.url
             naan_record.target.url = "https://ezid.cdlib.org/ark:/${content}"
+            new_name = entry.get("name", None)
+            if new_name is not None:
+                naan_record.who.name = new_name
+                naan_record.who.name_native = None
             repo.update(naan_record)
             _L.info(f"Updated naan {key} from {previous_target} to {naan_record.target.url}")
         else:
@@ -264,11 +287,15 @@ def ezid_overrides(ezid_shoulders_url, dest_path):
                 shoulder_record.what = key
             previous_target = shoulder_record.target.url
             shoulder_record.target.url = "https://ezid.cdlib.org/ark:/${content}"
+            new_name = entry.get("name", None)
+            if new_name is not None:
+                shoulder_record.who.name = new_name
+                shoulder_record.who.name_native = None
             repo.upsert(shoulder_record)
             _L.info(f"Updated shoulder {key} from {previous_target} to {shoulder_record.target.url}")
     repo.store(as_public=True)
     # Now apply magic patches
-    magic_path = pathlib.Path("./magic")
+    magic_path = pathlib.Path(MAGIC_PATH)
     patches = magic_path.glob("*.json")
     for path in patches:
         record = None
