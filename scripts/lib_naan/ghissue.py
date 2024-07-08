@@ -1,3 +1,11 @@
+"""
+Copyright©2024, Regents of the University of California
+
+License: https://opensource.org/license/mit, See LICENSE
+
+Manage JSON embedded in GH issues.
+
+"""
 import json
 import os
 import re

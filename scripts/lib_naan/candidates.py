@@ -1,4 +1,8 @@
 """
+Copyright©2024, Regents of the University of California
+
+License: https://opensource.org/license/mit, See LICENSE
+
 This module contains methods for managing the candidate_naans list.
 """
 

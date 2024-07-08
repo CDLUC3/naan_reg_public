@@ -1,4 +1,9 @@
-"""Provides various methods for parsing the legacy anvl format.
+"""
+Copyright©2024, Regents of the University of California
+
+License: https://opensource.org/license/mit, See LICENSE
+
+Provides various methods for parsing the legacy anvl format.
 """
 import collections
 import datetime

@@ -1,4 +1,8 @@
 """
+Copyright©2024, Regents of the University of California
+
+License: https://opensource.org/license/mit, See LICENSE
+
 This module implements a repository for NAAN records.
 """
 
@@ -198,7 +202,7 @@ class NaanRepository:
                 naan = lib_naan.NAAN.from_anvl_block(block)
                 if as_public:
                     naan = naan.as_public()
-                # TODO: !! this is a hack
+                # TODO: !! this is a hack. Replace with magic files, and eventually with update naan registry.
                 if naan.what in UNKNOWN_CONFIGS.keys():
                     naan.target.url = UNKNOWN_CONFIGS[naan.what]
                 self.upsert(naan)

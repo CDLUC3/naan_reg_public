@@ -15,128 +15,42 @@ The artifacts are published using GitHub pages, accessible at:
 
 ## The conversion script
 
-`naan_reg_json` provides a tool for converting NAAN registry ANVL to JSON. It 
-includes JSON-schema with generated documentation for private and publicly 
-visible NAAN records. 
+`scripts/naan_reg_json.py` provides a tool for converting NAAN registry ANVL to JSON. 
+
+The script performs the following operations:
+
+1. Generate public JSON representation of the private ANVL formatted NAAN records.
+2. Augment the NAAN JSON file with a JSON representation of the `shoulder_registry` records.
+3. Apply known corrections to the generated JSON through a list of manually configured "magic" files.
+
+Note that several functions performed by this script will be deprecated in conjunction
+with progression of the migration from the legacy N2T system in 2024. 
 
 
 ## Usage
 
 ```
-$python naan_reg_json.py --help
-usage: naan_reg_json.py [-h] [-p] [path]
+$python scripts/naan_reg_json.py --help
+Usage: naan_reg_json.py [OPTIONS] COMMAND [ARGS]...
 
-Generate JSON representation of naan_reg_priv/main_naans. This tool translates the 
-NAAN registry file from ANVL to JSON to assist downstream programmatic use. If pydantic 
-is installed then the script can output JSON schema describing the JSON respresentation 
-of the transformed NAAN entries.
+  Generate JSON form of naan_reg_priv/main_naans and
+  naan_reg_priv/shoulder_registry.
 
-positional arguments:
-  path          Path to naan_reg_priv ANVL file.
+  This tool translates the NAAN and shoulder registry files from ANVL to JSON
+  to assist downstream programmatic use.
 
-optional arguments:
-  -h, --help    show this help message and exit
-  -p, --public  Output public content only.
-```
+Options:
+  --help  Show this message and exit.
 
-For conversion from ANVL to JSON no additional dependencies are needed if using 
-Python3.8 or later. E.g. (portions redacted):
-
-```
-$python naan_reg_json.py ../naan_reg_priv/main_naans
-
-{
-  "12025": {
-    "what": "12025",
-    "where": "http://www.nlm.nih.gov",
-    "target": "http://www.nlm.nih.gov/$arkpid",
-    "when": "2001-03-08T00:00:00+00:00",
-    "who": {
-      "name": "US National Library of Medicine",
-      "acronym": null,
-      "address": "8600 Rockville Pike, Bethesda, MD 20894, USA"
-    },
-    "na_policy": {
-      "orgtype": "NP",
-      "policy": "(:unkn) unknown",
-      "tenure": "2001",
-      "policy_url": null
-    },
-    "test_identifier": null,
-    "service_provider": null,
-    "purpose": "unspecified",
-    "why": "ARK",
-    "contact": {
-      "name": "M",
-      "unit": null,
-      "tenure": null,
-      "email": "",
-      "phone": ""
-    },
-    "alternate_contact": null,
-    "comments": null,
-    "provider": null
-  },
-  ...
+Commands:
+  ezid-overrides             Overrides targets known to be managed by EZID.
+  main-naans-to-json         Generate a JSON version of the main_naans file.
+  shoulder-registry-to-json  Generate JSON representation of the shoulder_registry
 ```
 
-A public view of the ANVL to JSON can be generated using the `-p` or `--public` option:
+Dependencies are listed in `scripts/requirements.txt`.
 
-```
-$python naan_reg_json.py -p ../naan_reg_priv/main_naans
-
-{
-  "12025":{
-    "what": "12025",
-    "where": "http://www.nlm.nih.gov",
-    "target": "http://www.nlm.nih.gov/$arkpid",
-    "when": "2001-03-08T00:00:00+00:00",
-    "who": {
-        "name": "US National Library of Medicine",
-        "acronym": null
-    },
-    "na_policy": {
-        "orgtype": "NP",
-        "policy": "(:unkn) unknown",
-        "tenure": "2001",
-        "policy_url": null
-    },
-    "test_identifier": null,
-    "service_provider": null,
-    "purpose": "unspecified"
-    }
-  },
-  ...
-```
-
-For JSON-schema generation, `pydantic` is required:
-```
-pip install pydantic
-```
-
-The public view and full view have different schemas, they can be generated like:
-```
-$python naan_reg_json.py -s > schema/naan_schema.json
-```
-and
-```
-$python naan_reg_json.py -s -p > schema/public/naan_schema.json
-```
-
-Schema documentation can be generated if `json-schema-for-humans` is installed:
-```
-pip install json-schema-for-humans
-```
-
-To generate the schema documentation:
-```
-generate-schema-doc --config-file docs_config.yaml ./schema/naan_schema.json ./schema/
-generate-schema-doc --config-file docs_config.yaml --config template_name=md ./schema/naan_schema.json ./schema/
-generate-schema-doc --config-file docs_config.yaml ./schema/public/naan_schema.json ./schema/public/
-generate-schema-doc --config-file docs_config.yaml --config template_name=md ./schema/public/naan_schema.json ./schema/public/
-```
 
 ## Acknowledgement
 
 This work is supported by the California Digital Library.
-

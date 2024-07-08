@@ -1,4 +1,8 @@
 """
+Copyright©2024, Regents of the University of California
+
+License: https://opensource.org/license/mit, See LICENSE
+
 Generate JSON form of naan_reg_priv/main_naans and naan_reg_priv/shoulder_registry.
 
 This tool translates the NAAN and shoulder registry files from ANVL to JSON to
@@ -106,7 +110,7 @@ def load_ezid_shoulder_list(url: str) -> typing.List[dict]:
         r"\b(?P<PID>ark:/?(?P<prefix>[0-9]{5,10})\/(?P<value>\S+)?)\s+(?P<name>.*)",
         re.IGNORECASE | re.MULTILINE,
     )
-    response = requests.get(url)
+    response = requests.get(url, timeout=10)
     if response.status_code == 200:
         _L.info("Shoulder list retrieved from %s", url)
         text = response.text
@@ -147,7 +151,13 @@ def shoulder_from_naan(naan: typing.Union[lib_naan.NAAN, lib_naan.PublicNAAN]) -
 
 @click.group(name="naan_reg")
 def click_main():
-    logging.basicConfig(level=logging.DEBUG)
+    """
+    Generate JSON form of naan_reg_priv/main_naans and naan_reg_priv/shoulder_registry.
+
+    This tool translates the NAAN and shoulder registry files from ANVL to JSON to
+    assist downstream programmatic use.
+    """
+    logging.basicConfig(level=logging.INFO)
     pass
 
 
@@ -184,6 +194,8 @@ def naan_anvl_to_json(anvl_source: str, dest_path: pathlib.Path, private: bool):
               help="JSON destination for NAANs. Existing is updated, path created if necessary.")
 @click.option("-p", "--private", is_flag=True, help="Generate private JSON records.")
 def shoulder_anvl_to_json(anvl_source: str, dest_path: pathlib.Path, private: bool):
+    """Generate JSON representation of the shoulder_registry file.
+    """
     if isinstance(dest_path, str):
         dest_path = pathlib.Path(dest_path)
     shoulder_src = open(anvl_source, "r").read()
@@ -267,57 +279,15 @@ def ezid_overrides(ezid_shoulders_url, dest_path):
             repo.upsert(entry)
             _L.info("Applied magic patch to %s", entry.what)
     repo.store(as_public=True)
-    return
-    '''
-        shoulder_key:typing.Optional[str] = None
-        shoulder_record:typing.Optional[dict[str,typing.Any]] = None
-        naan_key = entry["prefix"]
-        if naan_key in ezid_exceptions:
-            _L.warning("Imposing ezid_exception for NAAN %s", naan_key)
-            continue
-        naan_record = existing.get(naan_key, None)
-        if len(entry["value"]) > 0:
-            shoulder_key = f'{entry["prefix"]}/{entry["value"]}'
-            shoulder_record = existing.get(shoulder_key, None)
-        if shoulder_record is not None:
-            # check the target url. If netloc is arks.org then override, otherwise leave it be.
-            url = urllib.parse.urlsplit(shoulder_record["target"]["url"], scheme="https")
-            if url.netloc == "arks.org":
-                shoulder_record["target"]["url"] = "https://ezid.cdlib.org/$arkpid"
-                existing[shoulder_key] = shoulder_record
-                _L.info("Updated %s shoulder record with ezid target", shoulder_key)
-                continue
-            _L.warning("Skipping override of existing shoulder record %s / %s", shoulder_record["naan"], shoulder_record["shoulder"])
-            continue
-        if naan_record is None:
-            _L.error("Existing NAAN record not found for EZID record %s / %s", entry["prefix"], entry["value"])
-            continue
-        if shoulder_key is not None and shoulder_record is None:
-            # create a new record based on the naan record.
-            shoulder_record = copy.deepcopy(naan_record)
-            shoulder_record["rtype"] = "shoulder"
-            shoulder_record["naan"] = naan_key
-            shoulder_record["shoulder"] = shoulder_record["what"]
-            del shoulder_record["what"]
-            shoulder_record["who"]["name"] = entry["name"]
-            shoulder_record["who"]["acronym"] = None
-            shoulder_record["target"]["url"] = "https://ezid.cdlib.org/$arkpid"
-            existing[shoulder_key] = shoulder_record
-            continue
-
-        # Replace the target URL with ezid.cdlib.org
-        _L.info("EZID %s %s updating record %s %s", entry["prefix"], entry["value"], naan_key, naan_record["target"]["url"])
-        naan_record["target"]["url"] = "https://ezid.cdlib.org/$arkpid"
-        existing[naan_key] = naan_record
-    with open(fname, "w") as dest:
-        json.dump(existing, dest, indent=2, ensure_ascii=False, cls=EnhancedJSONEncoder)
-        _L.info("Wrote EZID updated records to %s", fname)
-    '''
 
 
-@click_main.command()
-def generate_schema():
-    pass
+if PYDANTIC_AVAILABLE:
+    # Section available only if pydantic is installed.
+
+    @click_main.command()
+    def generate_schema():
+        # TODO: flesh this out from the older code base.
+        pass
 
 
 if __name__ == "__main__":
