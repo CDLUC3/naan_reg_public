@@ -1,156 +1,12 @@
 {
   "metadata": {
     "version": "1.0",
-    "created_date": "2024-07-04T15:08:41.941585+00:00",
+    "created_date": "2024-07-08T22:21:46.958030+00:00",
     "modified_date": null,
     "description": "Public NAAN records and Shoulder information.",
-    "updated": "2024-07-04T15:08:43+00:00"
+    "updated": "2024-07-08T22:21:48+00:00"
   },
   "data": [
-    {
-      "what": "b6071",
-      "where": "https://ezid.cdlib.org/",
-      "target": {
-        "url": "https://doi.org/10.6071/${value}",
-        "http_code": 302
-      },
-      "when": "1970-01-01T00:00:00+00:00",
-      "who": {
-        "name": "CDLIB EZID",
-        "name_native": null,
-        "acronym": "EZID"
-      },
-      "na_policy": {
-        "orgtype": "NP",
-        "policy": "NR",
-        "tenure": "1970",
-        "policy_url": ""
-      },
-      "test_identifier": "ark:/b6071/m3z07d",
-      "service_provider": null,
-      "purpose": "unspecified",
-      "rtype": "PublicNAAN"
-    },
-    {
-      "what": "b7291",
-      "where": "https://ezid.cdlib.org/",
-      "target": {
-        "url": "https://doi.org/10.7291/${value}",
-        "http_code": 302
-      },
-      "when": "1970-01-01T00:00:00+00:00",
-      "who": {
-        "name": "CDLIB EZID",
-        "name_native": null,
-        "acronym": "EZID"
-      },
-      "na_policy": {
-        "orgtype": "NP",
-        "policy": "NR",
-        "tenure": "1970",
-        "policy_url": ""
-      },
-      "test_identifier": "ark:/b7291/d1wc74",
-      "service_provider": null,
-      "purpose": "unspecified",
-      "rtype": "PublicNAAN"
-    },
-    {
-      "what": "b5060",
-      "where": "https://ezid.cdlib.org/",
-      "target": {
-        "url": "https://doi.org/10.5060/${value}",
-        "http_code": 302
-      },
-      "when": "1970-01-01T00:00:00+00:00",
-      "who": {
-        "name": "CDLIB EZID",
-        "name_native": null,
-        "acronym": "EZID"
-      },
-      "na_policy": {
-        "orgtype": "NP",
-        "policy": "NR",
-        "tenure": "1970",
-        "policy_url": ""
-      },
-      "test_identifier": "ark:/b5060/d8bc75",
-      "service_provider": null,
-      "purpose": "unspecified",
-      "rtype": "PublicNAAN"
-    },
-    {
-      "what": "b7272",
-      "where": "https://ezid.cdlib.org/",
-      "target": {
-        "url": "https://doi.org/10.7272/${value}",
-        "http_code": 302
-      },
-      "when": "1970-01-01T00:00:00+00:00",
-      "who": {
-        "name": "CDLIB EZID",
-        "name_native": null,
-        "acronym": "EZID"
-      },
-      "na_policy": {
-        "orgtype": "NP",
-        "policy": "NR",
-        "tenure": "1970",
-        "policy_url": ""
-      },
-      "test_identifier": "ark:/b7272/q6ms3qnx",
-      "service_provider": null,
-      "purpose": "unspecified",
-      "rtype": "PublicNAAN"
-    },
-    {
-      "what": "b7280",
-      "where": "https://ezid.cdlib.org/",
-      "target": {
-        "url": "https://doi.org/10.7280/${value}",
-        "http_code": 302
-      },
-      "when": "1970-01-01T00:00:00+00:00",
-      "who": {
-        "name": "CDLIB EZID",
-        "name_native": null,
-        "acronym": "EZID"
-      },
-      "na_policy": {
-        "orgtype": "NP",
-        "policy": "NR",
-        "tenure": "1970",
-        "policy_url": ""
-      },
-      "test_identifier": "ark:/b7280/d1988w",
-      "service_provider": null,
-      "purpose": "unspecified",
-      "rtype": "PublicNAAN"
-    },
-    {
-      "what": "b6078",
-      "where": "https://ezid.cdlib.org/",
-      "target": {
-        "url": "https://doi.org/10.6078/${value}",
-        "http_code": 302
-      },
-      "when": "1970-01-01T00:00:00+00:00",
-      "who": {
-        "name": "CDLIB EZID",
-        "name_native": null,
-        "acronym": "EZID"
-      },
-      "na_policy": {
-        "orgtype": "NP",
-        "policy": "NR",
-        "tenure": "1970",
-        "policy_url": ""
-      },
-      "test_identifier": "ark:/b6078/d1mw2k",
-      "service_provider": null,
-      "purpose": "unspecified",
-      "rtype": "PublicNAAN"
-    },
     {
       "what": "12025",
       "where": "http://www.nlm.nih.gov",
@@ -280,7 +136,7 @@
       },
       "when": "2004-06-02T00:00:00+00:00",
       "who": {
-        "name": "University of California San Diego",
+        "name": "UCSD",
         "name_native": null,
         "acronym": "UCSD"
       },
@@ -544,7 +400,7 @@
       },
       "when": "2005-10-06T00:00:00+00:00",
       "who": {
-        "name": "Princeton University",
+        "name": "PUL Digital Collections",
         "name_native": null,
         "acronym": "PRINCETON"
       },
@@ -784,7 +640,7 @@
       },
       "when": "2007-10-02T00:00:00+00:00",
       "who": {
-        "name": "Shared NAAN for Examples",
+        "name": "Examples Shoulder",
         "name_native": null,
         "acronym": "EXAMPLES"
       },
@@ -3064,7 +2920,7 @@
       },
       "when": "2012-12-06T00:00:00+00:00",
       "who": {
-        "name": "Biocode Commons UC Berkeley",
+        "name": "Biocode Commons (UCB only)",
         "name_native": null,
         "acronym": "BIOCODEUCB"
       },
@@ -4768,7 +4624,7 @@
       },
       "when": "2014-05-21T00:00:00+00:00",
       "who": {
-        "name": "CLIVAR and Carbon Hydrographic Data Office",
+        "name": "CLIVAR & Carbon Hydrographic Data Office",
         "name_native": null,
         "acronym": "CCHDO"
       },
@@ -5104,7 +4960,7 @@
       },
       "when": "2014-08-18T00:00:00+00:00",
       "who": {
-        "name": "Smithsonian Institution",
+        "name": "Smithsonian Institution - empty shoulder",
         "name_native": null,
         "acronym": "SI"
       },
@@ -7120,7 +6976,7 @@
       },
       "when": "2016-01-20T00:00:00+00:00",
       "who": {
-        "name": "bioCADDIE",
+        "name": "bioCADDIE no minter",
         "name_native": null,
         "acronym": "BIOCADDIE"
       },
@@ -9112,7 +8968,7 @@
       },
       "when": "2017-03-30T00:00:00+00:00",
       "who": {
-        "name": "University of Nevada, Las Vegas University Libraries",
+        "name": "UNLV Library No Minter",
         "name_native": null,
         "acronym": "UNLV"
       },
@@ -32288,11 +32144,35 @@
       "rtype": "PublicNAAN"
     },
     {
+      "what": "85163",
+      "where": "https://TRP/therootjournal.org",
+      "target": {
+        "url": "https://trp/therootjournal.org/ark:/${content}",
+        "http_code": 302
+      },
+      "when": "2024-07-04T00:00:00+00:00",
+      "who": {
+        "name": "The Root Publishing",
+        "name_native": null,
+        "acronym": "TRP"
+      },
+      "na_policy": {
+        "orgtype": "FP",
+        "policy": "(:unkn) unknown",
+        "tenure": "2024",
+        "policy_url": null
+      },
+      "test_identifier": null,
+      "service_provider": null,
+      "purpose": "unspecified",
+      "rtype": "PublicNAAN"
+    },
+    {
       "shoulder": "p9",
       "naan": "99166",
       "what": "99166/p9",
       "who": {
-        "name": "EZID CDL agents",
+        "name": "CDL Agent",
         "name_native": null,
         "acronym": "EZAGENTS"
       },
@@ -32316,7 +32196,7 @@
       "naan": "99999",
       "what": "99999/fk4",
       "who": {
-        "name": "EZID expiring test",
+        "name": "ARK Test",
         "name_native": null,
         "acronym": "EZTESTTMP"
       },
@@ -32364,7 +32244,7 @@
       "naan": "99999",
       "what": "99999/fk8",
       "who": {
-        "name": "EZID non-expiring test",
+        "name": "ARK Test (non-expiring)",
         "name_native": null,
         "acronym": "EZTESTLONG"
       },
@@ -32676,7 +32556,7 @@
       "naan": "99152",
       "what": "99152/p0",
       "who": {
-        "name": "OpenContext PeriodO time periods",
+        "name": "OpenContext PeriodO",
         "name_native": null,
         "acronym": "PERIODO"
       },
@@ -32700,7 +32580,7 @@
       "naan": "99166",
       "what": "99166/p3",
       "who": {
-        "name": "EZID eScholarship agents",
+        "name": "eScholarship Agents",
         "name_native": null,
         "acronym": "EZAGEXCHOL"
       },
@@ -32916,7 +32796,7 @@
       "naan": "13030",
       "what": "13030/bn",
       "who": {
-        "name": "California Digital Library",
+        "name": "?1?",
         "name_native": null,
         "acronym": "CDLIB"
       },
@@ -32940,7 +32820,7 @@
       "naan": "86073",
       "what": "86073/b3",
       "who": {
-        "name": "American University of Beirut, University Libraries",
+        "name": "American University of Beirut",
         "name_native": null,
         "acronym": "AUB-UL"
       },
@@ -33084,7 +32964,7 @@
       "naan": "86084",
       "what": "86084/b4",
       "who": {
-        "name": "Blavatnik Archive Foundation",
+        "name": "Blavatnik Archive",
         "name_native": null,
         "acronym": "BAF"
       },
@@ -33132,7 +33012,7 @@
       "naan": "13030",
       "what": "13030/j2",
       "who": {
-        "name": "California Digital Library",
+        "name": "CDL Auxiliary",
         "name_native": null,
         "acronym": "CDLIB"
       },
@@ -33156,7 +33036,7 @@
       "naan": "13030",
       "what": "13030/c8",
       "who": {
-        "name": "California Digital Library",
+        "name": "CDL Digital Special Collections",
         "name_native": null,
         "acronym": "CDLIB"
       },
@@ -33180,7 +33060,7 @@
       "naan": "13030",
       "what": "13030/sw1",
       "who": {
-        "name": "California Digital Library",
+        "name": "CDL Web Archiving System",
         "name_native": null,
         "acronym": "CDLIB"
       },
@@ -33300,7 +33180,7 @@
       "naan": "86080",
       "what": "86080/k3",
       "who": {
-        "name": "Collaborative Research Computational Neuroscience Program",
+        "name": "Collaborative Research in Computational Neuroscience (CRCNS)",
         "name_native": null,
         "acronym": "CRCNSP"
       },
@@ -33348,8 +33228,8 @@
       "naan": "19153",
       "what": "19153/b2",
       "who": {
-        "name": "French National Pedogical Documentation Center",
-        "name_native": "Centre national de documentation p\u00e9dagogique",
+        "name": "CRDP academie d'Aix-Marseille",
+        "name_native": null,
         "acronym": "CNDP"
       },
       "where": "http://www.cndp.fr",
@@ -33420,7 +33300,7 @@
       "naan": "44461",
       "what": "44461/r4",
       "who": {
-        "name": "Remix the Manuscript",
+        "name": "Dartmouth Remix the Manuscript",
         "name_native": null,
         "acronym": "RMXMANU"
       },
@@ -33540,7 +33420,7 @@
       "naan": "13030",
       "what": "13030/d3",
       "who": {
-        "name": "California Digital Library",
+        "name": "DCPPC Team Sodium",
         "name_native": null,
         "acronym": "CDLIB"
       },
@@ -33564,7 +33444,7 @@
       "naan": "21198",
       "what": "21198/n1",
       "who": {
-        "name": "University of California Los Angeles",
+        "name": "DLP",
         "name_native": null,
         "acronym": "UCLA"
       },
@@ -33588,7 +33468,7 @@
       "naan": "13030",
       "what": "13030/fq",
       "who": {
-        "name": "California Digital Library",
+        "name": "DPR Legacy",
         "name_native": null,
         "acronym": "CDLIB"
       },
@@ -33612,7 +33492,7 @@
       "naan": "85782",
       "what": "85782/d8",
       "who": {
-        "name": "Drug Design Data Resource",
+        "name": "Drug Design Data (D3R) Resource",
         "name_native": null,
         "acronym": "D3R"
       },
@@ -33636,7 +33516,7 @@
       "naan": "87924",
       "what": "87924/r4",
       "who": {
-        "name": "Duke University",
+        "name": "Duke Digital Repository",
         "name_native": null,
         "acronym": "DUL"
       },
@@ -33660,7 +33540,7 @@
       "naan": "87924",
       "what": "87924/r3",
       "who": {
-        "name": "Duke University",
+        "name": "Duke Digital Repository (Retired Minter)",
         "name_native": null,
         "acronym": "DUL"
       },
@@ -33708,7 +33588,7 @@
       "naan": "87924",
       "what": "87924/m1",
       "who": {
-        "name": "Duke University",
+        "name": "DUL Archives & Manuscripts",
         "name_native": null,
         "acronym": "DUL"
       },
@@ -33732,7 +33612,7 @@
       "naan": "23942",
       "what": "23942/g3",
       "who": {
-        "name": "EarthCube",
+        "name": "EarthCube Documents",
         "name_native": null,
         "acronym": "ECUBE"
       },
@@ -33756,7 +33636,7 @@
       "naan": "23942",
       "what": "23942/g2",
       "who": {
-        "name": "EarthCube",
+        "name": "EarthCube Resources",
         "name_native": null,
         "acronym": "ECUBE"
       },
@@ -33780,7 +33660,7 @@
       "naan": "78662",
       "what": "78662/s2",
       "who": {
-        "name": "Environmental System Science Data Infrastructure for a Virtual Ecosystem",
+        "name": "Environmental System Science Data Infrastructure for a Virtual Ecosystem (ESS-DIVE)",
         "name_native": null,
         "acronym": "ESSDIVE"
       },
@@ -33804,7 +33684,7 @@
       "naan": "13030",
       "what": "13030/qt",
       "who": {
-        "name": "California Digital Library",
+        "name": "eScholarship Legacy",
         "name_native": null,
         "acronym": "CDLIB"
       },
@@ -33828,7 +33708,7 @@
       "naan": "13030",
       "what": "13030/c7",
       "who": {
-        "name": "California Digital Library",
+        "name": "EZID",
         "name_native": null,
         "acronym": "CDLIB"
       },
@@ -33852,7 +33732,7 @@
       "naan": "13030",
       "what": "13030/g3",
       "who": {
-        "name": "California Digital Library",
+        "name": "EZID binder ids",
         "name_native": null,
         "acronym": "CDLIB"
       },
@@ -33900,8 +33780,8 @@
       "naan": "19153",
       "what": "19153/s9",
       "who": {
-        "name": "French National Pedogical Documentation Center",
-        "name_native": "Centre national de documentation p\u00e9dagogique",
+        "name": "Formulaire Scolomfr",
+        "name_native": null,
         "acronym": "CNDP"
       },
       "where": "http://www.cndp.fr",
@@ -34020,7 +33900,7 @@
       "naan": "87281",
       "what": "87281/t2",
       "who": {
-        "name": "Johns Hopkins University",
+        "name": "Johns Hopkins University Data Archive",
         "name_native": null,
         "acronym": "JHU"
       },
@@ -34092,7 +33972,7 @@
       "naan": "51986",
       "what": "51986/b6",
       "who": {
-        "name": "LBNL ETA Building Tech and Urban Systems",
+        "name": "LBNL BTUSAdmin",
         "name_native": null,
         "acronym": "BSUDADMIN"
       },
@@ -34116,7 +33996,7 @@
       "naan": "80358",
       "what": "80358/s5",
       "who": {
-        "name": "LBNL Climate & Ecosystems Science Division",
+        "name": "LBNL CESD",
         "name_native": null,
         "acronym": "LBNLCESD"
       },
@@ -34140,7 +34020,7 @@
       "naan": "88431",
       "what": "88431/b4",
       "who": {
-        "name": "Energy Analysis and Environmental Impacts",
+        "name": "LBNL EAEI",
         "name_native": null,
         "acronym": "EAEI"
       },
@@ -34164,7 +34044,7 @@
       "naan": "88734",
       "what": "88734/p3",
       "who": {
-        "name": "Joint Center for Artificial Photosynthesis in Chemical Sciences Division",
+        "name": "LBNL JCAP/CSD",
         "name_native": null,
         "acronym": "LBNLJCAP"
       },
@@ -34212,7 +34092,7 @@
       "naan": "13030",
       "what": "13030/vf",
       "who": {
-        "name": "California Digital Library",
+        "name": "Legacy arkpreserve",
         "name_native": null,
         "acronym": "CDLIB"
       },
@@ -34260,7 +34140,7 @@
       "naan": "13030",
       "what": "13030/m5",
       "who": {
-        "name": "California Digital Library",
+        "name": "Merritt",
         "name_native": null,
         "acronym": "CDLIB"
       },
@@ -34332,7 +34212,7 @@
       "naan": "85335",
       "what": "85335/m5",
       "who": {
-        "name": "Michigan State University Libraries",
+        "name": "MSU Libraries",
         "name_native": null,
         "acronym": "MSUL"
       },
@@ -34356,7 +34236,7 @@
       "naan": "85065",
       "what": "85065/d7",
       "who": {
-        "name": "National Center for Atmospheric Research",
+        "name": "National Center for Atmospheric Research (NCAR)",
         "name_native": null,
         "acronym": "NCAR"
       },
@@ -34380,7 +34260,7 @@
       "naan": "85063",
       "what": "85063/f2",
       "who": {
-        "name": "National Center for Ecological Analysis and Synthesis",
+        "name": "National Center for Ecological Analysis and Synthesis (NCEAS)",
         "name_native": null,
         "acronym": "NCEAS"
       },
@@ -34428,7 +34308,7 @@
       "naan": "81985",
       "what": "81985/n2",
       "who": {
-        "name": "Northwestern University",
+        "name": "NorthwesternUniv",
         "name_native": null,
         "acronym": "NUL"
       },
@@ -34452,7 +34332,7 @@
       "naan": "13030",
       "what": "13030/kt",
       "who": {
-        "name": "California Digital Library",
+        "name": "Online Archive of California (OAC)",
         "name_native": null,
         "acronym": "CDLIB"
       },
@@ -34476,7 +34356,7 @@
       "naan": "13030",
       "what": "13030/ft",
       "who": {
-        "name": "California Digital Library",
+        "name": "Online Archive of California (OAC) Legacy ft",
         "name_native": null,
         "acronym": "CDLIB"
       },
@@ -34500,7 +34380,7 @@
       "naan": "13030",
       "what": "13030/tf",
       "who": {
-        "name": "California Digital Library",
+        "name": "Online Archive of California (OAC) Legacy tf",
         "name_native": null,
         "acronym": "CDLIB"
       },
@@ -34524,7 +34404,7 @@
       "naan": "13030",
       "what": "13030/p8",
       "who": {
-        "name": "California Digital Library",
+        "name": "Open Access Policy",
         "name_native": null,
         "acronym": "CDLIB"
       },
@@ -34548,7 +34428,7 @@
       "naan": "13030",
       "what": "13030/p4",
       "who": {
-        "name": "California Digital Library",
+        "name": "Open Access Policy (Retired Minter)",
         "name_native": null,
         "acronym": "CDLIB"
       },
@@ -34572,7 +34452,7 @@
       "naan": "13960",
       "what": "13960/t",
       "who": {
-        "name": "Internet Archive",
+        "name": "Open Content Alliance",
         "name_native": null,
         "acronym": "IA"
       },
@@ -34596,7 +34476,7 @@
       "naan": "28722",
       "what": "28722/k2",
       "who": {
-        "name": "University of California Berkeley",
+        "name": "OpenContext",
         "name_native": null,
         "acronym": "UCBERKELEY"
       },
@@ -34620,7 +34500,7 @@
       "naan": "28722",
       "what": "28722/r2",
       "who": {
-        "name": "University of California Berkeley",
+        "name": "OpenContext identifier preregistration shoulder",
         "name_native": null,
         "acronym": "UCBERKELEY"
       },
@@ -34644,7 +34524,7 @@
       "naan": "85069",
       "what": "85069/g8",
       "who": {
-        "name": "SDSC OpenTopography Facility",
+        "name": "OpenTopography Facility",
         "name_native": null,
         "acronym": "SDSCOTF"
       },
@@ -34668,8 +34548,8 @@
       "naan": "19153",
       "what": "19153/p4",
       "who": {
-        "name": "French National Pedogical Documentation Center",
-        "name_native": "Centre national de documentation p\u00e9dagogique",
+        "name": "Parcours EGO-PAC",
+        "name_native": null,
         "acronym": "CNDP"
       },
       "where": "http://www.cndp.fr",
@@ -34692,7 +34572,7 @@
       "naan": "86085",
       "what": "86085/n0",
       "who": {
-        "name": "Partnership for Interdisciplinary Studies of Coastal Oceans",
+        "name": "Partnership for Interdisciplinary Studies of Coastal Oceans (PISCO)",
         "name_native": null,
         "acronym": "PISCO"
       },
@@ -34716,7 +34596,7 @@
       "naan": "42409",
       "what": "42409/pr9",
       "who": {
-        "name": "The Pennsylvania State University",
+        "name": "Penn State Libraries: (Dark) Preservation",
         "name_native": null,
         "acronym": "PSU"
       },
@@ -34740,7 +34620,7 @@
       "naan": "42409",
       "what": "42409/ac3",
       "who": {
-        "name": "The Pennsylvania State University",
+        "name": "Penn State Libraries: Access",
         "name_native": null,
         "acronym": "PSU"
       },
@@ -34764,7 +34644,7 @@
       "naan": "42409",
       "what": "42409/ed5",
       "who": {
-        "name": "The Pennsylvania State University",
+        "name": "Penn State Libraries: Educational Resource",
         "name_native": null,
         "acronym": "PSU"
       },
@@ -34788,7 +34668,7 @@
       "naan": "42409",
       "what": "42409/ex7",
       "who": {
-        "name": "The Pennsylvania State University",
+        "name": "Penn State Libraries: Exhibitions",
         "name_native": null,
         "acronym": "PSU"
       },
@@ -34812,7 +34692,7 @@
       "naan": "42409",
       "what": "42409/fa8",
       "who": {
-        "name": "The Pennsylvania State University",
+        "name": "Penn State Libraries: Finding Aids",
         "name_native": null,
         "acronym": "PSU"
       },
@@ -34836,7 +34716,7 @@
       "naan": "42409",
       "what": "42409/ii3",
       "who": {
-        "name": "The Pennsylvania State University",
+        "name": "Penn State Libraries: IIIF Presentation Manifests",
         "name_native": null,
         "acronym": "PSU"
       },
@@ -34860,7 +34740,7 @@
       "naan": "88435",
       "what": "88435/dsp01",
       "who": {
-        "name": "Princeton University",
+        "name": "Princeton University Library",
         "name_native": null,
         "acronym": "PRINCETON"
       },
@@ -34884,7 +34764,7 @@
       "naan": "88435",
       "what": "88435/pr1",
       "who": {
-        "name": "Princeton University",
+        "name": "Princeton University Open Access Repository",
         "name_native": null,
         "acronym": "PRINCETON"
       },
@@ -34908,7 +34788,7 @@
       "naan": "88114",
       "what": "88114/p7",
       "who": {
-        "name": "Purdue Polytechnic Institute",
+        "name": "Purdue Polytechnic Institute (Retired Minter)",
         "name_native": null,
         "acronym": "PURPOLY"
       },
@@ -34932,7 +34812,7 @@
       "naan": "86084",
       "what": "86084/b8",
       "who": {
-        "name": "Blavatnik Archive Foundation",
+        "name": "Refuseniks & Activists",
         "name_native": null,
         "acronym": "BAF"
       },
@@ -34956,8 +34836,8 @@
       "naan": "19153",
       "what": "19153/spbb9",
       "who": {
-        "name": "French National Pedogical Documentation Center",
-        "name_native": "Centre national de documentation p\u00e9dagogique",
+        "name": "Scolomfr -- Association Fran\u00e7aise pour la Lecture",
+        "name_native": null,
         "acronym": "CNDP"
       },
       "where": "http://www.cndp.fr",
@@ -34980,8 +34860,8 @@
       "naan": "19153",
       "what": "19153/sbcs9",
       "who": {
-        "name": "French National Pedogical Documentation Center",
-        "name_native": "Centre national de documentation p\u00e9dagogique",
+        "name": "Scolomfr -- Bac \u00e0 sable",
+        "name_native": null,
         "acronym": "CNDP"
       },
       "where": "http://www.cndp.fr",
@@ -35004,8 +34884,8 @@
       "naan": "19153",
       "what": "19153/sdbb9",
       "who": {
-        "name": "French National Pedogical Documentation Center",
-        "name_native": "Centre national de documentation p\u00e9dagogique",
+        "name": "Scolomfr -- BrainPop",
+        "name_native": null,
         "acronym": "CNDP"
       },
       "where": "http://www.cndp.fr",
@@ -35028,8 +34908,8 @@
       "naan": "19153",
       "what": "19153/spbc9",
       "who": {
-        "name": "French National Pedogical Documentation Center",
-        "name_native": "Centre national de documentation p\u00e9dagogique",
+        "name": "Scolomfr -- BRNE - Myria\u00e9",
+        "name_native": null,
         "acronym": "CNDP"
       },
       "where": "http://www.cndp.fr",
@@ -35052,8 +34932,8 @@
       "naan": "19153",
       "what": "19153/sdbc9",
       "who": {
-        "name": "French National Pedogical Documentation Center",
-        "name_native": "Centre national de documentation p\u00e9dagogique",
+        "name": "Scolomfr -- Cadmos",
+        "name_native": null,
         "acronym": "CNDP"
       },
       "where": "http://www.cndp.fr",
@@ -35076,8 +34956,8 @@
       "naan": "19153",
       "what": "19153/rcbc9",
       "who": {
-        "name": "French National Pedogical Documentation Center",
-        "name_native": "Centre national de documentation p\u00e9dagogique",
+        "name": "Scolomfr -- Canop\u00e9",
+        "name_native": null,
         "acronym": "CNDP"
       },
       "where": "http://www.cndp.fr",
@@ -35100,8 +34980,8 @@
       "naan": "19153",
       "what": "19153/spbd9",
       "who": {
-        "name": "French National Pedogical Documentation Center",
-        "name_native": "Centre national de documentation p\u00e9dagogique",
+        "name": "Scolomfr -- Canoprof",
+        "name_native": null,
         "acronym": "CNDP"
       },
       "where": "http://www.cndp.fr",
@@ -35124,8 +35004,8 @@
       "naan": "19153",
       "what": "19153/sdbd9",
       "who": {
-        "name": "French National Pedogical Documentation Center",
-        "name_native": "Centre national de documentation p\u00e9dagogique",
+        "name": "Scolomfr -- Cfactuel",
+        "name_native": null,
         "acronym": "CNDP"
       },
       "where": "http://www.cndp.fr",
@@ -35148,8 +35028,8 @@
       "naan": "19153",
       "what": "19153/sdbf9",
       "who": {
-        "name": "French National Pedogical Documentation Center",
-        "name_native": "Centre national de documentation p\u00e9dagogique",
+        "name": "Scolomfr -- Delagrave",
+        "name_native": null,
         "acronym": "CNDP"
       },
       "where": "http://www.cndp.fr",
@@ -35172,8 +35052,8 @@
       "naan": "19153",
       "what": "19153/sdbg9",
       "who": {
-        "name": "French National Pedogical Documentation Center",
-        "name_native": "Centre national de documentation p\u00e9dagogique",
+        "name": "Scolomfr -- Didier",
+        "name_native": null,
         "acronym": "CNDP"
       },
       "where": "http://www.cndp.fr",
@@ -35196,8 +35076,8 @@
       "naan": "19153",
       "what": "19153/sdbh9",
       "who": {
-        "name": "French National Pedogical Documentation Center",
-        "name_native": "Centre national de documentation p\u00e9dagogique",
+        "name": "Scolomfr -- Didier (2017)",
+        "name_native": null,
         "acronym": "CNDP"
       },
       "where": "http://www.cndp.fr",
@@ -35220,8 +35100,8 @@
       "naan": "19153",
       "what": "19153/sdbt9",
       "who": {
-        "name": "French National Pedogical Documentation Center",
-        "name_native": "Centre national de documentation p\u00e9dagogique",
+        "name": "Scolomfr -- e-Toiles \u00e9ditions",
+        "name_native": null,
         "acronym": "CNDP"
       },
       "where": "http://www.cndp.fr",
@@ -35244,8 +35124,8 @@
       "naan": "19153",
       "what": "19153/sdbj9",
       "who": {
-        "name": "French National Pedogical Documentation Center",
-        "name_native": "Centre national de documentation p\u00e9dagogique",
+        "name": "Scolomfr -- Editions Chavir\u00f4",
+        "name_native": null,
         "acronym": "CNDP"
       },
       "where": "http://www.cndp.fr",
@@ -35268,8 +35148,8 @@
       "naan": "19153",
       "what": "19153/sdbk9",
       "who": {
-        "name": "French National Pedogical Documentation Center",
-        "name_native": "Centre national de documentation p\u00e9dagogique",
+        "name": "Scolomfr -- \u00c9ditions Maison des Langues",
+        "name_native": null,
         "acronym": "CNDP"
       },
       "where": "http://www.cndp.fr",
@@ -35292,8 +35172,8 @@
       "naan": "19153",
       "what": "19153/spbf9",
       "who": {
-        "name": "French National Pedogical Documentation Center",
-        "name_native": "Centre national de documentation p\u00e9dagogique",
+        "name": "Scolomfr -- Edubases pour Myria\u00e9",
+        "name_native": null,
         "acronym": "CNDP"
       },
       "where": "http://www.cndp.fr",
@@ -35316,8 +35196,8 @@
       "naan": "19153",
       "what": "19153/sdbn9",
       "who": {
-        "name": "French National Pedogical Documentation Center",
-        "name_native": "Centre national de documentation p\u00e9dagogique",
+        "name": "Scolomfr -- Educ'Arte",
+        "name_native": null,
         "acronym": "CNDP"
       },
       "where": "http://www.cndp.fr",
@@ -35340,8 +35220,8 @@
       "naan": "19153",
       "what": "19153/sdbm9",
       "who": {
-        "name": "French National Pedogical Documentation Center",
-        "name_native": "Centre national de documentation p\u00e9dagogique",
+        "name": "Scolomfr -- Educagri",
+        "name_native": null,
         "acronym": "CNDP"
       },
       "where": "http://www.cndp.fr",
@@ -35364,8 +35244,8 @@
       "naan": "19153",
       "what": "19153/sdbp9",
       "who": {
-        "name": "French National Pedogical Documentation Center",
-        "name_native": "Centre national de documentation p\u00e9dagogique",
+        "name": "Scolomfr -- Educlever",
+        "name_native": null,
         "acronym": "CNDP"
       },
       "where": "http://www.cndp.fr",
@@ -35388,8 +35268,8 @@
       "naan": "19153",
       "what": "19153/sdbq9",
       "who": {
-        "name": "French National Pedogical Documentation Center",
-        "name_native": "Centre national de documentation p\u00e9dagogique",
+        "name": "Scolomfr -- Educode",
+        "name_native": null,
         "acronym": "CNDP"
       },
       "where": "http://www.cndp.fr",
@@ -35412,8 +35292,8 @@
       "naan": "19153",
       "what": "19153/sdbr9",
       "who": {
-        "name": "French National Pedogical Documentation Center",
-        "name_native": "Centre national de documentation p\u00e9dagogique",
+        "name": "Scolomfr -- eduMedia",
+        "name_native": null,
         "acronym": "CNDP"
       },
       "where": "http://www.cndp.fr",
@@ -35436,8 +35316,8 @@
       "naan": "19153",
       "what": "19153/sdbs9",
       "who": {
-        "name": "French National Pedogical Documentation Center",
-        "name_native": "Centre national de documentation p\u00e9dagogique",
+        "name": "Scolomfr -- EduPad",
+        "name_native": null,
         "acronym": "CNDP"
       },
       "where": "http://www.cndp.fr",
@@ -35460,8 +35340,8 @@
       "naan": "19153",
       "what": "19153/spcw9",
       "who": {
-        "name": "French National Pedogical Documentation Center",
-        "name_native": "Centre national de documentation p\u00e9dagogique",
+        "name": "Scolomfr -- Encyclop\u00e6dia Universalis",
+        "name_native": null,
         "acronym": "CNDP"
       },
       "where": "http://www.cndp.fr",
@@ -35484,8 +35364,8 @@
       "naan": "19153",
       "what": "19153/rcbh9",
       "who": {
-        "name": "French National Pedogical Documentation Center",
-        "name_native": "Centre national de documentation p\u00e9dagogique",
+        "name": "Scolomfr -- ENI Onisep",
+        "name_native": null,
         "acronym": "CNDP"
       },
       "where": "http://www.cndp.fr",
@@ -35508,8 +35388,8 @@
       "naan": "19153",
       "what": "19153/rcbf9",
       "who": {
-        "name": "French National Pedogical Documentation Center",
-        "name_native": "Centre national de documentation p\u00e9dagogique",
+        "name": "Scolomfr -- ENI ressources",
+        "name_native": null,
         "acronym": "CNDP"
       },
       "where": "http://www.cndp.fr",
@@ -35532,8 +35412,8 @@
       "naan": "19153",
       "what": "19153/sdbv9",
       "who": {
-        "name": "French National Pedogical Documentation Center",
-        "name_native": "Centre national de documentation p\u00e9dagogique",
+        "name": "Scolomfr -- Euro-France M\u00e9dias",
+        "name_native": null,
         "acronym": "CNDP"
       },
       "where": "http://www.cndp.fr",
@@ -35556,8 +35436,8 @@
       "naan": "19153",
       "what": "19153/sdbw9",
       "who": {
-        "name": "French National Pedogical Documentation Center",
-        "name_native": "Centre national de documentation p\u00e9dagogique",
+        "name": "Scolomfr -- Floc Production Multim\u00e9dia",
+        "name_native": null,
         "acronym": "CNDP"
       },
       "where": "http://www.cndp.fr",
@@ -35580,8 +35460,8 @@
       "naan": "19153",
       "what": "19153/sdbx9",
       "who": {
-        "name": "French National Pedogical Documentation Center",
-        "name_native": "Centre national de documentation p\u00e9dagogique",
+        "name": "Scolomfr -- Foucher",
+        "name_native": null,
         "acronym": "CNDP"
       },
       "where": "http://www.cndp.fr",
@@ -35604,8 +35484,8 @@
       "naan": "19153",
       "what": "19153/sdbz9",
       "who": {
-        "name": "French National Pedogical Documentation Center",
-        "name_native": "Centre national de documentation p\u00e9dagogique",
+        "name": "Scolomfr -- Foucher (2017)",
+        "name_native": null,
         "acronym": "CNDP"
       },
       "where": "http://www.cndp.fr",
@@ -35628,8 +35508,8 @@
       "naan": "19153",
       "what": "19153/sdcb9",
       "who": {
-        "name": "French National Pedogical Documentation Center",
-        "name_native": "Centre national de documentation p\u00e9dagogique",
+        "name": "Scolomfr -- Fourmikili",
+        "name_native": null,
         "acronym": "CNDP"
       },
       "where": "http://www.cndp.fr",
@@ -35652,8 +35532,8 @@
       "naan": "19153",
       "what": "19153/spdc9",
       "who": {
-        "name": "French National Pedogical Documentation Center",
-        "name_native": "Centre national de documentation p\u00e9dagogique",
+        "name": "Scolomfr -- Fov\u00e9a",
+        "name_native": null,
         "acronym": "CNDP"
       },
       "where": "http://www.cndp.fr",
@@ -35676,8 +35556,8 @@
       "naan": "19153",
       "what": "19153/sdcc9",
       "who": {
-        "name": "French National Pedogical Documentation Center",
-        "name_native": "Centre national de documentation p\u00e9dagogique",
+        "name": "Scolomfr -- G\u00e9n\u00e9ration 5",
+        "name_native": null,
         "acronym": "CNDP"
       },
       "where": "http://www.cndp.fr",
@@ -35700,8 +35580,8 @@
       "naan": "19153",
       "what": "19153/sdcd9",
       "who": {
-        "name": "French National Pedogical Documentation Center",
-        "name_native": "Centre national de documentation p\u00e9dagogique",
+        "name": "Scolomfr -- Hachette",
+        "name_native": null,
         "acronym": "CNDP"
       },
       "where": "http://www.cndp.fr",
@@ -35724,8 +35604,8 @@
       "naan": "19153",
       "what": "19153/sdcf9",
       "who": {
-        "name": "French National Pedogical Documentation Center",
-        "name_native": "Centre national de documentation p\u00e9dagogique",
+        "name": "Scolomfr -- Hachette (2017)",
+        "name_native": null,
         "acronym": "CNDP"
       },
       "where": "http://www.cndp.fr",
@@ -35748,8 +35628,8 @@
       "naan": "19153",
       "what": "19153/sdcg9",
       "who": {
-        "name": "French National Pedogical Documentation Center",
-        "name_native": "Centre national de documentation p\u00e9dagogique",
+        "name": "Scolomfr -- Hachette FLE",
+        "name_native": null,
         "acronym": "CNDP"
       },
       "where": "http://www.cndp.fr",
@@ -35772,8 +35652,8 @@
       "naan": "19153",
       "what": "19153/sdch9",
       "who": {
-        "name": "French National Pedogical Documentation Center",
-        "name_native": "Centre national de documentation p\u00e9dagogique",
+        "name": "Scolomfr -- Hachette FLE (2017)",
+        "name_native": null,
         "acronym": "CNDP"
       },
       "where": "http://www.cndp.fr",
@@ -35796,8 +35676,8 @@
       "naan": "19153",
       "what": "19153/sdcj9",
       "who": {
-        "name": "French National Pedogical Documentation Center",
-        "name_native": "Centre national de documentation p\u00e9dagogique",
+        "name": "Scolomfr -- Hatier",
+        "name_native": null,
         "acronym": "CNDP"
       },
       "where": "http://www.cndp.fr",
@@ -35820,8 +35700,8 @@
       "naan": "19153",
       "what": "19153/sdck9",
       "who": {
-        "name": "French National Pedogical Documentation Center",
-        "name_native": "Centre national de documentation p\u00e9dagogique",
+        "name": "Scolomfr -- Hatier (2017)",
+        "name_native": null,
         "acronym": "CNDP"
       },
       "where": "http://www.cndp.fr",
@@ -35844,8 +35724,8 @@
       "naan": "19153",
       "what": "19153/spcx9",
       "who": {
-        "name": "French National Pedogical Documentation Center",
-        "name_native": "Centre national de documentation p\u00e9dagogique",
+        "name": "Scolomfr -- INS HEA",
+        "name_native": null,
         "acronym": "CNDP"
       },
       "where": "http://www.cndp.fr",
@@ -35868,8 +35748,8 @@
       "naan": "19153",
       "what": "19153/sdcm9",
       "who": {
-        "name": "French National Pedogical Documentation Center",
-        "name_native": "Centre national de documentation p\u00e9dagogique",
+        "name": "Scolomfr -- International d\u00e9veloppement syst\u00e8me",
+        "name_native": null,
         "acronym": "CNDP"
       },
       "where": "http://www.cndp.fr",
@@ -35892,8 +35772,8 @@
       "naan": "19153",
       "what": "19153/sdcn9",
       "who": {
-        "name": "French National Pedogical Documentation Center",
-        "name_native": "Centre national de documentation p\u00e9dagogique",
+        "name": "Scolomfr -- Istra",
+        "name_native": null,
         "acronym": "CNDP"
       },
       "where": "http://www.cndp.fr",
@@ -35916,8 +35796,8 @@
       "naan": "19153",
       "what": "19153/sdcp9",
       "who": {
-        "name": "French National Pedogical Documentation Center",
-        "name_native": "Centre national de documentation p\u00e9dagogique",
+        "name": "Scolomfr -- Istra (2017)",
+        "name_native": null,
         "acronym": "CNDP"
       },
       "where": "http://www.cndp.fr",
@@ -35940,8 +35820,8 @@
       "naan": "19153",
       "what": "19153/sdcq9",
       "who": {
-        "name": "French National Pedogical Documentation Center",
-        "name_native": "Centre national de documentation p\u00e9dagogique",
+        "name": "Scolomfr -- Itop Education",
+        "name_native": null,
         "acronym": "CNDP"
       },
       "where": "http://www.cndp.fr",
@@ -35964,8 +35844,8 @@
       "naan": "19153",
       "what": "19153/spcz9",
       "who": {
-        "name": "French National Pedogical Documentation Center",
-        "name_native": "Centre national de documentation p\u00e9dagogique",
+        "name": "Scolomfr -- Jeu Num\u00e9rique",
+        "name_native": null,
         "acronym": "CNDP"
       },
       "where": "http://www.cndp.fr",
@@ -35988,8 +35868,8 @@
       "naan": "19153",
       "what": "19153/sdcr9",
       "who": {
-        "name": "French National Pedogical Documentation Center",
-        "name_native": "Centre national de documentation p\u00e9dagogique",
+        "name": "Scolomfr -- Kiupe",
+        "name_native": null,
         "acronym": "CNDP"
       },
       "where": "http://www.cndp.fr",
@@ -36012,8 +35892,8 @@
       "naan": "19153",
       "what": "19153/sdcs9",
       "who": {
-        "name": "French National Pedogical Documentation Center",
-        "name_native": "Centre national de documentation p\u00e9dagogique",
+        "name": "Scolomfr -- Kwyk",
+        "name_native": null,
         "acronym": "CNDP"
       },
       "where": "http://www.cndp.fr",
@@ -36036,8 +35916,8 @@
       "naan": "19153",
       "what": "19153/sddb9",
       "who": {
-        "name": "French National Pedogical Documentation Center",
-        "name_native": "Centre national de documentation p\u00e9dagogique",
+        "name": "Scolomfr -- L'Escapadou",
+        "name_native": null,
         "acronym": "CNDP"
       },
       "where": "http://www.cndp.fr",
@@ -36060,8 +35940,8 @@
       "naan": "19153",
       "what": "19153/sdct9",
       "who": {
-        "name": "French National Pedogical Documentation Center",
-        "name_native": "Centre national de documentation p\u00e9dagogique",
+        "name": "Scolomfr -- Larousse",
+        "name_native": null,
         "acronym": "CNDP"
       },
       "where": "http://www.cndp.fr",
@@ -36084,8 +35964,8 @@
       "naan": "19153",
       "what": "19153/sdcv9",
       "who": {
-        "name": "French National Pedogical Documentation Center",
-        "name_native": "Centre national de documentation p\u00e9dagogique",
+        "name": "Scolomfr -- Larousse (2017)",
+        "name_native": null,
         "acronym": "CNDP"
       },
       "where": "http://www.cndp.fr",
@@ -36108,8 +35988,8 @@
       "naan": "19153",
       "what": "19153/sdcw9",
       "who": {
-        "name": "French National Pedogical Documentation Center",
-        "name_native": "Centre national de documentation p\u00e9dagogique",
+        "name": "Scolomfr -- Le Kiosque de l'Education",
+        "name_native": null,
         "acronym": "CNDP"
       },
       "where": "http://www.cndp.fr",
@@ -36132,8 +36012,8 @@
       "naan": "19153",
       "what": "19153/sdcx9",
       "who": {
-        "name": "French National Pedogical Documentation Center",
-        "name_native": "Centre national de documentation p\u00e9dagogique",
+        "name": "Scolomfr -- Le Web P\u00e9dagogique",
+        "name_native": null,
         "acronym": "CNDP"
       },
       "where": "http://www.cndp.fr",
@@ -36156,8 +36036,8 @@
       "naan": "19153",
       "what": "19153/sdcz9",
       "who": {
-        "name": "French National Pedogical Documentation Center",
-        "name_native": "Centre national de documentation p\u00e9dagogique",
+        "name": "Scolomfr -- Learn Enjoy",
+        "name_native": null,
         "acronym": "CNDP"
       },
       "where": "http://www.cndp.fr",
@@ -36180,8 +36060,8 @@
       "naan": "19153",
       "what": "19153/spbg9",
       "who": {
-        "name": "French National Pedogical Documentation Center",
-        "name_native": "Centre national de documentation p\u00e9dagogique",
+        "name": "Scolomfr -- Lumni - AFP",
+        "name_native": null,
         "acronym": "CNDP"
       },
       "where": "http://www.cndp.fr",
@@ -36204,8 +36084,8 @@
       "naan": "19153",
       "what": "19153/spbh9",
       "who": {
-        "name": "French National Pedogical Documentation Center",
-        "name_native": "Centre national de documentation p\u00e9dagogique",
+        "name": "Scolomfr -- Lumni - ARTE",
+        "name_native": null,
         "acronym": "CNDP"
       },
       "where": "http://www.cndp.fr",
@@ -36228,8 +36108,8 @@
       "naan": "19153",
       "what": "19153/spbj9",
       "who": {
-        "name": "French National Pedogical Documentation Center",
-        "name_native": "Centre national de documentation p\u00e9dagogique",
+        "name": "Scolomfr -- Lumni - BBC",
+        "name_native": null,
         "acronym": "CNDP"
       },
       "where": "http://www.cndp.fr",
@@ -36252,8 +36132,8 @@
       "naan": "19153",
       "what": "19153/spbk9",
       "who": {
-        "name": "French National Pedogical Documentation Center",
-        "name_native": "Centre national de documentation p\u00e9dagogique",
+        "name": "Scolomfr -- Lumni - BNF",
+        "name_native": null,
         "acronym": "CNDP"
       },
       "where": "http://www.cndp.fr",
@@ -36276,8 +36156,8 @@
       "naan": "19153",
       "what": "19153/spbm9",
       "who": {
-        "name": "French National Pedogical Documentation Center",
-        "name_native": "Centre national de documentation p\u00e9dagogique",
+        "name": "Scolomfr -- Lumni - BNF Partenariats",
+        "name_native": null,
         "acronym": "CNDP"
       },
       "where": "http://www.cndp.fr",
@@ -36300,8 +36180,8 @@
       "naan": "19153",
       "what": "19153/spbn9",
       "who": {
-        "name": "French National Pedogical Documentation Center",
-        "name_native": "Centre national de documentation p\u00e9dagogique",
+        "name": "Scolomfr -- Lumni - BRGM",
+        "name_native": null,
         "acronym": "CNDP"
       },
       "where": "http://www.cndp.fr",
@@ -36324,8 +36204,8 @@
       "naan": "19153",
       "what": "19153/spbp9",
       "who": {
-        "name": "French National Pedogical Documentation Center",
-        "name_native": "Centre national de documentation p\u00e9dagogique",
+        "name": "Scolomfr -- Lumni - Centre Pompidou",
+        "name_native": null,
         "acronym": "CNDP"
       },
       "where": "http://www.cndp.fr",
@@ -36348,8 +36228,8 @@
       "naan": "19153",
       "what": "19153/spbq9",
       "who": {
-        "name": "French National Pedogical Documentation Center",
-        "name_native": "Centre national de documentation p\u00e9dagogique",
+        "name": "Scolomfr -- Lumni - Ch\u00e2teau de Versailles",
+        "name_native": null,
         "acronym": "CNDP"
       },
       "where": "http://www.cndp.fr",
@@ -36372,8 +36252,8 @@
       "naan": "19153",
       "what": "19153/spbr9",
       "who": {
-        "name": "French National Pedogical Documentation Center",
-        "name_native": "Centre national de documentation p\u00e9dagogique",
+        "name": "Scolomfr -- Lumni - Cit\u00e9 de l'architecture et du patrimoine",
+        "name_native": null,
         "acronym": "CNDP"
       },
       "where": "http://www.cndp.fr",
@@ -36396,8 +36276,8 @@
       "naan": "19153",
       "what": "19153/spbs9",
       "who": {
-        "name": "French National Pedogical Documentation Center",
-        "name_native": "Centre national de documentation p\u00e9dagogique",
+        "name": "Scolomfr -- Lumni - CMN",
+        "name_native": null,
         "acronym": "CNDP"
       },
       "where": "http://www.cndp.fr",
@@ -36420,8 +36300,8 @@
       "naan": "19153",
       "what": "19153/spbt9",
       "who": {
-        "name": "French National Pedogical Documentation Center",
-        "name_native": "Centre national de documentation p\u00e9dagogique",
+        "name": "Scolomfr -- Lumni - CNES",
+        "name_native": null,
         "acronym": "CNDP"
       },
       "where": "http://www.cndp.fr",
@@ -36444,8 +36324,8 @@
       "naan": "19153",
       "what": "19153/spbv9",
       "who": {
-        "name": "French National Pedogical Documentation Center",
-        "name_native": "Centre national de documentation p\u00e9dagogique",
+        "name": "Scolomfr -- Lumni - CNRS",
+        "name_native": null,
         "acronym": "CNDP"
       },
       "where": "http://www.cndp.fr",
@@ -36468,8 +36348,8 @@
       "naan": "19153",
       "what": "19153/spbw9",
       "who": {
-        "name": "French National Pedogical Documentation Center",
-        "name_native": "Centre national de documentation p\u00e9dagogique",
+        "name": "Scolomfr -- Lumni - Deutsche Welle",
+        "name_native": null,
         "acronym": "CNDP"
       },
       "where": "http://www.cndp.fr",
@@ -36492,8 +36372,8 @@
       "naan": "19153",
       "what": "19153/spbx9",
       "who": {
-        "name": "French National Pedogical Documentation Center",
-        "name_native": "Centre national de documentation p\u00e9dagogique",
+        "name": "Scolomfr -- Lumni - ECPAD",
+        "name_native": null,
         "acronym": "CNDP"
       },
       "where": "http://www.cndp.fr",
@@ -36516,8 +36396,8 @@
       "naan": "19153",
       "what": "19153/spbz9",
       "who": {
-        "name": "French National Pedogical Documentation Center",
-        "name_native": "Centre national de documentation p\u00e9dagogique",
+        "name": "Scolomfr -- Lumni - Espace Myria\u00e9",
+        "name_native": null,
         "acronym": "CNDP"
       },
       "where": "http://www.cndp.fr",
@@ -36540,8 +36420,8 @@
       "naan": "19153",
       "what": "19153/spcb9",
       "who": {
-        "name": "French National Pedogical Documentation Center",
-        "name_native": "Centre national de documentation p\u00e9dagogique",
+        "name": "Scolomfr -- Lumni - Ifremer",
+        "name_native": null,
         "acronym": "CNDP"
       },
       "where": "http://www.cndp.fr",
@@ -36564,8 +36444,8 @@
       "naan": "19153",
       "what": "19153/spcc9",
       "who": {
-        "name": "French National Pedogical Documentation Center",
-        "name_native": "Centre national de documentation p\u00e9dagogique",
+        "name": "Scolomfr -- Lumni - IGN \u00e9dug\u00e9o",
+        "name_native": null,
         "acronym": "CNDP"
       },
       "where": "http://www.cndp.fr",
@@ -36588,8 +36468,8 @@
       "naan": "19153",
       "what": "19153/spcd9",
       "who": {
-        "name": "French National Pedogical Documentation Center",
-        "name_native": "Centre national de documentation p\u00e9dagogique",
+        "name": "Scolomfr -- Lumni - INA GRM",
+        "name_native": null,
         "acronym": "CNDP"
       },
       "where": "http://www.cndp.fr",
@@ -36612,8 +36492,8 @@
       "naan": "19153",
       "what": "19153/spcf9",
       "who": {
-        "name": "French National Pedogical Documentation Center",
-        "name_native": "Centre national de documentation p\u00e9dagogique",
+        "name": "Scolomfr -- Lumni - Inserm",
+        "name_native": null,
         "acronym": "CNDP"
       },
       "where": "http://www.cndp.fr",
@@ -36636,8 +36516,8 @@
       "naan": "19153",
       "what": "19153/spcg9",
       "who": {
-        "name": "French National Pedogical Documentation Center",
-        "name_native": "Centre national de documentation p\u00e9dagogique",
+        "name": "Scolomfr -- Lumni - Institut du Monde arabe",
+        "name_native": null,
         "acronym": "CNDP"
       },
       "where": "http://www.cndp.fr",
@@ -36660,8 +36540,8 @@
       "naan": "19153",
       "what": "19153/spch9",
       "who": {
-        "name": "French National Pedogical Documentation Center",
-        "name_native": "Centre national de documentation p\u00e9dagogique",
+        "name": "Scolomfr -- Lumni - LE BAL",
+        "name_native": null,
         "acronym": "CNDP"
       },
       "where": "http://www.cndp.fr",
@@ -36684,8 +36564,8 @@
       "naan": "19153",
       "what": "19153/spcj9",
       "who": {
-        "name": "French National Pedogical Documentation Center",
-        "name_native": "Centre national de documentation p\u00e9dagogique",
+        "name": "Scolomfr -- Lumni - Louvre",
+        "name_native": null,
         "acronym": "CNDP"
       },
       "where": "http://www.cndp.fr",
@@ -36708,8 +36588,8 @@
       "naan": "19153",
       "what": "19153/spck9",
       "who": {
-        "name": "French National Pedogical Documentation Center",
-        "name_native": "Centre national de documentation p\u00e9dagogique",
+        "name": "Scolomfr -- Lumni - M\u00e9t\u00e9o France",
+        "name_native": null,
         "acronym": "CNDP"
       },
       "where": "http://www.cndp.fr",
@@ -36732,8 +36612,8 @@
       "naan": "19153",
       "what": "19153/spcm9",
       "who": {
-        "name": "French National Pedogical Documentation Center",
-        "name_native": "Centre national de documentation p\u00e9dagogique",
+        "name": "Scolomfr -- Lumni - MNHN",
+        "name_native": null,
         "acronym": "CNDP"
       },
       "where": "http://www.cndp.fr",
@@ -36756,8 +36636,8 @@
       "naan": "19153",
       "what": "19153/rcbd9",
       "who": {
-        "name": "French National Pedogical Documentation Center",
-        "name_native": "Centre national de documentation p\u00e9dagogique",
+        "name": "Scolomfr -- Lumni - Offre th\u00e9\u00e2tre",
+        "name_native": null,
         "acronym": "CNDP"
       },
       "where": "http://www.cndp.fr",
@@ -36780,8 +36660,8 @@
       "naan": "19153",
       "what": "19153/spcn9",
       "who": {
-        "name": "French National Pedogical Documentation Center",
-        "name_native": "Centre national de documentation p\u00e9dagogique",
+        "name": "Scolomfr -- Lumni - Philharmonie de Paris",
+        "name_native": null,
         "acronym": "CNDP"
       },
       "where": "http://www.cndp.fr",
@@ -36804,8 +36684,8 @@
       "naan": "19153",
       "what": "19153/spcp9",
       "who": {
-        "name": "French National Pedogical Documentation Center",
-        "name_native": "Centre national de documentation p\u00e9dagogique",
+        "name": "Scolomfr -- Lumni - Radio France",
+        "name_native": null,
         "acronym": "CNDP"
       },
       "where": "http://www.cndp.fr",
@@ -36828,8 +36708,8 @@
       "naan": "19153",
       "what": "19153/spcq9",
       "who": {
-        "name": "French National Pedogical Documentation Center",
-        "name_native": "Centre national de documentation p\u00e9dagogique",
+        "name": "Scolomfr -- Lumni - Retronews - BNF",
+        "name_native": null,
         "acronym": "CNDP"
       },
       "where": "http://www.cndp.fr",
@@ -36852,8 +36732,8 @@
       "naan": "19153",
       "what": "19153/spcr9",
       "who": {
-        "name": "French National Pedogical Documentation Center",
-        "name_native": "Centre national de documentation p\u00e9dagogique",
+        "name": "Scolomfr -- Lumni - RMN HPI",
+        "name_native": null,
         "acronym": "CNDP"
       },
       "where": "http://www.cndp.fr",
@@ -36876,8 +36756,8 @@
       "naan": "19153",
       "what": "19153/spcs9",
       "who": {
-        "name": "French National Pedogical Documentation Center",
-        "name_native": "Centre national de documentation p\u00e9dagogique",
+        "name": "Scolomfr -- Lumni - RMN PA",
+        "name_native": null,
         "acronym": "CNDP"
       },
       "where": "http://www.cndp.fr",
@@ -36900,8 +36780,8 @@
       "naan": "19153",
       "what": "19153/spct9",
       "who": {
-        "name": "French National Pedogical Documentation Center",
-        "name_native": "Centre national de documentation p\u00e9dagogique",
+        "name": "Scolomfr -- Lumni - RTVE",
+        "name_native": null,
         "acronym": "CNDP"
       },
       "where": "http://www.cndp.fr",
@@ -36924,8 +36804,8 @@
       "naan": "19153",
       "what": "19153/spcv9",
       "who": {
-        "name": "French National Pedogical Documentation Center",
-        "name_native": "Centre national de documentation p\u00e9dagogique",
+        "name": "Scolomfr -- Lumni - Site.tv",
+        "name_native": null,
         "acronym": "CNDP"
       },
       "where": "http://www.cndp.fr",
@@ -36948,8 +36828,8 @@
       "naan": "19153",
       "what": "19153/sddc9",
       "who": {
-        "name": "French National Pedogical Documentation Center",
-        "name_native": "Centre national de documentation p\u00e9dagogique",
+        "name": "Scolomfr -- Magist\u00e8re",
+        "name_native": null,
         "acronym": "CNDP"
       },
       "where": "http://www.cndp.fr",
@@ -36972,8 +36852,8 @@
       "naan": "19153",
       "what": "19153/sddd9",
       "who": {
-        "name": "French National Pedogical Documentation Center",
-        "name_native": "Centre national de documentation p\u00e9dagogique",
+        "name": "Scolomfr -- Magnard",
+        "name_native": null,
         "acronym": "CNDP"
       },
       "where": "http://www.cndp.fr",
@@ -36996,8 +36876,8 @@
       "naan": "19153",
       "what": "19153/sddf9",
       "who": {
-        "name": "French National Pedogical Documentation Center",
-        "name_native": "Centre national de documentation p\u00e9dagogique",
+        "name": "Scolomfr -- MusicAmour SAS",
+        "name_native": null,
         "acronym": "CNDP"
       },
       "where": "http://www.cndp.fr",
@@ -37020,8 +36900,8 @@
       "naan": "19153",
       "what": "19153/spdb9",
       "who": {
-        "name": "French National Pedogical Documentation Center",
-        "name_native": "Centre national de documentation p\u00e9dagogique",
+        "name": "Scolomfr -- Myria\u00e9 - Espace prescripteurs acad\u00e9miques",
+        "name_native": null,
         "acronym": "CNDP"
       },
       "where": "http://www.cndp.fr",
@@ -37044,8 +36924,8 @@
       "naan": "19153",
       "what": "19153/sddg9",
       "who": {
-        "name": "French National Pedogical Documentation Center",
-        "name_native": "Centre national de documentation p\u00e9dagogique",
+        "name": "Scolomfr -- Neotis",
+        "name_native": null,
         "acronym": "CNDP"
       },
       "where": "http://www.cndp.fr",
@@ -37068,8 +36948,8 @@
       "naan": "19153",
       "what": "19153/sddh9",
       "who": {
-        "name": "French National Pedogical Documentation Center",
-        "name_native": "Centre national de documentation p\u00e9dagogique",
+        "name": "Scolomfr -- Pixel Cookers",
+        "name_native": null,
         "acronym": "CNDP"
       },
       "where": "http://www.cndp.fr",
@@ -37092,8 +36972,8 @@
       "naan": "19153",
       "what": "19153/sddj9",
       "who": {
-        "name": "French National Pedogical Documentation Center",
-        "name_native": "Centre national de documentation p\u00e9dagogique",
+        "name": "Scolomfr -- Planet N\u00e9mo Interactive",
+        "name_native": null,
         "acronym": "CNDP"
       },
       "where": "http://www.cndp.fr",
@@ -37116,8 +36996,8 @@
       "naan": "19153",
       "what": "19153/sddk9",
       "who": {
-        "name": "French National Pedogical Documentation Center",
-        "name_native": "Centre national de documentation p\u00e9dagogique",
+        "name": "Scolomfr -- Plateforme p\u00e9dagogiques multim\u00e9dia",
+        "name_native": null,
         "acronym": "CNDP"
       },
       "where": "http://www.cndp.fr",
@@ -37140,8 +37020,8 @@
       "naan": "19153",
       "what": "19153/sddm9",
       "who": {
-        "name": "French National Pedogical Documentation Center",
-        "name_native": "Centre national de documentation p\u00e9dagogique",
+        "name": "Scolomfr -- Promethean",
+        "name_native": null,
         "acronym": "CNDP"
       },
       "where": "http://www.cndp.fr",
@@ -37164,8 +37044,8 @@
       "naan": "19153",
       "what": "19153/rcbg9",
       "who": {
-        "name": "French National Pedogical Documentation Center",
-        "name_native": "Centre national de documentation p\u00e9dagogique",
+        "name": "Scolomfr -- R\u00e9seau Canop\u00e9 - Espace Myria\u00e9",
+        "name_native": null,
         "acronym": "CNDP"
       },
       "where": "http://www.cndp.fr",
@@ -37188,8 +37068,8 @@
       "naan": "19153",
       "what": "19153/sddn9",
       "who": {
-        "name": "French National Pedogical Documentation Center",
-        "name_native": "Centre national de documentation p\u00e9dagogique",
+        "name": "Scolomfr -- Retronews-BNF",
+        "name_native": null,
         "acronym": "CNDP"
       },
       "where": "http://www.cndp.fr",
@@ -37212,8 +37092,8 @@
       "naan": "19153",
       "what": "19153/sddp9",
       "who": {
-        "name": "French National Pedogical Documentation Center",
-        "name_native": "Centre national de documentation p\u00e9dagogique",
+        "name": "Scolomfr -- Seira",
+        "name_native": null,
         "acronym": "CNDP"
       },
       "where": "http://www.cndp.fr",
@@ -37236,8 +37116,8 @@
       "naan": "19153",
       "what": "19153/sddq9",
       "who": {
-        "name": "French National Pedogical Documentation Center",
-        "name_native": "Centre national de documentation p\u00e9dagogique",
+        "name": "Scolomfr -- Sejer",
+        "name_native": null,
         "acronym": "CNDP"
       },
       "where": "http://www.cndp.fr",
@@ -37260,8 +37140,8 @@
       "naan": "19153",
       "what": "19153/sddr9",
       "who": {
-        "name": "French National Pedogical Documentation Center",
-        "name_native": "Centre national de documentation p\u00e9dagogique",
+        "name": "Scolomfr -- Serpodile",
+        "name_native": null,
         "acronym": "CNDP"
       },
       "where": "http://www.cndp.fr",
@@ -37284,8 +37164,8 @@
       "naan": "19153",
       "what": "19153/sdds9",
       "who": {
-        "name": "French National Pedogical Documentation Center",
-        "name_native": "Centre national de documentation p\u00e9dagogique",
+        "name": "Scolomfr -- SlimCricket",
+        "name_native": null,
         "acronym": "CNDP"
       },
       "where": "http://www.cndp.fr",
@@ -37308,8 +37188,8 @@
       "naan": "19153",
       "what": "19153/sddt9",
       "who": {
-        "name": "French National Pedogical Documentation Center",
-        "name_native": "Centre national de documentation p\u00e9dagogique",
+        "name": "Scolomfr -- Te\u00efta conseil",
+        "name_native": null,
         "acronym": "CNDP"
       },
       "where": "http://www.cndp.fr",
@@ -37332,8 +37212,8 @@
       "naan": "19153",
       "what": "19153/stst9",
       "who": {
-        "name": "French National Pedogical Documentation Center",
-        "name_native": "Centre national de documentation p\u00e9dagogique",
+        "name": "Scolomfr -- Test",
+        "name_native": null,
         "acronym": "CNDP"
       },
       "where": "http://www.cndp.fr",
@@ -37356,8 +37236,8 @@
       "naan": "19153",
       "what": "19153/sddv9",
       "who": {
-        "name": "French National Pedogical Documentation Center",
-        "name_native": "Centre national de documentation p\u00e9dagogique",
+        "name": "Scolomfr -- Texas Instruments",
+        "name_native": null,
         "acronym": "CNDP"
       },
       "where": "http://www.cndp.fr",
@@ -37380,8 +37260,8 @@
       "naan": "19153",
       "what": "19153/rcngcg9",
       "who": {
-        "name": "French National Pedogical Documentation Center",
-        "name_native": "Centre national de documentation p\u00e9dagogique",
+        "name": "Scolomfr -- TNE-Cabrilog [nonGar]",
+        "name_native": null,
         "acronym": "CNDP"
       },
       "where": "http://www.cndp.fr",
@@ -37404,8 +37284,8 @@
       "naan": "19153",
       "what": "19153/rcngbn9",
       "who": {
-        "name": "French National Pedogical Documentation Center",
-        "name_native": "Centre national de documentation p\u00e9dagogique",
+        "name": "Scolomfr -- TNE-Jocatop [nonGar]",
+        "name_native": null,
         "acronym": "CNDP"
       },
       "where": "http://www.cndp.fr",
@@ -37428,8 +37308,8 @@
       "naan": "19153",
       "what": "19153/rcngbw9",
       "who": {
-        "name": "French National Pedogical Documentation Center",
-        "name_native": "Centre national de documentation p\u00e9dagogique",
+        "name": "Scolomfr -- TNE-Kardi [nonGar]",
+        "name_native": null,
         "acronym": "CNDP"
       },
       "where": "http://www.cndp.fr",
@@ -37452,8 +37332,8 @@
       "naan": "19153",
       "what": "19153/rcngbm9",
       "who": {
-        "name": "French National Pedogical Documentation Center",
-        "name_native": "Centre national de documentation p\u00e9dagogique",
+        "name": "Scolomfr -- TNE-LaliloPlume [nonGar]",
+        "name_native": null,
         "acronym": "CNDP"
       },
       "where": "http://www.cndp.fr",
@@ -37476,8 +37356,8 @@
       "naan": "19153",
       "what": "19153/rcngbv9",
       "who": {
-        "name": "French National Pedogical Documentation Center",
-        "name_native": "Centre national de documentation p\u00e9dagogique",
+        "name": "Scolomfr -- TNE-LDE [nonGar]",
+        "name_native": null,
         "acronym": "CNDP"
       },
       "where": "http://www.cndp.fr",
@@ -37500,8 +37380,8 @@
       "naan": "19153",
       "what": "19153/rcngbt9",
       "who": {
-        "name": "French National Pedogical Documentation Center",
-        "name_native": "Centre national de documentation p\u00e9dagogique",
+        "name": "Scolomfr -- TNE-Learn Enjoy [nonGar]",
+        "name_native": null,
         "acronym": "CNDP"
       },
       "where": "http://www.cndp.fr",
@@ -37524,8 +37404,8 @@
       "naan": "19153",
       "what": "19153/rcngcc9",
       "who": {
-        "name": "French National Pedogical Documentation Center",
-        "name_native": "Centre national de documentation p\u00e9dagogique",
+        "name": "Scolomfr -- TNE-MaskottBelin [nonGar]",
+        "name_native": null,
         "acronym": "CNDP"
       },
       "where": "http://www.cndp.fr",
@@ -37548,8 +37428,8 @@
       "naan": "19153",
       "what": "19153/rcngcd9",
       "who": {
-        "name": "French National Pedogical Documentation Center",
-        "name_native": "Centre national de documentation p\u00e9dagogique",
+        "name": "Scolomfr -- TNE-MFB Edumalin [nonGar]",
+        "name_native": null,
         "acronym": "CNDP"
       },
       "where": "http://www.cndp.fr",
@@ -37572,8 +37452,8 @@
       "naan": "19153",
       "what": "19153/sddw9",
       "who": {
-        "name": "French National Pedogical Documentation Center",
-        "name_native": "Centre national de documentation p\u00e9dagogique",
+        "name": "Scolomfr -- Tom Pouce Interactive",
+        "name_native": null,
         "acronym": "CNDP"
       },
       "where": "http://www.cndp.fr",
@@ -37596,8 +37476,8 @@
       "naan": "19153",
       "what": "19153/sddx9",
       "who": {
-        "name": "French National Pedogical Documentation Center",
-        "name_native": "Centre national de documentation p\u00e9dagogique",
+        "name": "Scolomfr -- Tralal\u00e8re",
+        "name_native": null,
         "acronym": "CNDP"
       },
       "where": "http://www.cndp.fr",
@@ -37620,8 +37500,8 @@
       "naan": "19153",
       "what": "19153/sddz9",
       "who": {
-        "name": "French National Pedogical Documentation Center",
-        "name_native": "Centre national de documentation p\u00e9dagogique",
+        "name": "Scolomfr -- Vuilbert",
+        "name_native": null,
         "acronym": "CNDP"
       },
       "where": "http://www.cndp.fr",
@@ -37644,8 +37524,8 @@
       "naan": "19153",
       "what": "19153/rcpcb9",
       "who": {
-        "name": "French National Pedogical Documentation Center",
-        "name_native": "Centre national de documentation p\u00e9dagogique",
+        "name": "Scolomfr \u2013 TNE - Bayard",
+        "name_native": null,
         "acronym": "CNDP"
       },
       "where": "http://www.cndp.fr",
@@ -37668,8 +37548,8 @@
       "naan": "19153",
       "what": "19153/rcpbx9",
       "who": {
-        "name": "French National Pedogical Documentation Center",
-        "name_native": "Centre national de documentation p\u00e9dagogique",
+        "name": "Scolomfr \u2013 TNE - Bordas",
+        "name_native": null,
         "acronym": "CNDP"
       },
       "where": "http://www.cndp.fr",
@@ -37692,8 +37572,8 @@
       "naan": "19153",
       "what": "19153/rcpcg9",
       "who": {
-        "name": "French National Pedogical Documentation Center",
-        "name_native": "Centre national de documentation p\u00e9dagogique",
+        "name": "Scolomfr \u2013 TNE - Cabrilog",
+        "name_native": null,
         "acronym": "CNDP"
       },
       "where": "http://www.cndp.fr",
@@ -37716,8 +37596,8 @@
       "naan": "19153",
       "what": "19153/rcpbr9",
       "who": {
-        "name": "French National Pedogical Documentation Center",
-        "name_native": "Centre national de documentation p\u00e9dagogique",
+        "name": "Scolomfr \u2013 TNE - Educlever",
+        "name_native": null,
         "acronym": "CNDP"
       },
       "where": "http://www.cndp.fr",
@@ -37740,8 +37620,8 @@
       "naan": "19153",
       "what": "19153/rcpbp9",
       "who": {
-        "name": "French National Pedogical Documentation Center",
-        "name_native": "Centre national de documentation p\u00e9dagogique",
+        "name": "Scolomfr \u2013 TNE - Hachette",
+        "name_native": null,
         "acronym": "CNDP"
       },
       "where": "http://www.cndp.fr",
@@ -37764,8 +37644,8 @@
       "naan": "19153",
       "what": "19153/rcpbn9",
       "who": {
-        "name": "French National Pedogical Documentation Center",
-        "name_native": "Centre national de documentation p\u00e9dagogique",
+        "name": "Scolomfr \u2013 TNE - Jocatop",
+        "name_native": null,
         "acronym": "CNDP"
       },
       "where": "http://www.cndp.fr",
@@ -37788,8 +37668,8 @@
       "naan": "19153",
       "what": "19153/rcpbw9",
       "who": {
-        "name": "French National Pedogical Documentation Center",
-        "name_native": "Centre national de documentation p\u00e9dagogique",
+        "name": "Scolomfr \u2013 TNE - Kardi",
+        "name_native": null,
         "acronym": "CNDP"
       },
       "where": "http://www.cndp.fr",
@@ -37812,8 +37692,8 @@
       "naan": "19153",
       "what": "19153/rcpbm9",
       "who": {
-        "name": "French National Pedogical Documentation Center",
-        "name_native": "Centre national de documentation p\u00e9dagogique",
+        "name": "Scolomfr \u2013 TNE - LaliloPlume",
+        "name_native": null,
         "acronym": "CNDP"
       },
       "where": "http://www.cndp.fr",
@@ -37836,8 +37716,8 @@
       "naan": "19153",
       "what": "19153/rcpbv9",
       "who": {
-        "name": "French National Pedogical Documentation Center",
-        "name_native": "Centre national de documentation p\u00e9dagogique",
+        "name": "Scolomfr \u2013 TNE - LDE",
+        "name_native": null,
         "acronym": "CNDP"
       },
       "where": "http://www.cndp.fr",
@@ -37860,8 +37740,8 @@
       "naan": "19153",
       "what": "19153/rcpcj9",
       "who": {
-        "name": "French National Pedogical Documentation Center",
-        "name_native": "Centre national de documentation p\u00e9dagogique",
+        "name": "Scolomfr \u2013 TNE - Le livre scolaire",
+        "name_native": null,
         "acronym": "CNDP"
       },
       "where": "http://www.cndp.fr",
@@ -37884,8 +37764,8 @@
       "naan": "19153",
       "what": "19153/rcpbt9",
       "who": {
-        "name": "French National Pedogical Documentation Center",
-        "name_native": "Centre national de documentation p\u00e9dagogique",
+        "name": "Scolomfr \u2013 TNE - Learn Enjoy",
+        "name_native": null,
         "acronym": "CNDP"
       },
       "where": "http://www.cndp.fr",
@@ -37908,8 +37788,8 @@
       "naan": "19153",
       "what": "19153/rcpbq9",
       "who": {
-        "name": "French National Pedogical Documentation Center",
-        "name_native": "Centre national de documentation p\u00e9dagogique",
+        "name": "Scolomfr \u2013 TNE - Lili",
+        "name_native": null,
         "acronym": "CNDP"
       },
       "where": "http://www.cndp.fr",
@@ -37932,8 +37812,8 @@
       "naan": "19153",
       "what": "19153/rcpcc9",
       "who": {
-        "name": "French National Pedogical Documentation Center",
-        "name_native": "Centre national de documentation p\u00e9dagogique",
+        "name": "Scolomfr \u2013 TNE - MaskottBelin",
+        "name_native": null,
         "acronym": "CNDP"
       },
       "where": "http://www.cndp.fr",
@@ -37956,8 +37836,8 @@
       "naan": "19153",
       "what": "19153/rcpcd9",
       "who": {
-        "name": "French National Pedogical Documentation Center",
-        "name_native": "Centre national de documentation p\u00e9dagogique",
+        "name": "Scolomfr \u2013 TNE - MFB Edumalin",
+        "name_native": null,
         "acronym": "CNDP"
       },
       "where": "http://www.cndp.fr",
@@ -37980,8 +37860,8 @@
       "naan": "19153",
       "what": "19153/rcpbs9",
       "who": {
-        "name": "French National Pedogical Documentation Center",
-        "name_native": "Centre national de documentation p\u00e9dagogique",
+        "name": "Scolomfr \u2013 TNE - ODE",
+        "name_native": null,
         "acronym": "CNDP"
       },
       "where": "http://www.cndp.fr",
@@ -38004,8 +37884,8 @@
       "naan": "19153",
       "what": "19153/rcpbk9",
       "who": {
-        "name": "French National Pedogical Documentation Center",
-        "name_native": "Centre national de documentation p\u00e9dagogique",
+        "name": "Scolomfr \u2013 TNE - Pearltrees",
+        "name_native": null,
         "acronym": "CNDP"
       },
       "where": "http://www.cndp.fr",
@@ -38028,8 +37908,8 @@
       "naan": "19153",
       "what": "19153/rcpbj9",
       "who": {
-        "name": "French National Pedogical Documentation Center",
-        "name_native": "Centre national de documentation p\u00e9dagogique",
+        "name": "Scolomfr \u2013 TNE - R\u00e9seau Canop\u00e9",
+        "name_native": null,
         "acronym": "CNDP"
       },
       "where": "http://www.cndp.fr",
@@ -38052,8 +37932,8 @@
       "naan": "19153",
       "what": "19153/rcpbz9",
       "who": {
-        "name": "French National Pedogical Documentation Center",
-        "name_native": "Centre national de documentation p\u00e9dagogique",
+        "name": "Scolomfr \u2013 TNE - Retz",
+        "name_native": null,
         "acronym": "CNDP"
       },
       "where": "http://www.cndp.fr",
@@ -38076,8 +37956,8 @@
       "naan": "19153",
       "what": "19153/rcpch9",
       "who": {
-        "name": "French National Pedogical Documentation Center",
-        "name_native": "Centre national de documentation p\u00e9dagogique",
+        "name": "Scolomfr \u2013 TNE - Studytracks",
+        "name_native": null,
         "acronym": "CNDP"
       },
       "where": "http://www.cndp.fr",
@@ -38100,8 +37980,8 @@
       "naan": "19153",
       "what": "19153/rcpcf9",
       "who": {
-        "name": "French National Pedogical Documentation Center",
-        "name_native": "Centre national de documentation p\u00e9dagogique",
+        "name": "Scolomfr \u2013 TNE - Tralal\u00e8re",
+        "name_native": null,
         "acronym": "CNDP"
       },
       "where": "http://www.cndp.fr",
@@ -38124,8 +38004,8 @@
       "naan": "19153",
       "what": "19153/rcpck9",
       "who": {
-        "name": "French National Pedogical Documentation Center",
-        "name_native": "Centre national de documentation p\u00e9dagogique",
+        "name": "Scolomfr \u2013 TNE - Wooclap",
+        "name_native": null,
         "acronym": "CNDP"
       },
       "where": "http://www.cndp.fr",
@@ -38148,8 +38028,8 @@
       "naan": "19153",
       "what": "19153/rcbk9",
       "who": {
-        "name": "French National Pedogical Documentation Center",
-        "name_native": "Centre national de documentation p\u00e9dagogique",
+        "name": "Scolomfr \u2013 TNE \u2013 Candidat 1",
+        "name_native": null,
         "acronym": "CNDP"
       },
       "where": "http://www.cndp.fr",
@@ -38172,8 +38052,8 @@
       "naan": "19153",
       "what": "19153/rcbw9",
       "who": {
-        "name": "French National Pedogical Documentation Center",
-        "name_native": "Centre national de documentation p\u00e9dagogique",
+        "name": "Scolomfr \u2013 TNE \u2013 Candidat 10",
+        "name_native": null,
         "acronym": "CNDP"
       },
       "where": "http://www.cndp.fr",
@@ -38196,8 +38076,8 @@
       "naan": "19153",
       "what": "19153/rcbx9",
       "who": {
-        "name": "French National Pedogical Documentation Center",
-        "name_native": "Centre national de documentation p\u00e9dagogique",
+        "name": "Scolomfr \u2013 TNE \u2013 Candidat 11",
+        "name_native": null,
         "acronym": "CNDP"
       },
       "where": "http://www.cndp.fr",
@@ -38220,8 +38100,8 @@
       "naan": "19153",
       "what": "19153/rcbz9",
       "who": {
-        "name": "French National Pedogical Documentation Center",
-        "name_native": "Centre national de documentation p\u00e9dagogique",
+        "name": "Scolomfr \u2013 TNE \u2013 Candidat 12",
+        "name_native": null,
         "acronym": "CNDP"
       },
       "where": "http://www.cndp.fr",
@@ -38244,8 +38124,8 @@
       "naan": "19153",
       "what": "19153/rccb9",
       "who": {
-        "name": "French National Pedogical Documentation Center",
-        "name_native": "Centre national de documentation p\u00e9dagogique",
+        "name": "Scolomfr \u2013 TNE \u2013 Candidat 13",
+        "name_native": null,
         "acronym": "CNDP"
       },
       "where": "http://www.cndp.fr",
@@ -38268,8 +38148,8 @@
       "naan": "19153",
       "what": "19153/rccc9",
       "who": {
-        "name": "French National Pedogical Documentation Center",
-        "name_native": "Centre national de documentation p\u00e9dagogique",
+        "name": "Scolomfr \u2013 TNE \u2013 Candidat 14",
+        "name_native": null,
         "acronym": "CNDP"
       },
       "where": "http://www.cndp.fr",
@@ -38292,8 +38172,8 @@
       "naan": "19153",
       "what": "19153/rccd9",
       "who": {
-        "name": "French National Pedogical Documentation Center",
-        "name_native": "Centre national de documentation p\u00e9dagogique",
+        "name": "Scolomfr \u2013 TNE \u2013 Candidat 15",
+        "name_native": null,
         "acronym": "CNDP"
       },
       "where": "http://www.cndp.fr",
@@ -38316,8 +38196,8 @@
       "naan": "19153",
       "what": "19153/rccf9",
       "who": {
-        "name": "French National Pedogical Documentation Center",
-        "name_native": "Centre national de documentation p\u00e9dagogique",
+        "name": "Scolomfr \u2013 TNE \u2013 Candidat 16",
+        "name_native": null,
         "acronym": "CNDP"
       },
       "where": "http://www.cndp.fr",
@@ -38340,8 +38220,8 @@
       "naan": "19153",
       "what": "19153/rccg9",
       "who": {
-        "name": "French National Pedogical Documentation Center",
-        "name_native": "Centre national de documentation p\u00e9dagogique",
+        "name": "Scolomfr \u2013 TNE \u2013 Candidat 17",
+        "name_native": null,
         "acronym": "CNDP"
       },
       "where": "http://www.cndp.fr",
@@ -38364,8 +38244,8 @@
       "naan": "19153",
       "what": "19153/rcch9",
       "who": {
-        "name": "French National Pedogical Documentation Center",
-        "name_native": "Centre national de documentation p\u00e9dagogique",
+        "name": "Scolomfr \u2013 TNE \u2013 Candidat 18",
+        "name_native": null,
         "acronym": "CNDP"
       },
       "where": "http://www.cndp.fr",
@@ -38388,8 +38268,8 @@
       "naan": "19153",
       "what": "19153/rccj9",
       "who": {
-        "name": "French National Pedogical Documentation Center",
-        "name_native": "Centre national de documentation p\u00e9dagogique",
+        "name": "Scolomfr \u2013 TNE \u2013 Candidat 19",
+        "name_native": null,
         "acronym": "CNDP"
       },
       "where": "http://www.cndp.fr",
@@ -38412,8 +38292,8 @@
       "naan": "19153",
       "what": "19153/rcbm9",
       "who": {
-        "name": "French National Pedogical Documentation Center",
-        "name_native": "Centre national de documentation p\u00e9dagogique",
+        "name": "Scolomfr \u2013 TNE \u2013 Candidat 2",
+        "name_native": null,
         "acronym": "CNDP"
       },
       "where": "http://www.cndp.fr",
@@ -38436,8 +38316,8 @@
       "naan": "19153",
       "what": "19153/rcck9",
       "who": {
-        "name": "French National Pedogical Documentation Center",
-        "name_native": "Centre national de documentation p\u00e9dagogique",
+        "name": "Scolomfr \u2013 TNE \u2013 Candidat 20",
+        "name_native": null,
         "acronym": "CNDP"
       },
       "where": "http://www.cndp.fr",
@@ -38460,8 +38340,8 @@
       "naan": "19153",
       "what": "19153/rcbn9",
       "who": {
-        "name": "French National Pedogical Documentation Center",
-        "name_native": "Centre national de documentation p\u00e9dagogique",
+        "name": "Scolomfr \u2013 TNE \u2013 Candidat 3",
+        "name_native": null,
         "acronym": "CNDP"
       },
       "where": "http://www.cndp.fr",
@@ -38484,8 +38364,8 @@
       "naan": "19153",
       "what": "19153/rcbp9",
       "who": {
-        "name": "French National Pedogical Documentation Center",
-        "name_native": "Centre national de documentation p\u00e9dagogique",
+        "name": "Scolomfr \u2013 TNE \u2013 Candidat 4",
+        "name_native": null,
         "acronym": "CNDP"
       },
       "where": "http://www.cndp.fr",
@@ -38508,8 +38388,8 @@
       "naan": "19153",
       "what": "19153/rcbq9",
       "who": {
-        "name": "French National Pedogical Documentation Center",
-        "name_native": "Centre national de documentation p\u00e9dagogique",
+        "name": "Scolomfr \u2013 TNE \u2013 Candidat 5",
+        "name_native": null,
         "acronym": "CNDP"
       },
       "where": "http://www.cndp.fr",
@@ -38532,8 +38412,8 @@
       "naan": "19153",
       "what": "19153/rcbr9",
       "who": {
-        "name": "French National Pedogical Documentation Center",
-        "name_native": "Centre national de documentation p\u00e9dagogique",
+        "name": "Scolomfr \u2013 TNE \u2013 Candidat 6",
+        "name_native": null,
         "acronym": "CNDP"
       },
       "where": "http://www.cndp.fr",
@@ -38556,8 +38436,8 @@
       "naan": "19153",
       "what": "19153/rcbs9",
       "who": {
-        "name": "French National Pedogical Documentation Center",
-        "name_native": "Centre national de documentation p\u00e9dagogique",
+        "name": "Scolomfr \u2013 TNE \u2013 Candidat 7",
+        "name_native": null,
         "acronym": "CNDP"
       },
       "where": "http://www.cndp.fr",
@@ -38580,8 +38460,8 @@
       "naan": "19153",
       "what": "19153/rcbt9",
       "who": {
-        "name": "French National Pedogical Documentation Center",
-        "name_native": "Centre national de documentation p\u00e9dagogique",
+        "name": "Scolomfr \u2013 TNE \u2013 Candidat 8",
+        "name_native": null,
         "acronym": "CNDP"
       },
       "where": "http://www.cndp.fr",
@@ -38604,8 +38484,8 @@
       "naan": "19153",
       "what": "19153/rcbv9",
       "who": {
-        "name": "French National Pedogical Documentation Center",
-        "name_native": "Centre national de documentation p\u00e9dagogique",
+        "name": "Scolomfr \u2013 TNE \u2013 Candidat 9",
+        "name_native": null,
         "acronym": "CNDP"
       },
       "where": "http://www.cndp.fr",
@@ -38628,8 +38508,8 @@
       "naan": "19153",
       "what": "19153/rcbj9",
       "who": {
-        "name": "French National Pedogical Documentation Center",
-        "name_native": "Centre national de documentation p\u00e9dagogique",
+        "name": "Scolomfr \u2013 TNE \u2013 R\u00e9seau Canop\u00e9",
+        "name_native": null,
         "acronym": "CNDP"
       },
       "where": "http://www.cndp.fr",
@@ -38652,8 +38532,8 @@
       "naan": "19153",
       "what": "19153/rcngcf9",
       "who": {
-        "name": "French National Pedogical Documentation Center",
-        "name_native": "Centre national de documentation p\u00e9dagogique",
+        "name": "Scolomfr \u2013 TNE-Tralal\u00e8re [nonGar]",
+        "name_native": null,
         "acronym": "CNDP"
       },
       "where": "http://www.cndp.fr",
@@ -38676,7 +38556,7 @@
       "naan": "81986",
       "what": "81986/caida",
       "who": {
-        "name": "SDSC Center for Applied Internet Data and Analysis",
+        "name": "SDSC CAIDA",
         "name_native": null,
         "acronym": "CAIDA"
       },
@@ -38700,7 +38580,7 @@
       "naan": "81986",
       "what": "81986/s6.caida",
       "who": {
-        "name": "SDSC Center for Applied Internet Data and Analysis",
+        "name": "SDSC CAIDA Minter",
         "name_native": null,
         "acronym": "CAIDA"
       },
@@ -38724,7 +38604,7 @@
       "naan": "65665",
       "what": "65665/n6",
       "who": {
-        "name": "Smithsonian Institution",
+        "name": "Smithsonian Institution - no longer used",
         "name_native": null,
         "acronym": "SI"
       },
@@ -38748,8 +38628,8 @@
       "naan": "19153",
       "what": "19153/srtpbb8",
       "who": {
-        "name": "French National Pedogical Documentation Center",
-        "name_native": "Centre national de documentation p\u00e9dagogique",
+        "name": "Syrtis -- Prod",
+        "name_native": null,
         "acronym": "CNDP"
       },
       "where": "http://www.cndp.fr",
@@ -38772,8 +38652,8 @@
       "naan": "19153",
       "what": "19153/srtvbb8",
       "who": {
-        "name": "French National Pedogical Documentation Center",
-        "name_native": "Centre national de documentation p\u00e9dagogique",
+        "name": "Syrtis -- Val",
+        "name_native": null,
         "acronym": "CNDP"
       },
       "where": "http://www.cndp.fr",
@@ -38796,7 +38676,7 @@
       "naan": "10945",
       "what": "10945/t4",
       "who": {
-        "name": "AsWeGrow",
+        "name": "TeachPitch",
         "name_native": null,
         "acronym": "ASWEGROW"
       },
@@ -38820,7 +38700,7 @@
       "naan": "81423",
       "what": "81423/b1",
       "who": {
-        "name": "Texas A&M University Libraries",
+        "name": "Texas A&M Univ Batt",
         "name_native": null,
         "acronym": "TAMUL"
       },
@@ -38844,7 +38724,7 @@
       "naan": "81423",
       "what": "81423/d2",
       "who": {
-        "name": "Texas A&M University Libraries",
+        "name": "Texas A&M Univ DigProjects",
         "name_native": null,
         "acronym": "TAMUL"
       },
@@ -38868,7 +38748,7 @@
       "naan": "81423",
       "what": "81423/m3",
       "who": {
-        "name": "Texas A&M University Libraries",
+        "name": "Texas A&M Univ Libr",
         "name_native": null,
         "acronym": "TAMUL"
       },
@@ -38892,7 +38772,7 @@
       "naan": "81423",
       "what": "81423/g1",
       "who": {
-        "name": "Texas A&M University Libraries",
+        "name": "Texas A&M Univ MSL",
         "name_native": null,
         "acronym": "TAMUL"
       },
@@ -38916,7 +38796,7 @@
       "naan": "28722",
       "what": "28722/d9",
       "who": {
-        "name": "University of California Berkeley",
+        "name": "UC Berkeley",
         "name_native": null,
         "acronym": "UCBERKELEY"
       },
@@ -38964,7 +38844,7 @@
       "naan": "87922",
       "what": "87922/g3",
       "who": {
-        "name": "Institute of Transportation Studies, UC Berkeley",
+        "name": "UC Berkeley Institute of Transportation Studies (ITS)",
         "name_native": null,
         "acronym": "UCBITS"
       },
@@ -38988,7 +38868,7 @@
       "naan": "13030",
       "what": "13030/hb",
       "who": {
-        "name": "California Digital Library",
+        "name": "UC Berkeley Legacy Library",
         "name_native": null,
         "acronym": "CDLIB"
       },
@@ -39012,7 +38892,7 @@
       "naan": "28722",
       "what": "28722/bk",
       "who": {
-        "name": "University of California Berkeley",
+        "name": "UC Berkeley Legacy Library bk",
         "name_native": null,
         "acronym": "UCBERKELEY"
       },
@@ -39036,7 +38916,7 @@
       "naan": "28722",
       "what": "28722/h2",
       "who": {
-        "name": "University of California Berkeley",
+        "name": "UC Berkeley Library - HathiTrust/UCB",
         "name_native": null,
         "acronym": "UCBERKELEY"
       },
@@ -39060,7 +38940,7 @@
       "naan": "28722",
       "what": "28722/b8",
       "who": {
-        "name": "University of California Berkeley",
+        "name": "UC Berkeley Miscellany",
         "name_native": null,
         "acronym": "UCBERKELEY"
       },
@@ -39084,7 +38964,7 @@
       "naan": "87299",
       "what": "87299/x6",
       "who": {
-        "name": "Museum of Vertebrate Zoology",
+        "name": "UC Berkeley Museum of Vertebrate Zoology",
         "name_native": null,
         "acronym": "UCBMVZ"
       },
@@ -39108,7 +38988,7 @@
       "naan": "87928",
       "what": "87928/h7",
       "who": {
-        "name": "Berkeley Research IT",
+        "name": "UC Berkeley Research IT",
         "name_native": null,
         "acronym": "UCBRIT"
       },
@@ -39132,7 +39012,7 @@
       "naan": "13030",
       "what": "13030/k6",
       "who": {
-        "name": "California Digital Library",
+        "name": "UC Berkeley/Digital Special Collections",
         "name_native": null,
         "acronym": "CDLIB"
       },
@@ -39156,7 +39036,7 @@
       "naan": "87293",
       "what": "87293/d3",
       "who": {
-        "name": "UC Davis Archives and Institutional Assets",
+        "name": "UC Davis Archives and Institutional Assets Program",
         "name_native": null,
         "acronym": "UCD-AIA"
       },
@@ -39180,7 +39060,7 @@
       "naan": "85781",
       "what": "85781/m7",
       "who": {
-        "name": "UC Davis Online Strategies",
+        "name": "UC Davis DAMS (legacy branch)",
         "name_native": null,
         "acronym": "UCD-ONS"
       },
@@ -39228,7 +39108,7 @@
       "naan": "87280",
       "what": "87280/t0",
       "who": {
-        "name": "University of California Irvine",
+        "name": "UC Irvine Library",
         "name_native": null,
         "acronym": "UCIRVINE"
       },
@@ -39252,7 +39132,7 @@
       "naan": "86071",
       "what": "86071/h7",
       "who": {
-        "name": "University of California Merced",
+        "name": "UC Merced",
         "name_native": null,
         "acronym": "UCM"
       },
@@ -39276,7 +39156,7 @@
       "naan": "81973",
       "what": "81973/r7",
       "who": {
-        "name": "University of California Natural Reserve System",
+        "name": "UC Natural Reserve System",
         "name_native": null,
         "acronym": "UCNRS"
       },
@@ -39300,7 +39180,7 @@
       "naan": "81973",
       "what": "81973/s3",
       "who": {
-        "name": "University of California Natural Reserve System",
+        "name": "UC NRS Santa Cruz Island Reserve",
         "name_native": null,
         "acronym": "UCNRS"
       },
@@ -39348,7 +39228,7 @@
       "naan": "86086",
       "what": "86086/n2",
       "who": {
-        "name": "University of California Riverside",
+        "name": "UC Riverside",
         "name_native": null,
         "acronym": "UCRIVERSIDE"
       },
@@ -39372,7 +39252,7 @@
       "naan": "87268",
       "what": "87268/p2",
       "who": {
-        "name": "Bourns College of Engineering",
+        "name": "UC Riverside Bourns College of Engineering",
         "name_native": null,
         "acronym": "BCOE"
       },
@@ -39420,7 +39300,7 @@
       "naan": "81224",
       "what": "81224/h2",
       "who": {
-        "name": "UC San Diego Philosophy Dept.",
+        "name": "UC San Diego Philosophy Dept",
         "name_native": null,
         "acronym": "UCSDGRUSH"
       },
@@ -39468,7 +39348,7 @@
       "naan": "28722",
       "what": "28722/s7",
       "who": {
-        "name": "University of California Berkeley",
+        "name": "UCB Library Systems Office",
         "name_native": null,
         "acronym": "UCBERKELEY"
       },
@@ -39540,7 +39420,7 @@
       "naan": "81416",
       "what": "81416/p4",
       "who": {
-        "name": "UCI PECE project",
+        "name": "UCI PECE Project",
         "name_native": null,
         "acronym": "PECE"
       },
@@ -39564,7 +39444,7 @@
       "naan": "21198",
       "what": "21198/r1",
       "who": {
-        "name": "University of California Los Angeles",
+        "name": "UCLA",
         "name_native": null,
         "acronym": "UCLA"
       },
@@ -39612,7 +39492,7 @@
       "naan": "21198",
       "what": "21198/z1",
       "who": {
-        "name": "University of California Los Angeles",
+        "name": "UCLA Digital Library",
         "name_native": null,
         "acronym": "UCLA"
       },
@@ -39660,7 +39540,7 @@
       "naan": "21198",
       "what": "21198/r2",
       "who": {
-        "name": "University of California Los Angeles",
+        "name": "UCLA Library",
         "name_native": null,
         "acronym": "UCLA"
       },
@@ -39708,7 +39588,7 @@
       "naan": "81222",
       "what": "81222/c2",
       "who": {
-        "name": "UCLA Dept of Civil & Environmental Engineering - Geotechnical Engineering Research Group",
+        "name": "UCLA_CEEGEO",
         "name_native": null,
         "acronym": "UCLACEEGEO"
       },
@@ -39732,7 +39612,7 @@
       "naan": "86071",
       "what": "86071/d2",
       "who": {
-        "name": "University of California Merced",
+        "name": "UCM Library Digital Assets",
         "name_native": null,
         "acronym": "UCM"
       },
@@ -39756,7 +39636,7 @@
       "naan": "48907",
       "what": "48907/b7",
       "who": {
-        "name": "University of California Santa Barbara",
+        "name": "UCSB",
         "name_native": null,
         "acronym": "UCSB"
       },
@@ -39780,7 +39660,7 @@
       "naan": "87919",
       "what": "87919/f5",
       "who": {
-        "name": "Advanced Graphics Lab",
+        "name": "UCSB Advanced Graphics Lab",
         "name_native": null,
         "acronym": "AGL"
       },
@@ -39804,7 +39684,7 @@
       "naan": "48907",
       "what": "48907/f3",
       "who": {
-        "name": "University of California Santa Barbara",
+        "name": "UCSB Alexandria Digital Research Library",
         "name_native": null,
         "acronym": "UCSB"
       },
@@ -39852,7 +39732,7 @@
       "naan": "81424",
       "what": "81424/r2",
       "who": {
-        "name": "Earth Research Institute",
+        "name": "UCSB Earth Research Institute",
         "name_native": null,
         "acronym": "ERI"
       },
@@ -39924,7 +39804,7 @@
       "naan": "84135",
       "what": "84135/p5",
       "who": {
-        "name": "Punctum Books",
+        "name": "UCSB Punctum Books",
         "name_native": null,
         "acronym": "PUNCTUM"
       },
@@ -39972,7 +39852,7 @@
       "naan": "86074",
       "what": "86074/z4",
       "who": {
-        "name": "Zapruder World",
+        "name": "UCSB Zapruder World",
         "name_native": null,
         "acronym": "ZWJ"
       },
@@ -39996,7 +39876,7 @@
       "naan": "38305",
       "what": "38305/g4",
       "who": {
-        "name": "University of California Santa Cruz",
+        "name": "UCSC Grateful Dead Archive",
         "name_native": null,
         "acronym": "UCSC"
       },
@@ -40020,7 +39900,7 @@
       "naan": "38305",
       "what": "38305/f1",
       "who": {
-        "name": "University of California Santa Cruz",
+        "name": "UCSC Library",
         "name_native": null,
         "acronym": "UCSC"
       },
@@ -40044,7 +39924,7 @@
       "naan": "88437",
       "what": "88437/c3",
       "who": {
-        "name": "Coastal Data Information Program",
+        "name": "UCSD CDIP",
         "name_native": null,
         "acronym": "CDIP"
       },
@@ -40092,7 +39972,7 @@
       "naan": "20775",
       "what": "20775/cp",
       "who": {
-        "name": "University of California San Diego",
+        "name": "UCSD COMET (Project Surfliner) (CP)",
         "name_native": null,
         "acronym": "UCSD"
       },
@@ -40116,7 +39996,7 @@
       "naan": "20775",
       "what": "20775/cs",
       "who": {
-        "name": "University of California San Diego",
+        "name": "UCSD COMET (Project Surfliner) (CS)",
         "name_native": null,
         "acronym": "UCSD"
       },
@@ -40140,7 +40020,7 @@
       "naan": "13340",
       "what": "13340/d3",
       "who": {
-        "name": "UCSD Library Digital Media Lab",
+        "name": "UCSD Digital Media Lab",
         "name_native": null,
         "acronym": "UCSDDML"
       },
@@ -40188,7 +40068,7 @@
       "naan": "87279",
       "what": "87279/s8",
       "who": {
-        "name": "Ocean Observatory Initiative",
+        "name": "UCSD Ocean Observatory Initiative",
         "name_native": null,
         "acronym": "OOI"
       },
@@ -40212,7 +40092,7 @@
       "naan": "87300",
       "what": "87300/x9",
       "who": {
-        "name": "UCSD School of Medicine, Department of Neurosciences, Mobley Lab",
+        "name": "UCSD OneLab",
         "name_native": null,
         "acronym": "ONELAB"
       },
@@ -40236,7 +40116,7 @@
       "naan": "88436",
       "what": "88436/s3",
       "who": {
-        "name": "Southern California Ocean Observing System",
+        "name": "UCSD SCCOOS",
         "name_native": null,
         "acronym": "SCCOOS"
       },
@@ -40260,7 +40140,7 @@
       "naan": "81976",
       "what": "81976/p7",
       "who": {
-        "name": "Climate, Atmospheric Science and Physical Oceanography",
+        "name": "UCSD Scripps CASPO",
         "name_native": null,
         "acronym": "CASPO"
       },
@@ -40284,7 +40164,7 @@
       "naan": "81422",
       "what": "81422/d4",
       "who": {
-        "name": "UCSD Scripps Project IDA, Inst. for Geophysics and Planetary Physics",
+        "name": "UCSD Scripps ProjectIDA",
         "name_native": null,
         "acronym": "PROJECTIDA"
       },
@@ -40356,7 +40236,7 @@
       "naan": "87270",
       "what": "87270/q3",
       "who": {
-        "name": "Skaggs School of Pharmacy",
+        "name": "UCSD Skaggs School of Pharmacy and Pharmaceutical Sciences",
         "name_native": null,
         "acronym": "UCSDSSPPS"
       },
@@ -40380,7 +40260,7 @@
       "naan": "29114",
       "what": "29114/q5",
       "who": {
-        "name": "University of California San Francisco",
+        "name": "UCSF",
         "name_native": null,
         "acronym": "UCSF"
       },
@@ -40428,7 +40308,7 @@
       "naan": "87272",
       "what": "87272/q7",
       "who": {
-        "name": "UCSF Clinical and Translational Science Institute",
+        "name": "UCSF Clinical & Translational Science Institute (CTSI)",
         "name_native": null,
         "acronym": "UCSFCTSI"
       },
@@ -40452,7 +40332,7 @@
       "naan": "67034",
       "what": "67034/k4",
       "who": {
-        "name": "University of Michigan Medical School DLHS-DLKS",
+        "name": "UMichigan Medical School DLHS-DLKS",
         "name_native": null,
         "acronym": "DLHSDLKS"
       },
@@ -40476,7 +40356,7 @@
       "naan": "87925",
       "what": "87925/h1",
       "who": {
-        "name": "University College Dublin",
+        "name": "University College Dublin Minter",
         "name_native": null,
         "acronym": "UCDIRL"
       },
@@ -40500,7 +40380,7 @@
       "naan": "85140",
       "what": "85140/d4",
       "who": {
-        "name": "University of California Davis",
+        "name": "University of California, Davis, University Library",
         "name_native": null,
         "acronym": "UCDAVIS"
       },
@@ -40548,7 +40428,7 @@
       "naan": "81984",
       "what": "81984/d3",
       "who": {
-        "name": "University of Illinois at Chicago",
+        "name": "University of Illinois Chicago Digital Collections",
         "name_native": null,
         "acronym": "UIC"
       },
@@ -40572,8 +40452,8 @@
       "naan": "47881",
       "what": "47881/m6",
       "who": {
-        "name": "University of Lyon 1",
-        "name_native": "Universit\u00e9 Claude Bernard Lyon 1",
+        "name": "University of Lyon",
+        "name_native": null,
         "acronym": "UCBL"
       },
       "where": "http://www.univ-lyon1.fr",
@@ -40596,7 +40476,7 @@
       "naan": "87302",
       "what": "87302/z3",
       "who": {
-        "name": "University of Michigan Libaries",
+        "name": "University of Michigan Library (Retired Minter)",
         "name_native": null,
         "acronym": "UMICH"
       },
@@ -40692,7 +40572,7 @@
       "naan": "62930",
       "what": "62930/w1",
       "who": {
-        "name": "University of Nevada, Las Vegas University Libraries",
+        "name": "UNLV Libraries Web Archives",
         "name_native": null,
         "acronym": "UNLV"
       },
@@ -40716,7 +40596,7 @@
       "naan": "62930",
       "what": "62930/v3",
       "who": {
-        "name": "University of Nevada, Las Vegas University Libraries",
+        "name": "UNLV Library",
         "name_native": null,
         "acronym": "UNLV"
       },
@@ -40740,7 +40620,7 @@
       "naan": "62930",
       "what": "62930/a1",
       "who": {
-        "name": "University of Nevada, Las Vegas University Libraries",
+        "name": "UNLV Library Authorities",
         "name_native": null,
         "acronym": "UNLV"
       },
@@ -40764,7 +40644,7 @@
       "naan": "62930",
       "what": "62930/d1",
       "who": {
-        "name": "University of Nevada, Las Vegas University Libraries",
+        "name": "UNLV Library Digital Objects",
         "name_native": null,
         "acronym": "UNLV"
       },
@@ -40788,7 +40668,7 @@
       "naan": "62930",
       "what": "62930/f1",
       "who": {
-        "name": "University of Nevada, Las Vegas University Libraries",
+        "name": "UNLV Library Finding Aids",
         "name_native": null,
         "acronym": "UNLV"
       },
@@ -40836,7 +40716,7 @@
       "naan": "85142",
       "what": "85142/t4",
       "who": {
-        "name": "Utah State University",
+        "name": "Utah State University Merrill-Cazier Library",
         "name_native": null,
         "acronym": "USU"
       },
@@ -40860,7 +40740,7 @@
       "naan": "81968",
       "what": "81968/g6",
       "who": {
-        "name": "University of Wisconsin German Program",
+        "name": "UWisc German Program (Retired Minter)",
         "name_native": null,
         "acronym": "UWISGERMAN"
       },
@@ -40884,7 +40764,7 @@
       "naan": "88737",
       "what": "88737/t7",
       "who": {
-        "name": "Duke Visible Thinking",
+        "name": "Visible Thinking",
         "name_native": null,
         "acronym": "VISIBLETHK"
       },
@@ -40956,7 +40836,7 @@
       "naan": "63614",
       "what": "63614/w1",
       "who": {
-        "name": "Wildlife Insights",
+        "name": "Wildlife Insights (Conservation International)",
         "name_native": null,
         "acronym": "WINSIGHTS"
       },
@@ -40980,7 +40860,7 @@
       "naan": "87936",
       "what": "87936/b7",
       "who": {
-        "name": "Washington University in St. Louis",
+        "name": "WUSTL Center for Biomedical Informatics",
         "name_native": null,
         "acronym": "WUSTL"
       },
@@ -41004,7 +40884,7 @@
       "naan": "87936",
       "what": "87936/g6",
       "who": {
-        "name": "Washington University in St. Louis",
+        "name": "WUSTL GIS",
         "name_native": null,
         "acronym": "WUSTL"
       },
@@ -41022,6 +40902,102 @@
       },
       "test_identifier": null,
       "rtype": "PublicNAANShoulder"
+    },
+    {
+      "what": "b5060",
+      "where": "https://ezid.cdlib.org/",
+      "target": {
+        "url": "https://doi.org/10.5060/${value}",
+        "http_code": 302
+      },
+      "when": "1970-01-01T00:00:00+00:00",
+      "who": {
+        "name": "CDLIB EZID",
+        "name_native": null,
+        "acronym": "EZID"
+      },
+      "na_policy": {
+        "orgtype": "NP",
+        "policy": "NR",
+        "tenure": "1970",
+        "policy_url": ""
+      },
+      "test_identifier": "ark:/b5060/d8bc75",
+      "service_provider": null,
+      "purpose": "unspecified",
+      "rtype": "PublicNAAN"
+    },
+    {
+      "what": "b7272",
+      "where": "https://ezid.cdlib.org/",
+      "target": {
+        "url": "https://doi.org/10.7272/${value}",
+        "http_code": 302
+      },
+      "when": "1970-01-01T00:00:00+00:00",
+      "who": {
+        "name": "CDLIB EZID",
+        "name_native": null,
+        "acronym": "EZID"
+      },
+      "na_policy": {
+        "orgtype": "NP",
+        "policy": "NR",
+        "tenure": "1970",
+        "policy_url": ""
+      },
+      "test_identifier": "ark:/b7272/q6ms3qnx",
+      "service_provider": null,
+      "purpose": "unspecified",
+      "rtype": "PublicNAAN"
+    },
+    {
+      "what": "b6071",
+      "where": "https://ezid.cdlib.org/",
+      "target": {
+        "url": "https://doi.org/10.6071/${value}",
+        "http_code": 302
+      },
+      "when": "1970-01-01T00:00:00+00:00",
+      "who": {
+        "name": "CDLIB EZID",
+        "name_native": null,
+        "acronym": "EZID"
+      },
+      "na_policy": {
+        "orgtype": "NP",
+        "policy": "NR",
+        "tenure": "1970",
+        "policy_url": ""
+      },
+      "test_identifier": "ark:/b6071/m3z07d",
+      "service_provider": null,
+      "purpose": "unspecified",
+      "rtype": "PublicNAAN"
+    },
+    {
+      "what": "b7291",
+      "where": "https://ezid.cdlib.org/",
+      "target": {
+        "url": "https://doi.org/10.7291/${value}",
+        "http_code": 302
+      },
+      "when": "1970-01-01T00:00:00+00:00",
+      "who": {
+        "name": "CDLIB EZID",
+        "name_native": null,
+        "acronym": "EZID"
+      },
+      "na_policy": {
+        "orgtype": "NP",
+        "policy": "NR",
+        "tenure": "1970",
+        "policy_url": ""
+      },
+      "test_identifier": "ark:/b7291/d1wc74",
+      "service_provider": null,
+      "purpose": "unspecified",
+      "rtype": "PublicNAAN"
     },
     {
       "shoulder": "tkt42",
@@ -41046,6 +41022,54 @@
       },
       "test_identifier": null,
       "rtype": "PublicNAANShoulder"
+    },
+    {
+      "what": "b6078",
+      "where": "https://ezid.cdlib.org/",
+      "target": {
+        "url": "https://doi.org/10.6078/${value}",
+        "http_code": 302
+      },
+      "when": "1970-01-01T00:00:00+00:00",
+      "who": {
+        "name": "CDLIB EZID",
+        "name_native": null,
+        "acronym": "EZID"
+      },
+      "na_policy": {
+        "orgtype": "NP",
+        "policy": "NR",
+        "tenure": "1970",
+        "policy_url": ""
+      },
+      "test_identifier": "ark:/b6078/d1mw2k",
+      "service_provider": null,
+      "purpose": "unspecified",
+      "rtype": "PublicNAAN"
+    },
+    {
+      "what": "b7280",
+      "where": "https://ezid.cdlib.org/",
+      "target": {
+        "url": "https://doi.org/10.7280/${value}",
+        "http_code": 302
+      },
+      "when": "1970-01-01T00:00:00+00:00",
+      "who": {
+        "name": "CDLIB EZID",
+        "name_native": null,
+        "acronym": "EZID"
+      },
+      "na_policy": {
+        "orgtype": "NP",
+        "policy": "NR",
+        "tenure": "1970",
+        "policy_url": ""
+      },
+      "test_identifier": "ark:/b7280/d1988w",
+      "service_provider": null,
+      "purpose": "unspecified",
+      "rtype": "PublicNAAN"
     }
   ]
 }
