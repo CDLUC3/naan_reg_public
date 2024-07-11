@@ -1,10 +1,10 @@
 {
   "metadata": {
     "version": "1.0",
-    "created_date": "2024-07-09T14:46:47.862917+00:00",
+    "created_date": "2024-07-11T08:38:52.537732+00:00",
     "modified_date": null,
     "description": "Public NAAN records and Shoulder information.",
-    "updated": "2024-07-09T14:46:49+00:00"
+    "updated": "2024-07-11T08:38:53+00:00"
   },
   "data": [
     {
@@ -40904,30 +40904,6 @@
       "rtype": "PublicNAANShoulder"
     },
     {
-      "what": "b5060",
-      "where": "https://ezid.cdlib.org/",
-      "target": {
-        "url": "https://doi.org/10.5060/${value}",
-        "http_code": 302
-      },
-      "when": "1970-01-01T00:00:00+00:00",
-      "who": {
-        "name": "CDLIB EZID",
-        "name_native": null,
-        "acronym": "EZID"
-      },
-      "na_policy": {
-        "orgtype": "NP",
-        "policy": "NR",
-        "tenure": "1970",
-        "policy_url": ""
-      },
-      "test_identifier": "ark:/b5060/d8bc75",
-      "service_provider": null,
-      "purpose": "unspecified",
-      "rtype": "PublicNAAN"
-    },
-    {
       "what": "b7272",
       "where": "https://ezid.cdlib.org/",
       "target": {
@@ -40976,30 +40952,6 @@
       "rtype": "PublicNAAN"
     },
     {
-      "what": "b7291",
-      "where": "https://ezid.cdlib.org/",
-      "target": {
-        "url": "https://doi.org/10.7291/${value}",
-        "http_code": 302
-      },
-      "when": "1970-01-01T00:00:00+00:00",
-      "who": {
-        "name": "CDLIB EZID",
-        "name_native": null,
-        "acronym": "EZID"
-      },
-      "na_policy": {
-        "orgtype": "NP",
-        "policy": "NR",
-        "tenure": "1970",
-        "policy_url": ""
-      },
-      "test_identifier": "ark:/b7291/d1wc74",
-      "service_provider": null,
-      "purpose": "unspecified",
-      "rtype": "PublicNAAN"
-    },
-    {
       "shoulder": "tkt42",
       "naan": "19156",
       "what": "19156/tkt42",
@@ -41043,6 +40995,54 @@
         "policy_url": ""
       },
       "test_identifier": "ark:/b6078/d1mw2k",
+      "service_provider": null,
+      "purpose": "unspecified",
+      "rtype": "PublicNAAN"
+    },
+    {
+      "what": "b5060",
+      "where": "https://ezid.cdlib.org/",
+      "target": {
+        "url": "https://doi.org/10.5060/${value}",
+        "http_code": 302
+      },
+      "when": "1970-01-01T00:00:00+00:00",
+      "who": {
+        "name": "CDLIB EZID",
+        "name_native": null,
+        "acronym": "EZID"
+      },
+      "na_policy": {
+        "orgtype": "NP",
+        "policy": "NR",
+        "tenure": "1970",
+        "policy_url": ""
+      },
+      "test_identifier": "ark:/b5060/d8bc75",
+      "service_provider": null,
+      "purpose": "unspecified",
+      "rtype": "PublicNAAN"
+    },
+    {
+      "what": "b7291",
+      "where": "https://ezid.cdlib.org/",
+      "target": {
+        "url": "https://doi.org/10.7291/${value}",
+        "http_code": 302
+      },
+      "when": "1970-01-01T00:00:00+00:00",
+      "who": {
+        "name": "CDLIB EZID",
+        "name_native": null,
+        "acronym": "EZID"
+      },
+      "na_policy": {
+        "orgtype": "NP",
+        "policy": "NR",
+        "tenure": "1970",
+        "policy_url": ""
+      },
+      "test_identifier": "ark:/b7291/d1wc74",
       "service_provider": null,
       "purpose": "unspecified",
       "rtype": "PublicNAAN"
