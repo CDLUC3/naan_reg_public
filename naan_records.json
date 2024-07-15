@@ -1,10 +1,10 @@
 {
   "metadata": {
     "version": "1.0",
-    "created_date": "2024-07-15T10:44:46.981508+00:00",
+    "created_date": "2024-07-15T10:45:59.989225+00:00",
     "modified_date": null,
     "description": "Public NAAN records and Shoulder information.",
-    "updated": "2024-07-15T10:44:48+00:00"
+    "updated": "2024-07-15T10:46:01+00:00"
   },
   "data": [
     {
@@ -32227,6 +32227,30 @@
         "name": "Selkirk College Library",
         "name_native": null,
         "acronym": "BCS"
+      },
+      "na_policy": {
+        "orgtype": "NP",
+        "policy": "(:unkn) unknown",
+        "tenure": "2024",
+        "policy_url": null
+      },
+      "test_identifier": null,
+      "service_provider": null,
+      "purpose": "unspecified",
+      "rtype": "PublicNAAN"
+    },
+    {
+      "what": "33522",
+      "where": "https://unbc.ca",
+      "target": {
+        "url": "https://unbc.ca/ark:/${content}",
+        "http_code": 302
+      },
+      "when": "2024-07-15T00:00:00+00:00",
+      "who": {
+        "name": "University of Northern British Columbia",
+        "name_native": null,
+        "acronym": "UNBC"
       },
       "na_policy": {
         "orgtype": "NP",
