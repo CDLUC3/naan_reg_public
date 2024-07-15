@@ -1,10 +1,10 @@
 {
   "metadata": {
     "version": "1.0",
-    "created_date": "2024-07-15T09:20:57.099394+00:00",
+    "created_date": "2024-07-15T09:34:17.190472+00:00",
     "modified_date": null,
     "description": "Public NAAN records and Shoulder information.",
-    "updated": "2024-07-15T09:20:58+00:00"
+    "updated": "2024-07-15T09:34:18+00:00"
   },
   "data": [
     {
@@ -28089,9 +28089,9 @@
     },
     {
       "what": "85505",
-      "where": "https://jck.nl",
+      "where": "https://collections.jck.nl",
       "target": {
-        "url": "https://jck.nl/ark:/${content}",
+        "url": "https://collections.jck.nl/ark:/${content}",
         "http_code": 302
       },
       "when": "2023-11-02T00:00:00+00:00",
