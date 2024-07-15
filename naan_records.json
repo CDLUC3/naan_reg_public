@@ -1,10 +1,10 @@
 {
   "metadata": {
     "version": "1.0",
-    "created_date": "2024-07-15T10:31:12.403162+00:00",
+    "created_date": "2024-07-15T10:32:07.737656+00:00",
     "modified_date": null,
     "description": "Public NAAN records and Shoulder information.",
-    "updated": "2024-07-15T10:31:14+00:00"
+    "updated": "2024-07-15T10:32:09+00:00"
   },
   "data": [
     {
@@ -32179,6 +32179,30 @@
         "name": "Langara College",
         "name_native": null,
         "acronym": "LAN"
+      },
+      "na_policy": {
+        "orgtype": "NP",
+        "policy": "(:unkn) unknown",
+        "tenure": "2024",
+        "policy_url": null
+      },
+      "test_identifier": null,
+      "service_provider": null,
+      "purpose": "unspecified",
+      "rtype": "PublicNAAN"
+    },
+    {
+      "what": "59513",
+      "where": "https://NLN.nvdpl.ca",
+      "target": {
+        "url": "https://nln.nvdpl.ca/ark:/${content}",
+        "http_code": 302
+      },
+      "when": "2024-07-15T00:00:00+00:00",
+      "who": {
+        "name": "North Vancouver District Public Library",
+        "name_native": null,
+        "acronym": "NVDPL"
       },
       "na_policy": {
         "orgtype": "NP",
