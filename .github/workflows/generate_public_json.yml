@@ -1,6 +1,11 @@
 name: generate_public_json
 on:
   workflow_dispatch:
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
   generate_json:
     runs-on: ${{ matrix.os }}
