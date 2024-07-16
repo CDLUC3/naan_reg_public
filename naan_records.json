@@ -1,10 +1,10 @@
 {
   "metadata": {
     "version": "1.0",
-    "created_date": "2024-07-16T12:05:21.940343+00:00",
+    "created_date": "2024-07-16T12:07:14.961743+00:00",
     "modified_date": null,
     "description": "Public NAAN records and Shoulder information.",
-    "updated": "2024-07-16T12:05:23+00:00"
+    "updated": "2024-07-16T12:07:16+00:00"
   },
   "data": [
     {
@@ -32299,6 +32299,30 @@
         "name": "CAPER-BC",
         "name_native": null,
         "acronym": "CAPERBC"
+      },
+      "na_policy": {
+        "orgtype": "NP",
+        "policy": "(:unkn) unknown",
+        "tenure": "2024",
+        "policy_url": null
+      },
+      "test_identifier": null,
+      "service_provider": null,
+      "purpose": "unspecified",
+      "rtype": "PublicNAAN"
+    },
+    {
+      "what": "69089",
+      "where": "https://www.jibc.ca",
+      "target": {
+        "url": "https://www.jibc.ca/ark:/${content}",
+        "http_code": 302
+      },
+      "when": "2024-07-16T00:00:00+00:00",
+      "who": {
+        "name": "Justice Institute of British Columbia",
+        "name_native": null,
+        "acronym": "JIBC"
       },
       "na_policy": {
         "orgtype": "NP",
