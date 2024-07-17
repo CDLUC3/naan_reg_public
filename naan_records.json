@@ -1,10 +1,10 @@
 {
   "metadata": {
     "version": "1.0",
-    "created_date": "2024-07-17T13:13:27.767723+00:00",
+    "created_date": "2024-07-17T13:15:17.404916+00:00",
     "modified_date": null,
     "description": "Public NAAN records and Shoulder information.",
-    "updated": "2024-07-17T13:13:29+00:00"
+    "updated": "2024-07-17T13:15:19+00:00"
   },
   "data": [
     {
@@ -32422,6 +32422,30 @@
       },
       "na_policy": {
         "orgtype": "FP",
+        "policy": "(:unkn) unknown",
+        "tenure": "2024",
+        "policy_url": null
+      },
+      "test_identifier": null,
+      "service_provider": null,
+      "purpose": "unspecified",
+      "rtype": "PublicNAAN"
+    },
+    {
+      "what": "78665",
+      "where": "https://archives.bas-rhin.fr",
+      "target": {
+        "url": "https://archives.bas-rhin.fr/ark:/${content}",
+        "http_code": 302
+      },
+      "when": "2024-07-17T00:00:00+00:00",
+      "who": {
+        "name": "Archives Alsace - Strasbourg",
+        "name_native": null,
+        "acronym": "AAS"
+      },
+      "na_policy": {
+        "orgtype": "NP",
         "policy": "(:unkn) unknown",
         "tenure": "2024",
         "policy_url": null
