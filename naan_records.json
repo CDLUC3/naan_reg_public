@@ -1,10 +1,10 @@
 {
   "metadata": {
     "version": "1.0",
-    "created_date": "2024-07-19T05:00:05.549507+00:00",
+    "created_date": "2024-07-19T05:37:19.117027+00:00",
     "modified_date": null,
     "description": "Public NAAN records and Shoulder information.",
-    "updated": "2024-07-19T05:00:07+00:00"
+    "updated": "2024-07-19T05:37:20+00:00"
   },
   "data": [
     {
@@ -32443,6 +32443,30 @@
         "name": "Archives Alsace - Strasbourg",
         "name_native": null,
         "acronym": "AAS"
+      },
+      "na_policy": {
+        "orgtype": "NP",
+        "policy": "(:unkn) unknown",
+        "tenure": "2024",
+        "policy_url": null
+      },
+      "test_identifier": null,
+      "service_provider": null,
+      "purpose": "unspecified",
+      "rtype": "PublicNAAN"
+    },
+    {
+      "what": "65670",
+      "where": "http://pceaarchives.org",
+      "target": {
+        "url": "http://pceaarchives.org/ark:/${content}",
+        "http_code": 302
+      },
+      "when": "2024-07-18T00:00:00+00:00",
+      "who": {
+        "name": "Presbyterian Church of Eastern Australia",
+        "name_native": null,
+        "acronym": "PCEA"
       },
       "na_policy": {
         "orgtype": "NP",
