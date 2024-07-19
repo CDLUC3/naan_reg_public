@@ -1,10 +1,10 @@
 {
   "metadata": {
     "version": "1.0",
-    "created_date": "2024-07-19T05:37:19.117027+00:00",
+    "created_date": "2024-07-19T23:56:34.527678+00:00",
     "modified_date": null,
     "description": "Public NAAN records and Shoulder information.",
-    "updated": "2024-07-19T05:37:20+00:00"
+    "updated": "2024-07-19T23:56:36+00:00"
   },
   "data": [
     {
@@ -29385,9 +29385,9 @@
     },
     {
       "what": "32496",
-      "where": "https://fchportaldigital.unsl.edu.ar/index.php/argonautas",
+      "where": "https://fchportaldigital.unsl.edu.ar/index.php/argonautas/gateway/plugin/pubIdResolver",
       "target": {
-        "url": "https://fchportaldigital.unsl.edu.ar/index.php/argonautas/ark:/${content}",
+        "url": "https://fchportaldigital.unsl.edu.ar/index.php/argonautas/gateway/plugin/pubIdResolver/ark:/${content}",
         "http_code": 302
       },
       "when": "2024-02-07T00:00:00+00:00",
@@ -37357,6 +37357,54 @@
       "what": "19153/rcbg9",
       "who": {
         "name": "Scolomfr -- R\u00e9seau Canop\u00e9 - Espace Myria\u00e9",
+        "name_native": null,
+        "acronym": "CNDP"
+      },
+      "where": "http://www.cndp.fr",
+      "target": {
+        "url": "https://ezid.cdlib.org/ark:/${content}",
+        "http_code": 302
+      },
+      "when": "2011-02-12T00:00:00+00:00",
+      "na_policy": {
+        "orgtype": "NP",
+        "policy": "(:unkn) unknown",
+        "tenure": "2011",
+        "policy_url": null
+      },
+      "test_identifier": null,
+      "rtype": "PublicNAANShoulder"
+    },
+    {
+      "shoulder": "rccm9",
+      "naan": "19153",
+      "what": "19153/rccm9",
+      "who": {
+        "name": "Scolomfr -- R\u00e9seau Canop\u00e9 - Gar [PFPART]",
+        "name_native": null,
+        "acronym": "CNDP"
+      },
+      "where": "http://www.cndp.fr",
+      "target": {
+        "url": "https://ezid.cdlib.org/ark:/${content}",
+        "http_code": 302
+      },
+      "when": "2011-02-12T00:00:00+00:00",
+      "na_policy": {
+        "orgtype": "NP",
+        "policy": "(:unkn) unknown",
+        "tenure": "2011",
+        "policy_url": null
+      },
+      "test_identifier": null,
+      "rtype": "PublicNAANShoulder"
+    },
+    {
+      "shoulder": "rccn9",
+      "naan": "19153",
+      "what": "19153/rccn9",
+      "who": {
+        "name": "Scolomfr -- R\u00e9seau Canop\u00e9 - Gar [PROD]",
         "name_native": null,
         "acronym": "CNDP"
       },
