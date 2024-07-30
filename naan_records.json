@@ -1,10 +1,10 @@
 {
   "metadata": {
     "version": "1.0",
-    "created_date": "2024-07-30T23:41:14.693941+00:00",
+    "created_date": "2024-07-30T23:57:15.126322+00:00",
     "modified_date": null,
     "description": "Public NAAN records and Shoulder information.",
-    "updated": "2024-07-30T23:41:16+00:00"
+    "updated": "2024-07-30T23:57:16+00:00"
   },
   "data": [
     {
@@ -28137,9 +28137,9 @@
     },
     {
       "what": "59512",
-      "where": "https://patrimoine.pantin.fr",
+      "where": "https://archives-patrimoine.pantin.fr",
       "target": {
-        "url": "https://patrimoine.pantin.fr/ark:/${content}",
+        "url": "https://archives-patrimoine.pantin.fr/ark:/${content}",
         "http_code": 302
       },
       "when": "2023-11-03T00:00:00+00:00",
