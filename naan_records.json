@@ -1,10 +1,10 @@
 {
   "metadata": {
     "version": "1.0",
-    "created_date": "2024-08-12T16:02:10.698269+00:00",
+    "created_date": "2024-08-12T16:12:36.889206+00:00",
     "modified_date": null,
     "description": "Public NAAN records and Shoulder information.",
-    "updated": "2024-08-12T16:02:12+00:00"
+    "updated": "2024-08-12T16:12:38+00:00"
   },
   "data": [
     {
@@ -32505,16 +32505,16 @@
     },
     {
       "what": "39678",
-      "where": "https://raigal.unvm.edu.ar/ojs/index.php/raigal/gateway/plugin/pubIdResolver",
+      "where": "https://ark.unvm.edu.ar",
       "target": {
-        "url": "https://raigal.unvm.edu.ar/ojs/index.php/raigal/gateway/plugin/pubIdResolver/ark:/${content}",
+        "url": "https://ark.unvm.edu.ar/ark:/${content}",
         "http_code": 302
       },
       "when": "2024-07-19T00:00:00+00:00",
       "who": {
-        "name": "Instituto AP de Ciencias Sociales, Universidad Nacional de Villa Maria",
+        "name": "Universidad Nacional de Villa Maria",
         "name_native": null,
-        "acronym": "IAPCS-UNVM"
+        "acronym": "UNVM"
       },
       "na_policy": {
         "orgtype": "NP",
@@ -37693,6 +37693,54 @@
       "what": "19153/rcbg9",
       "who": {
         "name": "Scolomfr -- R\u00e9seau Canop\u00e9 - Espace Myria\u00e9",
+        "name_native": null,
+        "acronym": "CNDP"
+      },
+      "where": "http://www.cndp.fr",
+      "target": {
+        "url": "https://ezid.cdlib.org/ark:/${content}",
+        "http_code": 302
+      },
+      "when": "2011-02-12T00:00:00+00:00",
+      "na_policy": {
+        "orgtype": "NP",
+        "policy": "(:unkn) unknown",
+        "tenure": "2011",
+        "policy_url": null
+      },
+      "test_identifier": null,
+      "rtype": "PublicNAANShoulder"
+    },
+    {
+      "shoulder": "rccm9",
+      "naan": "19153",
+      "what": "19153/rccm9",
+      "who": {
+        "name": "Scolomfr -- R\u00e9seau Canop\u00e9 - Gar [PFPART]",
+        "name_native": null,
+        "acronym": "CNDP"
+      },
+      "where": "http://www.cndp.fr",
+      "target": {
+        "url": "https://ezid.cdlib.org/ark:/${content}",
+        "http_code": 302
+      },
+      "when": "2011-02-12T00:00:00+00:00",
+      "na_policy": {
+        "orgtype": "NP",
+        "policy": "(:unkn) unknown",
+        "tenure": "2011",
+        "policy_url": null
+      },
+      "test_identifier": null,
+      "rtype": "PublicNAANShoulder"
+    },
+    {
+      "shoulder": "rccn9",
+      "naan": "19153",
+      "what": "19153/rccn9",
+      "who": {
+        "name": "Scolomfr -- R\u00e9seau Canop\u00e9 - Gar [PROD]",
         "name_native": null,
         "acronym": "CNDP"
       },
