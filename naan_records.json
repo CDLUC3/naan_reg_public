@@ -1,10 +1,10 @@
 {
   "metadata": {
     "version": "1.0",
-    "created_date": "2024-08-12T16:12:36.889206+00:00",
+    "created_date": "2024-08-12T21:23:48.324783+00:00",
     "modified_date": null,
     "description": "Public NAAN records and Shoulder information.",
-    "updated": "2024-08-12T16:12:38+00:00"
+    "updated": "2024-08-12T21:23:50+00:00"
   },
   "data": [
     {
@@ -32806,6 +32806,30 @@
       },
       "na_policy": {
         "orgtype": "FP",
+        "policy": "(:unkn) unknown",
+        "tenure": "2024",
+        "policy_url": null
+      },
+      "test_identifier": null,
+      "service_provider": null,
+      "purpose": "unspecified",
+      "rtype": "PublicNAAN"
+    },
+    {
+      "what": "45834",
+      "where": "https://athabascau.arcabc.ca",
+      "target": {
+        "url": "https://athabascau.arcabc.ca/ark:/${content}",
+        "http_code": 302
+      },
+      "when": "2024-08-12T00:00:00+00:00",
+      "who": {
+        "name": "Athabasca University",
+        "name_native": null,
+        "acronym": "AU"
+      },
+      "na_policy": {
+        "orgtype": "NP",
         "policy": "(:unkn) unknown",
         "tenure": "2024",
         "policy_url": null
