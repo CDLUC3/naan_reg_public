@@ -1,10 +1,10 @@
 {
   "metadata": {
     "version": "1.0",
-    "created_date": "2024-08-13T04:11:55.260423+00:00",
+    "created_date": "2024-08-13T17:59:57.353010+00:00",
     "modified_date": null,
     "description": "Public NAAN records and Shoulder information.",
-    "updated": "2024-08-13T04:11:56+00:00"
+    "updated": "2024-08-13T17:59:58+00:00"
   },
   "data": [
     {
@@ -32864,6 +32864,102 @@
       "rtype": "PublicNAAN"
     },
     {
+      "what": "64986",
+      "where": "https://resolver.dark-pid.net",
+      "target": {
+        "url": "https://resolver.dark-pid.net/ark:/${content}",
+        "http_code": 302
+      },
+      "when": "2024-08-02T00:00:00+00:00",
+      "who": {
+        "name": "Universidade Federal de Pernambuco",
+        "name_native": null,
+        "acronym": "BRUFPE"
+      },
+      "na_policy": {
+        "orgtype": "NP",
+        "policy": "NR, OP",
+        "tenure": "2024",
+        "policy_url": null
+      },
+      "test_identifier": null,
+      "service_provider": null,
+      "purpose": "unspecified",
+      "rtype": "PublicNAAN"
+    },
+    {
+      "what": "51990",
+      "where": "https://resolver.dark-pid.net",
+      "target": {
+        "url": "https://resolver.dark-pid.net/ark:/${content}",
+        "http_code": 302
+      },
+      "when": "2024-08-02T00:00:00+00:00",
+      "who": {
+        "name": "Instituto de Pesquisa Econ\u00f4mica Aplicada",
+        "name_native": null,
+        "acronym": "BRIPEA"
+      },
+      "na_policy": {
+        "orgtype": "NP",
+        "policy": "NR, OP",
+        "tenure": "2024",
+        "policy_url": null
+      },
+      "test_identifier": null,
+      "service_provider": null,
+      "purpose": "unspecified",
+      "rtype": "PublicNAAN"
+    },
+    {
+      "what": "38995",
+      "where": "https://resolver.dark-pid.net",
+      "target": {
+        "url": "https://resolver.dark-pid.net/ark:/${content}",
+        "http_code": 302
+      },
+      "when": "2024-08-02T00:00:00+00:00",
+      "who": {
+        "name": "Universidade Federal de Goi\u00e1s",
+        "name_native": null,
+        "acronym": "BRUFG"
+      },
+      "na_policy": {
+        "orgtype": "NP",
+        "policy": "NR, OP",
+        "tenure": "2024",
+        "policy_url": null
+      },
+      "test_identifier": null,
+      "service_provider": null,
+      "purpose": "unspecified",
+      "rtype": "PublicNAAN"
+    },
+    {
+      "what": "26339",
+      "where": "https://resolver.dark-pid.net",
+      "target": {
+        "url": "https://resolver.dark-pid.net/ark:/${content}",
+        "http_code": 302
+      },
+      "when": "2024-08-02T00:00:00+00:00",
+      "who": {
+        "name": "Universidade Federal de Santa Maria",
+        "name_native": null,
+        "acronym": "BRUFSM"
+      },
+      "na_policy": {
+        "orgtype": "NP",
+        "policy": "NR, OP",
+        "tenure": "2024",
+        "policy_url": null
+      },
+      "test_identifier": null,
+      "service_provider": null,
+      "purpose": "unspecified",
+      "rtype": "PublicNAAN"
+    },
+    {
       "shoulder": "p9",
       "naan": "99166",
       "what": "99166/p9",
@@ -37741,54 +37837,6 @@
       "what": "19153/rcbg9",
       "who": {
         "name": "Scolomfr -- R\u00e9seau Canop\u00e9 - Espace Myria\u00e9",
-        "name_native": null,
-        "acronym": "CNDP"
-      },
-      "where": "http://www.cndp.fr",
-      "target": {
-        "url": "https://ezid.cdlib.org/ark:/${content}",
-        "http_code": 302
-      },
-      "when": "2011-02-12T00:00:00+00:00",
-      "na_policy": {
-        "orgtype": "NP",
-        "policy": "(:unkn) unknown",
-        "tenure": "2011",
-        "policy_url": null
-      },
-      "test_identifier": null,
-      "rtype": "PublicNAANShoulder"
-    },
-    {
-      "shoulder": "rccm9",
-      "naan": "19153",
-      "what": "19153/rccm9",
-      "who": {
-        "name": "Scolomfr -- R\u00e9seau Canop\u00e9 - Gar [PFPART]",
-        "name_native": null,
-        "acronym": "CNDP"
-      },
-      "where": "http://www.cndp.fr",
-      "target": {
-        "url": "https://ezid.cdlib.org/ark:/${content}",
-        "http_code": 302
-      },
-      "when": "2011-02-12T00:00:00+00:00",
-      "na_policy": {
-        "orgtype": "NP",
-        "policy": "(:unkn) unknown",
-        "tenure": "2011",
-        "policy_url": null
-      },
-      "test_identifier": null,
-      "rtype": "PublicNAANShoulder"
-    },
-    {
-      "shoulder": "rccn9",
-      "naan": "19153",
-      "what": "19153/rccn9",
-      "who": {
-        "name": "Scolomfr -- R\u00e9seau Canop\u00e9 - Gar [PROD]",
         "name_native": null,
         "acronym": "CNDP"
       },
