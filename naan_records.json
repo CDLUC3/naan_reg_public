@@ -1,10 +1,10 @@
 {
   "metadata": {
     "version": "1.0",
-    "created_date": "2024-08-12T21:35:25.161917+00:00",
+    "created_date": "2024-08-13T04:11:55.260423+00:00",
     "modified_date": null,
     "description": "Public NAAN records and Shoulder information.",
-    "updated": "2024-08-12T21:35:27+00:00"
+    "updated": "2024-08-13T04:11:56+00:00"
   },
   "data": [
     {
@@ -32805,7 +32805,7 @@
         "acronym": "CMTN"
       },
       "na_policy": {
-        "orgtype": "FP",
+        "orgtype": "NP",
         "policy": "(:unkn) unknown",
         "tenure": "2024",
         "policy_url": null
