@@ -1,10 +1,10 @@
 {
   "metadata": {
     "version": "1.0",
-    "created_date": "2024-08-15T17:11:02.860681+00:00",
+    "created_date": "2024-08-15T17:12:39.336692+00:00",
     "modified_date": null,
     "description": "Public NAAN records and Shoulder information.",
-    "updated": "2024-08-15T17:11:04+00:00"
+    "updated": "2024-08-15T17:12:41+00:00"
   },
   "data": [
     {
@@ -33019,6 +33019,30 @@
         "name": "Nigerian Research and Education Network",
         "name_native": null,
         "acronym": "NGREN"
+      },
+      "na_policy": {
+        "orgtype": "NP",
+        "policy": "(:unkn) unknown",
+        "tenure": "2024",
+        "policy_url": null
+      },
+      "test_identifier": null,
+      "service_provider": null,
+      "purpose": "unspecified",
+      "rtype": "PublicNAAN"
+    },
+    {
+      "what": "55410",
+      "where": "https://ebiblioteca.org/lecturas",
+      "target": {
+        "url": "https://ebiblioteca.org/lecturas/ark:/${content}",
+        "http_code": 302
+      },
+      "when": "2024-08-15T00:00:00+00:00",
+      "who": {
+        "name": "EBiblioteca Org",
+        "name_native": null,
+        "acronym": "EBB"
       },
       "na_policy": {
         "orgtype": "NP",
