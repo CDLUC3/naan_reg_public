@@ -1,10 +1,10 @@
 {
   "metadata": {
     "version": "1.0",
-    "created_date": "2024-08-15T16:57:45.893340+00:00",
+    "created_date": "2024-08-15T17:09:13.194061+00:00",
     "modified_date": null,
     "description": "Public NAAN records and Shoulder information.",
-    "updated": "2024-08-15T16:57:47+00:00"
+    "updated": "2024-08-15T17:09:14+00:00"
   },
   "data": [
     {
@@ -32971,6 +32971,30 @@
         "name": "stichting kasteel Amerongen",
         "name_native": null,
         "acronym": "SKA"
+      },
+      "na_policy": {
+        "orgtype": "NP",
+        "policy": "(:unkn) unknown",
+        "tenure": "2024",
+        "policy_url": null
+      },
+      "test_identifier": null,
+      "service_provider": null,
+      "purpose": "unspecified",
+      "rtype": "PublicNAAN"
+    },
+    {
+      "what": "81402",
+      "where": "https://www.ijarr.in/ArchiveList.aspx",
+      "target": {
+        "url": "https://www.ijarr.in/ArchiveList.aspx/ark:/${content}",
+        "http_code": 302
+      },
+      "when": "2024-08-15T00:00:00+00:00",
+      "who": {
+        "name": "International Journal of Advanced Research and Review",
+        "name_native": null,
+        "acronym": "IJOARAR"
       },
       "na_policy": {
         "orgtype": "NP",
