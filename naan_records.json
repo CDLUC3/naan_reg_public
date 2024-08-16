@@ -1,10 +1,10 @@
 {
   "metadata": {
     "version": "1.0",
-    "created_date": "2024-08-15T17:12:39.336692+00:00",
+    "created_date": "2024-08-16T20:31:44.757817+00:00",
     "modified_date": null,
     "description": "Public NAAN records and Shoulder information.",
-    "updated": "2024-08-15T17:12:41+00:00"
+    "updated": "2024-08-16T20:31:46+00:00"
   },
   "data": [
     {
@@ -33009,9 +33009,9 @@
     },
     {
       "what": "68406",
-      "where": "https://ngren.edu.ng",
+      "where": "https://niris.ngren.edu.ng/",
       "target": {
-        "url": "https://ngren.edu.ng/ark:/${content}",
+        "url": "https://niris.ngren.edu.ng/ark:/${content}",
         "http_code": 302
       },
       "when": "2024-08-15T00:00:00+00:00",
