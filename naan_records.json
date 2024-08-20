@@ -1,10 +1,10 @@
 {
   "metadata": {
     "version": "1.0",
-    "created_date": "2024-08-20T00:14:46.320852+00:00",
+    "created_date": "2024-08-20T00:49:06.792818+00:00",
     "modified_date": null,
     "description": "Public NAAN records and Shoulder information.",
-    "updated": "2024-08-20T00:14:47+00:00"
+    "updated": "2024-08-20T00:49:08+00:00"
   },
   "data": [
     {
@@ -33043,6 +33043,30 @@
         "name": "EBiblioteca Org",
         "name_native": null,
         "acronym": "EBB"
+      },
+      "na_policy": {
+        "orgtype": "NP",
+        "policy": "(:unkn) unknown",
+        "tenure": "2024",
+        "policy_url": null
+      },
+      "test_identifier": null,
+      "service_provider": null,
+      "purpose": "unspecified",
+      "rtype": "PublicNAAN"
+    },
+    {
+      "what": "42414",
+      "where": "https://acading.org.ve",
+      "target": {
+        "url": "https://acading.org.ve/ark:/${content}",
+        "http_code": 302
+      },
+      "when": "2024-08-19T00:00:00+00:00",
+      "who": {
+        "name": "Bolet\u00edn de la Academia Nacional de la Ingenier\u00eda y el H\u00e1bitat",
+        "name_native": null,
+        "acronym": "ANIH"
       },
       "na_policy": {
         "orgtype": "NP",
