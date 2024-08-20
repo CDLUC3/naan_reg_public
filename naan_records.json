@@ -1,10 +1,10 @@
 {
   "metadata": {
     "version": "1.0",
-    "created_date": "2024-08-20T00:49:06.792818+00:00",
+    "created_date": "2024-08-20T21:20:22.166818+00:00",
     "modified_date": null,
     "description": "Public NAAN records and Shoulder information.",
-    "updated": "2024-08-20T00:49:08+00:00"
+    "updated": "2024-08-20T21:20:23+00:00"
   },
   "data": [
     {
@@ -19942,7 +19942,7 @@
       },
       "na_policy": {
         "orgtype": "NP",
-        "policy": "(:unkn) unknown",
+        "policy": "NR, OP, CC",
         "tenure": "2021",
         "policy_url": null
       },
