@@ -1,10 +1,10 @@
 {
   "metadata": {
     "version": "1.0",
-    "created_date": "2024-08-26T08:06:51.808638+00:00",
+    "created_date": "2024-08-26T16:54:49.807149+00:00",
     "modified_date": null,
     "description": "Public NAAN records and Shoulder information.",
-    "updated": "2024-08-26T08:06:53+00:00"
+    "updated": "2024-08-26T16:54:51+00:00"
   },
   "data": [
     {
@@ -32625,9 +32625,9 @@
     },
     {
       "what": "62250",
-      "where": "https://vnvn.hosting.deventit.net/AtlantisPubliek/data",
+      "where": "https://atlantislite.deventit.nl",
       "target": {
-        "url": "https://vnvn.hosting.deventit.net/AtlantisPubliek/data/ark:/${content}",
+        "url": "https://atlantislite.deventit.nl/ark:/${content}",
         "http_code": 302
       },
       "when": "2024-07-25T00:00:00+00:00",
