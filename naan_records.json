@@ -1,10 +1,10 @@
 {
   "metadata": {
     "version": "1.0",
-    "created_date": "2024-08-27T14:05:23.672659+00:00",
+    "created_date": "2024-08-27T14:15:09.970622+00:00",
     "modified_date": null,
     "description": "Public NAAN records and Shoulder information.",
-    "updated": "2024-08-27T14:05:25+00:00"
+    "updated": "2024-08-27T14:15:11+00:00"
   },
   "data": [
     {
@@ -32649,9 +32649,9 @@
     },
     {
       "what": "49254",
-      "where": "https://axiell.com",
+      "where": "https://data.axiell.com",
       "target": {
-        "url": "https://axiell.com/ark:/${content}",
+        "url": "https://data.axiell.com/ark:/${content}",
         "http_code": 302
       },
       "when": "2024-07-25T00:00:00+00:00",
