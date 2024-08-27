@@ -1,10 +1,10 @@
 {
   "metadata": {
     "version": "1.0",
-    "created_date": "2024-08-27T14:24:41.496438+00:00",
+    "created_date": "2024-08-27T14:31:45.590922+00:00",
     "modified_date": null,
     "description": "Public NAAN records and Shoulder information.",
-    "updated": "2024-08-27T14:24:43+00:00"
+    "updated": "2024-08-27T14:31:47+00:00"
   },
   "data": [
     {
@@ -33115,6 +33115,30 @@
         "name": "Universidad Nacional de San Martin",
         "name_native": null,
         "acronym": "UNSAM"
+      },
+      "na_policy": {
+        "orgtype": "NP",
+        "policy": "(:unkn) unknown",
+        "tenure": "2024",
+        "policy_url": null
+      },
+      "test_identifier": null,
+      "service_provider": null,
+      "purpose": "unspecified",
+      "rtype": "PublicNAAN"
+    },
+    {
+      "what": "77982",
+      "where": "https://www.sammlung-mueller.com",
+      "target": {
+        "url": "https://www.sammlung-mueller.com/ark:/${content}",
+        "http_code": 302
+      },
+      "when": "2024-08-27T00:00:00+00:00",
+      "who": {
+        "name": "Sammlung Mueller",
+        "name_native": null,
+        "acronym": "SAM"
       },
       "na_policy": {
         "orgtype": "NP",
