@@ -1,10 +1,10 @@
 {
   "metadata": {
     "version": "1.0",
-    "created_date": "2024-08-27T22:05:00.064440+00:00",
+    "created_date": "2024-08-27T23:25:33.534232+00:00",
     "modified_date": null,
     "description": "Public NAAN records and Shoulder information.",
-    "updated": "2024-08-27T22:05:01+00:00"
+    "updated": "2024-08-27T23:25:34+00:00"
   },
   "data": [
     {
@@ -33142,6 +33142,30 @@
       },
       "na_policy": {
         "orgtype": "NP",
+        "policy": "(:unkn) unknown",
+        "tenure": "2024",
+        "policy_url": null
+      },
+      "test_identifier": null,
+      "service_provider": null,
+      "purpose": "unspecified",
+      "rtype": "PublicNAAN"
+    },
+    {
+      "what": "70296",
+      "where": "https://ark.rviews.org",
+      "target": {
+        "url": "https://ark.rviews.org/ark:/${content}",
+        "http_code": 302
+      },
+      "when": "2024-08-27T00:00:00+00:00",
+      "who": {
+        "name": "Rviews Press, Marseille, France",
+        "name_native": null,
+        "acronym": "RVW"
+      },
+      "na_policy": {
+        "orgtype": "FP",
         "policy": "(:unkn) unknown",
         "tenure": "2024",
         "policy_url": null
