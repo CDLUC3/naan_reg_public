@@ -1,10 +1,10 @@
 {
   "metadata": {
     "version": "1.0",
-    "created_date": "2024-09-04T02:42:00.769577+00:00",
+    "created_date": "2024-09-04T15:08:59.351682+00:00",
     "modified_date": null,
     "description": "Public NAAN records and Shoulder information.",
-    "updated": "2024-09-04T02:42:02+00:00"
+    "updated": "2024-09-04T15:09:01+00:00"
   },
   "data": [
     {
@@ -33225,9 +33225,9 @@
     },
     {
       "what": "71142",
-      "where": "https://eminentscientists.com",
+      "where": "https://submissions.eminentscientists.com/index.php/IJAEB/gateway/plugin/pubIdResolver",
       "target": {
-        "url": "https://eminentscientists.com/ark:/${content}",
+        "url": "https://submissions.eminentscientists.com/index.php/IJAEB/gateway/plugin/pubIdResolver/ark:/${content}",
         "http_code": 302
       },
       "when": "2024-09-03T00:00:00+00:00",
