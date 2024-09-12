@@ -1,10 +1,10 @@
 {
   "metadata": {
     "version": "1.0",
-    "created_date": "2024-09-12T16:50:14.020201+00:00",
+    "created_date": "2024-09-12T16:57:21.734199+00:00",
     "modified_date": null,
     "description": "Public NAAN records and Shoulder information.",
-    "updated": "2024-09-12T16:50:15+00:00"
+    "updated": "2024-09-12T16:57:23+00:00"
   },
   "data": [
     {
@@ -33358,6 +33358,30 @@
       },
       "na_policy": {
         "orgtype": "FP",
+        "policy": "(:unkn) unknown",
+        "tenure": "2024",
+        "policy_url": null
+      },
+      "test_identifier": null,
+      "service_provider": null,
+      "purpose": "unspecified",
+      "rtype": "PublicNAAN"
+    },
+    {
+      "what": "68064",
+      "where": "https://www.peelenmaas.nl",
+      "target": {
+        "url": "https://www.peelenmaas.nl/ark:/${content}",
+        "http_code": 302
+      },
+      "when": "2024-09-12T00:00:00+00:00",
+      "who": {
+        "name": "Gemeente Peel en Maas",
+        "name_native": null,
+        "acronym": "1894PM"
+      },
+      "na_policy": {
+        "orgtype": "NP",
         "policy": "(:unkn) unknown",
         "tenure": "2024",
         "policy_url": null
