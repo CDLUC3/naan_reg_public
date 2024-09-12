@@ -1,10 +1,10 @@
 {
   "metadata": {
     "version": "1.0",
-    "created_date": "2024-09-04T15:18:30.497883+00:00",
+    "created_date": "2024-09-12T16:03:37.655956+00:00",
     "modified_date": null,
     "description": "Public NAAN records and Shoulder information.",
-    "updated": "2024-09-04T15:18:31+00:00"
+    "updated": "2024-09-12T16:03:39+00:00"
   },
   "data": [
     {
@@ -32625,9 +32625,9 @@
     },
     {
       "what": "62250",
-      "where": "https://atlantislite.deventit.nl",
+      "where": "https://atlantislite.deventit.nl/AtlantisPubliek/data",
       "target": {
-        "url": "https://atlantislite.deventit.nl/ark:/${content}",
+        "url": "https://atlantislite.deventit.nl/AtlantisPubliek/data/ark:/${content}",
         "http_code": 302
       },
       "when": "2024-07-25T00:00:00+00:00",
@@ -42152,6 +42152,30 @@
       "rtype": "PublicNAANShoulder"
     },
     {
+      "shoulder": "tkt42",
+      "naan": "19156",
+      "what": "19156/tkt42",
+      "who": {
+        "name": "Participatory Image Archives",
+        "name_native": null,
+        "acronym": "PIA"
+      },
+      "where": "https://ark.participatory-archives.ch",
+      "target": {
+        "url": "https://vocab.participatory-archives.ch/vocab.participatory-archives.ch/brunner${suffix}",
+        "http_code": 302
+      },
+      "when": "2022-04-14T00:00:00+00:00",
+      "na_policy": {
+        "orgtype": "NP",
+        "policy": "(:unkn) unknown",
+        "tenure": "2022",
+        "policy_url": null
+      },
+      "test_identifier": null,
+      "rtype": "PublicNAANShoulder"
+    },
+    {
       "what": "b7272",
       "where": "https://ezid.cdlib.org/",
       "target": {
@@ -42176,10 +42200,10 @@
       "rtype": "PublicNAAN"
     },
     {
-      "what": "b6071",
+      "what": "b5060",
       "where": "https://ezid.cdlib.org/",
       "target": {
-        "url": "https://doi.org/10.6071/${value}",
+        "url": "https://doi.org/10.5060/${value}",
         "http_code": 302
       },
       "when": "1970-01-01T00:00:00+00:00",
@@ -42194,7 +42218,7 @@
         "tenure": "1970",
         "policy_url": ""
       },
-      "test_identifier": "ark:/b6071/m3z07d",
+      "test_identifier": "ark:/b5060/d8bc75",
       "service_provider": null,
       "purpose": "unspecified",
       "rtype": "PublicNAAN"
@@ -42224,10 +42248,10 @@
       "rtype": "PublicNAAN"
     },
     {
-      "what": "b6078",
+      "what": "b6071",
       "where": "https://ezid.cdlib.org/",
       "target": {
-        "url": "https://doi.org/10.6078/${value}",
+        "url": "https://doi.org/10.6071/${value}",
         "http_code": 302
       },
       "when": "1970-01-01T00:00:00+00:00",
@@ -42242,7 +42266,7 @@
         "tenure": "1970",
         "policy_url": ""
       },
-      "test_identifier": "ark:/b6078/d1mw2k",
+      "test_identifier": "ark:/b6071/m3z07d",
       "service_provider": null,
       "purpose": "unspecified",
       "rtype": "PublicNAAN"
@@ -42272,34 +42296,10 @@
       "rtype": "PublicNAAN"
     },
     {
-      "shoulder": "tkt42",
-      "naan": "19156",
-      "what": "19156/tkt42",
-      "who": {
-        "name": "Participatory Image Archives",
-        "name_native": null,
-        "acronym": "PIA"
-      },
-      "where": "https://ark.participatory-archives.ch",
-      "target": {
-        "url": "https://vocab.participatory-archives.ch/vocab.participatory-archives.ch/brunner${suffix}",
-        "http_code": 302
-      },
-      "when": "2022-04-14T00:00:00+00:00",
-      "na_policy": {
-        "orgtype": "NP",
-        "policy": "(:unkn) unknown",
-        "tenure": "2022",
-        "policy_url": null
-      },
-      "test_identifier": null,
-      "rtype": "PublicNAANShoulder"
-    },
-    {
-      "what": "b5060",
+      "what": "b6078",
       "where": "https://ezid.cdlib.org/",
       "target": {
-        "url": "https://doi.org/10.5060/${value}",
+        "url": "https://doi.org/10.6078/${value}",
         "http_code": 302
       },
       "when": "1970-01-01T00:00:00+00:00",
@@ -42314,7 +42314,7 @@
         "tenure": "1970",
         "policy_url": ""
       },
-      "test_identifier": "ark:/b5060/d8bc75",
+      "test_identifier": "ark:/b6078/d1mw2k",
       "service_provider": null,
       "purpose": "unspecified",
       "rtype": "PublicNAAN"
