@@ -1,10 +1,10 @@
 {
   "metadata": {
     "version": "1.0",
-    "created_date": "2024-09-13T19:15:20.880608+00:00",
+    "created_date": "2024-09-16T01:28:46.585753+00:00",
     "modified_date": null,
     "description": "Public NAAN records and Shoulder information.",
-    "updated": "2024-09-13T19:15:22+00:00"
+    "updated": "2024-09-16T01:28:48+00:00"
   },
   "data": [
     {
@@ -9808,7 +9808,7 @@
       },
       "when": "2017-10-27T00:00:00+00:00",
       "who": {
-        "name": "Universidad Nacional Autonoma de M\u00e9xico campus Morelia",
+        "name": "Universidad Nacional Aut\u00f3noma de M\u00e9xico campus Morelia",
         "name_native": null,
         "acronym": "UNAMM"
       },
