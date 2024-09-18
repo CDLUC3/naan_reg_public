@@ -1,10 +1,10 @@
 {
   "metadata": {
     "version": "1.0",
-    "created_date": "2024-09-18T16:31:00.054407+00:00",
+    "created_date": "2024-09-18T18:39:19.823619+00:00",
     "modified_date": null,
     "description": "Public NAAN records and Shoulder information.",
-    "updated": "2024-09-18T16:31:01+00:00"
+    "updated": "2024-09-18T18:39:21+00:00"
   },
   "data": [
     {
@@ -33403,6 +33403,30 @@
         "name": "Liberas",
         "name_native": null,
         "acronym": "LBS"
+      },
+      "na_policy": {
+        "orgtype": "NP",
+        "policy": "(:unkn) unknown",
+        "tenure": "2024",
+        "policy_url": null
+      },
+      "test_identifier": null,
+      "service_provider": null,
+      "purpose": "unspecified",
+      "rtype": "PublicNAAN"
+    },
+    {
+      "what": "42072",
+      "where": "https://sagardeche.fr",
+      "target": {
+        "url": "https://sagardeche.fr/ark:/${content}",
+        "http_code": 302
+      },
+      "when": "2024-09-18T00:00:00+00:00",
+      "who": {
+        "name": "SAGA",
+        "name_native": null,
+        "acronym": "SAGA"
       },
       "na_policy": {
         "orgtype": "NP",
