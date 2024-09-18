@@ -1,10 +1,10 @@
 {
   "metadata": {
     "version": "1.0",
-    "created_date": "2024-09-18T18:42:37.852962+00:00",
+    "created_date": "2024-09-18T18:44:32.217135+00:00",
     "modified_date": null,
     "description": "Public NAAN records and Shoulder information.",
-    "updated": "2024-09-18T18:42:39+00:00"
+    "updated": "2024-09-18T18:44:33+00:00"
   },
   "data": [
     {
@@ -33454,6 +33454,30 @@
       },
       "na_policy": {
         "orgtype": "NP",
+        "policy": "(:unkn) unknown",
+        "tenure": "2024",
+        "policy_url": null
+      },
+      "test_identifier": null,
+      "service_provider": null,
+      "purpose": "unspecified",
+      "rtype": "PublicNAAN"
+    },
+    {
+      "what": "16080",
+      "where": "https://EGR.egregius.es",
+      "target": {
+        "url": "https://egr.egregius.es/ark:/${content}",
+        "http_code": 302
+      },
+      "when": "2024-09-18T00:00:00+00:00",
+      "who": {
+        "name": "Egregius editorial",
+        "name_native": null,
+        "acronym": "EGR"
+      },
+      "na_policy": {
+        "orgtype": "FP",
         "policy": "(:unkn) unknown",
         "tenure": "2024",
         "policy_url": null
