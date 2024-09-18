@@ -1,10 +1,10 @@
 {
   "metadata": {
     "version": "1.0",
-    "created_date": "2024-09-18T18:51:30.370728+00:00",
+    "created_date": "2024-09-18T18:56:08.584571+00:00",
     "modified_date": null,
     "description": "Public NAAN records and Shoulder information.",
-    "updated": "2024-09-18T18:51:32+00:00"
+    "updated": "2024-09-18T18:56:10+00:00"
   },
   "data": [
     {
@@ -42320,28 +42320,100 @@
       "rtype": "PublicNAANShoulder"
     },
     {
-      "shoulder": "tkt42",
-      "naan": "19156",
-      "what": "19156/tkt42",
-      "who": {
-        "name": "Participatory Image Archives",
-        "name_native": null,
-        "acronym": "PIA"
-      },
-      "where": "https://ark.participatory-archives.ch",
+      "what": "b6078",
+      "where": "https://ezid.cdlib.org/",
       "target": {
-        "url": "https://vocab.participatory-archives.ch/vocab.participatory-archives.ch/brunner${suffix}",
+        "url": "https://doi.org/10.6078/${value}",
         "http_code": 302
       },
-      "when": "2022-04-14T00:00:00+00:00",
+      "when": "1970-01-01T00:00:00+00:00",
+      "who": {
+        "name": "CDLIB EZID",
+        "name_native": null,
+        "acronym": "EZID"
+      },
       "na_policy": {
         "orgtype": "NP",
-        "policy": "(:unkn) unknown",
-        "tenure": "2022",
-        "policy_url": null
+        "policy": "NR",
+        "tenure": "1970",
+        "policy_url": ""
       },
-      "test_identifier": null,
-      "rtype": "PublicNAANShoulder"
+      "test_identifier": "ark:/b6078/d1mw2k",
+      "service_provider": null,
+      "purpose": "unspecified",
+      "rtype": "PublicNAAN"
+    },
+    {
+      "what": "b6071",
+      "where": "https://ezid.cdlib.org/",
+      "target": {
+        "url": "https://doi.org/10.6071/${value}",
+        "http_code": 302
+      },
+      "when": "1970-01-01T00:00:00+00:00",
+      "who": {
+        "name": "CDLIB EZID",
+        "name_native": null,
+        "acronym": "EZID"
+      },
+      "na_policy": {
+        "orgtype": "NP",
+        "policy": "NR",
+        "tenure": "1970",
+        "policy_url": ""
+      },
+      "test_identifier": "ark:/b6071/m3z07d",
+      "service_provider": null,
+      "purpose": "unspecified",
+      "rtype": "PublicNAAN"
+    },
+    {
+      "what": "b7280",
+      "where": "https://ezid.cdlib.org/",
+      "target": {
+        "url": "https://doi.org/10.7280/${value}",
+        "http_code": 302
+      },
+      "when": "1970-01-01T00:00:00+00:00",
+      "who": {
+        "name": "CDLIB EZID",
+        "name_native": null,
+        "acronym": "EZID"
+      },
+      "na_policy": {
+        "orgtype": "NP",
+        "policy": "NR",
+        "tenure": "1970",
+        "policy_url": ""
+      },
+      "test_identifier": "ark:/b7280/d1988w",
+      "service_provider": null,
+      "purpose": "unspecified",
+      "rtype": "PublicNAAN"
+    },
+    {
+      "what": "b7291",
+      "where": "https://ezid.cdlib.org/",
+      "target": {
+        "url": "https://doi.org/10.7291/${value}",
+        "http_code": 302
+      },
+      "when": "1970-01-01T00:00:00+00:00",
+      "who": {
+        "name": "CDLIB EZID",
+        "name_native": null,
+        "acronym": "EZID"
+      },
+      "na_policy": {
+        "orgtype": "NP",
+        "policy": "NR",
+        "tenure": "1970",
+        "policy_url": ""
+      },
+      "test_identifier": "ark:/b7291/d1wc74",
+      "service_provider": null,
+      "purpose": "unspecified",
+      "rtype": "PublicNAAN"
     },
     {
       "what": "b7272",
@@ -42392,100 +42464,28 @@
       "rtype": "PublicNAAN"
     },
     {
-      "what": "b7280",
-      "where": "https://ezid.cdlib.org/",
+      "shoulder": "tkt42",
+      "naan": "19156",
+      "what": "19156/tkt42",
+      "who": {
+        "name": "Participatory Image Archives",
+        "name_native": null,
+        "acronym": "PIA"
+      },
+      "where": "https://ark.participatory-archives.ch",
       "target": {
-        "url": "https://doi.org/10.7280/${value}",
+        "url": "https://vocab.participatory-archives.ch/vocab.participatory-archives.ch/brunner${suffix}",
         "http_code": 302
       },
-      "when": "1970-01-01T00:00:00+00:00",
-      "who": {
-        "name": "CDLIB EZID",
-        "name_native": null,
-        "acronym": "EZID"
-      },
+      "when": "2022-04-14T00:00:00+00:00",
       "na_policy": {
         "orgtype": "NP",
-        "policy": "NR",
-        "tenure": "1970",
-        "policy_url": ""
+        "policy": "(:unkn) unknown",
+        "tenure": "2022",
+        "policy_url": null
       },
-      "test_identifier": "ark:/b7280/d1988w",
-      "service_provider": null,
-      "purpose": "unspecified",
-      "rtype": "PublicNAAN"
-    },
-    {
-      "what": "b6071",
-      "where": "https://ezid.cdlib.org/",
-      "target": {
-        "url": "https://doi.org/10.6071/${value}",
-        "http_code": 302
-      },
-      "when": "1970-01-01T00:00:00+00:00",
-      "who": {
-        "name": "CDLIB EZID",
-        "name_native": null,
-        "acronym": "EZID"
-      },
-      "na_policy": {
-        "orgtype": "NP",
-        "policy": "NR",
-        "tenure": "1970",
-        "policy_url": ""
-      },
-      "test_identifier": "ark:/b6071/m3z07d",
-      "service_provider": null,
-      "purpose": "unspecified",
-      "rtype": "PublicNAAN"
-    },
-    {
-      "what": "b7291",
-      "where": "https://ezid.cdlib.org/",
-      "target": {
-        "url": "https://doi.org/10.7291/${value}",
-        "http_code": 302
-      },
-      "when": "1970-01-01T00:00:00+00:00",
-      "who": {
-        "name": "CDLIB EZID",
-        "name_native": null,
-        "acronym": "EZID"
-      },
-      "na_policy": {
-        "orgtype": "NP",
-        "policy": "NR",
-        "tenure": "1970",
-        "policy_url": ""
-      },
-      "test_identifier": "ark:/b7291/d1wc74",
-      "service_provider": null,
-      "purpose": "unspecified",
-      "rtype": "PublicNAAN"
-    },
-    {
-      "what": "b6078",
-      "where": "https://ezid.cdlib.org/",
-      "target": {
-        "url": "https://doi.org/10.6078/${value}",
-        "http_code": 302
-      },
-      "when": "1970-01-01T00:00:00+00:00",
-      "who": {
-        "name": "CDLIB EZID",
-        "name_native": null,
-        "acronym": "EZID"
-      },
-      "na_policy": {
-        "orgtype": "NP",
-        "policy": "NR",
-        "tenure": "1970",
-        "policy_url": ""
-      },
-      "test_identifier": "ark:/b6078/d1mw2k",
-      "service_provider": null,
-      "purpose": "unspecified",
-      "rtype": "PublicNAAN"
+      "test_identifier": null,
+      "rtype": "PublicNAANShoulder"
     }
   ]
 }
