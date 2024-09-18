@@ -1,10 +1,10 @@
 {
   "metadata": {
     "version": "1.0",
-    "created_date": "2024-09-16T01:28:46.585753+00:00",
+    "created_date": "2024-09-18T02:36:14.240984+00:00",
     "modified_date": null,
     "description": "Public NAAN records and Shoulder information.",
-    "updated": "2024-09-16T01:28:48+00:00"
+    "updated": "2024-09-18T02:36:16+00:00"
   },
   "data": [
     {
@@ -33369,9 +33369,9 @@
     },
     {
       "what": "68064",
-      "where": "https://www.peelenmaas.nl",
+      "where": "https://pem.hosting.deventit.net/AtlantisPubliek/data",
       "target": {
-        "url": "https://www.peelenmaas.nl/ark:/${content}",
+        "url": "https://pem.hosting.deventit.net/AtlantisPubliek/data/ark:/${content}",
         "http_code": 302
       },
       "when": "2024-09-12T00:00:00+00:00",
