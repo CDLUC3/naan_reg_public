@@ -1,10 +1,10 @@
 {
   "metadata": {
     "version": "1.0",
-    "created_date": "2024-09-24T09:57:02.376995+00:00",
+    "created_date": "2024-09-24T10:15:07.279826+00:00",
     "modified_date": null,
     "description": "Public NAAN records and Shoulder information.",
-    "updated": "2024-09-24T09:57:04+00:00"
+    "updated": "2024-09-24T10:15:09+00:00"
   },
   "data": [
     {
@@ -33523,6 +33523,30 @@
         "name": "Asia Technology Research Institute Ltd",
         "name_native": null,
         "acronym": "ATRI"
+      },
+      "na_policy": {
+        "orgtype": "NP",
+        "policy": "(:unkn) unknown",
+        "tenure": "2024",
+        "policy_url": null
+      },
+      "test_identifier": null,
+      "service_provider": null,
+      "purpose": "unspecified",
+      "rtype": "PublicNAAN"
+    },
+    {
+      "what": "51648",
+      "where": "https://editorial.unrn.edu.ar",
+      "target": {
+        "url": "https://editorial.unrn.edu.ar/ark:/${content}",
+        "http_code": 302
+      },
+      "when": "2024-09-24T00:00:00+00:00",
+      "who": {
+        "name": "Editorial UNRN",
+        "name_native": null,
+        "acronym": "UNRN"
       },
       "na_policy": {
         "orgtype": "NP",
