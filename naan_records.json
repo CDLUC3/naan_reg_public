@@ -1,10 +1,10 @@
 {
   "metadata": {
     "version": "1.0",
-    "created_date": "2024-09-26T12:51:38.457859+00:00",
+    "created_date": "2024-09-30T08:46:04.034360+00:00",
     "modified_date": null,
     "description": "Public NAAN records and Shoulder information.",
-    "updated": "2024-09-26T12:51:39+00:00"
+    "updated": "2024-09-30T08:46:05+00:00"
   },
   "data": [
     {
@@ -33571,6 +33571,30 @@
         "name": "Museum Rotterdam",
         "name_native": null,
         "acronym": "MR"
+      },
+      "na_policy": {
+        "orgtype": "NP",
+        "policy": "(:unkn) unknown",
+        "tenure": "2024",
+        "policy_url": null
+      },
+      "test_identifier": null,
+      "service_provider": null,
+      "purpose": "unspecified",
+      "rtype": "PublicNAAN"
+    },
+    {
+      "what": "25656",
+      "where": "https://relatic.org",
+      "target": {
+        "url": "https://relatic.org/ark:/${content}",
+        "http_code": 302
+      },
+      "when": "2024-09-30T00:00:00+00:00",
+      "who": {
+        "name": "PORTAL DE CARTELES CIENTIFICOS",
+        "name_native": null,
+        "acronym": "RELATIC"
       },
       "na_policy": {
         "orgtype": "NP",
