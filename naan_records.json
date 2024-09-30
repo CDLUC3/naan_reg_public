@@ -1,10 +1,10 @@
 {
   "metadata": {
     "version": "1.0",
-    "created_date": "2024-09-30T09:04:15.315910+00:00",
+    "created_date": "2024-09-30T09:06:55.595057+00:00",
     "modified_date": null,
     "description": "Public NAAN records and Shoulder information.",
-    "updated": "2024-09-30T09:04:16+00:00"
+    "updated": "2024-09-30T09:06:57+00:00"
   },
   "data": [
     {
@@ -33595,6 +33595,30 @@
         "name": "PORTAL DE CARTELES CIENTIFICOS",
         "name_native": null,
         "acronym": "RELATIC"
+      },
+      "na_policy": {
+        "orgtype": "NP",
+        "policy": "(:unkn) unknown",
+        "tenure": "2024",
+        "policy_url": null
+      },
+      "test_identifier": null,
+      "service_provider": null,
+      "purpose": "unspecified",
+      "rtype": "PublicNAAN"
+    },
+    {
+      "what": "12659",
+      "where": "https://publicaciones.unrn.edu.ar/index.php/CyJ/gateway/plugin/pubIdResolver",
+      "target": {
+        "url": "https://publicaciones.unrn.edu.ar/index.php/CyJ/gateway/plugin/pubIdResolver/ark:/${content}",
+        "http_code": 302
+      },
+      "when": "2024-09-30T00:00:00+00:00",
+      "who": {
+        "name": "Congresos y Jornadas",
+        "name_native": null,
+        "acronym": "CYJ"
       },
       "na_policy": {
         "orgtype": "NP",
