@@ -1,10 +1,10 @@
 {
   "metadata": {
     "version": "1.0",
-    "created_date": "2024-10-07T09:09:05.804343+00:00",
+    "created_date": "2024-10-07T09:12:12.754583+00:00",
     "modified_date": null,
     "description": "Public NAAN records and Shoulder information.",
-    "updated": "2024-10-07T09:09:07+00:00"
+    "updated": "2024-10-07T09:12:14+00:00"
   },
   "data": [
     {
@@ -33667,6 +33667,30 @@
         "name": "Interpeer Project",
         "name_native": null,
         "acronym": "IP"
+      },
+      "na_policy": {
+        "orgtype": "NP",
+        "policy": "(:unkn) unknown",
+        "tenure": "2024",
+        "policy_url": null
+      },
+      "test_identifier": null,
+      "service_provider": null,
+      "purpose": "unspecified",
+      "rtype": "PublicNAAN"
+    },
+    {
+      "what": "61224",
+      "where": "https://www.scielo.org",
+      "target": {
+        "url": "https://www.scielo.org/ark:/${content}",
+        "http_code": 302
+      },
+      "when": "2024-10-07T00:00:00+00:00",
+      "who": {
+        "name": "SciELO (Scientific Electronic Library Online)",
+        "name_native": null,
+        "acronym": "SCIELO"
       },
       "na_policy": {
         "orgtype": "NP",
