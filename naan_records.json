@@ -1,10 +1,10 @@
 {
   "metadata": {
     "version": "1.0",
-    "created_date": "2024-10-07T09:19:15.314179+00:00",
+    "created_date": "2024-10-08T14:15:27.404103+00:00",
     "modified_date": null,
     "description": "Public NAAN records and Shoulder information.",
-    "updated": "2024-10-07T09:19:17+00:00"
+    "updated": "2024-10-08T14:15:29+00:00"
   },
   "data": [
     {
@@ -32097,9 +32097,9 @@
     },
     {
       "what": "23947",
-      "where": "https://id.erfgoeddata.be/ark:/[NAAN]/UUID",
+      "where": "https://id.erfgoeddata.be",
       "target": {
-        "url": "https://id.erfgoeddata.be/ark:/[NAAN]/UUID/ark:/${content}",
+        "url": "https://id.erfgoeddata.be/ark:/${content}",
         "http_code": 302
       },
       "when": "2024-07-01T00:00:00+00:00",
@@ -42464,10 +42464,10 @@
       "rtype": "PublicNAANShoulder"
     },
     {
-      "what": "b6078",
+      "what": "b7280",
       "where": "https://ezid.cdlib.org/",
       "target": {
-        "url": "https://doi.org/10.6078/${value}",
+        "url": "https://doi.org/10.7280/${value}",
         "http_code": 302
       },
       "when": "1970-01-01T00:00:00+00:00",
@@ -42482,7 +42482,7 @@
         "tenure": "1970",
         "policy_url": ""
       },
-      "test_identifier": "ark:/b6078/d1mw2k",
+      "test_identifier": "ark:/b7280/d1988w",
       "service_provider": null,
       "purpose": "unspecified",
       "rtype": "PublicNAAN"
@@ -42512,10 +42512,10 @@
       "rtype": "PublicNAAN"
     },
     {
-      "what": "b7280",
+      "what": "b6078",
       "where": "https://ezid.cdlib.org/",
       "target": {
-        "url": "https://doi.org/10.7280/${value}",
+        "url": "https://doi.org/10.6078/${value}",
         "http_code": 302
       },
       "when": "1970-01-01T00:00:00+00:00",
@@ -42530,16 +42530,16 @@
         "tenure": "1970",
         "policy_url": ""
       },
-      "test_identifier": "ark:/b7280/d1988w",
+      "test_identifier": "ark:/b6078/d1mw2k",
       "service_provider": null,
       "purpose": "unspecified",
       "rtype": "PublicNAAN"
     },
     {
-      "what": "b7291",
+      "what": "b5060",
       "where": "https://ezid.cdlib.org/",
       "target": {
-        "url": "https://doi.org/10.7291/${value}",
+        "url": "https://doi.org/10.5060/${value}",
         "http_code": 302
       },
       "when": "1970-01-01T00:00:00+00:00",
@@ -42554,7 +42554,7 @@
         "tenure": "1970",
         "policy_url": ""
       },
-      "test_identifier": "ark:/b7291/d1wc74",
+      "test_identifier": "ark:/b5060/d8bc75",
       "service_provider": null,
       "purpose": "unspecified",
       "rtype": "PublicNAAN"
@@ -42584,10 +42584,10 @@
       "rtype": "PublicNAAN"
     },
     {
-      "what": "b5060",
+      "what": "b7291",
       "where": "https://ezid.cdlib.org/",
       "target": {
-        "url": "https://doi.org/10.5060/${value}",
+        "url": "https://doi.org/10.7291/${value}",
         "http_code": 302
       },
       "when": "1970-01-01T00:00:00+00:00",
@@ -42602,7 +42602,7 @@
         "tenure": "1970",
         "policy_url": ""
       },
-      "test_identifier": "ark:/b5060/d8bc75",
+      "test_identifier": "ark:/b7291/d1wc74",
       "service_provider": null,
       "purpose": "unspecified",
       "rtype": "PublicNAAN"
