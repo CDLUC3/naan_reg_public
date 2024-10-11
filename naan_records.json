@@ -1,10 +1,10 @@
 {
   "metadata": {
     "version": "1.0",
-    "created_date": "2024-10-11T14:53:13.249878+00:00",
+    "created_date": "2024-10-11T14:56:37.120632+00:00",
     "modified_date": null,
     "description": "Public NAAN records and Shoulder information.",
-    "updated": "2024-10-11T14:53:14+00:00"
+    "updated": "2024-10-11T14:56:38+00:00"
   },
   "data": [
     {
@@ -10425,9 +10425,9 @@
     },
     {
       "what": "68402",
-      "where": "http://www.ur-red.com/ang/index.php",
+      "where": "https://red-laboratory.net/index.html",
       "target": {
-        "url": "http://www.ur-red.com/ang/index.php/ark:/${content}",
+        "url": "https://red-laboratory.net/index.html/ark:/${content}",
         "http_code": 302
       },
       "when": "2018-03-12T00:00:00+00:00",
