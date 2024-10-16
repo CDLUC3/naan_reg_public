@@ -1,10 +1,10 @@
 {
   "metadata": {
     "version": "1.0",
-    "created_date": "2024-10-16T10:08:21.300927+00:00",
+    "created_date": "2024-10-16T10:12:08.720162+00:00",
     "modified_date": null,
     "description": "Public NAAN records and Shoulder information.",
-    "updated": "2024-10-16T10:08:23+00:00"
+    "updated": "2024-10-16T10:12:10+00:00"
   },
   "data": [
     {
@@ -33859,6 +33859,30 @@
         "name": "Trobairitz Magazine",
         "name_native": null,
         "acronym": "TRM"
+      },
+      "na_policy": {
+        "orgtype": "NP",
+        "policy": "(:unkn) unknown",
+        "tenure": "2024",
+        "policy_url": null
+      },
+      "test_identifier": null,
+      "service_provider": null,
+      "purpose": "unspecified",
+      "rtype": "PublicNAAN"
+    },
+    {
+      "what": "31811",
+      "where": "https://www.centre-valdeloire.fr",
+      "target": {
+        "url": "https://www.centre-valdeloire.fr/ark:/${content}",
+        "http_code": 302
+      },
+      "when": "2024-10-16T00:00:00+00:00",
+      "who": {
+        "name": "Conseil r\u00e9gional Centre-Val de Loire",
+        "name_native": null,
+        "acronym": "CRCVL"
       },
       "na_policy": {
         "orgtype": "NP",
