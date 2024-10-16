@@ -1,10 +1,10 @@
 {
   "metadata": {
     "version": "1.0",
-    "created_date": "2024-10-16T06:51:59.158050+00:00",
+    "created_date": "2024-10-16T06:58:52.486566+00:00",
     "modified_date": null,
     "description": "Public NAAN records and Shoulder information.",
-    "updated": "2024-10-16T06:52:00+00:00"
+    "updated": "2024-10-16T06:58:54+00:00"
   },
   "data": [
     {
@@ -33811,6 +33811,30 @@
         "name": "El Pelda\u00f1o-Cuaderno de Teatrolog\u00eda-Facultad de Arte-UNICEN- Argentina",
         "name_native": null,
         "acronym": "EPC"
+      },
+      "na_policy": {
+        "orgtype": "NP",
+        "policy": "(:unkn) unknown",
+        "tenure": "2024",
+        "policy_url": null
+      },
+      "test_identifier": null,
+      "service_provider": null,
+      "purpose": "unspecified",
+      "rtype": "PublicNAAN"
+    },
+    {
+      "what": "57804",
+      "where": "https://redibec.org/ojs/index.php/revibec/index",
+      "target": {
+        "url": "https://redibec.org/ojs/index.php/revibec/index/ark:/${content}",
+        "http_code": 302
+      },
+      "when": "2024-10-15T00:00:00+00:00",
+      "who": {
+        "name": "Revista Iberoamericana de Econom\u00eda Ecol\u00f3gica",
+        "name_native": null,
+        "acronym": "RIEE"
       },
       "na_policy": {
         "orgtype": "NP",
