@@ -1,10 +1,10 @@
 {
   "metadata": {
     "version": "1.0",
-    "created_date": "2024-10-16T06:58:52.486566+00:00",
+    "created_date": "2024-10-16T07:03:11.469185+00:00",
     "modified_date": null,
     "description": "Public NAAN records and Shoulder information.",
-    "updated": "2024-10-16T06:58:54+00:00"
+    "updated": "2024-10-16T07:03:13+00:00"
   },
   "data": [
     {
@@ -33835,6 +33835,30 @@
         "name": "Revista Iberoamericana de Econom\u00eda Ecol\u00f3gica",
         "name_native": null,
         "acronym": "RIEE"
+      },
+      "na_policy": {
+        "orgtype": "NP",
+        "policy": "(:unkn) unknown",
+        "tenure": "2024",
+        "policy_url": null
+      },
+      "test_identifier": null,
+      "service_provider": null,
+      "purpose": "unspecified",
+      "rtype": "PublicNAAN"
+    },
+    {
+      "what": "44808",
+      "where": "https://www.trobairitzmagazine.com.ar",
+      "target": {
+        "url": "https://www.trobairitzmagazine.com.ar/ark:/${content}",
+        "http_code": 302
+      },
+      "when": "2024-10-16T00:00:00+00:00",
+      "who": {
+        "name": "Trobairitz Magazine",
+        "name_native": null,
+        "acronym": "TRM"
       },
       "na_policy": {
         "orgtype": "NP",
