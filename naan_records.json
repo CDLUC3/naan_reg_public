@@ -1,10 +1,10 @@
 {
   "metadata": {
     "version": "1.0",
-    "created_date": "2024-10-23T08:44:06.803134+00:00",
+    "created_date": "2024-10-23T08:49:34.169977+00:00",
     "modified_date": null,
     "description": "Public NAAN records and Shoulder information.",
-    "updated": "2024-10-23T08:44:08+00:00"
+    "updated": "2024-10-23T08:49:35+00:00"
   },
   "data": [
     {
@@ -33955,6 +33955,30 @@
         "name": "Altaplana",
         "name_native": null,
         "acronym": "APL"
+      },
+      "na_policy": {
+        "orgtype": "NP",
+        "policy": "(:unkn) unknown",
+        "tenure": "2024",
+        "policy_url": null
+      },
+      "test_identifier": null,
+      "service_provider": null,
+      "purpose": "unspecified",
+      "rtype": "PublicNAAN"
+    },
+    {
+      "what": "54384",
+      "where": "http://www.openarchives.net",
+      "target": {
+        "url": "http://www.openarchives.net/ark:/${content}",
+        "http_code": 302
+      },
+      "when": "2024-10-23T00:00:00+00:00",
+      "who": {
+        "name": "K-KOS Archives",
+        "name_native": null,
+        "acronym": "KOS"
       },
       "na_policy": {
         "orgtype": "NP",
