@@ -1,10 +1,10 @@
 {
   "metadata": {
     "version": "1.0",
-    "created_date": "2024-10-23T08:49:34.169977+00:00",
+    "created_date": "2024-10-23T10:53:32.524674+00:00",
     "modified_date": null,
     "description": "Public NAAN records and Shoulder information.",
-    "updated": "2024-10-23T08:49:35+00:00"
+    "updated": "2024-10-23T10:53:34+00:00"
   },
   "data": [
     {
@@ -38888,54 +38888,6 @@
       "rtype": "PublicNAANShoulder"
     },
     {
-      "shoulder": "rccm9",
-      "naan": "19153",
-      "what": "19153/rccm9",
-      "who": {
-        "name": "Scolomfr -- R\u00e9seau Canop\u00e9 - Gar [PFPART]",
-        "name_native": null,
-        "acronym": "CNDP"
-      },
-      "where": "http://www.cndp.fr",
-      "target": {
-        "url": "https://ezid.cdlib.org/ark:/${content}",
-        "http_code": 302
-      },
-      "when": "2011-02-12T00:00:00+00:00",
-      "na_policy": {
-        "orgtype": "NP",
-        "policy": "(:unkn) unknown",
-        "tenure": "2011",
-        "policy_url": null
-      },
-      "test_identifier": null,
-      "rtype": "PublicNAANShoulder"
-    },
-    {
-      "shoulder": "rccn9",
-      "naan": "19153",
-      "what": "19153/rccn9",
-      "who": {
-        "name": "Scolomfr -- R\u00e9seau Canop\u00e9 - Gar [PROD]",
-        "name_native": null,
-        "acronym": "CNDP"
-      },
-      "where": "http://www.cndp.fr",
-      "target": {
-        "url": "https://ezid.cdlib.org/ark:/${content}",
-        "http_code": 302
-      },
-      "when": "2011-02-12T00:00:00+00:00",
-      "na_policy": {
-        "orgtype": "NP",
-        "policy": "(:unkn) unknown",
-        "tenure": "2011",
-        "policy_url": null
-      },
-      "test_identifier": null,
-      "rtype": "PublicNAANShoulder"
-    },
-    {
       "shoulder": "sddn9",
       "naan": "19153",
       "what": "19153/sddn9",
@@ -41450,30 +41402,6 @@
         "orgtype": "NP",
         "policy": "(:unkn) unknown",
         "tenure": "2018",
-        "policy_url": null
-      },
-      "test_identifier": null,
-      "rtype": "PublicNAANShoulder"
-    },
-    {
-      "shoulder": "s1",
-      "naan": "21198",
-      "what": "21198/s1",
-      "who": {
-        "name": "UCLA Sinai Manuscripts Digital Library and Data Portal",
-        "name_native": null,
-        "acronym": "UCLA"
-      },
-      "where": "http://library.ucla.edu",
-      "target": {
-        "url": "https://ezid.cdlib.org/ark:/${content}",
-        "http_code": 302
-      },
-      "when": "2005-05-02T00:00:00+00:00",
-      "na_policy": {
-        "orgtype": "NP",
-        "policy": "(:unkn) unknown",
-        "tenure": "2005",
         "policy_url": null
       },
       "test_identifier": null,
