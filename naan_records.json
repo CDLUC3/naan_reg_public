@@ -1,10 +1,10 @@
 {
   "metadata": {
     "version": "1.0",
-    "created_date": "2024-11-04T18:28:04.847513+00:00",
+    "created_date": "2024-11-04T18:31:17.486931+00:00",
     "modified_date": null,
     "description": "Public NAAN records and Shoulder information.",
-    "updated": "2024-11-04T18:28:06+00:00"
+    "updated": "2024-11-04T18:31:19+00:00"
   },
   "data": [
     {
@@ -19785,9 +19785,9 @@
     },
     {
       "what": "53698",
-      "where": "https://nuestramerica.cl/ojs/index.php/nuestramerica",
+      "where": "https://nuestramerica.cl/ojs/index.php/nuestramerica/gateway/plugin/pubIdResolver",
       "target": {
-        "url": "https://nuestramerica.cl/ojs/index.php/nuestramerica/ark:/${content}",
+        "url": "https://nuestramerica.cl/ojs/index.php/nuestramerica/gateway/plugin/pubIdResolver/ark:/${content}",
         "http_code": 302
       },
       "when": "2021-09-06T00:00:00+00:00",
