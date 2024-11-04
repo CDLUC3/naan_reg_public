@@ -1,10 +1,10 @@
 {
   "metadata": {
     "version": "1.0",
-    "created_date": "2024-11-04T17:59:25.774547+00:00",
+    "created_date": "2024-11-04T18:02:02.111252+00:00",
     "modified_date": null,
     "description": "Public NAAN records and Shoulder information.",
-    "updated": "2024-11-04T17:59:27+00:00"
+    "updated": "2024-11-04T18:02:03+00:00"
   },
   "data": [
     {
@@ -34027,6 +34027,30 @@
         "name": "Faculty of Mathematics and Computer Science",
         "name_native": null,
         "acronym": "MATCUH"
+      },
+      "na_policy": {
+        "orgtype": "NP",
+        "policy": "(:unkn) unknown",
+        "tenure": "2024",
+        "policy_url": null
+      },
+      "test_identifier": null,
+      "service_provider": null,
+      "purpose": "unspecified",
+      "rtype": "PublicNAAN"
+    },
+    {
+      "what": "15737",
+      "where": "https://dataverse.hgk.fhnw.ch/resolve",
+      "target": {
+        "url": "https://dataverse.hgk.fhnw.ch/resolve/ark:/${content}",
+        "http_code": 302
+      },
+      "when": "2024-11-04T00:00:00+00:00",
+      "who": {
+        "name": "Mediathek - Academy of Art and Design Basel FHNW",
+        "name_native": null,
+        "acronym": "MBFFHNW"
       },
       "na_policy": {
         "orgtype": "NP",
