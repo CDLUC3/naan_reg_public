@@ -1,10 +1,10 @@
 {
   "metadata": {
     "version": "1.0",
-    "created_date": "2024-11-04T18:08:12.149759+00:00",
+    "created_date": "2024-11-04T18:09:55.860029+00:00",
     "modified_date": null,
     "description": "Public NAAN records and Shoulder information.",
-    "updated": "2024-11-04T18:08:14+00:00"
+    "updated": "2024-11-04T18:09:57+00:00"
   },
   "data": [
     {
@@ -34078,6 +34078,30 @@
       },
       "na_policy": {
         "orgtype": "FP",
+        "policy": "(:unkn) unknown",
+        "tenure": "2024",
+        "policy_url": null
+      },
+      "test_identifier": null,
+      "service_provider": null,
+      "purpose": "unspecified",
+      "rtype": "PublicNAAN"
+    },
+    {
+      "what": "76956",
+      "where": "http://ark.ubbcluj.ro",
+      "target": {
+        "url": "http://ark.ubbcluj.ro/ark:/${content}",
+        "http_code": 302
+      },
+      "when": "2024-11-04T00:00:00+00:00",
+      "who": {
+        "name": "Babes-Bolyai University",
+        "name_native": null,
+        "acronym": "BBU"
+      },
+      "na_policy": {
+        "orgtype": "NP",
         "policy": "(:unkn) unknown",
         "tenure": "2024",
         "policy_url": null
