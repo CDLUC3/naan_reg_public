@@ -1,10 +1,10 @@
 {
   "metadata": {
     "version": "1.0",
-    "created_date": "2024-11-07T16:26:18.993871+00:00",
+    "created_date": "2024-11-07T16:28:11.358528+00:00",
     "modified_date": null,
     "description": "Public NAAN records and Shoulder information.",
-    "updated": "2024-11-07T16:26:20+00:00"
+    "updated": "2024-11-07T16:28:13+00:00"
   },
   "data": [
     {
@@ -34099,6 +34099,30 @@
         "name": "Babes-Bolyai University",
         "name_native": null,
         "acronym": "BBU"
+      },
+      "na_policy": {
+        "orgtype": "NP",
+        "policy": "(:unkn) unknown",
+        "tenure": "2024",
+        "policy_url": null
+      },
+      "test_identifier": null,
+      "service_provider": null,
+      "purpose": "unspecified",
+      "rtype": "PublicNAAN"
+    },
+    {
+      "what": "63960",
+      "where": "https://data.brabantcloud.nl",
+      "target": {
+        "url": "https://data.brabantcloud.nl/ark:/${content}",
+        "http_code": 302
+      },
+      "when": "2024-11-07T00:00:00+00:00",
+      "who": {
+        "name": "Museum De Looierij",
+        "name_native": null,
+        "acronym": "MDLJ"
       },
       "na_policy": {
         "orgtype": "NP",
