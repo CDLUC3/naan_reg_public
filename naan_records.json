@@ -1,10 +1,10 @@
 {
   "metadata": {
     "version": "1.0",
-    "created_date": "2024-11-07T16:36:14.589915+00:00",
+    "created_date": "2024-11-07T16:43:49.294124+00:00",
     "modified_date": null,
     "description": "Public NAAN records and Shoulder information.",
-    "updated": "2024-11-07T16:36:16+00:00"
+    "updated": "2024-11-07T16:43:50+00:00"
   },
   "data": [
     {
@@ -34150,6 +34150,30 @@
       },
       "na_policy": {
         "orgtype": "NP",
+        "policy": "(:unkn) unknown",
+        "tenure": "2024",
+        "policy_url": null
+      },
+      "test_identifier": null,
+      "service_provider": null,
+      "purpose": "unspecified",
+      "rtype": "PublicNAAN"
+    },
+    {
+      "what": "37969",
+      "where": "https://www.geoarchief.nl",
+      "target": {
+        "url": "https://www.geoarchief.nl/ark:/${content}",
+        "http_code": 302
+      },
+      "when": "2024-11-07T00:00:00+00:00",
+      "who": {
+        "name": "GeoArchief",
+        "name_native": null,
+        "acronym": "GAR"
+      },
+      "na_policy": {
+        "orgtype": "FP",
         "policy": "(:unkn) unknown",
         "tenure": "2024",
         "policy_url": null
