@@ -1,10 +1,10 @@
 {
   "metadata": {
     "version": "1.0",
-    "created_date": "2024-11-07T16:31:40.757464+00:00",
+    "created_date": "2024-11-07T16:33:00.240219+00:00",
     "modified_date": null,
     "description": "Public NAAN records and Shoulder information.",
-    "updated": "2024-11-07T16:31:42+00:00"
+    "updated": "2024-11-07T16:33:02+00:00"
   },
   "data": [
     {
@@ -34123,6 +34123,30 @@
         "name": "Museum De Looierij",
         "name_native": null,
         "acronym": "MDLJ"
+      },
+      "na_policy": {
+        "orgtype": "NP",
+        "policy": "(:unkn) unknown",
+        "tenure": "2024",
+        "policy_url": null
+      },
+      "test_identifier": null,
+      "service_provider": null,
+      "purpose": "unspecified",
+      "rtype": "PublicNAAN"
+    },
+    {
+      "what": "50964",
+      "where": "https://data.brabantcloud.nl",
+      "target": {
+        "url": "https://data.brabantcloud.nl/ark:/${content}",
+        "http_code": 302
+      },
+      "when": "2024-11-07T00:00:00+00:00",
+      "who": {
+        "name": "Stg Heemkundekring De Heerlyckheit Dongen",
+        "name_native": null,
+        "acronym": "HKKD"
       },
       "na_policy": {
         "orgtype": "NP",
