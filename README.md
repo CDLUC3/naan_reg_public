@@ -1,5 +1,11 @@
 # naan_reg_public
 
+> [!IMPORTANT]
+> This repository is deprecated and will be removed 2024-12-01.
+>
+> The authoritative source for NAAN records is the [`naan_reg_priv`](https://cdluc3.github.io/naan_reg_priv/) private
+> repository. Publicly accessible information is avalable at https://cdluc3.github.io/naan_reg_priv/
+
 This is a public representation of the information contained in the private NAAN registry records.
 
 The content is expressed in JSON and is generated using a python script executed by a GitHub 
